@@ -1,5 +1,5 @@
 
-## swffg-ui Module
+## swffgUI-cc Module
 
 * **Author**: Prolice#9101
 * **Version**: ![](https://img.shields.io/badge/swffgUI--cc-v0.0.1-lightgrey)
@@ -10,7 +10,8 @@
 * [https://github.com/prolice/swffgUI-cc](https://github.com/prolice/swffgUI-cc)
 
 ### Description 
-swffg-ui for FoundryVTT - A full UI for starwarsffg, new button, windows style and all stuff integrated 
+swffgUI-cc for FoundryVTT - A full UI for starwarsffg, new button, windows style and all stuff integrated 
+Every images, buttons and all stuff are covered by licence Creative Common Zero [https://creativecommons.org/publicdomain/zero/1.0/?ref=ccsearch&atype=rich](https://creativecommons.org/publicdomain/zero/1.0/?ref=ccsearch&atype=rich)
 May the the Interface be with you !
 
 **The Rebel UI overview:**
