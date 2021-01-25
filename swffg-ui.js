@@ -24,14 +24,14 @@ class swffgUIModule {
     }
 
     log(msg, ...args) {
-        if (game && game.settings.get("swffgUI", "verboseLogs")) {
+        if (game && game.settings.get("swffgUI-cc", "verboseLogs")) {
             const color = "background: #6699ff; color: #000; font-size: larger;";
             console.debug(`%c swffgUIModule: ${msg}`, color, ...args);
         }
     }
 
     async init() {
-        game.settings.register("swffgUI", "selectSkin", {
+        game.settings.register("swffgUI-cc", "selectSkin", {
             name: game.i18n.localize("SWFFG.selectSkin"),
             hint: game.i18n.localize("SWFFG.selectSkinHint"),
             scope: "world",
@@ -48,20 +48,20 @@ class swffgUIModule {
 				var locationOrigin= document.location.origin;
 				if (state === IndicatorMode.GALACTIC){
 						for(var elem = 0 ; elem < head.children.length; elem++){
-							if (head.children[elem].href === locationOrigin +"/"+"modules/swffgUI/swffg-default.css" ||
-							    head.children[elem].href === locationOrigin +"/"+"modules/swffgUI/css/swffg.css"){
-							// head.children[elem].href= locationOrigin +"/"+"modules/swffgUI/darkside/css/swffg.css";
-							head.children[elem].href= "modules/swffgUI/darkside/css/swffg.css";
+							if (head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/swffg-default.css" ||
+							    head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/css/swffg.css"){
+							// head.children[elem].href= locationOrigin +"/"+"modules/swffgUI-cc/darkside/css/swffg.css";
+							head.children[elem].href= "modules/swffgUI-cc/darkside/css/swffg.css";
 							break;
 							}
 						}
 				}
 				else {
 					for(var elem = 0 ; elem < head.children.length; elem++){
-							if (head.children[elem].href == locationOrigin +"/"+"modules/swffgUI/swffg-default.css" ||
-								head.children[elem].href === locationOrigin +"/"+"modules/swffgUI/darkside/css/swffg.css"){
-							// head.children[elem].href= locationOrigin +"/"+"modules/swffgUI/css/swffg.css";
-							head.children[elem].href= "modules/swffgUI/css/swffg.css";
+							if (head.children[elem].href == locationOrigin +"/"+"modules/swffgUI-cc/swffg-default.css" ||
+								head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/darkside/css/swffg.css"){
+							// head.children[elem].href= locationOrigin +"/"+"modules/swffgUI-cc/css/swffg.css";
+							head.children[elem].href= "modules/swffgUI-cc/css/swffg.css";
 							break;
 							}
 						}					
@@ -70,7 +70,7 @@ class swffgUIModule {
 			}
         });
 		
-		game.settings.register("swffgUI", "fontSettings", {
+		game.settings.register("swffgUI-cc", "fontSettings", {
             name: game.i18n.localize("SWFFG.fontSettings"),
             hint: game.i18n.localize("SWFFG.fontSettingsHint"),
             scope: "world",
@@ -113,7 +113,7 @@ class swffgUIModule {
 			}
         });
 
-        game.settings.register("swffgUI", "verboseLogs", {
+        game.settings.register("swffgUI-cc", "verboseLogs", {
             name: "Enable more module logging.",
             hint: "Enables more verbose module logging. This is useful for debugging the module. But otherwise should be left off.",
             scope: "world",
@@ -127,7 +127,7 @@ class swffgUIModule {
 		/*let para = document.createElement("li");
 		let node = document.createTextNode("SWFFG-UI");
 		let span = document.createElement("span");
-		let version = document.createTextNode("0.2.2");
+		let version = document.createTextNode("0.0.2");
 		para.appendChild(node);
 		span.appendChild(version);
 		para.appendChild(span);
@@ -141,35 +141,35 @@ class swffgUIModule {
 	switchStyleSheet(){
 		var head = document.getElementsByTagName('head')[0];
 		var locationOrigin= document.location.origin;
-		let state = Number(game.settings.get("swffgUI", "selectSkin"));
+		let state = Number(game.settings.get("swffgUI-cc", "selectSkin"));
 				
 		if (state === IndicatorMode.REBEL) {
-			console.log("[SWFFG-UI] Default option is activated");
+			console.log("[SWFFG-UI-CC] Default option is activated");
 			for(var elem = 0 ; elem < head.children.length; elem++)
 			{
-				if (head.children[elem].href === locationOrigin +"/"+"modules/swffgUI/swffg-default.css" ||
-				    head.children[elem].href === locationOrigin +"/"+"modules/swffgUI/darkside/css/swffg.css"){
-					//head.children[elem].href= locationOrigin +"/"+"modules/swffgUI/css/swffg.css";
-					head.children[elem].href= "modules/swffgUI/css/swffg.css";
+				if (head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/swffg-default.css" ||
+				    head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/darkside/css/swffg.css"){
+					//head.children[elem].href= locationOrigin +"/"+"modules/swffgUI-cc/css/swffg.css";
+					head.children[elem].href= "modules/swffgUI-cc/css/swffg.css";
 					break;
 				}
 			}
 		}
 		else {
-			console.log("[SWFFG-UI] *Dark Side* option is activated");
+			console.log("[SWFFG-UI-CC] *Dark Side* option is activated");
 	
 			for(var elem = 0 ; elem < head.children.length; elem++)
 			{
-				if (head.children[elem].href === locationOrigin +"/"+"modules/swffgUI/swffg-default.css" ||
-				    head.children[elem].href === locationOrigin +"/"+"modules/swffgUI/css/swffg.css"){
-				  // head.children[elem].href= locationOrigin +"/"+"modules/swffgUI/darkside/css/swffg.css";
-				  head.children[elem].href= "modules/swffgUI/darkside/css/swffg.css";
+				if (head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/swffg-default.css" ||
+				    head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/css/swffg.css"){
+				  // head.children[elem].href= locationOrigin +"/"+"modules/swffgUI-cc/darkside/css/swffg.css";
+				  head.children[elem].href= "modules/swffgUI-cc/darkside/css/swffg.css";
 				  break;
 				}
 			}
 		}
 		
-		state = Number(game.settings.get("swffgUI", "fontSettings"));
+		state = Number(game.settings.get("swffgUI-cc", "fontSettings"));
 		switch (state){
 			case IndicatorFonts.EARTHORBITER:
 			  document.documentElement.style.setProperty('--major-button-font-family','EarthOrbiter');	
@@ -194,9 +194,9 @@ class swffgUIModule {
 		}
 		
 		/*let para = document.createElement("li");
-		let node = document.createTextNode("SWFFG-UI");
+		let node = document.createTextNode("SWFFG-UI-CC");
 		let span = document.createElement("span");
-		let version = document.createTextNode("0.2.2");
+		let version = document.createTextNode("0.0.2");
 		para.appendChild(node);
 		span.appendChild(version);
 		para.appendChild(span);
