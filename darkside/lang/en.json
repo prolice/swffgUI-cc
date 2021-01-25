@@ -1,0 +1,14 @@
+{
+  "SWFFG.selectSkin": "Select your skin:", 
+  "SWFFG.selectSkinHint": "Switch between the Rebels and the Empire skin in the game.",
+  "SWFFG.fontSettings": "Select the main font:", 
+  "SWFFG.fontSettingsHint": "Select a font to display the UI as you wish...",
+  "SWFFG.options.indicator.choices.0": "Rebel (theme)",
+  "SWFFG.options.indicator.choices.1": "Galactic Empire (theme)",
+  "SWFFG.options.indicator.fonts.0": "Earth Orbiter (opentype)",
+  "SWFFG.options.indicator.fonts.1": "KuiperBelt (truetype)",
+  "SWFFG.options.indicator.fonts.2": "Mons (truetype)",
+  "SWFFG.options.indicator.fonts.3": "Distant Galaxy (truetype)",
+  "SWFFG.options.indicator.fonts.4": "Signika (foundry default)",
+  "SWFFG.options.indicator.fonts.5": "Roboto (foundry default)"
+}
