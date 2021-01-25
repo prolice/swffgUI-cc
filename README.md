@@ -3,7 +3,7 @@
 
 * **Author**: Prolice#9101
 * **Version**: ![](https://img.shields.io/badge/swffgUI--cc-v0.0.1-lightgrey)
-* **Foundry VTT Compatibility**: ![](https://img.shields.io/badge/Foundry-v0.7.4-informational) to ![](https://img.shields.io/badge/Foundry-v0.7.9-informational)
+* **Foundry VTT Compatibility**: ![](https://img.shields.io/badge/Foundry-v0.7.9-informational) the only version I ve tested !
 * **System Compatibility**: Starwarsffg 1.3 / starwarsffg system branche made by Mandar (1.3)
  
 ### Link(s) to Module
