@@ -1,5 +1,6 @@
 /******************************************************************/
 /******************************************************************/
+/******************************************************************/
 /*=============== TABLE OF CONTENTS ==============================*/
 /******************************************************************/
 /*   I. LOCAL FONTS                                               */
@@ -1659,13 +1660,13 @@ input::placeholder, placeholder, *placeholder {
       display: block;
       width: 40px;
       height: 48px;
-      background: url(../ui/buttons/d10.png) no-repeat 50% 50%;
+      /* background: url(../ui/buttons/d10.png) no-repeat 50% 50%; */
       background-size: 32px;
       margin: 0 0.5em;
       opacity: 1.0;
     }
       #combat-popout li.combatant .roll:hover , #sidebar #combat li.combatant .roll:hover {
-        background-image: url(../ui/buttons/d10-highlight.png);
+        /* background-image: url(../ui/buttons/d10-highlight.png); */
 		cursor: url(../ui/buttons/cursor-rebel.png), auto;
       }
     #combat-popout li.combatant .token-initiative , #sidebar #combat li.combatant .token-initiative {
@@ -6216,7 +6217,7 @@ font-style : normal;
 }
 
 #sidebar #tables .directory-list .directory-item .profile{
-  content: url(../ui/buttons/d10.png);
+  /* content: url(../ui/buttons/d10.png); */
 }
 
 #av-config .sheet-tabs .item {

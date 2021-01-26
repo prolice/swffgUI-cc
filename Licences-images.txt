@@ -36,7 +36,6 @@ https://search.creativecommons.org/photos/7d9626b2-b14a-41a9-95ed-89c39e656cc3
 Chewie:
 https://search.creativecommons.org/photos/3445e750-416a-4bc1-b278-2334604e9563
 
-
 <-- Credit Creator --> ( CC BY 2.0 )
 X-wing helmet: made by big-ashb@
 https://search.creativecommons.org/photos/368d5a9d-deab-41ea-aa8f-8d4b356fd528
@@ -45,7 +44,6 @@ X-Wing --> made by Boynton Art Studio
 https://search.creativecommons.org/photos/7936ceb3-6a2e-4e4b-947f-8a47d1b2e7d0
 
 <-- Credit Creator --> ( CC BY-SA 4.0 ) 
-
 Helmet --> made by  Quarax 
 https://search.creativecommons.org/photos/f151a4b0-da77-465d-a15a-746a1ac196e7
 
@@ -53,6 +51,8 @@ https://search.creativecommons.org/photos/f151a4b0-da77-465d-a15a-746a1ac196e7
 Made by  Инкнигото
 https://search.creativecommons.org/photos/dd4edacd-1160-4935-93be-01d7c0ca9c6e
 
+Black Sun Logo --> (src: trace from an image on the databank fandom.com)
+https://starwars.fandom.com/wiki/Black_Sun/Legends?file=Blacksun.svg
 
 3D Object <CC BY 4.0>
 R2D2:https://sketchfab.com/3d-models/r2-d2-low-poly-a5b37a5bcd314c5a82dd037555419c4c
