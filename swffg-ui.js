@@ -132,7 +132,7 @@ class swffgUIModule {
 		//let myDiv = document.createElement("div");
 		let myImg = document.createElement("img");
 		let myImgA = document.createElement("a");
-		myImgA.setAttribute("href", "https://github.com/prolice/swffgUI-cc/blob/v0.0.7/ImagesLicences.md");
+		myImgA.setAttribute("href", "https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/ImagesLicences.md");
 		myImg.setAttribute("id", "creative-common");
 		myImg.setAttribute("src", "modules/swffgUI-cc/CC-BY-license.png");
 		myImg.style.cssText = 'position:absolute;width:150px;opacity:0.7;z-index:60;bottom:7px;right: 431px;';
