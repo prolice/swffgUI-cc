@@ -13,6 +13,7 @@ Create from [https://search.creativecommons.org/photos/9aa4161b-8651-4970-9163-7
 ---
 ##./ui
 * sidebar.png create from [https://search.creativecommons.org/photos/4bf75240-2fc9-4b3b-b566-769b2e56fcff](https://search.creativecommons.org/photos/4bf75240-2fc9-4b3b-b566-769b2e56fcff)
+* background.png create from [https://search.creativecommons.org/photos/6269b2ec-2df5-4c0f-86be-c85a543c9f1c](https://search.creativecommons.org/photos/6269b2ec-2df5-4c0f-86be-c85a543c9f1c)
 ##./ui/frames
 * window-app-background-bookshelf.png create from [https://search.creativecommons.org/photos/289462ef-3b39-4bef-a39e-3f3337223e35](https://search.creativecommons.org/photos/289462ef-3b39-4bef-a39e-3f3337223e35)
 
