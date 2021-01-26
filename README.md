@@ -31,9 +31,12 @@ May the the Interface be with you !
 * Do not overrule another UI, there is potential issues of compatibility.
 
 ## Release Notes:
+
 **Version [0.0.7]**
 * Add main background image
+
 **Version [0.0.6]**
 * Image inventory to be Creative Common Licence compliant
+
 **Version [<=0.0.5]**
 * Initial build
