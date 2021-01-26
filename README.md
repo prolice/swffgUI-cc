@@ -2,7 +2,7 @@
 ## swffgUI-cc Module
 * **Licences**:[https://raw.githubusercontent.com/prolice/swffgUI-cc/6332e35f208156cdcbe9ab883d9e95da153f4b4a/CC-Zero-badge.svg](https://raw.githubusercontent.com/prolice/swffgUI-cc/6332e35f208156cdcbe9ab883d9e95da153f4b4a/CC-Zero-badge.svg)
 * **Author**: Prolice#9101
-* **Version**: ![](https://img.shields.io/badge/swffgUI--cc-v0.0.5-lightgrey)
+* **Version**: ![](https://img.shields.io/badge/swffgUI--cc-v0.0.6-lightgrey)
 * **Foundry VTT Compatibility**: ![](https://img.shields.io/badge/Foundry-v0.7.9-informational) the only version I ve tested !
 * **System Compatibility**: Starwarsffg 1.3 / starwarsffg system branche made by Mandar (1.3)
  
@@ -31,5 +31,7 @@ May the the Interface be with you !
 * Do not overrule another UI, there is potential issues of compatibility.
 
 ## Release Notes:
+**Version [0.0.6]**
+* Image inventory to be Creative Common Licence compliant
 **Version [<=0.0.5]**
 * Initial build
