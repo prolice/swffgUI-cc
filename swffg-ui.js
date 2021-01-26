@@ -123,8 +123,28 @@ class swffgUIModule {
         });
 		
 		this.switchStyleSheet();
+		/*
+		width: 150px;
+		position: absolute;
+		bottom: 7px;
+		right: 431px;
+		*/
+		//let myDiv = document.createElement("div");
+		let myImg = document.createElement("img");
+		let myImgA = document.createElement("a");
+		myImgA.setAttribute("href", "https://github.com/prolice/swffgUI-cc/blob/v0.0.7/ImagesLicences.md");
+		myImg.setAttribute("id", "creative-common");
+		myImg.setAttribute("src", "modules/swffgUI-cc/CC-BY-license.png");
+		myImg.style.cssText = 'position:absolute;width:150px;opacity:0.7;z-index:60;bottom:7px;right: 431px;';
+		myImg.title = 'Images used by module swffg-cc are under Creative Common license\x0Afollow the link to get all the images licenses and owners...';
+		myImgA.appendChild(myImg);
+		// var body = document.getElementsByTagName('body');
+		// if (body !== null){
+			// body.appendChild(myDiv);
+		// }
+		document.body.appendChild(myImgA);
 		
-		/*let para = document.createElement("li");
+		/*let para = document.createElement("div");
 		let node = document.createTextNode("SWFFG-UI");
 		let span = document.createElement("span");
 		let version = document.createTextNode("0.0.2");

@@ -2,7 +2,8 @@
 We assumed the racine directory as [https://github.com/prolice/swffgUI-cc](https://github.com/prolice/swffgUI-cc)
 
 **Image under CC0 1.0 Universal (CC0 1.0) Public Domain Dedication**
-##./art/ui
+
+##Url: ./art/ui
 * alliance2.png
 * alliance3.png
 * Blacksun-centered-256-redshadow.png
@@ -11,21 +12,24 @@ Create from [https://search.creativecommons.org/photos/9aa4161b-8651-4970-9163-7
 ---
 * Empire_Galactique.png create from [https://search.creativecommons.org/photos/4bf75240-2fc9-4b3b-b566-769b2e56fcff](https://search.creativecommons.org/photos/4bf75240-2fc9-4b3b-b566-769b2e56fcff)
 ---
-##./ui
+##Url:./ui
 * sidebar.png create from [https://search.creativecommons.org/photos/4bf75240-2fc9-4b3b-b566-769b2e56fcff](https://search.creativecommons.org/photos/4bf75240-2fc9-4b3b-b566-769b2e56fcff)
 * background.png create from [https://search.creativecommons.org/photos/6269b2ec-2df5-4c0f-86be-c85a543c9f1c](https://search.creativecommons.org/photos/6269b2ec-2df5-4c0f-86be-c85a543c9f1c)
-##./ui/frames
+
+####Url: ./ui/frames
 * window-app-background-bookshelf.png create from [https://search.creativecommons.org/photos/289462ef-3b39-4bef-a39e-3f3337223e35](https://search.creativecommons.org/photos/289462ef-3b39-4bef-a39e-3f3337223e35)
 
 **Image under Attribution 2.0 Generic (CC BY 2.0)**
-##./ui
-* game-settings-background.png create from [link https://search.creativecommons.org/photos/7936ceb3-6a2e-4e4b-947f-8a47d1b2e7d0](link https://search.creativecommons.org/photos/7936ceb3-6a2e-4e4b-947f-8a47d1b2e7d0)
+
+##Url: ./ui
+* game-settings-background.png create from [https://search.creativecommons.org/photos/7936ceb3-6a2e-4e4b-947f-8a47d1b2e7d0](https://search.creativecommons.org/photos/7936ceb3-6a2e-4e4b-947f-8a47d1b2e7d0)
 * game-settings-border.png create from [https://search.creativecommons.org/photos/7936ceb3-6a2e-4e4b-947f-8a47d1b2e7d0](https://search.creativecommons.org/photos/7936ceb3-6a2e-4e4b-947f-8a47d1b2e7d0)
 ##./ui/buttons
 * cursor-rebel.png Create from [https://search.creativecommons.org/photos/9aa4161b-8651-4970-9163-79ff32290c88](https://search.creativecommons.org/photos/9aa4161b-8651-4970-9163-79ff32290c88)
 
 **Image with my own licence (purchased)**
-##./ui
+
+##Url: ./ui
 * actor-sheet-tab-border.png
 * chat-controls-border.png
 * chat-form-border.png
@@ -62,7 +66,8 @@ Create from [https://search.creativecommons.org/photos/9aa4161b-8651-4970-9163-7
 * sidebar-button-tables-active.png
 * window-app-dialog-content.png
 Create my own licence [__purchased_licence/button_and_decoration_licence.png](__purchased_licence/button_and_decoration_licence.png)
-##./ui/buttons
+
+##Url:./ui/buttons
 * button-close.png
 * button-configure-sheet.png
 * button-configure-token.png
@@ -90,7 +95,7 @@ Create my own licence [__purchased_licence/button_and_decoration_licence.png](__
 * sidebar-search-buttons-magnifying-glass.png
 Create my own licence [__purchased_licence/button_and_decoration_licence.png](__purchased_licence/button_and_decoration_licence.png)
 
-##./ui/frames
+####Url:./ui/frames
 * chat-message-border.png
 * hotkeybox-macro-list.png
 * hotkeybox.png
@@ -101,7 +106,7 @@ Create my own licence [__purchased_licence/button_and_decoration_licence.png](__
 * window-app-journal-sheet-content.png
 Create my own licence [__purchased_licence/button_and_decoration_licence.png](__purchased_licence/button_and_decoration_licence.png)
 
-##./ui/scrollbars
+##Url:./ui/scrollbars
 * scrollbar-button-vertical-decrement.png
 * scrollbar-button-vertical-increment.png
 * scrollbar-thumb.png
@@ -117,7 +122,8 @@ Create my own licence [__purchased_licence/button_and_decoration_licence.png](__
 Create my own licence [__purchased_licence/button_and_decoration_licence.png](__purchased_licence/button_and_decoration_licence.png)
 
 **Image foundryVTT**
-##./ui
+
+##Url:./ui
 * anvil-bg.png
 * denim.png
 * denim065.png
