@@ -7766,6 +7766,11 @@ img {
   background: #d8cbc0 url(../ui/frames/parchment-texture.png) no-repeat; 
 }
 
+.starwarsffg.roll-builder-dialog form {
+  overflow: scroll;
+  background: #6d9badfa url(../ui/frames/parchment-texture.png) round; 
+}
+
  .roll-builder-dialog .window-content button { 
 	margin: 0px 5px 6px 5px !important; 
 	border-image: url(../ui/footer-button.png) 10 repeat; 

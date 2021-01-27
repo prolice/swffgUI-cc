@@ -571,6 +571,11 @@ input::placeholder, placeholder, *placeholder {
     background-size: 9px 110px;
     box-shadow: none;
   }
+	.window-app .window-content {
+	   background: url(../ui/parchment.jpg) repeat;
+   }
+	
+	
    .window-app .window-content input::placeholder {
 	   color:#00ffffb8;
    }
@@ -7757,7 +7762,12 @@ img {
 
 .starwarsffg form {
   overflow: hidden;
-  background: #d8cbc0 url(../ui/frames/parchment-texture.png) no-repeat; 
+  background: #6d9badfa url(../ui/frames/parchment-texture.png) round; 
+}
+
+.starwarsffg.roll-builder-dialog form {
+  overflow: scroll;
+  background: #6d9badfa url(../ui/frames/parchment-texture.png) round; 
 }
 
  .roll-builder-dialog .window-content button { 

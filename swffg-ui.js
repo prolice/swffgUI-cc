@@ -135,7 +135,7 @@ class swffgUIModule {
 		myImgA.setAttribute("href", "https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/ImagesLicences.md");
 		myImg.setAttribute("id", "creative-common");
 		myImg.setAttribute("src", "modules/swffgUI-cc/CC-BY-license.png");
-		myImg.style.cssText = 'position:absolute;width:150px;opacity:0.7;z-index:60;bottom:7px;right: 431px;';
+		myImg.style.cssText = 'position:absolute;width:150px;opacity:0.7;z-index:60;bottom:7px;right: 450px;';
 		myImg.title = 'Images used by module swffg-cc are under Creative Common license\x0Afollow the link to get all the images licenses and owners...';
 		myImgA.appendChild(myImg);
 		// var body = document.getElementsByTagName('body');
