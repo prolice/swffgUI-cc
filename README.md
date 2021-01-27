@@ -1,6 +1,9 @@
 
 ## swffgUI-cc Module
-* **Licences**:![](https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/cc-by.svg)
+* **Licences**:
+
+![](https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/cc-by.svg)
+
 * **Author**: Prolice#9101
 * **Version**: ![](https://img.shields.io/badge/swffgUI--cc-v0.0.9-lightgrey)
 * **Foundry VTT Compatibility**: ![](https://img.shields.io/badge/Foundry-v0.7.9-informational) the only version I ve tested !
