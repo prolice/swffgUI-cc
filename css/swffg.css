@@ -588,7 +588,7 @@ input::placeholder, placeholder, *placeholder {
   }
   
   .sheet header.sheet-header h1 input {
-    color:#005f5fb8;
+    color:#00d6d6b8;
 	font-family:var(--window-header-title-font-family) !important;
 	font-size: var(--window-header-vehicle-font-size);
    }
