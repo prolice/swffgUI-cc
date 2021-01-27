@@ -21,7 +21,7 @@ May the the Interface be with you !
 ![](https://raw.githubusercontent.com/prolice/swffgUI-cc/swffgUI-cc/screenshots/rebel-overview.jpg)
 
 **The Galactic Empire UI**
-*No overview yet*
+![](https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/screenshots/empire-overview.jpg)
 
 ## Installation
 ### Method
