@@ -3972,7 +3972,7 @@ border-image-outset: 0px !important;
         border: none;
         background: none;
         /* box-shadow: inset 0px 0px 4px black; */
-        overflow-y: unset;
+        overflow-y: hidden;
       }
       #client-settings section.content {
         border-top: none;
