@@ -11,7 +11,7 @@
 
 ### Description 
 swffgUI-cc for FoundryVTT - A full UI for starwarsffg, new button, windows style and all stuff integrated 
-Every images, buttons and all stuff are covered by licence Creative Common Zero [https://creativecommons.org/publicdomain/zero/1.0/?ref=ccsearch&atype=rich](https://creativecommons.org/publicdomain/zero/1.0/?ref=ccsearch&atype=rich)
+Every images, buttons and all stuff are covered by licence Creative Common CC BY 2.0 [https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich)
 May the the Interface be with you !
 
 **The Rebel UI overview:**
