@@ -15,7 +15,7 @@ Every images, buttons and all stuff are covered by licence Creative Common Zero 
 May the the Interface be with you !
 
 **The Rebel UI overview:**
-[https://raw.githubusercontent.com/prolice/swffgUI-cc/swffgUI-cc/screenshots/rebel-overview.webp](https://raw.githubusercontent.com/prolice/swffgUI-cc/swffgUI-cc/screenshots/rebel-overview.webp)
+[https://raw.githubusercontent.com/prolice/swffgUI-cc/swffgUI-cc/screenshots/rebel-overview.jpg](https://raw.githubusercontent.com/prolice/swffgUI-cc/swffgUI-cc/screenshots/rebel-overview.jpg)
 
 **The Galactic Empire UI**
 *No overview yet*
