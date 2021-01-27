@@ -567,6 +567,10 @@ input::placeholder, placeholder, *placeholder {
     background-size: 9px 110px;
     box-shadow: none;
   }
+		.window-app .window-content {
+	   background: url(../ui/parchment.jpg) repeat;
+   }
+   
    .window-app .window-content input::placeholder {
 	   color:#9e0000b8;
    }
@@ -1337,6 +1341,9 @@ input::placeholder, placeholder, *placeholder {
       font-weight: 500;
       /* min-height: 80px; */
       vertical-align: middle;
+	  border-image-slice: 18 10 18 10;
+      border-image-width: 14px 18px 14px 10px;
+      border-image-outset: 7 7 7 7;						   
     }
     #chat-log .message .message-header {
       margin: 0px;
@@ -1667,13 +1674,13 @@ input::placeholder, placeholder, *placeholder {
       display: block;
       width: 40px;
       height: 48px;
-      background: url(../ui/buttons/d10.png) no-repeat 50% 50%;
+      /*background: url(../ui/buttons/d10.png) no-repeat 50% 50%;*/
       background-size: 32px;
       margin: 0 0.5em;
       opacity: 1.0;
     }
       #combat-popout li.combatant .roll:hover , #sidebar #combat li.combatant .roll:hover {
-        background-image: url(../ui/buttons/d10-highlight.png);
+        /*background-image: url(../ui/buttons/d10-highlight.png);*/
 		cursor: url(../ui/buttons/cursor-empire.png), auto;
       }
     #combat-popout li.combatant .token-initiative , #sidebar #combat li.combatant .token-initiative {
@@ -3658,7 +3665,7 @@ input::placeholder, placeholder, *placeholder {
   width: 200px;
   border: 1px solid blue;
   border-image: url(../ui/players-border.png) 21 repeat;
-  border-image-slice: 25 15 15 16;
+  border-image-slice: 40 16 25 16;
   border-image-width: 25px 15px 15px 16px;
   border-image-outset: 23px 8px 14px 12px;
   border-radius: 0px;
@@ -3936,7 +3943,7 @@ border-image-outset: 0px !important;
       border: 1px solid blue;
       border-width: 10px;
       border-image: url(../ui/game-settings-border.png) 5 repeat;
-      border-image-slice: 162 81 67 80;
+      border-image-slice: 160 80 66 85;
       border-image-width: 162px 81px 67px 80px;
       border-image-outset: 0px;
       background: none;
@@ -3993,7 +4000,7 @@ border-image-outset: 0px !important;
         flex: 2;
         line-height: 24px;
         border: 1px solid #736953a6;
-        box-shadow: 0px 0px 10px inset #866b00;
+        /*box-shadow: 0px 0px 10px inset #866b00;*/
         background: #5f000040;
         border-radius: 0px;
         opacity: 0.9;
@@ -4402,8 +4409,8 @@ font-family: var(--actor-input-font-family);
     border: 1px solid blue;
     border-width: 10px;
     border-image: url(../ui/window-app-dialog-content.png) 5 repeat;
-    border-image-slice: 19 21 19 21;
-    border-image-width: 19px 15px 15px 15px;
+    border-image-slice: 26 27 26 27;
+    border-image-width: 20px 16px 20px 16px;
     border-image-outset: 0px;
     height: fit-content;
     max-height: none;
@@ -6224,7 +6231,7 @@ font-style : normal;
 }
 
 #sidebar #tables .directory-list .directory-item .profile{
-  content: url(../ui/buttons/d10.png);
+  /*content: url(../ui/buttons/d10.png);*/
 }
 
 #av-config .sheet-tabs .item {
@@ -7763,7 +7770,7 @@ img {
 
 .starwarsffg form {
   overflow: hidden;
-  background: #d8cbc0 url(../ui/frames/parchment-texture.png) no-repeat; 
+  background: #d8cbc0fa url(../ui/frames/parchment-texture.png) round; 
 }
 
 .starwarsffg.roll-builder-dialog form {
@@ -7808,7 +7815,7 @@ img {
 	height: auto !important;
 	
 	border-image: url(../ui/frames/sidebar-collapsed.png) 5 repeat !important;
-    border-image-slice: 19 21 19 21 fill !important;
+    border-image-slice: 29 26 30 26 fill !important;
     border-image-width: 19px 21px 21px 21px !important;
     border-image-outset: 0px !important;
 	
@@ -7912,8 +7919,8 @@ img {
 /* Calendar */
 #calendar-time-container {
     border: 2px solid #540e0ec2 !important;
-    border-image-slice: 24 20 19 17 !important;
-    border-image-width: 20px 20px 20px 20px !important;
+    border-image-slice: 40 15 30 17 !important;
+    border-image-width: 25px 20px 25px 20px !important;
     border-image-outset: 20px 9px 14px 14px !important;
     border-image-repeat: repeat repeat !important;
     border-image-source: url(../ui/players-border.png) !important;

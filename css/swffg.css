@@ -575,7 +575,6 @@ input::placeholder, placeholder, *placeholder {
 	   background: url(../ui/parchment.jpg) repeat;
    }
 	
-	
    .window-app .window-content input::placeholder {
 	   color:#00ffffb8;
    }
@@ -894,7 +893,7 @@ input::placeholder, placeholder, *placeholder {
     right: -1px;
     padding: 20px 0px 20px 18px;
     margin: 3px 0px 0px 0px;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     border-image: url(../ui/frames/sidebar-collapsed.png);
     border-image-slice: 9 fill;
     border-image-width: 9px;
@@ -4469,7 +4468,7 @@ font-family: var(--actor-input-font-family);
         padding: 1px 3px;
         margin: 0;
         font-family: var(--actor-input-font-family);
-        font-size: var(--actor-input-font-size) !important;;
+        font-size: var(--actor-input-font-size) !important;
         font-weight: var(--actor-input-font-weight);
         color: #d6d6d6;
         border: 1px solid #736953a6;
@@ -7970,4 +7969,3 @@ img {
     cursor: not-allowed;
     background: #290a0aba;
 }
-
