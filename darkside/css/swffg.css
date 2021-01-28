@@ -1,5 +1,6 @@
 /******************************************************************/
 /******************************************************************/
+/******************************************************************/
 /*=============== TABLE OF CONTENTS ==============================*/
 /******************************************************************/
 /*   I. LOCAL FONTS                                               */
@@ -420,15 +421,15 @@ li.folder > .folder-header h3 {
   }
   
 input::placeholder, placeholder, *placeholder {
-    color: #004f4fb8 !important;
+    color: #4f0000b8 !important;
 }
 /* ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */ 
-  /* color: #004f4fb8; */
+  /* color: #4f0000b8; */
   /* opacity: 1; /* Firefox */ 
 /* } */
 
 /* ::-webkit-input-placeholder { /* Edge */ 
-  /* color: #004f4fb8; */
+  /* color: #4f0000b8; */
 /* } */
 /* ==================== (F) SCROLLBAR ========================= */
   .app.window-app.sheet.starwarsffg.actor ::-webkit-scrollbar {
@@ -572,7 +573,7 @@ input::placeholder, placeholder, *placeholder {
    }
    
    .window-app .window-content input::placeholder {
-	   color:#9e0000b8;
+	   color:#ffffffb8;
    }
    
    .window-app .window-content textarea {
@@ -949,7 +950,7 @@ input::placeholder, placeholder, *placeholder {
     .sidebar-popout .directory-header .header-search input::placeholder,
       .sidebar-tab .directory-header .header-search input::placeholder {
       text-align: center;
-      color: #004f4fb8;
+      color: #4f0000b8;
       position: relative;
       top: 2px;
     }
@@ -3665,9 +3666,9 @@ input::placeholder, placeholder, *placeholder {
   width: 200px;
   border: 1px solid blue;
   border-image: url(../ui/players-border.png) 21 repeat;
-  border-image-slice: 40 16 25 16;
-  border-image-width: 25px 15px 15px 16px;
-  border-image-outset: 23px 8px 14px 12px;
+  border-image-slice: 70 16 25 16;
+  border-image-width: 50px 15px 15px 16px;
+  border-image-outset: 50px 12px 13px 13px;
   border-radius: 0px;
   box-shadow: inset 0 0 10px #000000;
   background: #5f000040;
@@ -3824,10 +3825,14 @@ border-image-outset: 0px !important;
     #module-management .window-header {
        justify-content: flex-end;
        padding: 0px 8px;
+	   margin: 0px 0px 17px 0px;
     }
     #module-management .window-content {
       overflow: auto;
       background: url(../ui/frames/window-app-background-bookshelf.png);
+	  border-image-slice: 24 30 24 26;
+    border-image-width: 36px 36px 36px 36px;
+    border-image-outset: 24px 17px 22px 20px;
     }
     #module-management .window-content .modules-list {
       list-style: none;
@@ -3958,6 +3963,7 @@ border-image-outset: 0px !important;
     justify-content: flex-end;
     position: relative;
     /* top: 38px; */
+	margin:0px;
     }
       #client-settings .window-header h4 {
         display: none;
@@ -4369,7 +4375,7 @@ font-family: var(--actor-input-font-family);
   }
   .app.window-app .window-header {
     flex: 0 0 45px;
-    margin: 0px;
+    margin: 0px 0px 16px 0px;
     border: 1px solid blue;
     border-image: url(../ui/frames/window-app-header-blank.png) 5 repeat;
     border-image-slice: 19 21 19 21 fill;
@@ -4409,9 +4415,9 @@ font-family: var(--actor-input-font-family);
     border: 1px solid blue;
     border-width: 10px;
     border-image: url(../ui/window-app-dialog-content.png) 5 repeat;
-    border-image-slice: 26 27 26 27;
-    border-image-width: 20px 16px 20px 16px;
-    border-image-outset: 0px;
+    border-image-slice: 27 27 27 27;
+    border-image-width: 30px 27px 30px 27px;
+    border-image-outset: 19px 14px 16px 8px;
     height: fit-content;
     max-height: none;
   }
@@ -4495,7 +4501,7 @@ font-family: var(--actor-input-font-family);
       }
 
       #module-management .list-filters input::placeholder {
-        color: #004f4fb8;
+        color: #4f0000b8;
       }
 
       .app.window-app .form-group select {
@@ -4916,7 +4922,7 @@ font-family: var(--actor-input-font-family);
       color: #d6d6d6;
       line-height: normal;
       border: 3px double #800000;
-      background: #220048d9;
+      background: #616161d9;
     }
       .token-sheet .sheet-tabs .item:hover {
         box-shadow: 0 0 8px #ef0000 !important;
@@ -5166,7 +5172,7 @@ font-family: var(--actor-input-font-family);
       color: #d6d6d6;
       line-height: normal;
       border: 3px double #800000;
-      background: #220048d9;
+      background: #616161d9;
     }
       #drawing-config .sheet-tabs .item:hover {
         box-shadow: 0 0 8px #ef0000 !important;
@@ -5343,6 +5349,10 @@ font-family: var(--actor-input-font-family);
       min-width: 470px;
       min-height: 362px;
     }
+	
+	.window-app.app.journal-sheet header{
+      margin:0px;
+    }
     .window-app.app.journal-sheet.image-popout {
       min-width: 417px;
       min-height: 403px;
@@ -5355,7 +5365,7 @@ font-family: var(--actor-input-font-family);
       flex-direction: column;
       flex-wrap: nowrap;
       overflow-y: hidden;
-      padding: 0px;
+      padding: 15px 16px 20px 16px;
       margin: 0px;
       box-shadow: 0px 0px 30px black inset;
       font-family: KuiperBelt;
@@ -5542,7 +5552,7 @@ font-family: var(--actor-input-font-family);
       }
       .window-app.app .sidebar-tab.compendium .compendium-search input::placeholder {
         text-align: center;
-        color: #004f4fb8;
+        color: #4f0000b8;
         position: relative;
         top: 2px;
       }
@@ -6069,7 +6079,7 @@ font-style : normal;
         color: #d6d6d6;
         line-height: normal;
         border: 3px double #800000;
-        background: #220048d9;
+        background: #616161d9;
       }
       #module-management .list-filters .filter:hover,
       #client-settings .sheet-tabs .item:hover {
@@ -6817,7 +6827,7 @@ background-image: linear-gradient(to right, #820f0f , #82820d);
   color: #d6d6d6;
   line-height: normal;
   border: 3px double #800000;
-  background: #220048d9;
+  background: #616161d9;
 }
 .app.window-app.filepicker .tabs .item.active {
   background: #6b4a00d9;
@@ -7066,7 +7076,7 @@ background-image: linear-gradient(to right, #820f0f , #82820d);
   color: #d6d6d6;
   line-height: normal;
   border: 3px double #800000;
-  background: #220048d9;
+  background: #616161d9;
 }
   #av-config .sheet-tabs .item:hover {
     box-shadow: 0 0 8px #ef0000 !important;
@@ -7587,7 +7597,7 @@ hr,
   color: #d6d6d6;
   line-height: normal;
   border: 3px double #800000;
-  background: #220048d9;
+  background: #616161d9;
 }
 .forien-quest-preview nav .item:hover{
     box-shadow: 0 0 8px #ef0000 !important;
@@ -7650,7 +7660,7 @@ hr,
   font-weight: var(--actor-input-font-weight);
   color: #d6d6d6 !important;
   border: 3px double #800000 !important;
-  background: #220048d9 !important;
+  background: #616161d9 !important;
 }
 
 #destiny-tracker {
@@ -7667,7 +7677,6 @@ hr,
   border-image: none !important;
   border:0px !important;
   box-shadow: none;
-
 }
 
 #destiny-tracker .dropbtn:hover, #destiny-tracker .dropbtn:focus {
@@ -7919,9 +7928,9 @@ img {
 /* Calendar */
 #calendar-time-container {
     border: 2px solid #540e0ec2 !important;
-    border-image-slice: 40 15 30 17 !important;
-    border-image-width: 25px 20px 25px 20px !important;
-    border-image-outset: 20px 9px 14px 14px !important;
+    border-image-slice: 70 21 37 21 !important;
+    border-image-width: 50px 20px 32px 20px !important;
+    border-image-outset: 50px 14px 20px 14px !important;
     border-image-repeat: repeat repeat !important;
     border-image-source: url(../ui/players-border.png) !important;
     /* background: none; */
@@ -7977,4 +7986,40 @@ img {
 #calendar--time-controls li.disabled {
     cursor: not-allowed;
     background: #290a0aba;
+}
+
+#ogc-importer .window-content {
+  background: transparent;
+  border-image-slice: 27 27 27 27;
+  border-image-width: 30px 27px 30px 27px;
+  border-image-outset: 19px 7px 18px 6px;
+}
+
+div#ogc-importer {
+  width:auto !important;
+  height:auto !important;
+}
+
+#ogc-importer .window-content p{
+  color:white;
+  text-shadow: 0 1px 1px black;
+  padding: 2px 5px 0px 5px;
+}
+
+#ogc-importer .window-content button{
+  margin: 0px 0px 6px 0px !important;
+  padding: 0px 5px 0px 5px;
+  height: 34px;
+  border: 1px solid black;
+  border-image: url(../ui/footer-button.png) 10 repeat;
+  border-image-width: 4px;
+  border-image-outset: 0px;
+  box-shadow: 4px 4px 1px #00000085;
+  background: url(../ui/sidebar_button-background_red.png) repeat;
+  background-origin: padding-box;
+  color: #dadada;
+  font-family: KuiperBelt;
+  font-size: 20px;
+  font-weight: 500;
+  text-shadow: 0px 0px 1px #00000063;
 }

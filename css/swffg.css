@@ -588,9 +588,10 @@ input::placeholder, placeholder, *placeholder {
   }
   
   .sheet header.sheet-header h1 input {
-    color:#00d6d6b8;
+    color:#027b7b;
 	font-family:var(--window-header-title-font-family) !important;
 	font-size: var(--window-header-vehicle-font-size);
+	text-shadow: 1px 1px 1px #94f4fde0;
    }
   .app.window-app.form ::-webkit-scrollbar-thumb {
     outline: none;
@@ -1345,9 +1346,9 @@ input::placeholder, placeholder, *placeholder {
       font-weight: 500;
       /* min-height: 80px; */
       vertical-align: middle;
-	  border-image-slice: 18 10 18 10;
-      border-image-width: 14px 18px 14px 10px;
-      border-image-outset: 7 7 7 7;
+      border-image-slice: 24 14 24 14;
+      border-image-width: 15px 10px 15px 10px;
+      border-image-outset: 7 5 7 5;
     }
     #chat-log .message .message-header {
       margin: 0px;
@@ -3655,9 +3656,9 @@ input::placeholder, placeholder, *placeholder {
   width: 200px;
   border: 1px solid blue;
   border-image: url(../ui/players-border.png) 21 repeat;
-  border-image-slice: 40 16 25 16;
-  border-image-width: 25px 15px 15px 16px;
-  border-image-outset: 23px 8px 14px 12px;
+  border-image-slice: 75 16 25 16;
+  border-image-width: 43px 10px 15px 10px;
+  border-image-outset: 41px 9px 9px 9px;
   border-radius: 0px;
   box-shadow: inset 0 0 10px #000000;
   background: #00a5d640;
@@ -3942,12 +3943,13 @@ border-image-outset: 0px !important;
       box-shadow: none !important;
     }
     #client-settings .window-header {
-    border: none;
-    min-height: 152px;
-    background: none;
-    justify-content: flex-end;
-    position: relative;
-    /* top: 38px; */
+      border: none;
+      min-height: 152px;
+      background: none;
+      justify-content: flex-end;
+      position: relative;
+      /* top: 38px; */
+	  margin: 0px;
     }
       #client-settings .window-header h4 {
         display: none;
@@ -4368,6 +4370,7 @@ font-family: var(--actor-input-font-family);
     align-items: center;
     justify-content: flex-end;
     display: inline-flex;
+	margin: 0px 0px 20px 0px;
   }
     .app.window-app .window-header .window-title {
       flex: 1;
@@ -4388,20 +4391,21 @@ font-family: var(--actor-input-font-family);
 
   .app.window-app .window-content {
     background: url(../ui/frames/window-app-background-bookshelf.png);
-    background-position: -43px -120px;
+    background-position: -43px -120px !important;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     overflow-y: auto;
-    padding: 0px 7px 3px 7px;
+    /* padding: 0px 7px 3px 7px; */
+	padding: 0px;
     margin: 0px;
     box-shadow: 0px 0px 20px black inset;
     border: 1px solid blue;
     border-width: 10px;
     border-image: url(../ui/window-app-dialog-content.png) 5 repeat;
-    border-image-slice: 26 27 26 27;
-    border-image-width: 20px 16px 20px 16px;
-    border-image-outset: 0px;
+    border-image-slice: 30 27 26 27;
+    border-image-width: 30px 30px 30px 30px;
+    border-image-outset: 20px 20px 20px 20px;
     height: fit-content;
     max-height: none;
   }
@@ -5332,7 +5336,13 @@ font-family: var(--actor-input-font-family);
     .window-app.app.journal-sheet {
       min-width: 470px;
       min-height: 362px;
+	  background:transparent;
     }
+	
+	.window-app.app.journal-sheet header{
+      margin:0px;
+    }
+	
     .window-app.app.journal-sheet.image-popout {
       min-width: 417px;
       min-height: 403px;
@@ -5345,14 +5355,14 @@ font-family: var(--actor-input-font-family);
       flex-direction: column;
       flex-wrap: nowrap;
       overflow-y: hidden;
-      padding: 0px;
+      padding: 15px 16px 20px 16px;
       margin: 0px;
       box-shadow: 0px 0px 30px black inset;
       font-family: KuiperBelt;
       font-weight: 500;
       font-size: 14px;
       color: #000000;
-      border: 1px solid blue;
+      /* border: 1px solid blue; */
       border-width: 10px;
       border-image: url(../ui/frames/window-app-journal-sheet-content.png) 5 repeat;
       border-image-slice: 35;
@@ -6402,7 +6412,7 @@ input.card-edit {
     border-left: none;
     border-radius: 0px;
     box-shadow: 0px 0px 10px inset black;
-    background: #00486b;
+    background: #10252f;
 }
 
 .drawing-sheet textarea,
@@ -7730,6 +7740,7 @@ img {
   text-decoration: none;
   text-shadow: none;
   background: url(../ui/controls-active-background36x36.png) !important;
+  margin-right: 0px;
 }
 
 .starwarsffg.sheet.actor.v2 .tabs .item {
@@ -7753,10 +7764,11 @@ img {
 
 .starwarsffg.sheet.item.v2 .tabs .item {
   line-height: normal;
+  color: white;
 }
 
 .starwarsffg.sheet.item.v2 .tabs .item.active {
-  color: #fff;
+  color: #00e7ff;
 }
 
 .starwarsffg form {
@@ -7909,9 +7921,13 @@ img {
 
 #calendar-time-container {
     border: 2px solid #003cffc2 !important;
-    border-image-slice: 40 15 30 17 !important;
-    border-image-width: 25px 20px 25px 20px !important;
-    border-image-outset: 20px 9px 14px 14px !important;
+    /* border-image-slice: 40 15 30 17 !important; */
+    /* border-image-width: 25px 20px 25px 20px !important; */
+    /* border-image-outset: 20px 9px 14px 14px !important; */
+    /* border-image-repeat: repeat repeat !important; */
+	border-image-slice: 80 21 37 21 !important;
+    border-image-width: 60px 20px 32px 20px !important;
+    border-image-outset: 54px 14px 14px 14px !important;
     border-image-repeat: repeat repeat !important;
     border-image-source: url(../ui/players-border.png) !important;
     /* background: none; */
@@ -7968,4 +7984,38 @@ img {
 #calendar--time-controls li.disabled {
     cursor: not-allowed;
     background: #290a0aba;
+}
+
+#ogc-importer .window-content {
+  background: transparent;
+}
+
+div#ogc-importer {
+  width:auto !important;
+  height:auto !important;
+}
+
+
+#ogc-importer .window-content p{
+  color:white;
+  text-shadow: 0 1px 1px black;
+  padding: 2px 5px 0px 5px;
+}
+
+#ogc-importer .window-content button{
+  margin: 0px 5px 6px 5px !important;
+  padding: 2px 0px 0px 0px;
+  height: 34px;
+  border: 1px solid black;
+  border-image: url(../ui/footer-button.png) 10 repeat;
+  border-image-width: 4px;
+  border-image-outset: 0px;
+  box-shadow: 4px 4px 1px #00000085;
+  background: url(../ui/sidebar_button-background_red.png) repeat;
+  background-origin: padding-box;
+  color: #dadada;
+  font-family: KuiperBelt;
+  font-size: 20px;
+  font-weight: 500;
+  text-shadow: 0px 0px 1px #00000063;
 }
