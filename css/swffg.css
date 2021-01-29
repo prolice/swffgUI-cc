@@ -7654,20 +7654,102 @@ hr,
   background: #220048d9 !important;
 }
 
+/*div#destiny-tracker {
+	inset: 832px 305px 0px 1415px;
+}*/
+
 #destiny-tracker {
   box-shadow: none !important;
-  background: transparent;
+  background: url(../ui/parchment.jpg) repeat;
   position: absolute;
   /*inset:900px 305px 0px 1315px !important;*/
   border-image: none !important;
+  width: 260px !important;
+  height: 170px !important;
+  top:515px;
+  right: 500px;
 }
 
+.swffg-destiny .group-manager {
+    padding: 0px;
+}
+
+.swffg-destiny-bar {
+    background:none;
+    box-shadow: none;
+}
+
+.swffg-destiny #destinyLight {
+  background : url(../ui/lightside-UI-CC.png) no-repeat center;
+  background-size: contain;
+}
+
+.swffg-destiny #destinyDark {
+  background : url(../ui/darkside-UI-CC.png) no-repeat center;
+  background-size: contain;
+}
+
+section#destinyLight.destiny-points:hover {
+  background : url(../ui/lightside-UI-CC-active.png) no-repeat center;
+  background-size: contain;
+  cursor: url(../ui/buttons/cursor-rebel.png), auto;
+}
+
+section#destinyDark.destiny-points:hover {
+  background : url(../ui/darkside-UI-CC-active.png) no-repeat center;
+  background-size: contain;
+  cursor: url(../ui/buttons/cursor-rebel.png), auto;
+}
+.swffg-destiny {
+    background:none;
+    border: 0px ;
+    border-radius: 0px;
+    box-shadow: none;
+}
+.swffg-destiny .destiny-points {
+	font-family: var(--major-button-font-family), sans-serif !important;
+	font-size: 40px !important;
+    padding: 25px 0 12px 0;
+	text-shadow: 2px 2px 0px black;
+}
+
+.swffg-destiny .destiny-points span{
+	font-family: var(--major-button-font-family), serif !important;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.swffg-destiny-bar {
+    background: #00458c2b;
+    height: 20px;
+}
+
+#destiny-tracker .dropbtn {
+    font-size: 15px;
+	text-shadow: 1px 1px 1px black;
+}
+
+#destiny-tracker .dropbtn:hover{
+    color:#00d0ff;
+}
+
+.swffg-destiny.swffg-groupmanager {
+    min-width: 200px;
+    flex: 1;
+    position: relative;
+    padding: 0 0 5px 0;
+    pointer-events: auto;
+    height: 100px;
+}
 
 #destiny-tracker .window-content {
   background: transparent;
-  border-image: none !important;
-  border:0px !important;
+  /* border-image: none !important; */
+  /* border:0px !important; */
   box-shadow: none;
+  border-image-slice: 30 27 26 27;
+  border-image-width: 15px;
+  border-image-outset: 0px;
 
 }
 
@@ -8018,4 +8100,8 @@ div#ogc-importer {
   font-size: 20px;
   font-weight: 500;
   text-shadow: 0px 0px 1px #00000063;
+}
+
+#OneJournalShell:not(.oj-wfrp4e) .one-journal-attached .window-content {
+    background: url(../ui/frames/parchment-texture.png) !important;
 }

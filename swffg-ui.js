@@ -123,13 +123,6 @@ class swffgUIModule {
         });
 		
 		this.switchStyleSheet();
-		/*
-		width: 150px;
-		position: absolute;
-		bottom: 7px;
-		right: 431px;
-		*/
-		//let myDiv = document.createElement("div");
 		let myImg = document.createElement("img");
 		let myImgA = document.createElement("a");
 		myImgA.setAttribute("href", "https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/ImagesLicences.md");
@@ -138,12 +131,9 @@ class swffgUIModule {
 		myImg.style.cssText = 'position:absolute;width:150px;opacity:0.7;z-index:60;bottom:7px;right: 450px;';
 		myImg.title = 'Images used by module swffg-cc are under Creative Common license\x0Afollow the link to get all the images licenses and owners...';
 		myImgA.appendChild(myImg);
-		// var body = document.getElementsByTagName('body');
-		// if (body !== null){
-			// body.appendChild(myDiv);
-		// }
+
 		document.body.appendChild(myImgA);
-		
+	
 		/*let para = document.createElement("div");
 		let node = document.createTextNode("SWFFG-UI");
 		let span = document.createElement("span");
@@ -157,6 +147,7 @@ class swffgUIModule {
 			infoElmt.appendChild(para);
 		}*/
     }
+	
 	
 	switchStyleSheet(){
 		var head = document.getElementsByTagName('head')[0];
@@ -213,6 +204,8 @@ class swffgUIModule {
 			  console.log('Something went wrong [$value] does not exists in fonts choices');
 		}
 		
+		/*let destinydiv = document.getElementById('destiny-tracker');
+		destiny-tracker.setAttribute("style","z-index: 100; inset: 784px 305px 0px 1291px; width: 200px; height: 105px;");*/
 		/*let para = document.createElement("li");
 		let node = document.createTextNode("SWFFG-UI-CC");
 		let span = document.createElement("span");
