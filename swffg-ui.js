@@ -34,7 +34,7 @@ class swffgUIModule {
         game.settings.register("swffgUI-cc", "selectSkin", {
             name: game.i18n.localize("SWFFG.selectSkin"),
             hint: game.i18n.localize("SWFFG.selectSkinHint"),
-            scope: "world",
+            scope: "client",
             config: true,
             default: 0,
             type: Number,
@@ -73,7 +73,7 @@ class swffgUIModule {
 		game.settings.register("swffgUI-cc", "fontSettings", {
             name: game.i18n.localize("SWFFG.fontSettings"),
             hint: game.i18n.localize("SWFFG.fontSettingsHint"),
-            scope: "world",
+            scope: "client",
             config: true,
             default: 0,
             type: Number,
