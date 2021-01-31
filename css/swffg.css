@@ -8114,3 +8114,16 @@ div#ogc-importer {
 #OneJournalShell:not(.oj-wfrp4e) .one-journal-attached .window-content {
     background: url(../ui/frames/parchment-texture.png) !important;
 }
+
+#transition-form .window-content {
+    background: url(../ui/frames/parchment-texture.png) !important;
+}
+
+div#transition-form.app.window-app.sheet.transition-form{
+    height:570px !important;
+}
+
+#transition-form .window-content p {
+    text-shadow: 0px 1px 0px black;
+    color: #0063a9;
+}
