@@ -10,5 +10,9 @@
   "SWFFG.options.indicator.fonts.2": "Mons (truetype)",
   "SWFFG.options.indicator.fonts.3": "Distant Galaxy (truetype)",
   "SWFFG.options.indicator.fonts.4": "Signika (foundry default)",
-  "SWFFG.options.indicator.fonts.5": "Roboto (foundry default)"
+  "SWFFG.options.indicator.fonts.5": "Roboto (foundry default)",
+  "SWFFG.windowBorderSize": "Taille des contours fenêtres:",
+  "SWFFG.windowBorderSizeHint": "Adapter la taille des contours des fenêtres pour une meilleurs expérience avec l'interface",
+  "SWFFG.fontSize" : "Taille de la police de caractère:",
+  "SWFFG.fontSizeHint": "Adpater la taille de la police de caractères principale pour une meilleure lisibilité dans interface"
 }

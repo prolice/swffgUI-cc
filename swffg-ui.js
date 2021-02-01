@@ -75,7 +75,7 @@ class swffgUIModule {
             hint: game.i18n.localize("SWFFG.fontSettingsHint"),
             scope: "client",
             config: true,
-            default: 0,
+            default: 1,
             type: Number,
 			choices: {
 				0: "SWFFG.options.indicator.fonts.0",
@@ -112,8 +112,51 @@ class swffgUIModule {
 				}
 			}
         });
-
-        game.settings.register("swffgUI-cc", "verboseLogs", {
+	
+		game.settings.register("swffgUI-cc", "windowBorderSize", {
+			name: "SWFFG.windowBorderSize",
+			hint: "SWFFG.windowBorderSizeHint",
+			scope: "client",
+			type: Number,
+			default: 12,
+			range: {
+				min: 8,
+				max: 30,
+				step: 2
+			},
+			config: true,
+			onChange: (value) => {
+			  let windowBorderSize = Number(value);
+			  		
+			  let borderImageWidthValue= windowBorderSize;
+			  let borderImageOutsetValue = windowBorderSize - 8;
+			  let borderHeaderMarginValue= windowBorderSize - 8;
+			
+			  document.documentElement.style.setProperty('--window-content-border-image-width', borderImageWidthValue+'px');
+			  document.documentElement.style.setProperty('--window-content-border-image-outset', borderImageOutsetValue+'px');
+			  document.documentElement.style.setProperty('--window-header-margin', '0px 0px '+borderHeaderMarginValue+'px 0px');
+			}
+        });
+		
+		/*--major-button-font-size*/
+		game.settings.register("swffgUI-cc", "fontSize", {
+            name: "SWFFG.fontSize",
+			hint: "SWFFG.fontSizeHint",
+			scope: "client",
+			type: Number,
+			default: 14,
+			range: {
+				min: 12,
+				max: 22,
+				step: 2
+			},
+			config: true,
+			onChange: (value) => {
+				document.documentElement.style.setProperty('--major-button-font-size', value+'px');
+			}
+        });
+		
+		game.settings.register("swffgUI-cc", "verboseLogs", {
             name: "Enable more module logging.",
             hint: "Enables more verbose module logging. This is useful for debugging the module. But otherwise should be left off.",
             scope: "world",
@@ -123,6 +166,7 @@ class swffgUIModule {
         });
 		
 		this.switchStyleSheet();
+		
 		let myImg = document.createElement("img");
 		let myImgA = document.createElement("a");
 		myImgA.setAttribute("href", "https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/ImagesLicences.md");
@@ -204,6 +248,19 @@ class swffgUIModule {
 			  console.log('Something went wrong [$value] does not exists in fonts choices');
 		}
 		
+		let windowBorderSize = game.settings.get("swffgUI-cc", "windowBorderSize");
+		
+		let borderImageWidthValue= windowBorderSize;
+		let borderImageOutsetValue = windowBorderSize - 8;
+		let borderHeaderMarginValue= windowBorderSize - 8;
+		
+		document.documentElement.style.setProperty('--window-content-border-image-width', borderImageWidthValue+'px');
+		document.documentElement.style.setProperty('--window-content-border-image-outset', borderImageOutsetValue+'px');
+		document.documentElement.style.setProperty('--window-header-margin', '0px 0px '+borderHeaderMarginValue+'px 0px');
+		
+		let fontSize = game.settings.get("swffgUI-cc", "fontSize");
+		document.documentElement.style.setProperty('--major-button-font-size', fontSize+'px');
+		/*margin: 0px 0px 8px 0px;*/
 		/*let destinydiv = document.getElementById('destiny-tracker');
 		destiny-tracker.setAttribute("style","z-index: 100; inset: 784px 305px 0px 1291px; width: 200px; height: 105px;");*/
 		/*let para = document.createElement("li");

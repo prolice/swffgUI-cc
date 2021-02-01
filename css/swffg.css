@@ -116,7 +116,7 @@
 
     --actor-input-font-family: KuiperBelt;
     --actor-input-font-size: 16px;
-	--chatform-input-font-size: 20px;
+	--chatform-input-font-size: 16px;
     --actor-input-font-weight: 500;
     --actor-input-color: #000000;
 	
@@ -138,6 +138,12 @@
     --debug-box-shadow-red: inset 0 0 2px red;
     --debug-box-shadow-blue: inset 0 0 2px blue;
     --debug-box-shadow-green: inset 0 0 2px green;
+	
+  /* =================== 3. WINDOW BORDER SIZE ================ */
+	--window-content-border-image-width: 10px 10px 10px 10px;
+	--window-content-border-image-outset: 8px 8px 8px 8px;
+	--window-header-margin: 0px 0px 8px 0px;
+	--window-border-image-slice: 20 14 20 14;
   }
 
 /******************************************************************/
@@ -155,9 +161,17 @@
   }
 
 /* ==================== (B) BUTTON BEHAVIOR CHANGES =========== */
+  a[href] {
+    color: #2ed8ff;
+    font-size: 16px;
+    font-family: var(--major-button-font-family), serif;
+    text-shadow: 1px 1px 0px black;
+}
   a:hover {
     text-shadow: 0 0 8px #00c7ff !important;
+	color:white;
   }
+  
   button:hover {
     box-shadow: 0 0 5px #00c7ff !important;
 	cursor: url(../ui/buttons/cursor-rebel.png), auto;
@@ -1034,9 +1048,9 @@ input::placeholder, placeholder, *placeholder {
       background-origin: padding-box;
       color: #dadada;
       font-family: KuiperBelt;
-      font-size: 20px;
+      font-size: var(--major-button-font-size);
       font-weight: 500;
-      text-shadow: 0px 0px 1px #00000063;
+      text-shadow: 1px 1px 0px #00000063;
     }
     #sidebar .header-actions i {
       display: none;
@@ -1333,7 +1347,7 @@ input::placeholder, placeholder, *placeholder {
 
     #chat-log .message {
       padding: 4px 1px 4px 1px;
-      margin: 25px 16px 25px 21px;
+      margin: calc(var(--window-content-border-image-width) * 2) calc(var(--window-content-border-image-width) * 1.25) var(--window-content-border-image-width) calc(var(--window-content-border-image-width) * 1.25);
       border-image: url(../ui/frames/chat-message-border.png) 21 repeat;
       border-image-width: 10px;
       border-image-outset: 8px;
@@ -1346,9 +1360,11 @@ input::placeholder, placeholder, *placeholder {
       font-weight: 500;
       /* min-height: 80px; */
       vertical-align: middle;
-      border-image-slice: 24 14 24 14;
-      border-image-width: 15px 10px 15px 10px;
-      border-image-outset: 7 5 7 5;
+      border-image-slice: var(--window-border-image-slice);
+	  border-image-width: var(--window-content-border-image-width);
+	  border-image-outset:var(--window-content-border-image-width);
+	  
+	  /*calc(100% - 60px);*/
     }
     #chat-log .message .message-header {
       margin: 0px;
@@ -1399,6 +1415,13 @@ input::placeholder, placeholder, *placeholder {
       padding: 4px 4px 0px 4px;
       border-top: none;
       /* background: #0000000d; */
+    }
+	
+	#chat-log .message .message-content  a[href]{
+      color: #010ea9;
+      font-size: 16px;
+      font-family: var(--major-button-font-family), serif;
+      text-shadow: none;
     }
 
   /* ================== 2. CHAT CONTROLS ====================== */
@@ -2064,7 +2087,7 @@ input::placeholder, placeholder, *placeholder {
     font-weight: var(--major-button-font-weight);
     color: var(--major-button-color);
     line-height: normal;
-    text-shadow: 0px 0px 1px #00000063;
+    text-shadow: 2px 2px 0px #000000;
   }
   #sidebar #settings button i {
     display: none;
@@ -4370,7 +4393,7 @@ font-family: var(--actor-input-font-family);
     align-items: center;
     justify-content: flex-end;
     display: inline-flex;
-	margin: 0px 0px 20px 0px;
+	margin: var(--window-header-margin);
   }
     .app.window-app .window-header .window-title {
       flex: 1;
@@ -4404,8 +4427,8 @@ font-family: var(--actor-input-font-family);
     border-width: 10px;
     border-image: url(../ui/window-app-dialog-content.png) 5 repeat;
     border-image-slice: 30 27 26 27;
-    border-image-width: 30px 30px 30px 30px;
-    border-image-outset: 20px 20px 20px 20px;
+    border-image-width: var(--window-content-border-image-width);
+    border-image-outset: var(--window-content-border-image-outset);
     height: fit-content;
     max-height: none;
   }
@@ -4571,6 +4594,7 @@ font-family: var(--actor-input-font-family);
     font-size: var(--major-button-font-size);
     font-weight: var(--major-button-font-weight);
     color: var(--major-button-color);
+	text-shadow: 2px 2px 0px black;
   }
 
   .app.window-app.sheet.scene-sheet .grid-config {
@@ -5366,7 +5390,7 @@ font-family: var(--actor-input-font-family);
       border-width: 10px;
       border-image: url(../ui/frames/window-app-journal-sheet-content.png) 5 repeat;
       border-image-slice: 35;
-      border-image-width: 35px;
+      border-image-width: var(--window-content-border-image-width);
       border-image-outset: 0px 0px 0px 0px;
     }
     .window-app.app.journal-sheet .window-content form {
@@ -5651,7 +5675,12 @@ font-family: var(--actor-input-font-family);
       border-top: none;
       border-left: 1px solid #736953a6;
     }
-
+	.macro-sheet .form-group.command textarea {
+	  font-size: 14px;
+      font-family: 'Roboto';
+	  font-size: 15px;
+      text-shadow: 1px 1px 1px black;
+    }
   /* ================== 15. PLAYER CONFIGURATION ============== */
       #player-config .directory-list {
         max-height: 250px;
@@ -8017,8 +8046,8 @@ img {
     /* border-image-outset: 20px 9px 14px 14px !important; */
     /* border-image-repeat: repeat repeat !important; */
 	border-image-slice: 80 21 37 21 !important;
-    border-image-width: 60px 20px 32px 20px !important;
-    border-image-outset: 54px 14px 14px 14px !important;
+	border-image-width: 53px 14px 25px 14px !important;
+    border-image-outset: 45px 10px 11px 10px !important;
     border-image-repeat: repeat repeat !important;
     border-image-source: url(../ui/players-border.png) !important;
     /* background: none; */

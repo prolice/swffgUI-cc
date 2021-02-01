@@ -10,5 +10,9 @@
   "SWFFG.options.indicator.fonts.2": "Mons (truetype)",
   "SWFFG.options.indicator.fonts.3": "Distant Galaxy (truetype)",
   "SWFFG.options.indicator.fonts.4": "Signika (foundry default)",
-  "SWFFG.options.indicator.fonts.5": "Roboto (foundry default)"
+  "SWFFG.options.indicator.fonts.5": "Roboto (foundry default)",
+  "SWFFG.windowBorderSize": "Border size:",
+  "SWFFG.windowBorderSizeHint": "Adapt the windows border for a better experience on the interface",
+  "SWFFG.fontSize" : "Font size:",
+  "SWFFG.fontSizeHint": "Adapt the font size for a better lisibility on the interface"
 }
