@@ -1,6 +1,5 @@
 /******************************************************************/
 /******************************************************************/
-/******************************************************************/
 /*=============== TABLE OF CONTENTS ==============================*/
 /******************************************************************/
 /*   I. LOCAL FONTS                                               */
@@ -432,6 +431,7 @@ li.folder > .folder-header h3 {
 	--window-content-border-image-width: 10px 10px 10px 10px;
 	--window-content-border-image-outset: 8px 8px 8px 8px;
 	--window-header-margin: 0px 0px 8px 0px;
+	--window-border-image-slice: 20 14 20 14;
   }
   
 input::placeholder, placeholder, *placeholder {
@@ -1356,7 +1356,7 @@ input::placeholder, placeholder, *placeholder {
       font-weight: 500;
       /* min-height: 80px; */
       vertical-align: middle;
-      border-image-slice: calc(var(--window-content-border-image-width) + 6) var(--window-content-border-image-width) calc(var(--window-content-border-image-width) + 6) var(--window-content-border-image-width);
+      border-image-slice: border-image-slice: var(--window-border-image-slice);
 	  border-image-width: var(--window-content-border-image-width);
 	  border-image-outset:var(--window-content-border-image-width);			   
     }
@@ -8141,3 +8141,6 @@ div#transition-form.app.window-app.sheet.transition-form{
     color: #a70000;
 }
 
+.swade.sheet.item .window-content {
+    background: url(../ui/frames/parchment-texture.png) !important;
+}

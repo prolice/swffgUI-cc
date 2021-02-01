@@ -1,6 +1,5 @@
 /******************************************************************/
 /******************************************************************/
-/******************************************************************/
 /*=============== TABLE OF CONTENTS ==============================*/
 /******************************************************************/
 /*   I. LOCAL FONTS                                               */
@@ -8155,4 +8154,10 @@ div#transition-form.app.window-app.sheet.transition-form{
 #transition-form .window-content p {
     text-shadow: 0px 1px 0px black;
     color: #0063a9;
+}
+
+/* ##########  SWADE SYSTEM SPECIFICS ############# */
+
+.swade.sheet.item .window-content {
+    background: url(../ui/frames/parchment-texture.png) !important;
 }
