@@ -33,6 +33,11 @@ May the the Interface be with you !
 ## Known issues and advices:
 * Do not overrule another UI, there is potential issues of compatibility.
 
+## Running works
+**Version [0.1.6]**
+* Fixing chat borders (theme DarkSide)
+* Ficing Diplay bugs
+
 ## Release Notes:
 
 **Version [0.1.5]**
