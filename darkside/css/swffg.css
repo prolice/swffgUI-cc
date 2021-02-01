@@ -602,6 +602,7 @@ input::placeholder, placeholder, *placeholder {
     color:#9e0000b8;
 	font-family:var(--window-header-title-font-family) !important;
 	font-size: var(--window-header-vehicle-font-size);
+	text-shadow: 1px 1px 1px #94f4fde0;								
    }
   .app.window-app.form ::-webkit-scrollbar-thumb {
     outline: none;
@@ -1356,7 +1357,7 @@ input::placeholder, placeholder, *placeholder {
       font-weight: 500;
       /* min-height: 80px; */
       vertical-align: middle;
-      border-image-slice: border-image-slice: var(--window-border-image-slice);
+      border-image-slice: var(--window-border-image-slice);
 	  border-image-width: var(--window-content-border-image-width);
 	  border-image-outset:var(--window-content-border-image-width);			   
     }
@@ -1410,6 +1411,11 @@ input::placeholder, placeholder, *placeholder {
       border-top: none;
       /* background: #0000000d; */
     }
+	#chat-log .message .message-content  a[href]{
+      font-size: 16px;
+      font-family: var(--major-button-font-family), serif;
+      text-shadow: none;
+    }										  
 
   /* ================== 2. CHAT CONTROLS ====================== */
     #sidebar .sidebar-tab #chat-controls {
@@ -4400,6 +4406,7 @@ font-family: var(--actor-input-font-family);
     align-items: center;
     justify-content: flex-end;
     display: inline-flex;
+	margin: var(--window-header-margin);				  
   }
     .app.window-app .window-header .window-title {
       flex: 1;
@@ -4426,6 +4433,7 @@ font-family: var(--actor-input-font-family);
     flex-wrap: nowrap;
     overflow-y: auto;
     padding: 0px 7px 3px 7px;
+	padding: 0px;				   
     margin: 0px;
     box-shadow: 0px 0px 20px black inset;
     border: 1px solid blue;
@@ -5365,6 +5373,7 @@ font-family: var(--actor-input-font-family);
     .window-app.app.journal-sheet {
       min-width: 470px;
       min-height: 362px;
+	  background:transparent;			 
     }
 	
 	.window-app.app.journal-sheet header{
@@ -8141,6 +8150,7 @@ div#transition-form.app.window-app.sheet.transition-form{
     color: #a70000;
 }
 
+ /* ##########  SWADE SYSTEM SPECIFICS ############# */
 .swade.sheet.item .window-content {
     background: url(../ui/frames/parchment-texture.png) !important;
 }

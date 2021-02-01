@@ -3841,6 +3841,9 @@ border-image-outset: 0px !important;
     #module-management .window-content {
       overflow: auto;
       background: url(../ui/frames/window-app-background-bookshelf.png);
+	  border-image-slice: 24 30 24 26;
+	  border-image-width: var(--window-content-border-image-width);
+      border-image-outset: var(--window-content-border-image-outset							   																 
     }
     #module-management .window-content .modules-list {
       list-style: none;
