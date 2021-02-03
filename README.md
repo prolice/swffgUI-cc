@@ -9,7 +9,7 @@
 * **Foundry VTT Compatibility**: ![](https://img.shields.io/badge/Foundry-v0.7.9-informational) the only version I ve tested !
 * **System Compatibility**: Starwarsffg 1.3 / starwarsffg system branche made by Mandar (1.3) & SWADE system
 
-* **Total Download**: (https://img.shields.io/github/downloads/prolice/swffgUI-cc/blob/swffgUI-cc/total.svg)[https://github.com/prolice/swffgUI-cc/releases]
+* **Total Download**: [https://img.shields.io/github/downloads/prolice/swffgUI-cc/blob/swffgUI-cc/total.svg](https://github.com/prolice/swffgUI-cc/releases)
  
 ### Link(s) to Module
 * [https://github.com/prolice/swffgUI-cc](https://github.com/prolice/swffgUI-cc)
