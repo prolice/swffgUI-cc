@@ -1029,7 +1029,11 @@ input::placeholder, placeholder, *placeholder {
   .sidebar-popout {
     width: 330px !important;
   }
-    .sidebar-tab .directory-footer button,
+    
+	#settings button,
+	.sidebar-tab .action-buttons button,
+	.sidebar-tab .directory-footer button,
+	.sidebar-tab .directory-footer button,
     #macros .directory-footer button,
     #macros .directory-footer button,
     #sidebar .header-actions button {

@@ -182,7 +182,6 @@
   }
 .window-app {
   font-family: var(--major-button-font-family), sans-serif;
-  
 }
 /* ==================== (C) TINY MCE EDITOR FONT CHANGES ====== */
   .app.window-app .editor {
@@ -587,6 +586,7 @@ input::placeholder, placeholder, *placeholder {
 	.window-app .window-content {
 	   background: url(../ui/parchment.jpg) repeat;
    }
+ 
 	
    .window-app .window-content input::placeholder {
 	   color:#00ffffb8;
@@ -1031,7 +1031,10 @@ input::placeholder, placeholder, *placeholder {
   .sidebar-popout {
     width: 330px !important;
   }
-    .sidebar-tab .directory-footer button,
+  
+    #settings button,
+	.sidebar-tab .action-buttons button,
+	.sidebar-tab .directory-footer button,
     #macros .directory-footer button,
     #macros .directory-footer button,
     #sidebar .header-actions button {
@@ -3843,7 +3846,7 @@ border-image-outset: 0px !important;
       background: url(../ui/frames/window-app-background-bookshelf.png);
 	  border-image-slice: 24 30 24 26;
 	  border-image-width: var(--window-content-border-image-width);
-      border-image-outset: var(--window-content-border-image-outset							   																 
+      border-image-outset: var(--window-content-border-image-outset);						   																 
     }
     #module-management .window-content .modules-list {
       list-style: none;
