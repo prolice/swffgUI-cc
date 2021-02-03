@@ -5,7 +5,7 @@
 ![](https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/cc-by.svg)
 
 * **Author**: Prolice#9101
-* **Version**: ![](https://img.shields.io/badge/swffgUI--cc-v0.1.5-lightgrey)
+* **Version**: ![](https://img.shields.io/badge/swffgUI--cc-v0.1.6-lightgrey)
 * **Foundry VTT Compatibility**: ![](https://img.shields.io/badge/Foundry-v0.7.9-informational) the only version I ve tested !
 * **System Compatibility**: Starwarsffg 1.3 / starwarsffg system branche made by Mandar (1.3) & SWADE system
  
@@ -33,12 +33,12 @@ May the the Interface be with you !
 ## Known issues and advices:
 * Do not overrule another UI, there is potential issues of compatibility.
 
-## Running works
+## Release Notes:
+
 **Version [0.1.6]**
 * Fixing chat borders (theme DarkSide)
-* Ficing Diplay bugs
-
-## Release Notes:
+* Fixing Diplay bugs
+* Add sidebar button decor (when collapse)
 
 **Version [0.1.5]**
 * Add SWADE system support
