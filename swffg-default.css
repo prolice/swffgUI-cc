@@ -1,0 +1,70 @@
+/******************************************************************/
+/*=============== I. LOCAL FONTS =================================*/
+/******************************************************************/
+
+  /* ==================== (A) STAR JEDI ==================== */
+
+
+@font-face {
+  font-family: "Auberesh";
+  src: url("fonts/Aurebesh Bold.otf")format("opentype");
+}
+
+:root {
+  /* =================== 1. ACTOR SHEET FONT STYLES =========== */
+	--character-sheet-name-auberesh:Auberesh;
+}
+
+/* ==================== XIV. STAR WARS FFG SPECIFIC ==================== */
+.starwarsffg .vehicle .grid-3col {
+    /* grid-column: span 3/ span 3; */
+    /* grid-template-columns: repeat(3, minmax(0, 1fr)); */
+    grid-gap: 10px;
+    grid-column-gap: 25px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.starwarsffg .character .characteristics .characteristic-item {
+	background: url(ui/frames/caracteristics-background.png) no-repeat;
+	background-size:100% 100%;
+	background-color: #ffffff00;
+}
+
+.starwarsffg .vehicle .characteristics .characteristic-item {
+	background: url(ui/frames/vehicles-caracteristics-background.png) no-repeat;
+	background-size:100% 100%;
+	background-color: #ffffff00;
+}
+
+.starwarsffg.sheet.actor .character .characteristic-item .characteristic-label {
+    background-color: #ffffff00;
+}
+
+.starwarsffg.sheet.actor .vehicle .characteristic-item .characteristic-label {
+    background-color: #ffffff00;
+}
+
+/*--character-sheet-name-auberesh*/
+.starwarsffg.sheet.actor .character .header-fields .profile-block div .auberesh-name {
+	font-family: var(--character-sheet-name-auberesh);
+    text-shadow: 0px 1px 10px #ffffff;
+    color: #ffffff;
+    text-align: center;
+    font-size: auto;
+    position: absolute;
+    width: 125px;
+    z-index: 40;
+    bottom: 78px;
+    /* background: url(../ui/frames/auberesh-name-background.png) no-repeat; */
+    /* background-size: 100% 100%; */
+    padding-top: 2px;
+	--notchSize: 0.25rem;
+	-webkit-clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
+    clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
+	background-color: #771113;
+}
+
+.starwarsffg.sheet.actor .character .header-fields .header-name input {
+	/*font-family: 'DistantGalaxy';*/
+}

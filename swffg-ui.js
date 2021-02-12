@@ -3,6 +3,7 @@
 const IndicatorMode = {
     REBEL: 0,
     GALACTIC: 1,
+	DEFAULT:2,
 };
 
 const IndicatorFonts = {
@@ -31,7 +32,8 @@ class swffgUIModule {
     }
 
     async init() {
-        game.settings.register("swffgUI-cc", "selectSkin", {
+        
+		game.settings.register("swffgUI-cc", "selectSkin", {
             name: game.i18n.localize("SWFFG.selectSkin"),
             hint: game.i18n.localize("SWFFG.selectSkinHint"),
             scope: "client",
@@ -40,7 +42,8 @@ class swffgUIModule {
             type: Number,
 			choices: {
 				0: "SWFFG.options.indicator.choices.0",
-				1: "SWFFG.options.indicator.choices.1"
+				1: "SWFFG.options.indicator.choices.1",
+				2: "SWFFG.options.indicator.choices.2"
 			},
 			onChange: (value) => {
 				let state = Number(value);
@@ -56,7 +59,7 @@ class swffgUIModule {
 							}
 						}
 				}
-				else {
+				else if (state === IndicatorMode.REBEL){
 					for(var elem = 0 ; elem < head.children.length; elem++){
 							if (head.children[elem].href == locationOrigin +"/"+"modules/swffgUI-cc/swffg-default.css" ||
 								head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/darkside/css/swffg.css"){
@@ -65,6 +68,16 @@ class swffgUIModule {
 							break;
 							}
 						}					
+				}
+				else {
+					for(var elem = 0 ; elem < head.children.length; elem++){
+							if (head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/css/swffg.css" ||
+								head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/darkside/css/swffg.css"){
+							// head.children[elem].href= locationOrigin +"/"+"modules/swffgUI-cc/css/swffg.css";
+							head.children[elem].href= "modules/swffgUI-cc/swffg-default.css";
+							break;
+							}
+						}			
 				}
 				
 			}
@@ -190,6 +203,17 @@ class swffgUIModule {
 		if (infoElmt !== null){
 			infoElmt.appendChild(para);
 		}*/
+		
+		Hooks.on("renderActorSheet", (sheet, $element, templateData) => {
+			//$("")
+			let tokenName = sheet.token.data.name;
+			let profileImg = $element.find('.profile-img');
+			profileImg.before('<div class="auberesh-name">' + tokenName + '</div>');
+			//$( ".inner" ).before( "<p>Test</p>" );
+			
+			console.log("[SWFFG-UI-CC] is rendering " + tokenName + "actor sheet");
+			// inject what you want here using $element. $element is a jQuery object
+		});
     }
 	
 	
@@ -210,7 +234,7 @@ class swffgUIModule {
 				}
 			}
 		}
-		else {
+		else if (state === IndicatorMode.GALACTIC){
 			console.log("[SWFFG-UI-CC] *Dark Side* option is activated");
 	
 			for(var elem = 0 ; elem < head.children.length; elem++)
@@ -219,6 +243,19 @@ class swffgUIModule {
 				    head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/css/swffg.css"){
 				  // head.children[elem].href= locationOrigin +"/"+"modules/swffgUI-cc/darkside/css/swffg.css";
 				  head.children[elem].href= "modules/swffgUI-cc/darkside/css/swffg.css";
+				  break;
+				}
+			}
+		}
+		else {
+			console.log("[SWFFG-UI-CC] default starwars UI option is activated");
+	
+			for(var elem = 0 ; elem < head.children.length; elem++)
+			{
+				if (head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/darkside/css/swffg.css" ||
+				    head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/css/swffg.css"){
+				  // head.children[elem].href= locationOrigin +"/"+"modules/swffgUI-cc/darkside/css/swffg.css";
+				  head.children[elem].href= "modules/swffgUI-cc/swffg-default.css";
 				  break;
 				}
 			}
