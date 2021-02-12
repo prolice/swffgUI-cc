@@ -7861,10 +7861,11 @@ img {
 
 .starwarsffg.sheet.actor .vehicle .characteristic-item .characteristic-label {
     background-color: #ffffff00;
+	margin-top: 10px;
 }
 
 /*--character-sheet-name-auberesh*/
-.starwarsffg.sheet.actor .character .header-fields .profile-block div .auberesh-name {
+.starwarsffg.sheet.actor .character .header-fields .profile-block .auberesh-name {
 	font-family: var(--character-sheet-name-auberesh);
     text-shadow: 0px 1px 10px #ffffff;
     color: #ffffff;
@@ -7881,6 +7882,26 @@ img {
 	-webkit-clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
     clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
 	background-color: #771113;
+}
+
+.starwarsffg.sheet.actor .vehicle .header-fields .profile-block .auberesh-name {
+	font-family: var(--character-sheet-name-auberesh);
+    text-shadow: 0px 1px 10px #ffffff;
+    color: #ffffff;
+    text-align: center;
+    font-size: x-large;
+    position: absolute;
+    --rightNotchSize: 10px;
+    width: calc(100% - var(--rightNotchSize));
+    z-index: 40;
+    bottom: 5px;
+    /* background: url(../ui/frames/auberesh-name-background.png) no-repeat; */
+    /* background-size: 100% 100%; */
+    padding-top: 2px;
+	--notchSize: 0.25rem;
+	-webkit-clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
+    clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
+	background-color: #00304f;
 }
 
 .starwarsffg.sheet.actor .character .header-fields .header-name input {
