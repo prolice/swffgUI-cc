@@ -205,14 +205,21 @@ class swffgUIModule {
 		}*/
 		
 		Hooks.on("renderActorSheet", (sheet, $element, templateData) => {
-			//$("")
-			let tokenName = sheet.token.data.name;
+			if (game.system.id !== "starwarsffg") return;
+			
+			let tokenName = null;
+			if(sheet.token !== null){
+				tokenName = sheet.token.data.name;
+			}
+			else {
+				tokenName = templateData.actor.name;
+			}
+			
 			let profileImg = $element.find('.profile-img');
 			profileImg.before('<div class="auberesh-name">' + tokenName + '</div>');
-			//$( ".inner" ).before( "<p>Test</p>" );
+						
+			console.log("[SWFFG-UI-CC] is rendering " + tokenName + "actor sheet with Auberesh");
 			
-			console.log("[SWFFG-UI-CC] is rendering " + tokenName + "actor sheet");
-			// inject what you want here using $element. $element is a jQuery object
 		});
     }
 	

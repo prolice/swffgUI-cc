@@ -35,6 +35,11 @@
   /* ==================== (A) STAR JEDI ==================== */
 
 @font-face {
+  font-family: "Auberesh";
+  src: url("../fonts/Aurebesh Bold.otf")format("opentype");
+}
+
+@font-face {
   font-family: "Mons";
   src: url("../fonts/MonsOlympiaBold-dq9x.ttf")format("truetype");
 }
@@ -385,7 +390,9 @@ li.folder > .folder-header h3 {
 /* ==================== (E) GLOBAL CSS VARIABLES ============== */
   :root {
   /* =================== 1. ACTOR SHEET FONT STYLES =========== */
-    --window-header-title-font-family: DistantGalaxy;
+    --character-sheet-name-auberesh:Auberesh;
+	
+	--window-header-title-font-family: DistantGalaxy;
     --window-header-title-font-size: 17px;
 	--window-header-vehicle-font-size: xx-large;
     --window-header-title-font-weight: normal;
@@ -1520,21 +1527,9 @@ input::placeholder, placeholder, *placeholder {
 #pause > h3
 {
   color: #CCC;
-  font-family:DistantGalaxy;
+  font-family:Auberesh;
 }
 
-/*#pause img[src*="icons/svg/clockwork.svg"]{ 
-	content:'';
-	-moz-box-sizing: border-box;
-    box-sizing: border-box;
-	background: url(../art/ui/sith.png) no-repeat; 
-}
-
-#pause img:-moz-broken{
-    -moz-force-broken-image-icon:1;
-    width:100px;
-    height:100px;
-  }*/
 
 #pause > img {
   content: url(../art/ui/sith.png);
@@ -7902,6 +7897,18 @@ img {
 	-webkit-clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
     clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
 	background-color: #00304f;
+}
+
+.starwarsffg .item-sheet-species .characteristics .characteristic-item .characteristic-label {
+    position: relative;
+    background-color: #ffffff00 !important;
+    top: 15px;
+}
+
+.starwarsffg .characteristics .characteristic-item {
+   background: url(../ui/frames/caracteristics-background.png) no-repeat;
+	background-size:100% 100%;
+	background-color: #ffffff00 !important;
 }
 
 .starwarsffg.sheet.actor .character .header-fields .header-name input {

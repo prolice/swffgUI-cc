@@ -1533,7 +1533,7 @@ input::placeholder, placeholder, *placeholder {
 #pause > h3
 {
   color: #CCC;
-  font-family:DistantGalaxy;
+  font-family:Auberesh;
 }
 #pause > img {
   content: url(../art/ui/Blacksun-centered-256-redshadow.png);
@@ -7914,6 +7914,18 @@ img {
 	-webkit-clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
     clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
 	background-color: #00304f;
+}
+
+.starwarsffg .item-sheet-species .characteristics .characteristic-item .characteristic-label {
+    position: relative;
+    background-color: #ffffff00 !important;
+    top: 15px;
+}
+
+.starwarsffg .characteristics .characteristic-item {
+   background: url(../ui/frames/caracteristics-background.png) no-repeat;
+	background-size:100% 100%;
+	background-color: #ffffff00 !important;
 }
 
 .starwarsffg.sheet.actor .character .header-fields .header-name input {

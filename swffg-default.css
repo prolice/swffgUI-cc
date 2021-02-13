@@ -86,6 +86,24 @@
 	background-color: #00304f;
 }
 
+.starwarsffg .item-sheet-species .characteristics .characteristic-item .characteristic-label {
+    position: relative;
+    background-color: #ffffff00 !important;
+    top: 15px;
+}
+
+.starwarsffg .characteristics .characteristic-item {
+   background: url(ui/frames/caracteristics-background.png) no-repeat;
+	background-size:100% 100%;
+	background-color: #ffffff00 !important;
+}
+
 .starwarsffg.sheet.actor .character .header-fields .header-name input {
 	/*font-family: 'DistantGalaxy';*/
+}
+
+#pause > h3
+{
+  color: #CCC;
+  font-family:Auberesh;
 }
