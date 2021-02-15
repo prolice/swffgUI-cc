@@ -7992,26 +7992,30 @@ img {
   overflow: scroll;
   background: #6d9badfa url(../ui/frames/parchment-texture.png) round; 
 }
-
-.starwarsffg .injuries .block-background {
-	height:38px;
-}
-
-.starwarsffg.sheet.actor .character .biography-values:hover{
-	height:185px;
-	position: relative;
+.starwarsffg .vehicle .injuries{
+	/* height:150px; */
 	bottom:15px;
-	
 }
-.starwarsffg.sheet.actor .character .biography-values:hover .block-background{
+.starwarsffg .vehicle .injuries .block-background {
 	height:auto;
-	position: relative;
+	/* bottom:5px; */
 }
 
-.starwarsffg.sheet.actor .character .biography-values:hover .block-background-shadow{
-	position: relative;
-	bottom:25px;
-}
+/* .starwarsffg.sheet.actor .character .biography-values:hover{ */
+	/* height:185px; */
+	/* position: relative; */
+	/* bottom:15px; */
+	
+/* } */
+/* .starwarsffg.sheet.actor .character .biography-values:hover .block-background{ */
+	/* height:auto; */
+	/* position: relative; */
+/* } */
+
+/* .starwarsffg.sheet.actor .character .biography-values:hover .block-background-shadow{ */
+	/* position: relative; */
+	/* bottom:25px; */
+/* } */
 
 .starwarsffg .injuries .block-header {
   margin-bottom: 4px;
