@@ -14,6 +14,9 @@
 ### Link(s) to Module
 * [https://github.com/prolice/swffgUI-cc](https://github.com/prolice/swffgUI-cc)
 
+### Link to Wiki
+*[https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/wiki/module-settings.md](https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/wiki/module-settings.md)
+
 ### Description 
 swffgUI-cc for FoundryVTT - A full UI for starwarsffg, new button, windows style and all stuff integrated 
 Every images, buttons and all stuff are covered by licence Creative Common CC BY 2.0 [https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich)
