@@ -8001,6 +8001,17 @@ img {
 	/* bottom:5px; */
 }
 
+.starwarsffg .characteristic-item .characteristic {
+    background: #f9f1df;
+}
+
+.starwarsffg.sheet.actor .characteristic-item .characteristic {
+    background: #f9f1df;
+}
+
+.starwarsffg.sheet.actor .vehicle .characteristic-item .characteristic {
+    background: whitesmoke;
+}
 /* .starwarsffg.sheet.actor .character .biography-values:hover{ */
 	/* height:185px; */
 	/* position: relative; */

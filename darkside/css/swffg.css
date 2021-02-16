@@ -7923,6 +7923,18 @@ img {
 	font-family: 'DistantGalaxy' !important;
 }
 
+.starwarsffg .characteristic-item .characteristic {
+    background: #f9f1df;
+}
+
+.starwarsffg.sheet.actor .characteristic-item .characteristic {
+    background: #f9f1df;
+}
+
+.starwarsffg.sheet.actor .vehicle .characteristic-item .characteristic {
+    background: whitesmoke;
+}
+
 .starwarsffg.sheet.item.v2 .tabs .item,
 .starwarsffg.sheet.actor.v2 .tabs .item,
 .starwarsffg.v2 .tabs .item {

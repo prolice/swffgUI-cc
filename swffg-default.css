@@ -102,6 +102,18 @@
 	/*font-family: 'DistantGalaxy';*/
 }
 
+.starwarsffg .characteristic-item .characteristic {
+    background: #f9f1df;
+}
+
+.starwarsffg.sheet.actor .characteristic-item .characteristic {
+    background: #f9f1df;
+}
+
+.starwarsffg.sheet.actor .vehicle .characteristic-item .characteristic {
+    background: whitesmoke;
+}
+
 #pause > h3
 {
   color: #CCC;

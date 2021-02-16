@@ -1,8 +1,8 @@
 {
   "name": "swffgUI-cc",
   "title": "SWFFG-UI-CC - User Interface Creative Common",
-  "description": "Starwars unofficial design - 0.1.10 & SWADE",
-  "version": "0.1.10",
+  "description": "Starwars unofficial design - 0.2.0 & SWADE",
+  "version": "0.2.0",
   "author": "Prolice",
   "systems": [
       "starwarsffg", 
@@ -28,5 +28,5 @@
   "bugs": "https://github.com/prolice/swffgUI-cc/issues",
   "url": "https://github.com/prolice/swffgUI-cc",
   "manifest": "https://raw.githubusercontent.com/prolice/swffgUI-cc/swffgUI-cc/module.json",
-  "download": "https://github.com/prolice/swffgUI-cc/archive/v0.1.10.zip"
+  "download": "https://github.com/prolice/swffgUI-cc/archive/v0.2.0.zip"
 }
