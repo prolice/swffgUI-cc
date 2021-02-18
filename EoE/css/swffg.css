@@ -8014,6 +8014,10 @@ img {
 	background-color: #ffffff00;
 }
 
+.starwarsffg.sheet.actor .characteristic-item .characteristic {
+    background: #eee8d9;
+}
+
 .starwarsffg.sheet.actor .character .characteristic-item .characteristic-label {
     background-color: #ffffff00;
 }
