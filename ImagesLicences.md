@@ -11,7 +11,6 @@ We assumed the racine directory as [https://github.com/prolice/swffgUI-cc](https
 All images of this section are created from [https://search.creativecommons.org/photos/9aa4161b-8651-4970-9163-79ff32290c88](https://search.creativecommons.org/photos/9aa4161b-8651-4970-9163-79ff32290c88)
 ---
 * Empire_Galactique.png create from [https://search.creativecommons.org/photos/4bf75240-2fc9-4b3b-b566-769b2e56fcff](https://search.creativecommons.org/photos/4bf75240-2fc9-4b3b-b566-769b2e56fcff)
-* sith.png [https://commons.wikimedia.org/wiki/File:Sith_Order.png](https://commons.wikimedia.org/wiki/File:Sith_Order.png)
 ---
 ## Url:./ui
 * sidebar.png create from [https://search.creativecommons.org/photos/4bf75240-2fc9-4b3b-b566-769b2e56fcff](https://search.creativecommons.org/photos/4bf75240-2fc9-4b3b-b566-769b2e56fcff)

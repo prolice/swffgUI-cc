@@ -2,6 +2,8 @@ Rebel logo
 https://search.creativecommons.org/photos/9aa4161b-8651-4970-9163-79ff32290c88
 Empire Logo
 https://search.creativecommons.org/photos/4bf75240-2fc9-4b3b-b566-769b2e56fcff
+BlackSun Logo
+https://starwars.fandom.com/wiki/Pyke_Syndicate?file=Pyke_syndicate.svg
 
 Galactic Republic
 https://search.creativecommons.org/photos/50de8a7c-dc1e-4217-b469-f8b52d563a91
@@ -33,6 +35,9 @@ https://search.creativecommons.org/photos/5490be98-5091-44fa-a3a6-35b3b5858cd2
 
 Illustration:
 https://search.creativecommons.org/photos/7d9626b2-b14a-41a9-95ed-89c39e656cc3
+
+Millenium Falcon:
+https://starwars.fandom.com/wiki/Millennium_Falcon?file=Millennium_Falcon_Fathead_TROS.png
 
 Chewie:
 https://search.creativecommons.org/photos/3445e750-416a-4bc1-b278-2334604e9563
