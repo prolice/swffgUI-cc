@@ -1,8 +1,8 @@
 {
   "name": "swffgUI-cc",
   "title": "SWFFG-UI-CC - User Interface Creative Common",
-  "description": "Starwars unofficial design - 0.3.0 & SWADE",
-  "version": "0.3.0",
+  "description": "Starwars unofficial design - 0.3.1 & SWADE",
+  "version": "0.3.1",
   "author": "Prolice",
   "systems": [
       "starwarsffg", 
