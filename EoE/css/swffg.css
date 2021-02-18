@@ -186,6 +186,11 @@
 	background: url(../ui/sidebar_button-background_red.png) repeat !important;
 	color:white !important;
   }
+  
+  button:hover i{
+	color:white !important; 
+  }
+  
   input[type="text"]:focus, 
   input[type="password"]:focus {
     box-shadow: 0 0 5px #c70000 !important;
@@ -1086,6 +1091,25 @@ input::placeholder, placeholder, *placeholder {
     background: #270601b0 !important;
   }
 
+   #context-menu ol.context-items {
+      opacity: 0.95;
+      background-image: url(../ui/frames/window-app-background-bookshelf.png);
+      border: 4px solid #66141a;
+      border-radius: 10px;
+	  background-size:contain;
+   }
+   #context-menu.expand-down {
+      border-radius: 10px;
+	  opacity: 0.95;
+   }
+   
+   #context-menu li.context-item:hover {
+    color: white;
+    text-shadow: 3px 3px 7px #d40010;
+    background: url(../ui/sidebar_button-background_red.png) repeat;
+    cursor: url(../ui/buttons/cursor-pyke.png), auto;
+	opacity:0.8;
+  }
 /* ==================== (B) SIDEBAR HEADER ==================== */
   #sidebar-tabs {
     justify-content: space-evenly;
@@ -4243,7 +4267,7 @@ border-image-outset: 0px !important;
         #client-settings .window-content button[name="permissions"] i {
           display: contents;
           font-size: 16px;
-          color: #b9b9b9;
+          color: #66141a;
         }
       #client-settings .window-content .far.fa-save {
         display: none;
@@ -4744,7 +4768,7 @@ font-family: var(--actor-input-font-family);
   .app.window-app.sheet.scene-sheet .fas.fa-ruler-combined { 
     display: contents;
     font-size: 16px;
-    color: #b9b9b9;
+    color: #66141a;
   }
 
   #wall-config .notes {
@@ -4865,11 +4889,15 @@ font-family: var(--actor-input-font-family);
     #sound-config .form-group .file-picker {
       margin: 0px 3px 0px 0px;
     }
-      .app.window-app.sheet.scene-sheet .form-group .file-picker i,
+      .app.window-app.sheet.scene-sheet .form-group .file-picker button,
+	  #sound-config .form-group .file-picker button:hover > i{
+		  color:white;
+	  }
+	  .app.window-app.sheet.scene-sheet .form-group .file-picker i,
       #sound-config .form-group .file-picker i {
         display: contents;
         font-size: 16px;
-        color: #b9b9b9;
+        color: #66141a;
       }
       #sound-config .form-group input[type="checkbox"] {
         position: relative;
@@ -5110,7 +5138,7 @@ font-family: var(--actor-input-font-family);
       .token-sheet .tab[data-tab="image"] button i {
         display: contents;
         font-size: 16px;
-        color: #b9b9b9;
+        color: #66141a;
       }
     .token-sheet .tab[data-tab="image"] input[type="checkbox"] {
       transform: scale(1);
@@ -5345,7 +5373,7 @@ font-family: var(--actor-input-font-family);
       #drawing-config .tab[data-tab="image"] button i {
         display: contents;
         font-size: 16px;
-        color: #b9b9b9;
+        color: #66141a;
       }
     #drawing-config .tab[data-tab="image"] input[type="checkbox"] {
       transform: scale(1);
@@ -5467,7 +5495,7 @@ font-family: var(--actor-input-font-family);
     #drawing-config .file-picker .fas.fa-file-import.fa-fw {
       display: contents;
       font-size: 16px;
-      color: #b9b9b9;
+      color: #66141a;
     }
 
   /* ================== 11. JOUNRAL ENTRIES =================== */
@@ -5722,7 +5750,7 @@ font-family: var(--actor-input-font-family);
         /* transform: scaleX(-1); */
         display: contents;
         font-size: 16px;
-        color: #b9b9b9;
+        color: #66141a;
       }
     .app.window-app.filepicker .form-fields.display-modes a {
       border: 1px solid black;
@@ -5734,12 +5762,31 @@ font-family: var(--actor-input-font-family);
       margin-bottom: 0px;
       padding-top: 2px;
     }
-      .app.window-app.filepicker .form-fields.display-modes a i {
+	
+	.app.window-app.filepicker .form-group button:hover {
+		
+		background: url(../ui/sidebar_button-background_red.png) repeat;
+		color:white !important;
+		
+	}
+	.app.window-app.filepicker .form-group button:hover > i{
+		color:white !important;
+	}
+	
+	.filepicker .directory > li.dir {
+		color: white;
+    }
+    
+	.filepicker .directory > li {
+		color: white;
+	}
+	
+	.app.window-app.filepicker .form-fields.display-modes a i {
         color: #3c2100db;
         /* transform: scaleX(-1); */
         display: contents;
         font-size: 14px;
-        color: #b9b9b9;
+        color: #66141a;
         /* position: relative; */
         /* top: 9px; */
       }
@@ -5751,10 +5798,10 @@ font-family: var(--actor-input-font-family);
     .app.window-app.filepicker .filepicker-body .directory.files-list.thumbs-list,
     .app.window-app.filepicker .filepicker-body .directory.files-list.details-list,
     .app.window-app.filepicker .filepicker-body .directory.folders-list.details-list {
-      background: url(../ui/frames/parchment-texture.png) repeat;
-      border: 3px ridge #5d513e;
-      border-radius: 0px;
-      box-shadow: 0px 0px 33px black inset;
+      background: url(../ui/frames/bookshelf-texture.png) repeat;
+      border: 3px solid #66141a;
+      border-radius: 8px;
+      box-shadow: 0px 0px 23px #330004 inset;
     }
       .app.window-app.filepicker .filepicker-body .directory.folders-list.details-list {
         min-height: fit-content;
@@ -5857,7 +5904,7 @@ font-family: var(--actor-input-font-family);
     .app.window-app.sheet.tile-sheet .form-group .fas.fa-file-import.fa-fw {
       display: contents;
       font-size: 16px;
-      color: #b9b9b9;
+      color: #66141a;
     }
 
 
@@ -6670,7 +6717,7 @@ a.inline-roll,
   .scene-sheet .window-content .form-group.initial-position .form-fields .capture-position i {
     display: contents;
     font-size: 16px;
-    color: #b9b9b9;
+    color: #66141a;
   }
 
   .scene-sheet .form-header {
@@ -7069,7 +7116,7 @@ background-image: linear-gradient(to right, #820f0f , #82820d);
   #track-config .file-picker .fas.fa-file-import.fa-fw {
     display: contents;
     font-size: 16px;
-    color: #b9b9b9;
+    color: #66141a;
   }
   #track-config .form-group input[type="checkbox"] {
     position: relative;
