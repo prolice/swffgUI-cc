@@ -4569,8 +4569,8 @@ font-family: var(--actor-input-font-family);
     margin: 0px;
     border: 1px solid black;
     border-image: url(../ui/frames/window-app-header-blank.png) 5 repeat;
-    border-image-slice: 10 10 9 3 fill;
-    border-image-width: 11px;
+    border-image-slice: 10 fill;
+    border-image-width: 9px;
     border-image-outset: 0;
     align-items: center;
     justify-content: flex-end;
@@ -4578,6 +4578,7 @@ font-family: var(--actor-input-font-family);
     margin: var(--window-header-margin);
     border-radius: 8px;
     background: transparent;
+	max-height:38px;
   }
     .app.window-app .window-header .window-title {
       flex: 1;
@@ -4844,7 +4845,7 @@ font-family: var(--actor-input-font-family);
     }
     #permission .window-header .window-title {
       flex-grow: 0;
-      color: transparent;
+      color: whitesmoke;
       border: none;
       background: url(../ui/frames/window-app-title-permissions.png);
       min-width: 235px;
@@ -8133,6 +8134,24 @@ img {
 }
 
 /*--character-sheet-name-auberesh*/
+.starwarsffg.sheet.actor .minion .header-fields .profile-block .auberesh-name {
+	font-family: var(--character-sheet-name-auberesh);
+    /* text-shadow: 0px 1px 10px #ffffff; */
+    color: #ffffff;
+    text-align: center;
+    font-size: small;
+    position: absolute;
+    width: 122px;
+    z-index: 40;
+    bottom: 70px;
+    padding-top: 5px;
+	--notchSize: 0.25rem;
+	-webkit-clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
+    clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
+	background-color: #84725e;
+	max-height: 36px;
+}
+
 .starwarsffg.sheet.actor .character .header-fields .profile-block .auberesh-name {
 	font-family: var(--character-sheet-name-auberesh);
     text-shadow: 0px 1px 10px #ffffff;
@@ -8143,13 +8162,12 @@ img {
     width: 125px;
     z-index: 40;
     bottom: 78px;
-    /* background: url(../ui/frames/auberesh-name-background.png) no-repeat; */
-    /* background-size: 100% 100%; */
     padding-top: 2px;
 	--notchSize: 0.25rem;
 	-webkit-clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
     clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
 	background-color: #771113;
+	max-height: 36px;
 }
 
 .starwarsffg.sheet.actor .vehicle .header-fields .profile-block .auberesh-name {
@@ -8170,6 +8188,30 @@ img {
 	-webkit-clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
     clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
 	background-color: #00304f;
+}
+
+.starwarsffg .item-display {
+    border: 2px solid #782e22 !important;
+    background: rgb(102 20 26 / 20%) !important;
+    border-radius: 10px;
+}
+}
+
+.destiny-flip .destiny-left {
+    background: rgb(102 20 26 / 30%);
+    padding: 4px 5px 5px 14px;
+    color: #66141a;
+    text-shadow: 0px 1px 8px white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.destiny-flip .destiny-title {
+    border: 2px solid #782e22;
+    background: rgb(102 20 26 / 50%);
+    border-radius: 5px;
+    padding: 2px;
+    color: whitesmoke;
 }
 
 .starwarsffg .item-sheet-species .characteristics .characteristic-item .characteristic-label {
