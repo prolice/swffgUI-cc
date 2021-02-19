@@ -169,15 +169,19 @@
 
 /* ==================== (B) BUTTON BEHAVIOR CHANGES =========== */
   a[href] {
-    color: #2ed8ff;
+    color: #e00000;
     font-size: 16px;
     font-family: var(--major-button-font-family), serif;
-    text-shadow: 1px 1px 0px black;
+    text-shadow: 1px 0px 0px #ff0000;
 }
   a:hover {
-    text-shadow: 0 0 8px #c70000 !important;
+    /* color: #480000; */
 	color:white;
-	cursor: url(../ui/buttons/cursor-pyke.png), auto;
+    font-size: 17px;
+    text-shadow: 1px 1px 7px #b50000 !important;
+    font-family: var(--major-button-font-family), serif;
+    cursor: url(../ui/buttons/cursor-pyke.png), auto;
+    font-weight: bold;
   }
   
   button:hover {
@@ -196,6 +200,27 @@
     box-shadow: 0 0 5px #c70000 !important;
     outline: none;
   }
+  
+  table {
+    width: 100%;
+    border-collapse: unset;
+    background: rgb(102 20 26 / 26%);
+    border-top: 1px solid #7a7971;
+    border-bottom: 1px solid #7a7971;
+    margin: 0.5em 0;
+    border-radius: 10px;
+}
+
+table td, table th {
+    padding: 0.25em 0;
+    border: 0px;
+    align-content: center;
+    /*width: 20px;*/
+}
+tbody {
+    display: unset;
+    vertical-align: middle;
+}
 .window-app {
   font-family: var(--major-button-font-family), sans-serif !important;
 }
@@ -1083,12 +1108,13 @@ input::placeholder, placeholder, *placeholder {
     }
 
   .sidebar-tab .directory-list .directory-item.context, .sidebar-tab .directory-list .directory-item.active {
-    margin-top: 0px;
+    margin-top: 5px !important;
     padding: 3px 3px !important;
-    border-top: 1px solid red !important;
-    border-bottom: 1px solid #4e0c0c !important;
-    box-shadow: 0 0 3px #4e0c0c !important;
-    background: #270601b0 !important;
+    border-top: 2px solid #ffdf00 !important;
+    border-bottom: 2px solid #af7700 !important;
+    box-shadow: 1px 1px 3px #4e0c0c !important;
+    background: #66141a !important;
+    margin-bottom: 5px !important;
   }
 
    #context-menu ol.context-items {
@@ -1377,7 +1403,11 @@ input::placeholder, placeholder, *placeholder {
   }
 
 /* ==================== (C) SIDEBAR (CHAT) ==================== */
-    #sidebar .sidebar-tab .directory-list .folder-header {/*       border-bottom: 2px groove #790000; */margin-top: 2px;margin-left: 2px;}
+    #sidebar .sidebar-tab .directory-list .folder-header {
+		margin-top: 0px;
+        margin-left: 0px;
+        border-radius: 9px;
+	}
   /* ================== 1. CHAT LOG =========================== */
     #sidebar .sidebar-tab #chat-log {
       flex: 4;
@@ -1392,11 +1422,12 @@ input::placeholder, placeholder, *placeholder {
 
     #chat-log .message {
       padding: 4px 1px 4px 1px;
-      margin: calc(var(--window-content-border-image-width) * 2) calc(var(--window-content-border-image-width) * 1.25) var(--window-content-border-image-width) calc(var(--window-content-border-image-width) * 1.25);
+      /* margin: calc(var(--window-content-border-image-width) * 2) calc(var(--window-content-border-image-width) * 1.25) var(--window-content-border-image-width) calc(var(--window-content-border-image-width) * 1.25); */
+	  margin:25px 16px 25px 21px;
       border-image: url(../ui/frames/chat-message-border.png) 21 repeat;
-      border-image-width: 10px;
-      border-image-outset: 8px;
-      border-radius: 12px;
+      border-image-width: 16px;
+      border-image-outset: 12px;
+      border-radius: 4px;
       background: url(../ui/frames/parchment-texture.png) repeat !important;
       box-shadow: none;
       color: #000000;
@@ -1404,9 +1435,9 @@ input::placeholder, placeholder, *placeholder {
       font-size: 14px;
       font-weight: 500;
       vertical-align: middle;
-      border-image-slice: var(--window-border-image-slice);
-	  border-image-width: var(--window-content-border-image-width);
-	  border-image-outset: 9px;
+      /* border-image-slice: var(--window-border-image-slice); */
+	  /* border-image-width: var(--window-content-border-image-width); */
+	  /* border-image-outset: 9px; */
 	  background-position-x: center !important;
     }
     #chat-log .message .message-header {
@@ -1529,36 +1560,39 @@ input::placeholder, placeholder, *placeholder {
 
   /* ================== 3. CHAT FORM ========================== */
     #sidebar .sidebar-tab #chat-form {
-      min-height: 150px;
-      position: relative;
-      bottom: 0px;
-      right: 0px;
-      display: flex;
-      margin: 0px;
-      background: url(../ui/frames/parchment-texture.png) repeat;
-      border: 1px solid black;
-      border-image: url(../ui/chat-form-border.png) 10 repeat;
-      border-image-width: 14px;
-      border-image-outset: 1px;
-      box-shadow: inset 0 0 40px #000000;
-	  border-radius: 20px;
-	  background-size: cover;
+        min-height: 170px;
+		position: relative;
+		bottom: 8px;
+		right: -5px;
+		display: flex;
+		margin: 11px 0 0 0;
+		background: url(../ui/frames/parchment-texture.png) repeat;
+		border: 3px solid #66141a;
+		border-image: url(../ui/chat-form-border.png) 10 repeat;
+		border-image-width: 19px;
+		border-image-outset: 6px;
+		box-shadow: inset 0 0 40px #000000;
+		border-radius: 12px;
+		background-size: cover;
+		width: 96%;
+		border-image-slice: 12;
     }
     #sidebar #chat-form textarea {
-      height: auto;
-      width: 100%;
-      margin: 11px 11px 11px 11px;
-      padding: 5px 5px 5px 20px;
-      resize: none;
-      border: none;
-      border-radius: 0px;
-      background: none;
-      font-family: var(--actor-input-font-family);
-      font-size: var(--chatform-input-font-size);
-      font-weight: var(--actor-input-font-weight);
-      color: var(--actor-input-color);
-      line-height: normal;
-      border: 3px double #3e000078;
+		height: 80%;
+		width: 90%;
+		margin: 16px 17px 11px 35px;
+		padding: 5px 5px 5px 5px;
+		resize: none;
+		border: none;
+		border-radius: 0px;
+		background: none;
+		font-family: var(--actor-input-font-family);
+		font-size: var(--chatform-input-font-size);
+		font-weight: var(--actor-input-font-weight);
+		color: var(--actor-input-color);
+		line-height: normal;
+		border: 3px solid #66141a4d;
+		border-radius: 8px;
     }
     #sidebar #chat-form textarea:focus {
       outline: none;
@@ -1727,14 +1761,16 @@ input::placeholder, placeholder, *placeholder {
   }
   #combat-popout .directory-list .directory-item , #sidebar #combat .directory-list .directory-item {
     padding: 1px 3px;
-    border: 3px groove #790000;
+    border: 2px solid #790000;
     box-shadow: 0 0 6px #000 inset;
     line-height: 48px;
     background: #000000b5;
     font-family: var(--actor-input-font-family);
     font-size: var(--actor-input-font-size);
     font-weight: var(--actor-input-font-weight);
-    color: #3c2100;
+    color: #a7a296;
+	border-radius:10px;
+	margin: 1px 5px 1px 1px;
   }
     #combat-popout li.combatant .roll , #sidebar #combat li.combatant .roll {
       display: block;
@@ -1816,8 +1852,13 @@ input::placeholder, placeholder, *placeholder {
 
 /* ==================== (E) SIDEBAR (SCENES) ================== */
   #sidebar #scenes .directory-list .directory-item {
-    border: 3px groove #790000;
+    border: 2px solid #790000;
+    border-radius: 10px;
   }
+  #scenes .subdirectory {
+    border-left: 26px solid #66141ab5;
+    border-bottom: none;
+}
    #scenes-popout .directory-list .directory-item .entity-name a,
     #sidebar #scenes .directory-list .directory-item .entity-name a {
     background: #000000d4;
@@ -1844,6 +1885,7 @@ input::placeholder, placeholder, *placeholder {
     font-weight: var(--actor-input-font-weight);
     color: #f9efdc;
     text-shadow: 1px 1px 2px black;
+	border-radius: 10px;
   }
   #sidebar #actors .directory-list .directory-item h4 {
     top: 17px;
@@ -1862,6 +1904,7 @@ input::placeholder, placeholder, *placeholder {
     font-weight: var(--actor-input-font-weight);
     color: #f9efdc;
     text-shadow: 1px 1px 2px black;
+	border-radius: 10px;
   }
   #sidebar #items .directory-list .directory-item h4 {
     top: 17px;
@@ -1880,6 +1923,7 @@ input::placeholder, placeholder, *placeholder {
     font-weight: var(--actor-input-font-weight);
     color: #f9efdc;
     text-shadow: 1px 1px 2px black;
+	border-radius: 10px;
   }
 /* ==================== (I) SIDEBAR (PLAYLISTS) =============== */
   #playlists-popout .directory-list,
@@ -2072,14 +2116,15 @@ input::placeholder, placeholder, *placeholder {
     #sidebar #compendium .directory-list .compendium-list .compendium-pack {
     padding: 9px 6px 4px 6px;
     border: 3px groove #790000;
-    box-shadow: 0 0 6px #000 inset;
+    box-shadow: 0 0 6px #0c0000 inset;
     line-height: normal;
-    background: #000000b5;
+    background: #2d0609ba;
     font-family: var(--actor-input-font-family);
     font-size: 16px;
     font-weight: var(--actor-input-font-weight);
     color: #f9efdc;
     text-shadow: 1px 1px 2px black;
+    border-radius: 10px;
   }
      #compendium-popout .directory-list .compendium-list .compendium-pack a,
       #sidebar #compendium .directory-list .compendium-list .compendium-pack a {
@@ -5536,10 +5581,12 @@ font-family: var(--actor-input-font-family);
 	  border-radius: 24px;
     }
     .window-app.app.journal-sheet .window-content form {
-      margin: 15px;
-      height: 100%;
-      padding: 5px;
-      box-shadow: 0px 0px 3px #00000069 inset;
+        margin: 5px 5px 5px 20px;
+		height: 100%;
+		padding: 5px;
+		box-shadow: 0px 0px 3px #00000069 inset;
+		border-radius: 10px;
+		border: 3px double #66141aa8;
     }
     .window-app.app.journal-sheet .window-content .form-group.title {
       position: absolute;
@@ -5549,12 +5596,11 @@ font-family: var(--actor-input-font-family);
     }
       .window-app.app.journal-sheet .window-content input[name="name"],
       .window-app.app.journal-sheet .window-content input[name="title"] {
-        border: 1px solid blue;
-        /*border-image: url(../ui/item-sheet-header.png) repeat;*/
+        border: 3px solid #66141a;
         border-image-slice: 5;
         border-image-width: 4px;
         border-image-outset: 0px;
-        border-radius: 0px;
+        border-radius: 10px;
         font-family: KuiperBelt;
         font-size: 20px;
         font-weight: 500;
@@ -5583,26 +5629,29 @@ font-family: var(--actor-input-font-family);
         box-shadow: 0px 0px 2px #2700009e inset;
       }
     .window-app.app.journal-sheet .window-content form button[type="submit"] {
-      flex: 2;
-      flex-grow: 0;
-      line-height: 24px;
-      border: 3px double #736953a6;
-      box-shadow: 0px 0px 10px inset black;
-      border-radius: 0px;
-      opacity: 1.0;
-      text-align: center;
-      color: #3c2100;
-      font-family: KuiperBelt;
-      font-weight: 500;
-      font-size: 15px;
-      padding-top: 5px;
-      margin: 3px 0px 0px 1px !important;
-      border-image: url(../ui/footer-button.png) 10 repeat;
-      border-image-width: 4px;
-      border-image-outset: 0px;
-      /* box-shadow: inset 0 0 20px #000000; */
-      background: url(../ui/sidebar_button-background.png) repeat;
-      background-origin: padding-box;
+		flex: 2;
+		flex-grow: 0;
+		line-height: 23px;
+		border: 3px solid #66141a;
+		box-shadow: 0px 0px 10px inset black;
+		border-radius: 0px;
+		opacity: 0.9;
+		text-align: center;
+		color: #66141a;
+		font-family: KuiperBelt;
+		font-weight: bold;
+		font-size: 20px;
+		padding-top: 5px;
+		margin: 3px 0px 0px 1px !important;
+		/* border-image: url(../ui/footer-button.png) 10 repeat; */
+		border-image-width: 4px;
+		border-image-outset: 0px;
+		/* box-shadow: inset 0 0 20px #000000; */
+		background: url(../ui/sidebar_button-background.png) repeat;
+		background-origin: padding-box;
+		border-radius: 10px;
+		text-shadow: 0 0 black;
+
     } 
 
     .window-app.app.journal-sheet form.editable .editor {
@@ -6427,6 +6476,7 @@ font-style : normal;
   font-weight: var(--actor-input-font-weight);
   color: #f9efdc;
   text-shadow: 1px 1px 2px black;
+  border-radius: 10px;
 }
 
 #sidebar #tables .directory-list .directory-item h4{
@@ -6866,9 +6916,9 @@ our-box[data-location="lArm"] .armour-property .armour-flaw.comma:last-of-type {
   padding: 4px 1px 4px 1px;
   margin: 25px 16px 25px 21px;
   border-image: url(../ui/frames/chat-message-border-private.png) 21 repeat;
-  border-image-width: 10px;
-  border-image-outset: 8px;
-  border-radius: 0px;
+  border-image-width: 16px;
+  border-image-outset: 12px;
+  border-radius: 4px;
   background: url(../ui/frames/parchment-texture.png) repeat;
   box-shadow: none;
   color: #000000;
@@ -6885,9 +6935,9 @@ our-box[data-location="lArm"] .armour-property .armour-flaw.comma:last-of-type {
   padding: 4px 1px 4px 1px;
   margin: 25px 16px 25px 21px;
   border-image: url(../ui/frames/chat-message-border-blind.png) 21 repeat;
-  border-image-width: 10px;
-  border-image-outset: 8px;
-  border-radius: 0px;
+  border-image-width: 16px;
+  border-image-outset: 12px;
+  border-radius: 4px;
   background: url(../ui/frames/parchment-texture.png) repeat;
   box-shadow: none;
   color: #000000;
@@ -8035,6 +8085,14 @@ img {
     background: rgba(255, 255, 240, 0.65);
 }
 
+.starwarsffg.sheet .sheet-body {
+    margin: 0px 9px 9px 7px !important;
+    background: rgb(172 165 154 / 50%) !important;
+    border-top: 3px double #66141a !important;
+    border-radius: 14px !important;
+    border-bottom: 3px double #66141a;
+}
+
 .starwarsffg.sheet nav.sheet-tabs {
     width: 42px !important;
     padding-left: 9px;
@@ -8148,6 +8206,14 @@ img {
 .starwarsffg .item-sheet-itemattachment .characteristic {
     background: rgb(200 255 255);
 }
+
+/* @TODO CVB */
+.skill-label.rollable.roll-button.starwarsffg.item-rollable:hover {
+	background-image: url(../ui/buttons/d10.png) !important;
+}
+.starwarsffg .item-rollable.rollable:hover {
+    background-image: url(../ui/buttons/d10.png) !important;
+}
 /*.starwarsffg .item-sheet-itemattachment .characteristic-item, .starwarsffg .item-sheet-itemattachment {
     background-color: #bffebf;
 }*/
@@ -8206,12 +8272,27 @@ img {
 
 .starwarsffg form {
   overflow: hidden;
-  background: #6d9badfa url(../ui/frames/parchment-texture.png) round; 
+  background: #cab4a7 url(../ui/frames/parchment-texture.png) no-repeat;
+  background-position-x: -90px;
+  background-position-y: -120px;
+  font-weight: bold;
+}
+
+.starwarsffg .dice-pool-dialog table {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 24px;
+    border: 2px solid #66141a;
+    display: table-cell;
 }
 
 .starwarsffg.roll-builder-dialog form {
   overflow: scroll;
-  background: #6d9badfa url(../ui/frames/parchment-texture.png) round; 
+  background: #d0beb0e6 url(../ui/frames/parchment-texture.png) round;
+  padding: 10px;
+  margin: 0;
+  font-size:20px;
 }
 .starwarsffg .vehicle .injuries{
 	/* height:150px; */
@@ -8243,31 +8324,34 @@ img {
 }
 
  .roll-builder-dialog .window-content button { 
-	margin: 0px 5px 6px 5px !important; 
-	border-image: url(../ui/footer-button.png) 10 repeat; 
-	background: url(../ui/sidebar_button-background.png) repeat;
-	font-family: KuiperBelt;
-	font-size: 20px;
-	font-weight: 500;
-	text-shadow: 0px 0px 1px #00000063;
+	margin: 3px 5px 6px 5px !important;
+    background: url(../ui/sidebar_button-background.png) repeat;
+    font-family: 'DistantGalaxy';
+    font-size: 33px;
+    font-weight: 500;
+    text-shadow: 2px 2px 9px #f3000063;
+    color: #66141a;
+    border-radius: 10px;
+    border: 3px solid #66141a;
 }  
  
  .starwarsffg .dice-pool-dialog button {
 	margin: 0px 5px 6px 5px !important;
-	padding: 2px 0px 0px 0px;
-	height: 34px;
-	border: 1px solid black;
-	border-image: url(../ui/footer-button.png) 10 repeat;
-	border-image-width: 4px;
-	border-image-outset: 0px;
-	box-shadow: 4px 4px 1px #00000085;
-	background: url(../ui/sidebar_button-background.png) repeat;
-	background-origin: padding-box;
-	color: #3c2100;
-	font-family: KuiperBelt;
-	font-size: 20px;
-	font-weight: 500;
-	text-shadow: 0px 0px 1px #00000063;
+    padding: 2px 0px 0px 0px;
+    height: 34px;
+    border: 3px solid #66141a;
+    /* border-image: url(../ui/footer-button.png) 10 repeat; */
+    border-image-width: 4px;
+    border-image-outset: 0px;
+    box-shadow: 4px 4px 1px #00000085;
+    background: url(../ui/sidebar_button-background.png) repeat;
+    background-origin: padding-box;
+    color: #66141a;
+    font-family: KuiperBelt;
+    font-size: 15px !important;
+    font-weight: bold;
+    text-shadow: 0px 0px 0px #00000063;
+    border-radius: 10px;
 	
 }
 

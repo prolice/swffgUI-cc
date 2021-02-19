@@ -1,5 +1,4 @@
 "use strict";
-
 const IndicatorMode = {
     REBEL: 0,
     GALACTIC: 1,
@@ -32,6 +31,33 @@ class swffgUIModule {
         }
     }
 
+	/*addChatMessageContextOptions(html, options){
+		options.push(
+		  {
+			name: game.i18n.localize("CHATOPT.ApplyDamage"),
+			icon: '<i class="fas fa-user-minus"></i>',
+			condition: canApply,
+			callback: li => {
+
+			  if (li.find(".dice-roll").length)
+			  {
+				let amount = li.find('.dice-total').text();
+				game.user.targets.forEach(t => t.actor.applyBasicDamage(amount))
+			  }
+			  else 
+			  {
+				let cardData = game.messages.get(li.attr("data-message-id")).data.flags.opposeData
+				let defenderSpeaker = game.messages.get(li.attr("data-message-id")).data.flags.opposeData.speakerDefend;
+
+				if (!WFRP_Utility.getSpeaker(defenderSpeaker).owner)
+				  return ui.notifications.error(game.i18n.localize("ERROR.DamagePermission"))
+
+				let updateMsg = ActorWfrp4e.applyDamage(defenderSpeaker, cardData,  game.wfrp4e.config.DAMAGE_TYPE.NORMAL)
+				OpposedWFRP.updateOpposedMessage(updateMsg, li.attr("data-message-id"));
+			  }
+			}
+		  })
+	};*/
     async init() {
         
 		game.settings.register("swffgUI-cc", "selectSkin", {
@@ -76,40 +102,8 @@ class swffgUIModule {
 						head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/css/swffg.css"){
 							head.children[elem].href= hrefToApply;
 							break;
-						}
+					}
 				}
-				
-				/*if (state === IndicatorMode.GALACTIC){
-						for(var elem = 0 ; elem < head.children.length; elem++){
-							if (head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/swffg-default.css" ||
-							    head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/css/swffg.css"){
-							// head.children[elem].href= locationOrigin +"/"+"modules/swffgUI-cc/darkside/css/swffg.css";
-							head.children[elem].href= "modules/swffgUI-cc/darkside/css/swffg.css";
-							break;
-							}
-						}
-				}
-				else if (state === IndicatorMode.REBEL){
-					for(var elem = 0 ; elem < head.children.length; elem++){
-							if (head.children[elem].href == locationOrigin +"/"+"modules/swffgUI-cc/swffg-default.css" ||
-								head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/darkside/css/swffg.css"){
-							// head.children[elem].href= locationOrigin +"/"+"modules/swffgUI-cc/css/swffg.css";
-							head.children[elem].href= "modules/swffgUI-cc/css/swffg.css";
-							break;
-							}
-						}					
-				}
-				else {
-					for(var elem = 0 ; elem < head.children.length; elem++){
-							if (head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/css/swffg.css" ||
-								head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/darkside/css/swffg.css"){
-							// head.children[elem].href= locationOrigin +"/"+"modules/swffgUI-cc/css/swffg.css";
-							head.children[elem].href= "modules/swffgUI-cc/swffg-default.css";
-							break;
-							}
-						}			
-				}*/
-				
 			}
         });
 		
@@ -220,19 +214,6 @@ class swffgUIModule {
 		myImgA.appendChild(myImg);
 
 		document.body.appendChild(myImgA);
-	
-		/*let para = document.createElement("div");
-		let node = document.createTextNode("SWFFG-UI");
-		let span = document.createElement("span");
-		let version = document.createTextNode("0.0.2");
-		para.appendChild(node);
-		span.appendChild(version);
-		para.appendChild(span);
-		
-		var infoElmt = document.getElementById('game-details');
-		if (infoElmt !== null){
-			infoElmt.appendChild(para);
-		}*/
 		
 		Hooks.on("renderActorSheet", (sheet, $element, templateData) => {
 			if (game.system.id !== "starwarsffg") return;
@@ -251,6 +232,16 @@ class swffgUIModule {
 			console.log("[SWFFG-UI-CC] is rendering " + tokenName + "actor sheet with Auberesh");
 			
 		});
+		
+			
+		/*Hooks.on("getChatLogEntryContext", this.addChatMessageContextOptions);
+				
+		Hooks.on('renderChatMessage', (_0, html) => {
+			
+			if (_0.data.content === "1D100")
+				return;
+			
+		});*/
     }
 	
 	
@@ -286,46 +277,7 @@ class swffgUIModule {
 					break;
 				}
 		}
-		
-		/*if (state === IndicatorMode.REBEL) {
-			console.log("[SWFFG-UI-CC] Default option is activated");
-			for(var elem = 0 ; elem < head.children.length; elem++)
-			{
-				if (head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/swffg-default.css" ||
-				    head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/darkside/css/swffg.css"){
-					//head.children[elem].href= locationOrigin +"/"+"modules/swffgUI-cc/css/swffg.css";
-					head.children[elem].href= "modules/swffgUI-cc/css/swffg.css";
-					break;
-				}
-			}
-		}
-		else if (state === IndicatorMode.GALACTIC){
-			console.log("[SWFFG-UI-CC] *Dark Side* option is activated");
-	
-			for(var elem = 0 ; elem < head.children.length; elem++)
-			{
-				if (head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/swffg-default.css" ||
-				    head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/css/swffg.css"){
-				  // head.children[elem].href= locationOrigin +"/"+"modules/swffgUI-cc/darkside/css/swffg.css";
-				  head.children[elem].href= "modules/swffgUI-cc/darkside/css/swffg.css";
-				  break;
-				}
-			}
-		}
-		else {
-			console.log("[SWFFG-UI-CC] default starwars UI option is activated");
-	
-			for(var elem = 0 ; elem < head.children.length; elem++)
-			{
-				if (head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/darkside/css/swffg.css" ||
-				    head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/css/swffg.css"){
-				  // head.children[elem].href= locationOrigin +"/"+"modules/swffgUI-cc/darkside/css/swffg.css";
-				  head.children[elem].href= "modules/swffgUI-cc/swffg-default.css";
-				  break;
-				}
-			}
-		}*/
-		
+				
 		state = Number(game.settings.get("swffgUI-cc", "fontSettings"));
 		switch (state){
 			case IndicatorFonts.EARTHORBITER:
@@ -362,22 +314,7 @@ class swffgUIModule {
 		
 		let fontSize = game.settings.get("swffgUI-cc", "fontSize");
 		document.documentElement.style.setProperty('--major-button-font-size', fontSize+'px');
-		/*margin: 0px 0px 8px 0px;*/
-		/*let destinydiv = document.getElementById('destiny-tracker');
-		destiny-tracker.setAttribute("style","z-index: 100; inset: 784px 305px 0px 1291px; width: 200px; height: 105px;");*/
-		/*let para = document.createElement("li");
-		let node = document.createTextNode("SWFFG-UI-CC");
-		let span = document.createElement("span");
-		let version = document.createTextNode("0.0.2");
-		para.appendChild(node);
-		span.appendChild(version);
-		para.appendChild(span);
-		
-		var infoElmt = document.getElementById('game-details');
-		if (infoElmt !== null){
-			infoElmt.appendChild(para);
-		}*/
-		
+				
 	}
 
 }
@@ -386,3 +323,5 @@ Hooks.on("ready", () => {
     swffgUIModule.singleton = new swffgUIModule();
     swffgUIModule.singleton.init();
 });
+
+//registerHooks();

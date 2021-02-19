@@ -16,5 +16,14 @@
   "SWFFG.windowBorderSize": "Taille des contours fenêtres:",
   "SWFFG.windowBorderSizeHint": "Adapter la taille des contours des fenêtres pour une meilleurs expérience avec l'interface",
   "SWFFG.fontSize" : "Taille de la police de caractère:",
-  "SWFFG.fontSizeHint": "Adpater la taille de la police de caractères principale pour une meilleure lisibilité dans interface"
+  "SWFFG.fontSizeHint": "Adpater la taille de la police de caractères principale pour une meilleure lisibilité dans interface",
+  
+  "CHAT.Export": "Exporter la Discussion",
+  "CHAT.FlushTitle": "Vider la Discussion",
+  "TOKEN.Title": "Configuration...",
+  "TOKEN.TitlePrototype": "Prototype config.",
+  "ENTITY.Create": "Créer: {entity}",
+  "COMBAT.End": "Terminer",
+  "COMBAT.Round": "Tour",
+  "GAME.Paused": "Pause"
 }
