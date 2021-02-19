@@ -377,7 +377,17 @@ li.folder > .folder-header h3 {
 
   .app.sheet .editor-content {
     padding:5px;
+	/* background: #d8cbc0 url(../ui/frames/parchment-texture.png) no-repeat; */
   }
+  
+  .app.gm-notes.sheet .editor-content {
+    padding:5px;
+	background: #d8cbc0;
+  }
+  
+  .tox .tox-editor-container {
+    background: #d8cbc0 ;
+	}
   
   .window-app.sheet.actor .window-content {
   background: #d8cbc0 url(../ui/frames/parchment-texture.png) no-repeat;
@@ -626,7 +636,7 @@ input::placeholder, placeholder, *placeholder {
     box-shadow: none;
   }
 	.window-app .window-content {
-	   background: url(../ui/parchment.jpg) repeat;
+	   background: url(../ui/parchment.jpg) round;
    }
  
 	
