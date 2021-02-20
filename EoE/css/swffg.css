@@ -8095,7 +8095,7 @@ img {
 }
 
 .starwarsffg.sheet nav.sheet-tabs {
-    width: 42px !important;
+/*    width: 42px !important; */
     padding-left: 9px;
     margin-right: -7px !important;
 }
