@@ -23,7 +23,7 @@ Every images, buttons and all stuff are covered by licence Creative Common CC BY
 May the the Interface be with you !
 
 **<BRAND NEW> Edge of Empire overview:**
-![](https://raw.githubusercontent.com/prolice/swffgUI-cc/swffgUI-cc/screenshots/rebel-overview.jpg)
+![](https://raw.githubusercontent.com/prolice/swffgUI-cc/swffgUI-cc/screenshots/EoE-overview.jpg)
 
 **The Rebel UI overview:**
 ![](https://raw.githubusercontent.com/prolice/swffgUI-cc/swffgUI-cc/screenshots/rebel-overview.jpg)
