@@ -22,10 +22,13 @@ swffgUI-cc for FoundryVTT - A full UI for starwarsffg, new button, windows style
 Every images, buttons and all stuff are covered by licence Creative Common CC BY 2.0 [https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich)
 May the the Interface be with you !
 
+**<BRAND NEW> Edge of Empire overview:**
+![](https://raw.githubusercontent.com/prolice/swffgUI-cc/swffgUI-cc/screenshots/rebel-overview.jpg)
+
 **The Rebel UI overview:**
 ![](https://raw.githubusercontent.com/prolice/swffgUI-cc/swffgUI-cc/screenshots/rebel-overview.jpg)
 
-**The Galactic Empire UI**
+**The Galactic Empire UI:**
 ![](https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/screenshots/empire-overview.jpg)
 
 ## Installation
