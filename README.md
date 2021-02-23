@@ -40,6 +40,9 @@ May the the Interface be with you !
 
 ## Release Notes:
 
+**Version [0.3.0]**
+* Theme Edge of Empire has been added (enjoy)
+
 **Version [0.2.0]**
 * Fix display background color caracteristics when no "mandar.css" activation
 

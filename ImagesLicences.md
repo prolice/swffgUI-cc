@@ -3,6 +3,22 @@ We assumed the racine directory as [https://github.com/prolice/swffgUI-cc](https
 
 **Image under CC0 1.0 Universal (CC0 1.0) Public Domain Dedication**
 
+# New images with EoE update
+## ui && art/ui && ui/buttons
+* sidebar.png
+* logo-foundryVTswffg-ui100x42.png
+* game-settings-border.png
+* pyke-syndicate-256x256.png
+* logo-foundryVTswffg-ui100x42.png 
+* cursor-pyke.png
+All images in this section are created from [https://starwars.fandom.com/wiki/Black_Sun/Legends?file=Blacksun.svg](https://starwars.fandom.com/wiki/Black_Sun/Legends?file=Blacksun.svg)
+
+* players-border.png 
+* game-settings-border.png
+All images in this section are created from [https://search.creativecommons.org/photos/70ea87ae-7fcb-4a1b-8fa9-58d57c4db268](https://search.creativecommons.org/photos/70ea87ae-7fcb-4a1b-8fa9-58d57c4db268)
+
+For all other images there were created from the references here below or by myself (psd on demands) --> inspire from Edge of Empire design
+
 ## Url: ./art/ui
 * alliance2.png
 * alliance3.png
