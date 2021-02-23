@@ -2,6 +2,8 @@ Rebel logo
 https://search.creativecommons.org/photos/9aa4161b-8651-4970-9163-79ff32290c88
 Empire Logo
 https://search.creativecommons.org/photos/4bf75240-2fc9-4b3b-b566-769b2e56fcff
+BlackSun Logo
+https://starwars.fandom.com/wiki/Pyke_Syndicate?file=Pyke_syndicate.svg
 
 Galactic Republic
 https://search.creativecommons.org/photos/50de8a7c-dc1e-4217-b469-f8b52d563a91
@@ -16,13 +18,15 @@ https://search.creativecommons.org/photos/48ded27b-d90e-4422-bf55-8de8a44e0468
 
 Jedi Logo:
 https://search.creativecommons.org/photos/2ec2f5e6-c952-4fa0-af8f-a392ab4dcb5a
+https://commons.wikimedia.org/wiki/File:Embl%C3%A8me_de_l%27Ordre_Jedi.svg
 
+Sith Logo:
+https://commons.wikimedia.org/wiki/File:Sith_Order.png
 Millenium Falcon:
 https://search.creativecommons.org/photos/70ea87ae-7fcb-4a1b-8fa9-58d57c4db268
 
 Solo & Jabba:
 https://search.creativecommons.org/photos/289462ef-3b39-4bef-a39e-3f3337223e35
-
 
 Ben/Kylo:
 https://search.creativecommons.org/photos/e046643e-bbeb-48e4-a8db-ad7f35b33272
@@ -33,6 +37,9 @@ https://search.creativecommons.org/photos/5490be98-5091-44fa-a3a6-35b3b5858cd2
 
 Illustration:
 https://search.creativecommons.org/photos/7d9626b2-b14a-41a9-95ed-89c39e656cc3
+
+Millenium Falcon:
+https://starwars.fandom.com/wiki/Millennium_Falcon?file=Millennium_Falcon_Fathead_TROS.png
 
 Chewie:
 https://search.creativecommons.org/photos/3445e750-416a-4bc1-b278-2334604e9563
@@ -47,6 +54,12 @@ https://search.creativecommons.org/photos/7936ceb3-6a2e-4e4b-947f-8a47d1b2e7d0
 Yoda --> 
 https://search.creativecommons.org/photos/182dc294-46a9-42a3-a33b-290334b9c848
 
+TIE-Fighter
+https://search.creativecommons.org/photos/2360cb64-c941-48eb-86e7-632210260990
+
+<-- Credit Creator --> ( CC BY 4.0 )
+X-Wing --> "X-Wing - by Greta Pastorino" by AIV is licensed under CC BY 4.0 
+ https://search.creativecommons.org/photos/9942ae81-407f-4972-9960-d7eab9749e51									
 <-- Credit Creator --> ( CC BY-SA 4.0 ) 
 Helmet --> made by  Quarax 
 https://search.creativecommons.org/photos/f151a4b0-da77-465d-a15a-746a1ac196e7

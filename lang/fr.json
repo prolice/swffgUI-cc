@@ -5,7 +5,8 @@
   "SWFFG.fontSettingsHint": "Choisissez une police de caractère qui vous plait pour un plaisir maximal.",
   "SWFFG.options.indicator.choices.0": "Rebel (thème)",
   "SWFFG.options.indicator.choices.1": "Empire Galactique (thème)",
-  "SWFFG.options.indicator.choices.2": "Défaut",
+  "SWFFG.options.indicator.choices.2": "Aux Confins de L'Empire (thème)",
+  "SWFFG.options.indicator.choices.3": "Défaut",
   "SWFFG.options.indicator.fonts.0": "Earth Orbiter (opentype)",
   "SWFFG.options.indicator.fonts.1": "KuiperBelt (truetype)",
   "SWFFG.options.indicator.fonts.2": "Mons (truetype)",
@@ -15,5 +16,14 @@
   "SWFFG.windowBorderSize": "Taille des contours fenêtres:",
   "SWFFG.windowBorderSizeHint": "Adapter la taille des contours des fenêtres pour une meilleurs expérience avec l'interface",
   "SWFFG.fontSize" : "Taille de la police de caractère:",
-  "SWFFG.fontSizeHint": "Adpater la taille de la police de caractères principale pour une meilleure lisibilité dans interface"
+  "SWFFG.fontSizeHint": "Adpater la taille de la police de caractères principale pour une meilleure lisibilité dans interface",
+  
+  "CHAT.Export": "Exporter la Discussion",
+  "CHAT.FlushTitle": "Vider la Discussion",
+  "TOKEN.Title": "Configuration...",
+  "TOKEN.TitlePrototype": "Prototype config.",
+  "ENTITY.Create": "Créer: {entity}",
+  "COMBAT.End": "Terminer",
+  "COMBAT.Round": "Tour",
+  "GAME.Paused": "Pause"
 }
