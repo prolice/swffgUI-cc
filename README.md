@@ -32,10 +32,16 @@ May the the Interface be with you !
 ![](https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/screenshots/empire-overview.jpg)
 
 ## Installation
-### Method
+### Auto install Method (recommended)
+* Open the Foundry application and click **"Install Module"** in the **"Add-On Modules"** tab.
+* Type "swffg" in the Filter - window top right - 
+* Click "Install"
+* Activate the module in your World using **Manage Modules** under the **Game Settings** tab and find swffgUI-cc.
+
+### Manual Method
 * Open the Foundry application and click **"Install Module"** in the **"Add-On Modules"** tab.
 * Paste the following link: https://raw.githubusercontent.com/prolice/swffgUI-cc/swffgUI-cc/module.json
-* Click "Install"
+* Click "Install" 
 * Activate the module in your World using **Manage Modules** under the **Game Settings** tab and find swffgUI-cc.
 
 ## Known issues and advices:
