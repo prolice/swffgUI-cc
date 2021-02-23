@@ -5,7 +5,7 @@
 ![](https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/cc-by.svg)
 
 * **Author**: Prolice#9101
-* **Version**: ![](https://img.shields.io/badge/swffgUI--cc-v0.2.0-lightgrey)
+* **Version**: ![](https://img.shields.io/badge/swffgUI--cc-v0.3.0-green)
 * **Foundry VTT Compatibility**: ![](https://img.shields.io/badge/Foundry-v0.7.9-informational) the only version I ve tested !
 * **System Compatibility**: Starwarsffg 1.3 / starwarsffg system branche made by Mandar (1.3) & SWADE system
 
@@ -59,73 +59,5 @@ May the the Interface be with you !
 * Fix auberesh name when no token on the scene
 * Add auberesh display on pause
 
-**Version [0.1.9]**
-* Add Auberesh translation for vehicles.
-
-**Version [0.1.8]**
-* Add enhanced design on default starwars design
-
-**Version [0.1.7]**
-* Add collapse system on critical injuries (mandar theme)
-* Overrule background color chat message (mandar theme)
-
-**Version [0.1.6]**
-* Fixing chat borders (theme DarkSide)
-* Fixing Diplay bugs
-* Add sidebar button decor (when collapse)
-
-**Version [0.1.5]**
-* Add SWADE system support
-* Minor display fix (darkside theme)
-
-**Version [0.1.4]**
-* Add 2 parameters in the settings to manage font and window border size.
-* Minor color adaptation
-
-**Version [0.1.3]**
-* Support of "Scene Transition"
-
-**Version [0.1.2]**
-* Destiny decor deactivated
-* Settings available client side
-
-**Version [0.1.1]**
-* Destiny pooints decor
-* Missed png/jpg in Darkside theme
-
-**Version [0.1.0]**
-* Change the whole windowe template
-* finish Empire Theme
-* Fix minor bugs like text color for lisibility
-
-**Version [0.0.12]**
-* Change empire theme cursor
-
-**Version [0.0.11]**
-* Add Darkside images
-* Fix css display bugs
-
-**Version [0.0.10]**
-* Add Darkside images
-
-**Version [0.0.9]**
-* Add darkside Images CC
-* Fix scrollbar bug
-
-**Version [0.0.9]**
-* Add scroll bar in roll from
-* Add bookshelf-texture.png CC reference
-* Add Yoda reference in CC list
-* Pass parchment background as round for a better form display
-
-**Version [0.0.8]**
-* Add new background image CC
-
-**Version [0.0.7]**
-* Add main background image
-
-**Version [0.0.6]**
-* Image inventory to be Creative Common Licence compliant
-
-**Version [<=0.0.5]**
-* Initial build
+**Version [<0.1.10]**
+* Build versions ...
