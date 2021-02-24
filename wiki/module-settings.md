@@ -14,6 +14,7 @@ There is 4 different settings available for the swffgUI-cc module.
 * You have 3 possibilities (Rebel / Empire / Default)
 * Rebel is a rebel theme display
 * Empire is a empire theme display
+* Edge of the Empire theme
 * Default is a minimum overlay for starwarsffg. but it maintains the main display.
 
 ## B. Select the main font
