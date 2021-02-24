@@ -169,10 +169,11 @@
 
 /* ==================== (B) BUTTON BEHAVIOR CHANGES =========== */
   a[href] {
-    color: #e00000;
+    color: #da0000;
+    /* color: #ffa16a; */
     font-size: 16px;
     font-family: var(--major-button-font-family), serif;
-    text-shadow: 1px 0px 0px #ff0000;
+    text-shadow: 0px 0px 7px #ffffff;
 }
   a:hover {
     /* color: #480000; */
@@ -180,13 +181,13 @@
     font-size: 17px;
     text-shadow: 1px 1px 7px #b50000 !important;
     font-family: var(--major-button-font-family), serif;
-    cursor: url(../ui/buttons/cursor-pyke.png), auto;
+    cursor: url(../ui/buttons/cursor-pyke.png), pointer;
     font-weight: bold;
   }
   
   button:hover {
     box-shadow: 0 0 5px #c70000 !important;
-	cursor: url(../ui/buttons/cursor-pyke.png), auto;
+	cursor: url(../ui/buttons/cursor-pyke.png), pointer;
 	background: url(../ui/sidebar_button-background_red.png) repeat !important;
 	color:white !important;
   }
@@ -336,7 +337,7 @@ tbody {
     text-shadow: 1px 1px 2px black;
 	opacity:0.7;
 	color: rgba(255, 255, 255, 1);
-	cursor: url(../ui/buttons/cursor-pyke.png), auto;
+	cursor: url(../ui/buttons/cursor-pyke.png), pointer;
 }
 
 li.folder > .folder-header h3 {
@@ -345,7 +346,7 @@ li.folder > .folder-header h3 {
 	text-shadow: 2px 2px 2px red;
 	opacity:0.7;
 	color: rgba(253, 235, 105, 1);
-	cursor: url(../ui/buttons/cursor-pyke.png), auto;
+	cursor: url(../ui/buttons/cursor-pyke.png), pointer;
 }
   
   .app.window-app .editor .editor-content blockquote {
@@ -949,7 +950,7 @@ input::placeholder, placeholder, *placeholder {
   }
   
   #sidebar-tabs > .item {
-    cursor: url(../ui/buttons/cursor-pyke.png), auto;
+    cursor: url(../ui/buttons/cursor-pyke.png), pointer;
 }
 
   #sidebar.collapsed {
@@ -1143,7 +1144,7 @@ input::placeholder, placeholder, *placeholder {
     color: white;
     text-shadow: 3px 3px 7px #d40010;
     background: url(../ui/sidebar_button-background_red.png) repeat;
-    cursor: url(../ui/buttons/cursor-pyke.png), auto;
+    cursor: url(../ui/buttons/cursor-pyke.png), pointer;
 	opacity:0.8;
   }
 /* ==================== (B) SIDEBAR HEADER ==================== */
@@ -1793,7 +1794,7 @@ input::placeholder, placeholder, *placeholder {
     }
       #combat-popout li.combatant .roll:hover , #sidebar #combat li.combatant .roll:hover {
         /* background-image: url(../ui/buttons/d10-highlight.png); */
-		cursor: url(../ui/buttons/cursor-pyke.png), auto;
+		cursor: url(../ui/buttons/cursor-pyke.png), pointer;
       }
     #combat-popout li.combatant .token-initiative , #sidebar #combat li.combatant .token-initiative {
       flex: 0 0 48px;
@@ -1834,7 +1835,7 @@ input::placeholder, placeholder, *placeholder {
   }
   #combat-popout #combat-controls a:hover , #sidebar #combat #combat-controls a:hover {
     box-shadow: 0 0 5px #c70000 !important;
-	cursor: url(../ui/buttons/cursor-pyke.png), auto;
+	cursor: url(../ui/buttons/cursor-pyke.png), pointer;
 	background: url(../ui/sidebar_button-background_red.png) repeat;
 	color:white;
   }
@@ -2219,7 +2220,7 @@ input::placeholder, placeholder, *placeholder {
   
   #sidebar #settings button:hover {
 	color: #ffffff;
-    cursor: url(../ui/buttons/cursor-pyke.png), auto;
+    cursor: url(../ui/buttons/cursor-pyke.png), pointer;
     background: url(../ui/sidebar_button-background_red.png) repeat;
   }
   #sidebar #settings button i {
@@ -2494,7 +2495,7 @@ input::placeholder, placeholder, *placeholder {
       .app.window-app.sheet.item-sheet .item-details .input-text:hover {
         border: 1px dotted #463a3a;
         box-shadow: none;
-		cursor: url(../ui/buttons/cursor-pyke.png), auto;
+		cursor: url(../ui/buttons/cursor-pyke.png), pointer;
       }
 	  
     .app.window-app.sheet.item-sheet .sheet-tabs.edges.left {
@@ -3849,7 +3850,7 @@ input::placeholder, placeholder, *placeholder {
 /*=============== VII. NAVIGATION BAR =========================*/
 /*************************************************************/
 #navigation #scene-list .scene.view, #navigation #scene-list .scene.context {
-  cursor: url(../ui/buttons/cursor-pyke.png), auto; 
+  cursor: url(../ui/buttons/cursor-pyke.png), pointer; 
   color: #FFF;
   background: url(../ui/sidebar_button-background.png) repeat;
   background-origin: padding-box;
@@ -3860,7 +3861,7 @@ input::placeholder, placeholder, *placeholder {
 }
 
 #navigation #nav-toggle {
-  cursor: url(../ui/buttons/cursor-pyke.png), auto; 
+  cursor: url(../ui/buttons/cursor-pyke.png), pointer; 
   color: whitesmoke;
   background: url(../ui/sidebar_button-background_red.png) repeat;
   background-origin: padding-box;
@@ -3882,7 +3883,7 @@ input::placeholder, placeholder, *placeholder {
 }
 
 #navigation #scene-list .scene.nav-item {
-  cursor: url(../ui/buttons/cursor-pyke.png), auto; 
+  cursor: url(../ui/buttons/cursor-pyke.png), pointer; 
   color: #460004;
   background: url(../ui/sidebar_button-background_grey.png) repeat;
   background-origin: padding-box;
@@ -3898,7 +3899,7 @@ input::placeholder, placeholder, *placeholder {
 }
 
 #navigation #scene-list .scene.nav-item.gm {
-  cursor: url(../ui/buttons/cursor-pyke.png), auto;
+  cursor: url(../ui/buttons/cursor-pyke.png), pointer;
   color: #500106;
   background: url(../ui/sidebar_button-background.png) repeat;
   background-origin: padding-box;
@@ -3939,7 +3940,7 @@ input::placeholder, placeholder, *placeholder {
 #controls .control-tool.toggle.active, #controls .control-tool.toggle:hover {
     color: #8c53fb !important;
     text-shadow: 1px 1px 3px #42005f;
-	cursor: url(../ui/buttons/cursor-pyke.png), auto;
+	cursor: url(../ui/buttons/cursor-pyke.png), pointer;
 }
 /*************************************************************/
 /*************************************************************/
@@ -3965,7 +3966,7 @@ box-shadow: 0 0 0px #4e0c0c !important;
 border: 0px !important;
 text-shadow: 2px 2px 3px black;
 /*cursor:pointer !important;*/
-cursor: url(../ui/buttons/cursor-pyke.png), auto !important;	
+cursor: url(../ui/buttons/cursor-pyke.png), pointer !important;	
 }
 
 #controls .scene-control, #controls .control-tool {
@@ -4298,16 +4299,16 @@ border-image-outset: 0px !important;
           }
 		  #client-settings .window-content button:hover {
 			color: white;
-			cursor: url(../ui/buttons/cursor-pyke.png), auto;
+			cursor: url(../ui/buttons/cursor-pyke.png), pointer;
 			background: url(../ui/sidebar_button-background_red.png) repeat !important;
 		}
 		 #client-settings .window-content button:hover > label {
 			color: white;
-			cursor: url(../ui/buttons/cursor-pyke.png), auto;
+			cursor: url(../ui/buttons/cursor-pyke.png), pointer;
 		}
 		#client-settings .window-content button:hover > i {
 			color: white;
-			cursor: url(../ui/buttons/cursor-pyke.png), auto;
+			cursor: url(../ui/buttons/cursor-pyke.png), pointer;
 		}
         #client-settings .window-content button[name="permissions"] {
           max-width: 68px;
@@ -5134,7 +5135,7 @@ font-family: var(--actor-input-font-family);
     }
       .token-sheet .sheet-tabs .item:hover {
         box-shadow: 0 0 8px #c70000 !important;
-		cursor: url(../ui/buttons/cursor-pyke.png), auto;
+		cursor: url(../ui/buttons/cursor-pyke.png), pointer;
       }
       .token-sheet .sheet-tabs .item.active {
         background: #7b5c00d9;
@@ -5385,7 +5386,7 @@ font-family: var(--actor-input-font-family);
     }
       #drawing-config .sheet-tabs .item:hover {
         box-shadow: 0 0 8px #c70000 !important;
-		cursor: url(../ui/buttons/cursor-pyke.png), auto;
+		cursor: url(../ui/buttons/cursor-pyke.png), pointer;
       }
       #drawing-config .sheet-tabs .item.active {
         background: #7b5c00d9;
@@ -6014,18 +6015,18 @@ font-family: var(--actor-input-font-family);
         border-image-width: 6px 6px 6px 6px;
         border-image-outset: 0px 0px 0px 0px;
         border-radius: 0px;
-		cursor: url(../ui/buttons/cursor-pyke.png), auto;
+		cursor: url(../ui/buttons/cursor-pyke.png), pointer;
 		border-radius:8px;
       } 
 
 		#hotbar #action-bar .macro:hover {
 		  box-shadow: 2px 2px 5px #66141a;
-		  cursor: url(../ui/buttons/cursor-pyke.png), auto;
+		  cursor: url(../ui/buttons/cursor-pyke.png), pointer;
         }
       
 	  
 	  #hotbar .macro .macro-icon {
-	    cursor: url(../ui/buttons/cursor-pyke.png), auto;
+	    cursor: url(../ui/buttons/cursor-pyke.png), pointer;
 		width: 46px;
 		height: 46px;
 		border: none;
@@ -6337,7 +6338,7 @@ font-style : normal;
       #module-management .list-filters .filter:hover,
       #client-settings .sheet-tabs .item:hover {
           box-shadow: 0 0 8px #c70000 !important;
-		  cursor: url(../ui/buttons/cursor-pyke.png), auto;
+		  cursor: url(../ui/buttons/cursor-pyke.png), pointer;
         }
       #module-management .list-filters .filter.active,
       #client-settings .sheet-tabs .item.active {
@@ -6569,7 +6570,7 @@ font-style : normal;
 .chargen-button:hover {
   background: linear-gradient(to bottom, #800000 5%, #3e0101 100%);
   background-color: red;
-  cursor: url(../ui/buttons/cursor-pyke.png), auto;
+  cursor: url(../ui/buttons/cursor-pyke.png), pointer;
 }
 .overcast-button:active,
 .chargen-button:active {
@@ -7336,7 +7337,7 @@ background-image: linear-gradient(to right, #820f0f , #82820d);
 }
   #av-config .sheet-tabs .item:hover {
     box-shadow: 0 0 8px #c70000 !important;
-	cursor: url(../ui/buttons/cursor-pyke.png), auto;
+	cursor: url(../ui/buttons/cursor-pyke.png), pointer;
   }
   #av-config .sheet-tabs .item.active {
     background: #7b5c00d9;
@@ -7417,7 +7418,8 @@ background-image: linear-gradient(to right, #820f0f , #82820d);
     line-height: 24px;
     border: 1px solid #736953a6;
     box-shadow: 0px 0px 10px inset black;
-    background: #fff68640;
+    /* background: #fff68640; */
+	background: #d6ca7273;
     border-radius: 0px;
     opacity: 0.9;
     min-width: 93px;
@@ -7528,7 +7530,7 @@ input[name="dd-import.importPath"] {
 .chat-card-button:hover {
   background: linear-gradient(to bottom, #800000 5%, #3e0101 100%);
   background-color: red;
-  cursor: url(../ui/buttons/cursor-pyke.png), auto;
+  cursor: url(../ui/buttons/cursor-pyke.png), pointer;
 }
 .chat-card-button:active {
   position:relative;
@@ -7849,7 +7851,7 @@ hr,
   background: url(../ui/sidebar_button-background.png) repeat;
   background-origin: padding-box;
   color: var(--major-button-color);
-  cursor: url(../ui/buttons/cursor-pyke.png), auto;
+  cursor: url(../ui/buttons/cursor-pyke.png), pointer;
 }
 
 .forien-quest-preview nav {
@@ -7872,7 +7874,7 @@ hr,
 }
 .forien-quest-preview nav .item:hover{
     box-shadow: 0 0 8px #c70000 !important;
-	cursor: url(../ui/buttons/cursor-pyke.png), auto;
+	cursor: url(../ui/buttons/cursor-pyke.png), pointer;
   }
 .forien-quest-preview nav .item.active{
     background: #7b5c00d9 !important; 
@@ -7978,13 +7980,13 @@ hr,
 /* section#destinyLight.destiny-points:hover { */
   /* background : url(../ui/lightside-UI-CC-active.png) no-repeat center; */
   /* background-size: contain; */
-  /* cursor: url(../ui/buttons/cursor-pyke.png), auto; */
+  /* cursor: url(../ui/buttons/cursor-pyke.png), pointer; */
 /* } */
 
 /* section#destinyDark.destiny-points:hover { */
   /* background : url(../ui/darkside-UI-CC-active.png) no-repeat center; */
   /* background-size: contain; */
-  /* cursor: url(../ui/buttons/cursor-pyke.png), auto; */
+  /* cursor: url(../ui/buttons/cursor-pyke.png), pointer; */
 /* } */
 /* .swffg-destiny { */
     /* background:none; */
@@ -8044,11 +8046,11 @@ hr,
 
 
 /* #destiny-tracker .dropbtn:hover, #destiny-tracker .dropbtn:focus { */
-  /* cursor: url(../ui/buttons/cursor-pyke.png), auto; */
+  /* cursor: url(../ui/buttons/cursor-pyke.png), pointer; */
 /* } */
 
 /* #destiny-tracker .dropdown {  */
-  /* cursor: url(../ui/buttons/cursor-pyke.png), auto; */
+  /* cursor: url(../ui/buttons/cursor-pyke.png), pointer; */
 /* } */
 
 .flex-group-center,
