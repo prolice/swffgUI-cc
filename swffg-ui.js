@@ -77,32 +77,44 @@ class swffgUIModule {
 				let state = Number(value);
 				var head = document.getElementsByTagName('head')[0];
 				var locationOrigin= document.location.origin;
-				var hrefToApply = "modules/swffgUI-cc/swffg-default.css";
+				var hrefToApply = "swffg-default.css";
 				switch(state){
 					case IndicatorMode.GALACTIC:
-							hrefToApply= "modules/swffgUI-cc/darkside/css/swffg.css";
+							hrefToApply= "darkside/css/swffg.css";
 							break;
 					case IndicatorMode.REBEL:
-							hrefToApply= "modules/swffgUI-cc/css/swffg.css";
+							hrefToApply= "css/swffg.css";
 							break;
 					case IndicatorMode.EOE:
-							hrefToApply= "modules/swffgUI-cc/EoE/css/swffg.css";
+							hrefToApply= "EoE/css/swffg.css";
 							break;
 					case IndicatorMode.DEFAULT:
-							hrefToApply= "modules/swffgUI-cc/swffg-default.css";
+							hrefToApply= "swffg-default.css";
 							break;
 					default:
 					  console.log('Something went wrong [$value] does not exists in fonts choices (in theme)');
 				}
 				
 				for(var elem = 0 ; elem < head.children.length; elem++){
-					if (head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/swffg-default.css" ||
-						head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/darkside/css/swffg.css" ||
-						head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/EoE/css/swffg.css" ||
-						head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/css/swffg.css"){
-							head.children[elem].href= hrefToApply;
-							break;
+					if (typeof head.children[elem].href === 'undefined') continue;
+					
+					if (head.children[elem].href.endsWith("swffg-default.css")){
+						head.children[elem].href= head.children[elem].href.replace("swffg-default.css",hrefToApply);
+						break;
 					}
+					else if	(head.children[elem].href.endsWith("darkside/css/swffg.css")){
+						head.children[elem].href= head.children[elem].href.replace("darkside/css/swffg.css",hrefToApply);
+						break;
+					}
+					else if (head.children[elem].href.endsWith("EoE/css/swffg.css")){
+						head.children[elem].href= head.children[elem].href.replace("EoE/css/swffg.css",hrefToApply);
+						break;
+					}
+					else if (head.children[elem].href.endsWith("css/swffg.css")){
+						head.children[elem].href= head.children[elem].href.replace("css/swffg.css",hrefToApply);
+						break;
+					}
+						
 				}
 			}
         });
@@ -250,33 +262,45 @@ class swffgUIModule {
 		var locationOrigin= document.location.origin;
 		let state = Number(game.settings.get("swffgUI-cc", "selectSkin"));
 		
-		var hrefToApply = "modules/swffgUI-cc/swffg-default.css";
-		switch(state){
-			case IndicatorMode.GALACTIC:
-					hrefToApply= "modules/swffgUI-cc/darkside/css/swffg.css";
-					break;
-			case IndicatorMode.REBEL:
-					hrefToApply= "modules/swffgUI-cc/css/swffg.css";
-					break;
-			case IndicatorMode.EOE:
-					hrefToApply= "modules/swffgUI-cc/EoE/css/swffg.css";
-					break;
-			case IndicatorMode.DEFAULT:
-					hrefToApply= "modules/swffgUI-cc/swffg-default.css";
-					break;
-			default:
-			  console.log('Something went wrong [$value] does not exists in fonts choices (in theme)');
-		}
-		
-		for(var elem = 0 ; elem < head.children.length; elem++){
-			if (head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/swffg-default.css" ||
-				head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/darkside/css/swffg.css" ||
-				head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/EoE/css/swffg.css" ||
-				head.children[elem].href === locationOrigin +"/"+"modules/swffgUI-cc/css/swffg.css"){
-					head.children[elem].href= hrefToApply;
-					break;
+		var hrefToApply = "swffg-default.css";
+				switch(state){
+					case IndicatorMode.GALACTIC:
+							hrefToApply= "darkside/css/swffg.css";
+							break;
+					case IndicatorMode.REBEL:
+							hrefToApply= "css/swffg.css";
+							break;
+					case IndicatorMode.EOE:
+							hrefToApply= "EoE/css/swffg.css";
+							break;
+					case IndicatorMode.DEFAULT:
+							hrefToApply= "swffg-default.css";
+							break;
+					default:
+					  console.log('Something went wrong [$value] does not exists in fonts choices (in theme)');
 				}
-		}
+				
+				for(var elem = 0 ; elem < head.children.length; elem++){
+					if (typeof head.children[elem].href === 'undefined') continue;
+					
+					if (head.children[elem].href.endsWith("swffg-default.css")){
+						head.children[elem].href= head.children[elem].href.replace("swffg-default.css",hrefToApply);
+						break;
+					}
+					else if	(head.children[elem].href.endsWith("darkside/css/swffg.css")){
+						head.children[elem].href= head.children[elem].href.replace("darkside/css/swffg.css",hrefToApply);
+						break;
+					}
+					else if (head.children[elem].href.endsWith("EoE/css/swffg.css")){
+						head.children[elem].href= head.children[elem].href.replace("EoE/css/swffg.css",hrefToApply);
+						break;
+					}
+					else if (head.children[elem].href.endsWith("css/swffg.css")){
+						head.children[elem].href= head.children[elem].href.replace("css/swffg.css",hrefToApply);
+						break;
+					}
+						
+				}
 				
 		state = Number(game.settings.get("swffgUI-cc", "fontSettings"));
 		switch (state){
