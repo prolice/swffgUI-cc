@@ -11,7 +11,7 @@ There is 4 different settings available for the swffgUI-cc module.
 ![](https://raw.githubusercontent.com/prolice/swffgUI-cc/swffgUI-cc/wiki/module-settings.jpg)
 
 ## A. Select your skin
-* You have 3 possibilities (Rebel / Empire / Default)
+* You have 4 possibilities (Rebel / Empire / Edge of the Empire / Default)
 * Rebel is a rebel theme display
 * Empire is a empire theme display
 * Edge of the Empire theme
