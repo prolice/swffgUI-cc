@@ -8,7 +8,7 @@
 * **Version**: ![](https://img.shields.io/badge/swffgUI--cc-v0.3.2-green)
 * **Foundry VTT Compatibility**: ![](https://img.shields.io/badge/Foundry-v0.7.6-informational) to ![](https://img.shields.io/badge/Foundry-v0.8.0-informational) the only version I ve tested !
 * **System Compatibility**: Starwarsffg 1.3 / starwarsffg system branche made by Mandar (1.3) & SWADE system
-* ![Forge installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2FSwffgUI-cc)
+* ![Forge installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2FswffgUI-cc)
 
 * **Total Download**: [https://img.shields.io/github/downloads/prolice/swffgUI-cc/blob/swffgUI-cc/total.svg](https://github.com/prolice/swffgUI-cc/releases)
  
