@@ -106,6 +106,21 @@
 	/* top:102px; */
 }
 
+.starwarsffg.sheet.actor .character .header-fields .profile-block {
+    min-width: 125px;
+}
+
+.starwarsffg.sheet.actor .character .header-fields .profile-img {
+    display: block;
+}
+.starwarsffg .minion .profile-block {
+    min-width: 125px;
+}
+.starwarsffg .minion .profile-img {
+    display: block;
+}
+
+
 .starwarsffg .item-sheet-species .characteristics .characteristic-item .characteristic-label {
     position: relative;
     background-color: #ffffff00 !important;
