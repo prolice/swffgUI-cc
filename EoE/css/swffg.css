@@ -8120,6 +8120,16 @@ img {
     margin-right: 50px;
     margin-left: 50px;
 }
+
+.starwarsffg.sheet.actor .character .header-fields .profile-img{
+	display:block;
+}
+
+.starwarsffg.sheet.actor .character .header-fields .profile-block{
+	max-width: 150px;
+    min-width: 125px;
+}
+
 .starwarsffg .character .characteristics .characteristic-item {
 	background: url(../ui/frames/caracteristics-background.png) no-repeat;
 	background-size:100% 100%;
@@ -8140,9 +8150,26 @@ img {
     background-color: #ffffff00;
 }
 
+.starwarsffg.sheet.actor .vehicle .header-fields .profile-block .profile-img {
+    width: auto;
+    display: block;
+    margin: auto;
+}
+
 .starwarsffg.sheet.actor .vehicle .characteristic-item .characteristic-label {
     background-color: #ffffff00;
 	margin-top: 10px;
+}
+.starwarsffg .minion .profile-block {
+    min-height: 130px;
+	min-width:  130px;
+    display: block;
+}
+.starwarsffg .minion .profile-img {
+    display: block;
+}
+.starwarsffg .minion .minion-stats {
+    margin: 0 0 10px 20px;
 }
 
 /*--character-sheet-name-auberesh*/
@@ -8153,15 +8180,17 @@ img {
     text-align: center;
     font-size: small;
     position: absolute;
-    width: 122px;
+    width: 120px;
     z-index: 40;
     bottom: 70px;
     padding-top: 5px;
-	--notchSize: 0.25rem;
+	--notchSize: 6px;
 	-webkit-clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
     clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
 	background-color: #84725e;
 	max-height: 36px;
+	max-width:120px;
+	/* top:102px; */
 }
 
 .starwarsffg.sheet.actor .character .header-fields .profile-block .auberesh-name {
@@ -8479,6 +8508,7 @@ img {
 
 .starwarsffg.sheet.actor.v2 .minion .profile-block {
   margin-right: 8px;
+  margin-top: 8px;
 }
 
 .starwarsffg.sheet.item.v2 .item-sheet-vehicle-weapon .container.flex-group-center {

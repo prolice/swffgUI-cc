@@ -60,7 +60,7 @@
     /* background: url(../ui/frames/auberesh-name-background.png) no-repeat; */
     /* background-size: 100% 100%; */
     padding-top: 2px;
-	--notchSize: 0.25rem;
+	--notchSize: 6px;
 	-webkit-clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
     clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
 	background-color: #771113;
@@ -80,11 +80,46 @@
     /* background: url(../ui/frames/auberesh-name-background.png) no-repeat; */
     /* background-size: 100% 100%; */
     padding-top: 2px;
-	--notchSize: 0.25rem;
+	--notchSize: 6px;
 	-webkit-clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
     clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
 	background-color: #00304f;
 }
+
+.starwarsffg.sheet.actor .minion .header-fields .profile-block .auberesh-name {
+	font-family: var(--character-sheet-name-auberesh);
+    /* text-shadow: 0px 1px 10px #ffffff; */
+    color: #ffffff;
+    text-align: center;
+    font-size: small;
+    position: absolute;
+    width: 115px;
+    z-index: 40;
+    top: 98px;
+    padding-top: 5px;
+	--notchSize: 6px;
+	-webkit-clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
+    clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
+	background-color: #84725e;
+	max-height: 36px;
+	max-width:130px;
+	/* top:102px; */
+}
+
+.starwarsffg.sheet.actor .character .header-fields .profile-block {
+    min-width: 125px;
+}
+
+.starwarsffg.sheet.actor .character .header-fields .profile-img {
+    display: block;
+}
+.starwarsffg .minion .profile-block {
+    min-width: 125px;
+}
+.starwarsffg .minion .profile-img {
+    display: block;
+}
+
 
 .starwarsffg .item-sheet-species .characteristics .characteristic-item .characteristic-label {
     position: relative;
