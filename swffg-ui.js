@@ -188,7 +188,7 @@ class swffgUIModule {
         });
 		
 		/*--major-button-font-size*/
-		game.settings.register("swffgUI-cc", "fontSize", {
+	game.settings.register("swffgUI-cc", "fontSize", {
             name: "SWFFG.fontSize",
 			hint: "SWFFG.fontSizeHint",
 			scope: "client",
@@ -203,7 +203,24 @@ class swffgUIModule {
 			onChange: (value) => {
 				document.documentElement.style.setProperty('--major-button-font-size', value+'px');
 			}
-        });
+        }); 
+        
+        game.settings.register("swffgUI-cc", "enable-cursor", {
+        name: "SWFFG.CursorSettings",
+        hint: "SWFFG.CursorSettings",
+        scope: "Client",
+        config: true,
+        default: true,
+        type: Boolean,
+        onChange: (value) => { 
+            if (value){
+              document.documentElement.style.setProperty('--application-cursor-pointer', 'url(../ui/buttons/cursor-pyke.png), pointer');
+            }
+            else {
+              document.documentElement.style.setProperty('--application-cursor-pointer', 'pointer');
+            }
+        }
+      });
 		
 		game.settings.register("swffgUI-cc", "verboseLogs", {
             name: "Enable more module logging.",
