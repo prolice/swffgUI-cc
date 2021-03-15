@@ -17,6 +17,8 @@
   "SWFFG.windowBorderSizeHint": "Adapter la taille des contours des fenêtres pour une meilleurs expérience avec l'interface",
   "SWFFG.fontSize" : "Taille de la police de caractère:",
   "SWFFG.fontSizeHint": "Adpater la taille de la police de caractères principale pour une meilleure lisibilité dans interface",
+  "SWFFG.CursorSettings": "Activer/Desactiver le curseur du thème:",
+  "SWFFG.CursorSettingsHint": "Que le curseur soit avec toi.",
   
   "CHAT.Export": "Exporter la Discussion",
   "CHAT.FlushTitle": "Vider la Discussion",

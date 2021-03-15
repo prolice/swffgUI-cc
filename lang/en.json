@@ -16,5 +16,7 @@
   "SWFFG.windowBorderSize": "Border size:",
   "SWFFG.windowBorderSizeHint": "Adapt the windows border for a better experience on the interface",
   "SWFFG.fontSize" : "Font size:",
-  "SWFFG.fontSizeHint": "Adapt the font size for a better lisibility on the interface"
+  "SWFFG.fontSizeHint": "Adapt the font size for a better lisibility on the interface",
+  "SWFFG.CursorSettings": "Activate/Deactivate the custom cursor:",
+  "SWFFG.CursorSettingsHint": "If you only knew the power of the cursor."
 }

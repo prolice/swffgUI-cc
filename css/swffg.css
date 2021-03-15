@@ -151,6 +151,9 @@
 	--window-content-border-image-outset: 8px 8px 8px 8px;
 	--window-header-margin: 0px 0px 8px 0px;
 	--window-border-image-slice: 20 14 20 14;
+	
+ /* ================== 4. APPLICATION CURSOR ================= */
+    --application-cursor-pointer : pointer;
   }
 
 /******************************************************************/
@@ -181,7 +184,7 @@
   
   button:hover {
     box-shadow: 0 0 5px #00c7ff !important;
-	cursor: url(../ui/buttons/cursor-rebel.png), auto;
+	cursor: var(--application-cursor-pointer);
   }
   input[type="text"]:focus, 
   input[type="password"]:focus {
@@ -303,7 +306,7 @@
     text-shadow: 1px 1px 2px black;
 	opacity:0.7;
 	color: rgba(255, 255, 255, 1);
-	cursor: url(../ui/buttons/cursor-rebel.png), auto;
+	cursor: var(--application-cursor-pointer);
 }
 
 li.folder > .folder-header h3 {
@@ -312,7 +315,7 @@ li.folder > .folder-header h3 {
 	text-shadow: 1px 1px 2px black;
 	opacity:0.7;
 	color: rgba(0, 255, 255, 1);
-	cursor: url(../ui/buttons/cursor-rebel.png), auto;
+	cursor: var(--application-cursor-pointer);
 }
   
   .app.window-app .editor .editor-content blockquote {
@@ -904,7 +907,7 @@ input::placeholder, placeholder, *placeholder {
   }
   
   #sidebar-tabs > .item {
-    cursor: url(../ui/buttons/cursor-rebel.png), auto;
+    cursor: var(--application-cursor-pointer);
 }
 
   #sidebar.collapsed {
@@ -1705,7 +1708,7 @@ input::placeholder, placeholder, *placeholder {
     }
       #combat-popout li.combatant .roll:hover , #sidebar #combat li.combatant .roll:hover {
         /* background-image: url(../ui/buttons/d10-highlight.png); */
-		cursor: url(../ui/buttons/cursor-rebel.png), auto;
+		cursor: var(--application-cursor-pointer);
       }
     #combat-popout li.combatant .token-initiative , #sidebar #combat li.combatant .token-initiative {
       flex: 0 0 48px;
@@ -1745,7 +1748,7 @@ input::placeholder, placeholder, *placeholder {
   }
   #combat-popout #combat-controls a:hover , #sidebar #combat #combat-controls a:hover {
     box-shadow: 0 0 5px #00c7ff !important;
-	cursor: url(../ui/buttons/cursor-rebel.png), auto;
+	cursor: var(--application-cursor-pointer);
   }
   #combat-popout #combat-controls .combat-control i , #sidebar #combat #combat-controls .combat-control i {
     display: contents;
@@ -1890,7 +1893,7 @@ input::placeholder, placeholder, *placeholder {
       width: 11px;
       border-radius: 5px;
       background: #212121;
-      cursor: pointer;
+      cursor: var(--application-cursor-pointer);
       margin-top: -4px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
       box-shadow: 1px 1px 1px #000000 inset, 0px 0px 2px #0d0d0d; /* Add cool effects to your sliders! */
     }
@@ -1978,7 +1981,7 @@ input::placeholder, placeholder, *placeholder {
       width: 11px;
       border-radius: 5px;
       background: #212121;
-      cursor: pointer;
+      cursor: var(--application-cursor-pointer);
       margin-top: -4px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
       box-shadow: 1px 1px 1px #000000 inset, 0px 0px 2px #0d0d0d; /* Add cool effects to your sliders! */
     }
@@ -3807,7 +3810,7 @@ box-shadow: 0 0 0px #3cbbff !important;
 border: 0px !important;
 text-shadow: 2px 2px 3px black;
 /*cursor:pointer !important;*/
-cursor: url(../ui/buttons/cursor-rebel.png), auto !important;	
+cursor: var(--application-cursor-pointer) !important;	
 }
 
 #controls .scene-control, #controls .control-tool {
@@ -4549,7 +4552,7 @@ font-family: var(--actor-input-font-family);
         width: 11px;
         border-radius: 5px;
         background: #212121;
-        cursor: pointer;
+        cursor: var(--application-cursor-pointer);
         margin-top: -4px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
         box-shadow: 1px 1px 1px #000000 inset, 0px 0px 2px #0d0d0d; /* Add cool effects to your sliders! */
       } 
@@ -5024,7 +5027,7 @@ font-family: var(--actor-input-font-family);
       width: 11px;
       border-radius: 5px;
       background: #212121;
-      cursor: pointer;
+      cursor: var(--application-cursor-pointer);
       margin-top: -4px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
       box-shadow: 1px 1px 1px #000000 inset, 0px 0px 2px #0d0d0d; /* Add cool effects to your sliders! */
     } 
@@ -5261,7 +5264,7 @@ font-family: var(--actor-input-font-family);
       width: 11px;
       border-radius: 5px;
       background: #212121;
-      cursor: pointer;
+      cursor: var(--application-cursor-pointer);
       margin-top: -4px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
       box-shadow: 1px 1px 1px #000000 inset, 0px 0px 2px #0d0d0d; /* Add cool effects to your sliders! */
     } 
@@ -5805,7 +5808,7 @@ font-family: var(--actor-input-font-family);
         border-image-width: 6px 6px 6px 6px;
         border-image-outset: 0px 0px 0px 0px;
         border-radius: 0px;
-		cursor: url(../ui/buttons/cursor-rebel.png), auto;
+		cursor: var(--application-cursor-pointer);
       } 
 
 		#hotbar #action-bar .macro:hover {
@@ -5814,7 +5817,7 @@ font-family: var(--actor-input-font-family);
       
 	  
 	  #hotbar .macro .macro-icon {
-	    cursor: url(../ui/buttons/cursor-rebel.png), auto;
+	    cursor: var(--application-cursor-pointer);
 	  }
   
         #hotbar .macro .macro-key {
@@ -6169,7 +6172,7 @@ font-style : normal;
   left: 8px;
   position: relative;
   top: 5px;
-  cursor: pointer;
+  cursor: var(--application-cursor-pointer);
 }  
 
 .chat-buttons {
@@ -6312,7 +6315,7 @@ font-style : normal;
   border-radius: 3px;
   border: 2px ridge #846109;
   display: inline-block;
-  cursor: pointer;
+  cursor: var(--application-cursor-pointer);
   color: #ffffff;
   font-family: KuiperBelt;
   font-size: 14px;
@@ -6815,7 +6818,7 @@ height: 11px;
 width: 11px;
 border-radius: 5px;
 background: #212121;
-cursor: pointer;
+cursor: var(--application-cursor-pointer);
 margin-top: -4px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
 box-shadow: 1px 1px 1px #000000 inset, 0px 0px 2px #0d0d0d; /* Add cool effects to your sliders! */
 }
@@ -7288,7 +7291,7 @@ input[name="dd-import.importPath"] {
   border-radius: 3px;
   border: 2px ridge #846109;
   display: inline-block;
-  cursor: pointer;
+  cursor: var(--application-cursor-pointer);
   color: #ffffff;
   font-family: KuiperBelt;
   font-size: 14px;
@@ -7302,7 +7305,7 @@ input[name="dd-import.importPath"] {
 .chat-card-button:hover {
   background: linear-gradient(to bottom, #800000 5%, #3e0101 100%);
   background-color: red;
-  cursor: url(../ui/buttons/cursor-rebel.png), auto;
+  cursor: var(--application-cursor-pointer);
 }
 .chat-card-button:active {
   position:relative;
@@ -7611,7 +7614,7 @@ hr,
   background: url(../ui/sidebar_button-background_red.png) repeat;
   background-origin: padding-box;
   color: var(--major-button-color);
-  cursor: url(../ui/buttons/cursor-rebel.png), auto;
+  cursor: var(--application-cursor-pointer);
 }
 
 .forien-quest-preview nav {
@@ -7739,13 +7742,13 @@ hr,
 /* section#destinyLight.destiny-points:hover { */
   /* background : url(../ui/lightside-UI-CC-active.png) no-repeat center; */
   /* background-size: contain; */
-  /* cursor: url(../ui/buttons/cursor-rebel.png), auto; */
+  /* cursor: var(--application-cursor-pointer); */
 /* } */
 
 /* section#destinyDark.destiny-points:hover { */
   /* background : url(../ui/darkside-UI-CC-active.png) no-repeat center; */
   /* background-size: contain; */
-  /* cursor: url(../ui/buttons/cursor-rebel.png), auto; */
+  /* cursor: var(--application-cursor-pointer); */
 /* } */
 /* .swffg-destiny { */
     /* background:none; */
@@ -7805,11 +7808,11 @@ hr,
 
 
 /* #destiny-tracker .dropbtn:hover, #destiny-tracker .dropbtn:focus { */
-  /* cursor: url(../ui/buttons/cursor-rebel.png), auto; */
+  /* cursor: var(--application-cursor-pointer); */
 /* } */
 
 /* #destiny-tracker .dropdown {  */
-  /* cursor: url(../ui/buttons/cursor-rebel.png), auto; */
+  /* cursor: var(--application-cursor-pointer); */
 /* } */
 
 .flex-group-center,

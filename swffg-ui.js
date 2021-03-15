@@ -78,14 +78,22 @@ class swffgUIModule {
 				var head = document.getElementsByTagName('head')[0];
 				var locationOrigin= document.location.origin;
 				var hrefToApply = "swffg-default.css";
+				let stateEnableCursor = Number(game.settings.get("swffgUI-cc", "enable-cursor"));
+				
 				switch(state){
 					case IndicatorMode.GALACTIC:
 							hrefToApply= "darkside/css/swffg.css";
+							if (stateEnableCursor)
+								document.documentElement.style.setProperty('--application-cursor-pointer', 'url(../ui/buttons/cursor-empire.png), pointer');
 							break;
 					case IndicatorMode.REBEL:
+							if (stateEnableCursor)
+								document.documentElement.style.setProperty('--application-cursor-pointer', 'url(../ui/buttons/cursor-rebel.png), pointer');
 							hrefToApply= "css/swffg.css";
 							break;
 					case IndicatorMode.EOE:
+					        if (stateEnableCursor)
+								document.documentElement.style.setProperty('--application-cursor-pointer', 'url(../ui/buttons/cursor-pyke.png), pointer');
 							hrefToApply= "EoE/css/swffg.css";
 							break;
 					case IndicatorMode.DEFAULT:
@@ -207,14 +215,31 @@ class swffgUIModule {
         
         game.settings.register("swffgUI-cc", "enable-cursor", {
         name: "SWFFG.CursorSettings",
-        hint: "SWFFG.CursorSettings",
+        hint: "SWFFG.CursorSettingsHint",
         scope: "Client",
         config: true,
         default: true,
         type: Boolean,
         onChange: (value) => { 
             if (value){
-              document.documentElement.style.setProperty('--application-cursor-pointer', 'url(../ui/buttons/cursor-pyke.png), pointer');
+			  let state = Number(game.settings.get("swffgUI-cc", "selectSkin"));
+			  switch(state){
+					case IndicatorMode.GALACTIC:
+							document.documentElement.style.setProperty('--application-cursor-pointer', 'url(../ui/buttons/cursor-empire.png), pointer');
+							break;
+					case IndicatorMode.REBEL:
+							document.documentElement.style.setProperty('--application-cursor-pointer', 'url(../ui/buttons/cursor-rebel.png), pointer');
+							break;
+					case IndicatorMode.EOE:
+							document.documentElement.style.setProperty('--application-cursor-pointer', 'url(../ui/buttons/cursor-pyke.png), pointer');
+							break;
+					case IndicatorMode.DEFAULT:
+							document.documentElement.style.setProperty('--application-cursor-pointer', 'pointer');
+							break;
+					default:
+					  console.log('Something went wrong [$state] does not exists in theme choices');
+				}
+              
             }
             else {
               document.documentElement.style.setProperty('--application-cursor-pointer', 'pointer');
@@ -278,19 +303,27 @@ class swffgUIModule {
 		var head = document.getElementsByTagName('head')[0];
 		var locationOrigin= document.location.origin;
 		let state = Number(game.settings.get("swffgUI-cc", "selectSkin"));
+		let stateEnableCursor = Number(game.settings.get("swffgUI-cc", "enable-cursor"));
 		
 		var hrefToApply = "swffg-default.css";
 				switch(state){
 					case IndicatorMode.GALACTIC:
 							hrefToApply= "darkside/css/swffg.css";
+							if (stateEnableCursor)
+								document.documentElement.style.setProperty('--application-cursor-pointer', 'url(../ui/buttons/cursor-empire.png), pointer');
 							break;
 					case IndicatorMode.REBEL:
+					        if (stateEnableCursor)
+								document.documentElement.style.setProperty('--application-cursor-pointer', 'url(../ui/buttons/cursor-rebel.png), pointer');
 							hrefToApply= "css/swffg.css";
 							break;
 					case IndicatorMode.EOE:
+							if (stateEnableCursor)
+								document.documentElement.style.setProperty('--application-cursor-pointer', 'url(../ui/buttons/cursor-pyke.png), pointer');
 							hrefToApply= "EoE/css/swffg.css";
 							break;
 					case IndicatorMode.DEFAULT:
+					        document.documentElement.style.setProperty('--application-cursor-pointer', 'pointer');
 							hrefToApply= "swffg-default.css";
 							break;
 					default:
