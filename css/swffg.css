@@ -7858,6 +7858,15 @@ img {
     margin-right: 50px;
     margin-left: 50px;
 }
+
+.starwarsffg .skill-name {
+    font-size: var(--major-button-font-size) !important;
+}
+
+.starwarsffg .skillsGrid .skillTable .skillsHeader div {
+    font-size: var(--major-button-font-size) !important;
+}
+
 .starwarsffg .character .characteristics .characteristic-item {
 	background: url(../ui/frames/caracteristics-background.png) no-repeat;
 	background-size:100% 100%;
@@ -7883,6 +7892,11 @@ img {
     display: block;
     min-width: 120px;
 }
+
+.starwarsffg .item-sheet-species .characteristic {
+    background: #eee8d9;
+}
+
 /*--character-sheet-name-auberesh*/
 .starwarsffg.sheet.actor .character .header-fields .profile-block .auberesh-name {
 	font-family: var(--character-sheet-name-auberesh);
@@ -7957,7 +7971,7 @@ img {
 .starwarsffg .item-sheet-species .characteristics .characteristic-item .characteristic-label {
     position: relative;
     background-color: #ffffff00 !important;
-    top: 15px;
+    padding: 12px 0px 0px 0px;
 }
 
 .starwarsffg .characteristics .characteristic-item {

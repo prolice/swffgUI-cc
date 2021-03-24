@@ -85,6 +85,20 @@
   src: url("../fonts/SfDistantGalaxy-0l3d.ttf") format("truetype");
 }
 
+@font-face {
+	font-family: "Eras";
+    src: url("../fonts/ERASMD.TTF") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Eras";
+    src: url("../fonts/ERASBD.TTF") format("truetype");
+	font-weight: Bold;
+	font-style: normal;
+}
+
 /******************************************************************/
 /******************************************************************/
 
@@ -222,11 +236,12 @@ table td, table th {
     /*width: 20px;*/
 }
 tbody {
-    display: unset;
+    display: contents;
     vertical-align: middle;
 }
 .window-app {
   font-family: var(--major-button-font-family), sans-serif !important;
+  font-size: var(--major-button-font-size);
 }
 /* ==================== (C) TINY MCE EDITOR FONT CHANGES ====== */
   .app.window-app .editor {
@@ -466,8 +481,15 @@ li.folder > .folder-header h3 {
     overflow: hidden;
     background: url(../ui/background.png) repeat;
     font-size: 14px;
+	font-family: var(--major-button-font-family), sans-serif;
+	font-size: var(--major-button-font-size);
   }
-
+  
+  button {
+    font-family: var(--major-button-font-family), sans-serif;
+	font-size: var(--major-button-font-size);
+  }
+  
   input[type="text"], input[type="password"] {
     min-width: 20px;
     background: none;
@@ -484,7 +506,7 @@ li.folder > .folder-header h3 {
     -moz-user-select: text;
     -ms-user-select: text;
     user-select: text;
-	font-size: 20px;
+	font-size: var(--major-button-font-size);
   }
 
 /* ==================== (E) GLOBAL CSS VARIABLES ============== */
@@ -650,7 +672,7 @@ input::placeholder, placeholder, *placeholder {
    }
    
    .window-app .window-content textarea {
-	   color:#006d6db8;
+	   color:#66141a;
    }
    
   .app.window-app.form ::-webkit-scrollbar {
@@ -8101,6 +8123,14 @@ img {
     background: rgba(255, 255, 240, 0.65);
 }
 
+.starwarsffg .skill-name {
+    font-size: var(--major-button-font-size) !important;
+}
+
+.starwarsffg .skillsGrid .skillTable .skillsHeader div {
+    font-size: var(--major-button-font-size) !important;
+}
+
 .starwarsffg.sheet .sheet-body {
     margin: 0px 9px 9px 7px !important;
     background: rgb(172 165 154 / 50%) !important;
@@ -8145,6 +8175,10 @@ img {
 	background-color: #ffffff00;
 }
 
+.starwarsffg .item-sheet-species .characteristic {
+    background: #eee8d9;
+}
+
 .starwarsffg.sheet.actor .characteristic-item .characteristic {
     background: #eee8d9;
 }
@@ -8173,6 +8207,11 @@ img {
 }
 .starwarsffg .minion .minion-stats {
     margin: 0 0 10px 20px;
+}
+
+.starwarsffg .header-fields .row div {
+    font-size: inherit !important;
+    color: #512326 !important;
 }
 
 /*--character-sheet-name-auberesh*/
@@ -8261,7 +8300,9 @@ img {
 .starwarsffg .item-sheet-species .characteristics .characteristic-item .characteristic-label {
     position: relative;
     background-color: #ffffff00 !important;
-    top: 15px;
+    /* top: 15px; */
+	/* bottom:2px; */
+	padding: 12px 0px 0px 0px;
 }
 
 .starwarsffg .characteristics .characteristic-item {
@@ -8312,6 +8353,7 @@ img {
 .starwarsffg.sheet.actor.v2 .tabs .item,
 .starwarsffg.v2 .tabs .item {
   background: url(../ui/controls-background36x36.png) no-repeat !important;
+  background-size: contain !important;
 }
 
 .starwarsffg.sheet.item.v2 .tabs .item.active,
@@ -8322,12 +8364,13 @@ img {
   background: url(../ui/controls-active-background36x36.png) no-repeat !important;
   margin-right: 0px;
   flex:0 0 2.5rem;
+  background-size: contain !important;
 }
 
 .starwarsffg.sheet.actor.v2 .tabs .item {
   line-height: normal;
   color:#66141a;
-  margin: 2px;
+  margin: 0px;
   text-shadow: 0 0 black;
   height: 35px;
 }
@@ -8547,7 +8590,7 @@ img {
 
 .pure-g [class*=pure-u] {
     font-family: var(--major-button-font-family), sans-serif !important;
-	font-size : var(--actor-competence-font-size);
+	font-size : var(--actor-competence-font-size) !important;
 }
 
 #calendar-time-container {

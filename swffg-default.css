@@ -10,12 +10,73 @@
   src: url("fonts/Aurebesh Bold.otf")format("opentype");
 }
 
+@font-face {
+  font-family: "Mons";
+  src: url("../fonts/MonsOlympiaBold-dq9x.ttf")format("truetype");
+}
+
+@font-face {
+  font-family: "EarthOrbiter";
+  src: url("../fonts/EarthOrbiterBold-vzD9.otf")format("opentype");
+}
+
+@font-face {
+  font-family: "KuiperBelt";
+  src: url("../fonts/KuiperBelt-Px0g.ttf")format("truetype");
+}
+
+@font-face {
+  font-family: "DistantGalaxy";
+  src: url("../fonts/SfDistantGalaxy-0l3d.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Eras";
+    src: url("../fonts/ERASMD.TTF") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Eras";
+    src: url("../fonts/ERASBD.TTF") format("truetype");
+	font-weight: Bold;
+	font-style: normal;
+}
+
 :root {
   /* =================== 1. ACTOR SHEET FONT STYLES =========== */
 	--character-sheet-name-auberesh:Auberesh;
+	
+	--major-button-font-size: 16px;
+	--major-button-font-family: Eras;
+}
+body{
+	font-family: var(--major-button-font-family), sans-serif;
+	font-size: var(--major-button-font-size);
+}
+button {
+	background: #dcd4c2;
+    font-family: var(--major-button-font-family), sans-serif;
+	font-size: var(--major-button-font-size);
 }
 
+.window-app .window-content {
+    background: #dcd4c2;
+    font-size: 9pt;
+	font-family: var(--major-button-font-family), sans-serif;
+	font-size: var(--major-button-font-size);
+}
+
+.window-app .window-header .window-title {
+    font-family: "DistantGalaxy", sans-serif;
+}
 /* ==================== XIV. STAR WARS FFG SPECIFIC ==================== */
+.starwarsffg .charname input {
+    color: #771113;
+    font-family: "DistantGalaxy", sans-serif;
+}
+
 .starwarsffg .vehicle .grid-3col {
     /* grid-column: span 3/ span 3; */
     /* grid-template-columns: repeat(3, minmax(0, 1fr)); */
@@ -25,10 +86,25 @@
     margin-left: 50px;
 }
 
+.starwarsffg .skill-name {
+    font-size: var(--major-button-font-size) !important;
+}
+
+.starwarsffg .skillsGrid .skillTable .skillsHeader div {
+    font-size: var(--major-button-font-size) !important;
+}
+
+.starwarsffg .header-fields .row div {
+    color: #512326 !important;
+}
 .starwarsffg .character .characteristics .characteristic-item {
 	background: url(ui/frames/caracteristics-background.png) no-repeat;
 	background-size:100% 100%;
 	background-color: #ffffff00;
+}
+
+.starwarsffg .item-sheet-species .characteristic {
+    background: #eee8d9;
 }
 
 .starwarsffg .vehicle .characteristics .characteristic-item {
@@ -124,7 +200,8 @@
 .starwarsffg .item-sheet-species .characteristics .characteristic-item .characteristic-label {
     position: relative;
     background-color: #ffffff00 !important;
-    top: 15px;
+	/* bottom:2px; */
+	padding: 12px 0px 0px 0px;
 }
 
 .starwarsffg .characteristics .characteristic-item {
@@ -134,7 +211,8 @@
 }
 
 .starwarsffg.sheet.actor .character .header-fields .header-name input {
-	/*font-family: 'DistantGalaxy';*/
+	font-family: 'DistantGalaxy';
+	color:#771113;
 }
 
 .starwarsffg .characteristic-item .characteristic {
@@ -149,8 +227,24 @@
     background: whitesmoke;
 }
 
+#sidebar {
+    background: url(default-ui/sidebar.png) !important;
+    background-position-y: 45px !important;
+}
+
+#hotbar #macro-list {
+    flex: 0 0 503px;
+}
+
 #pause > h3
 {
   color: #CCC;
   font-family:Auberesh;
+}
+
+#pause > img {
+  content: url(default-ui/pause-icon.png);
+  height: 128px;
+  width: 128px;
+  left: calc(50% - 64px);
 }

@@ -13,10 +13,13 @@
   "SWFFG.options.indicator.fonts.3": "Distant Galaxy (truetype)",
   "SWFFG.options.indicator.fonts.4": "Signika (foundry default)",
   "SWFFG.options.indicator.fonts.5": "Roboto (foundry default)",
+  "SWFFG.options.indicator.fonts.6": "Eras (truetype)",
   "SWFFG.windowBorderSize": "Border size:",
   "SWFFG.windowBorderSizeHint": "Adapt the windows border for a better experience on the interface",
   "SWFFG.fontSize" : "Font size:",
   "SWFFG.fontSizeHint": "Adapt the font size for a better lisibility on the interface",
   "SWFFG.CursorSettings": "Activate/Deactivate the custom cursor:",
-  "SWFFG.CursorSettingsHint": "If you only knew the power of the cursor."
+  "SWFFG.CursorSettingsHint": "If you only knew the power of the cursor.",
+  
+  "GAME.Paused": "Pause"
 }

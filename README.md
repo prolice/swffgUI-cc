@@ -5,7 +5,7 @@
 ![](https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/cc-by.svg)
 
 * **Author**: Prolice#9101
-* **Version**: ![](https://img.shields.io/badge/swffgUI--cc-v0.3.3-green)
+* **Version**: ![](https://img.shields.io/badge/swffgUI--cc-v0.3.3.1-green)
 * **Foundry VTT Compatibility**: ![](https://img.shields.io/badge/Foundry-v0.7.6-informational) to ![](https://img.shields.io/badge/Foundry-v0.8.0-informational) the only version I ve tested !
 * **System Compatibility**: Starwarsffg 1.3 / starwarsffg system branche made by Mandar (1.3) & SWADE system
 * **Download**: ![Forge installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2FswffgUI-cc)![the latest version](https://img.shields.io/github/downloads/prolice/swffgUI-cc/latest/total) 
@@ -49,6 +49,15 @@ May the the Interface be with you !
 * Do not overrule another UI, there is potential issues of compatibility.
 
 ## Release Notes:
+**Version [0.3.3.1]**
+* font-family & font-size settings bug fix.
+* characteristics color modification.
+* display species characteristics item bug fix.
+* new pause image on default ui.
+* new sidebar image on default ui.
+* add "Eras" font as default font to avoid blur effect.
+* decrease minimum settings font size to 10 instead of 12.
+
 **Version [0.3.3]**
 * Add settings option to activate or deactivate the custom cursor in a theme.
 

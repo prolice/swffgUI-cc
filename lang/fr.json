@@ -13,6 +13,7 @@
   "SWFFG.options.indicator.fonts.3": "Distant Galaxy (truetype)",
   "SWFFG.options.indicator.fonts.4": "Signika (foundry default)",
   "SWFFG.options.indicator.fonts.5": "Roboto (foundry default)",
+  "SWFFG.options.indicator.fonts.6": "Eras (truetype)",
   "SWFFG.windowBorderSize": "Taille des contours fenêtres:",
   "SWFFG.windowBorderSizeHint": "Adapter la taille des contours des fenêtres pour une meilleurs expérience avec l'interface",
   "SWFFG.fontSize" : "Taille de la police de caractère:",

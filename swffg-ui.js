@@ -13,6 +13,7 @@ const IndicatorFonts = {
 	DISTANTGALAXY: 3,
 	SIGNIKA: 4,
 	ROBOTO: 5,
+	ERAS: 6,
 };
 
 class swffgUIModule {
@@ -132,7 +133,7 @@ class swffgUIModule {
             hint: game.i18n.localize("SWFFG.fontSettingsHint"),
             scope: "client",
             config: true,
-            default: 1,
+            default: 6,
             type: Number,
 			choices: {
 				0: "SWFFG.options.indicator.fonts.0",
@@ -140,7 +141,8 @@ class swffgUIModule {
 				2: "SWFFG.options.indicator.fonts.2",
 				3: "SWFFG.options.indicator.fonts.3",
 				4: "SWFFG.options.indicator.fonts.4",
-				5: "SWFFG.options.indicator.fonts.5"
+				5: "SWFFG.options.indicator.fonts.5",
+				6: "SWFFG.options.indicator.fonts.6",
 			},
 			onChange: (value) => {
 				let state = Number(value);
@@ -163,6 +165,9 @@ class swffgUIModule {
 					  break;
 					case IndicatorFonts.ROBOTO:
 					  document.documentElement.style.setProperty('--major-button-font-family','Roboto');	
+					  break;
+					case IndicatorFonts.ERAS:
+					  document.documentElement.style.setProperty('--major-button-font-family','Eras');	
 					  break;
 					default:
 					  console.log('Something went wrong [$value] does not exists in fonts choices');
@@ -203,7 +208,7 @@ class swffgUIModule {
 			type: Number,
 			default: 14,
 			range: {
-				min: 12,
+				min: 10,
 				max: 22,
 				step: 2
 			},
@@ -371,6 +376,9 @@ class swffgUIModule {
 			  break;
 			case IndicatorFonts.ROBOTO:
 			  document.documentElement.style.setProperty('--major-button-font-family','Roboto');	
+			  break;
+			case IndicatorFonts.ERAS:
+		      document.documentElement.style.setProperty('--major-button-font-family','Eras');	
 			  break;
 			default:
 			  console.log('Something went wrong [$value] does not exists in fonts choices');

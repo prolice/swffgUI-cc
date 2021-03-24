@@ -7841,6 +7841,14 @@ img {
     margin-left: 50px;
 }
 
+.starwarsffg .skill-name {
+    font-size: var(--major-button-font-size) !important;
+}
+
+.starwarsffg .skillsGrid .skillTable .skillsHeader div {
+    font-size: var(--major-button-font-size) !important;
+}
+
 .starwarsffg .character .characteristics .characteristic-item {
 	background: url(../ui/frames/caracteristics-background.png) no-repeat;
 	background-size:100% 100%;
@@ -7851,6 +7859,10 @@ img {
 	background: url(../ui/frames/vehicles-caracteristics-background.png) no-repeat;
 	background-size:100% 100%;
 	background-color: #ffffff00;
+}
+
+.starwarsffg .item-sheet-species .characteristic {
+    background: #eee8d9;
 }
 
 .starwarsffg.sheet.actor .character .characteristic-item .characteristic-label {
@@ -7936,7 +7948,7 @@ img {
 .starwarsffg .item-sheet-species .characteristics .characteristic-item .characteristic-label {
     position: relative;
     background-color: #ffffff00 !important;
-    top: 15px;
+    padding: 12px 0px 0px 0px;
 }
 
 .starwarsffg .characteristics .characteristic-item {
