@@ -7,7 +7,7 @@
 * **Author**: Prolice#9101
 * **Version**: ![](https://img.shields.io/badge/swffgUI--cc-v0.3.3.1-green)
 * **Foundry VTT Compatibility**: ![](https://img.shields.io/badge/Foundry-v0.7.6-informational) to ![](https://img.shields.io/badge/Foundry-v0.8.0-informational) the only version I ve tested !
-* **System Compatibility**: Starwarsffg 1.3 / starwarsffg system branche made by Mandar (1.3) & SWADE system
+* **System Compatibility**: ![](https://img.shields.io/badge/Starwarsffg-v1.3-green) to ![](https://img.shields.io/badge/Starwarsffg-v1.3-green) 
 * **Download**: ![Forge installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2FswffgUI-cc)![the latest version](https://img.shields.io/github/downloads/prolice/swffgUI-cc/latest/total) 
 
 * **Total Download**: [https://img.shields.io/github/downloads/prolice/swffgUI-cc/blob/swffgUI-cc/total.svg](https://github.com/prolice/swffgUI-cc/releases)
@@ -47,39 +47,3 @@ May the the Interface be with you !
 
 ## Known issues and advices:
 * Do not overrule another UI, there is potential issues of compatibility.
-
-## Release Notes:
-**Version [0.3.3.1]**
-* font-family & font-size settings bug fix.
-* characteristics color modification.
-* display species characteristics item bug fix.
-* new pause image on default ui.
-* new sidebar image on default ui.
-* add "Eras" font as default font to avoid blur effect.
-* decrease minimum settings font size to 10 instead of 12.
-
-**Version [0.3.3]**
-* Add settings option to activate or deactivate the custom cursor in a theme.
-
-**Version [0.3.2.1]**
-* Minor css modifications (display auberesh name on the forge fixed)
-
-**Version [0.3.2]**
-* Compatibility with "The Forge"
-
-**Version [0.3.1]**
-* Add compatibility with foundry 0.8.0
-* Fix display color for links a:href
-
-**Version [0.3.0]**
-* Theme Edge of Empire has been added (enjoy)
-
-**Version [0.2.0]**
-* Fix display background color caracteristics when no "mandar.css" activation
-
-**Version [0.1.10]**
-* Fix auberesh name when no token on the scene
-* Add auberesh display on pause
-
-**Version [<0.1.10]**
-* Build versions ...
