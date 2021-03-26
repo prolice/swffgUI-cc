@@ -27,6 +27,8 @@
   "compatibleCoreVersion": "0.7.9",
   "bugs": "https://github.com/prolice/swffgUI-cc/issues",
   "url": "https://github.com/prolice/swffgUI-cc",
+  "readme": "https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/README.md",
+  "changelog": "https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/changelog.md",
   "manifest": "https://raw.githubusercontent.com/prolice/swffgUI-cc/swffgUI-cc/module.json",
   "download": "https://github.com/prolice/swffgUI-cc/archive/v0.3.3.1.zip"
 }
