@@ -1,6 +1,7 @@
 
 ## swffgUI-cc Module
 * **Licences**:
+LICENSE: All images, buttons, artwork, and other assets taken from sources which are licensed Creative Commons CC-BY. For a list of each image and a link to its source and license please see: ![](https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/ImagesLicences.md)
 
 ![](https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/cc-by.svg)
 
@@ -19,8 +20,8 @@
 * [https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/wiki/module-settings.md](https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/wiki/module-settings.md)
 
 ### Description 
-swffgUI-cc for FoundryVTT - A full UI for starwarsffg, new button, windows style and all stuff integrated 
-Every images, buttons and all stuff are covered by licence Creative Common CC BY 2.0 [https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich)
+swffgUI-cc for FoundryVTT - A full UI for starwarsffg, new button, windows style and all stuff integrated! 
+
 May the the Interface be with you !
 
 **<BRAND NEW> Edge of Empire overview:**
