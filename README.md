@@ -1,13 +1,12 @@
 
 ## swffgUI-cc Module
-* **LICENSE**:
-All images, buttons, artwork, and other assets taken from sources which are licensed Creative Commons CC-BY. For a list of each image and a link to its source and license please see: ![](https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/ImagesLicences.md)
+* **Licences**:
 
 ![](https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/cc-by.svg)
 
 * **Author**: Prolice#9101
-* **Version**: ![](https://img.shields.io/badge/swffgUI--cc-v0.3.3.1-green)
-* **Foundry VTT Compatibility**: ![](https://img.shields.io/badge/Foundry-v0.7.6-informational) to ![](https://img.shields.io/badge/Foundry-v0.8.0-informational) the only version I ve tested !
+* **Version**: ![](https://img.shields.io/badge/swffgUI--cc-v0.3.3.2-green)
+* **Foundry VTT Compatibility**: ![](https://img.shields.io/badge/Foundry-v0.7.6-informational) to ![](https://img.shields.io/badge/Foundry-v0.8.3-informational) the only version I ve tested !
 * **System Compatibility**: ![](https://img.shields.io/badge/Starwarsffg-v1.3-orange) to ![](https://img.shields.io/badge/Starwarsffg-v1.4-orange) 
 * **Download**: ![Forge installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2FswffgUI-cc)![the latest version](https://img.shields.io/github/downloads/prolice/swffgUI-cc/latest/total) 
 
@@ -20,11 +19,14 @@ All images, buttons, artwork, and other assets taken from sources which are lice
 * [https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/wiki/module-settings.md](https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/wiki/module-settings.md)
 
 ### Description 
-swffgUI-cc for FoundryVTT - A full UI for starwarsffg, new button, windows style and all stuff integrated! 
-
+swffgUI-cc for FoundryVTT - A full UI for starwarsffg, new button, windows style and all stuff integrated 
+Every images, buttons and all stuff are covered by licence Creative Common CC BY 2.0 [https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich)
 May the the Interface be with you !
 
-**<BRAND NEW> Edge of Empire overview:**
+**Default skin overview:**
+![](https://raw.githubusercontent.com/prolice/swffgUI-cc/AoR-dev/screenshots/default-overview.jpg)
+
+**Edge of Empire overview:**
 ![](https://raw.githubusercontent.com/prolice/swffgUI-cc/swffgUI-cc/screenshots/EoE-overview.jpg)
 
 **The Rebel UI overview:**

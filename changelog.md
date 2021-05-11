@@ -1,5 +1,8 @@
 ## Release Notes:
 
+**Version [0.3.3.2]**
+* Display auberesh name bug on limited access sheet
+
 **Version [0.3.3.1]**
 * font-family & font-size settings bug fix.
 * characteristics color modification.

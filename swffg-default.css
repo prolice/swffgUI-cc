@@ -132,7 +132,8 @@ button {
     position: absolute;
     width: 125px;
     z-index: 40;
-    bottom: 78px;
+    /* bottom: 78px; */
+	top:108px;
     /* background: url(../ui/frames/auberesh-name-background.png) no-repeat; */
     /* background-size: 100% 100%; */
     padding-top: 2px;
@@ -247,4 +248,43 @@ button {
   height: 128px;
   width: 128px;
   left: calc(50% - 64px);
+}
+
+#tooltip-manager .window-content {
+    /* background: url(../ui/parchment.jpg); */
+    padding: 0px 10px 10px 10px;
+    margin: 0px;
+}
+
+#tooltip-editor-default .window-content {
+    /* background: url(../ui/parchment.jpg); */
+    padding: 0px 10px 10px 10px;
+    margin: 0px;
+}
+
+#tooltip-editor-default .window-content .notes {
+    /* color: #66141a; */
+    font-family: var(--actor-input-font-family);
+    font-size: var(--actor-input-font-size);
+    font-weight: var(--actor-input-font-weight);
+}
+
+#tooltip-editor-default .tabs .item {
+    color: whitesmoke;
+}
+
+.token-tooltip-alt-tooltip-container {
+  border: 4px solid white !important;
+  border-radius: 8px;
+}
+
+.token-tooltip-alt-data-manager-window .data-manager {
+  font-family: var(--major-button-font-family);
+}
+
+.token-tooltip-alt-advanced-editor-window .advanced-editor {
+  font-family: var(--major-button-font-family);
+}
+.token-tooltip-alt-tooltip-container.default .token-tooltip-alt-tooltip-item.title {
+  border-bottom: 3px solid white !important;
 }
