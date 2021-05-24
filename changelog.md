@@ -1,4 +1,7 @@
 ## Release Notes:
+**Version [0.3.3.3]**
+* Compatibility with FFG Star Wars Enhancement module
+* Fix display name on default theme with StarJedi font
 
 **Version [0.3.3.2]**
 * Display auberesh name bug on limited access sheet

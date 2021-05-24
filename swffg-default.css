@@ -12,37 +12,125 @@
 
 @font-face {
   font-family: "Mons";
-  src: url("../fonts/MonsOlympiaBold-dq9x.ttf")format("truetype");
+  src: url("fonts/MonsOlympiaBold-dq9x.ttf")format("truetype");
 }
 
 @font-face {
   font-family: "EarthOrbiter";
-  src: url("../fonts/EarthOrbiterBold-vzD9.otf")format("opentype");
+  src: url("fonts/EarthOrbiterBold-vzD9.otf")format("opentype");
 }
 
 @font-face {
   font-family: "KuiperBelt";
-  src: url("../fonts/KuiperBelt-Px0g.ttf")format("truetype");
+  src: url("fonts/KuiperBelt-Px0g.ttf")format("truetype");
 }
 
 @font-face {
   font-family: "DistantGalaxy";
-  src: url("../fonts/SfDistantGalaxy-0l3d.ttf") format("truetype");
+  src: url("fonts/SfDistantGalaxy-0l3d.ttf") format("truetype");
 }
 
 @font-face {
 	font-family: "Eras";
-    src: url("../fonts/ERASMD.TTF") format("truetype");
+    src: url("fonts/ERASMD.TTF") format("truetype");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Eras";
-    src: url("../fonts/ERASBD.TTF") format("truetype");
+    src: url("fonts/ERASBD.TTF") format("truetype");
 	font-weight: Bold;
 	font-style: normal;
 }
+
+/******************************************************************/
+/*=============== FFG Enhancement MOD ============================*/
+/******************************************************************/
+.swdatapad {
+    background-image: url(/modules/ffg-star-wars-enhancements/artwork/datapad-template-700w.png) !important;
+    background-repeat: no-repeat !important;
+    width: 700px;
+    min-height: 1000px;
+    display: block;
+    padding: 75px 50px !important;
+    color: #d0faff !important;
+    font-size: 18px;
+    font-family: Temporarium !important;
+}
+
+.swdatapad p {
+    color: #d0faff !important;
+    font-size: 18px;
+    font-family: Temporarium !important;
+}
+
+.swdatapad-wanted {
+    background-image: url(/modules/ffg-star-wars-enhancements/artwork/datapad-template-wanted-700w.png) !important;
+    background-repeat: no-repeat !important;
+    width: 700px;
+    min-height: 1000px;
+    display: block;
+    padding: 65px 65px !important;
+    color: #d0faff !important;
+    font-size: 18px;
+    font-family: Temporarium !important;
+    color: #02e3dd !important;
+}
+
+.swdatapad-wanted h1 {
+    font-family: AurekBesh !important;
+    width: 100%;
+    text-align: center !important;
+    margin-bottom: 0.5em !important;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    border-bottom: 2px solid #02e3dd !important;
+    border-top: 2px solid #02e3dd !important;
+}
+
+.swdatapad-wanted>* {
+    color: transparent !important;
+    background-color: #02e3dd;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    background-image: repeating-linear-gradient( to bottom, #02e3dd, #02e3dd 2px, #01bbb7 2px, #01bbb7 4px ) !important;
+}
+
+.swdatapad-wanted h2 {
+	font-family: AnakinMono !important;
+    margin-bottom: 0.5em !important;
+    padding-bottom: 0.25em;
+    border-bottom: 2px solid #02e3dd !important;
+}
+
+.swdatapad-wanted h3 {
+    margin-right: 0.5em !important;
+    font-family: AnakinMono !important;
+    font-weight: bold !important;
+    font-size: 16px !important;
+}
+
+.swdatapad-wanted p {
+    font-size: 14px;
+    margin-bottom: 1em;
+}
+
+.swdatapad-wanted table {
+    font-size: 14px;
+    border-bottom: 2px solid #02e3dd;
+    border-top: 2px solid #02e3dd;
+}
+
+.swdatapad-wanted .image-float {
+    float: right;
+    border-left: solid 10px #000000 !important;
+    filter: sepia(100%) saturate(300%) brightness(60%) hue-rotate(
+130deg
+);
+}
+/******************************************************************/
+/******************************************************************/
 
 :root {
   /* =================== 1. ACTOR SHEET FONT STYLES =========== */
