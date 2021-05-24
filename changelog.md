@@ -1,7 +1,7 @@
 ## Release Notes:
 
-**Version [0.3.3.4]**
-* Fix font for FFG Star Wars Enhancements
+**Version [0.3.4]**
+* Add FFG style to swffgcc style (fix the compatibilitiy issues)
 
 **Version [0.3.3.3]**
 * Compatibility with FFG Star Wars Enhancement module
