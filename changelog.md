@@ -1,4 +1,8 @@
 ## Release Notes:
+
+**Version [0.3.3.4]**
+* Fix font for FFG Star Wars Enhancements
+
 **Version [0.3.3.3]**
 * Compatibility with FFG Star Wars Enhancement module
 * Fix display name on default theme with StarJedi font

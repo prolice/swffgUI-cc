@@ -47,6 +47,20 @@
 /******************************************************************/
 /*=============== FFG Enhancement MOD ============================*/
 /******************************************************************/
+
+@font-face {
+    font-family: Temporarium;
+    src: url("/modules/ffg-star-wars-enhancements/fonts/Temporarium.otf");
+}
+@font-face {
+    font-family: AurekBesh;
+    src: url("/modules/ffg-star-wars-enhancements/fonts/Aurek-Besh.woff2");
+}
+@font-face {
+    font-family: AnakinMono;
+    src: url("/modules/ffg-star-wars-enhancements/fonts/anakinmono.ttf");
+}
+
 .swdatapad {
     background-image: url(/modules/ffg-star-wars-enhancements/artwork/datapad-template-700w.png) !important;
     background-repeat: no-repeat !important;
