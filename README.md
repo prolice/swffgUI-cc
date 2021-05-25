@@ -5,7 +5,7 @@
 ![](https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/cc-by.svg)
 
 * **Author**: Prolice#9101
-* **Version**: ![](https://img.shields.io/badge/swffgUI--cc-v0.3.4.1-green)
+* **Version**: ![](https://img.shields.io/badge/swffgUI--cc-v0.3.4.2-green)
 * **Foundry VTT Compatibility**: ![](https://img.shields.io/badge/Foundry-v0.7.6-informational) to ![](https://img.shields.io/badge/Foundry-v0.8.3-informational) the only version I ve tested !
 * **System Compatibility**: ![](https://img.shields.io/badge/Starwarsffg-v1.3-orange) to ![](https://img.shields.io/badge/Starwarsffg-v1.4-orange) 
 * **Download**: ![Forge installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2FswffgUI-cc)![the latest version](https://img.shields.io/github/downloads/prolice/swffgUI-cc/latest/total) 

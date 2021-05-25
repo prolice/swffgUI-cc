@@ -4655,6 +4655,7 @@ border-image-outset: 0px !important;
   margin: 0px;
   box-shadow: none;
   background: none;
+  color:whitesmoke;
 }
 
 .window-app.dialog .window-content .dialog-content ul{

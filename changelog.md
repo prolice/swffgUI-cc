@@ -1,5 +1,5 @@
 ## Release Notes:
-**Version [0.3.4.1]**
+**Version [0.3.4.2]**
 * Fix display text color in several part of the UI (including FFG SW enhancements module and starwarsffg system settings)
 
 **Version [0.3.4]**
