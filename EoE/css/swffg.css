@@ -323,6 +323,32 @@
     position: relative !important;
     left: 0px !important;
   }
+  
+ /* #client-settings .fa, */
+ /* #client-settings  .fas { */
+ #client-settings .far {
+    font-family: "Font Awesome 5 Free";
+	color:whitesmoke !important;
+}
+
+#client-settings.app.window-app.form #config-tabs .settings-list div.form-group input[type="checkbox"] {
+    left: 2px !important;
+    cursor: var(--application-cursor-pointer) !important;
+    height: 23px;
+}
+
+#client-settings.app.window-app.form #config-tabs .tab[data-tab="modules"] .settings-list h2.module-header {
+    cursor: var(--application-cursor-pointer) !important;
+}
+
+#client-settings #config-tabs div.tab[data-tab="modules"] #searchField #clear {
+    border-radius: 8px !important; 
+
+}
+
+#client-settings #config-tabs div.tab[data-tab="modules"] #searchField #searchInput {
+    color:whitesmoke !important;
+}
 
 /* ==================== (B) BUTTON BEHAVIOR CHANGES =========== */
   a[href] {
@@ -387,6 +413,11 @@ tbody {
 .window-app {
   font-family: var(--major-button-font-family), sans-serif !important;
   font-size: var(--major-button-font-size);
+}
+
+.window-app .window-content {
+  font-family: var(--major-button-font-family), sans-serif !important;
+  font-size: var(--major-button-font-size) !important;
 }
 /* ==================== (C) TINY MCE EDITOR FONT CHANGES ====== */
   .app.window-app .editor {
@@ -4344,7 +4375,7 @@ border-image-outset: 0px !important;
         border-top: none;
         overflow: scroll;
         overflow-x: auto;
-        max-height: 450px;
+        /* max-height: 450px; */
         margin-top: 15px;
         margin-bottom: 15px;
       }
@@ -6432,10 +6463,47 @@ font-style : normal;
   .window-content .notes {
     color: #BBB;
   }
+#data-importer .window-content .form-group p.notes {
+    color: black;
+}
 
+#swa-importer .window-content p.notes {
+    color: black;
+}
+
+ #swffg-skilllist-importer .window-content p.notes {
+    color: black;
+}
+#talent-checker .window-content p.notes {
+    color: black;
+}
   .pack-content .entry-name {
     color: white;
   }
+  
+#swffg-skilllist-importer.app.window-app {
+	height:fit-content !important;
+	width:500px !important;
+}
+#swffg-skilllist-importer.app.window-app .window-content form {
+	padding: 0px 5px 0px 20px;
+}
+
+#swffg-skilllist-importer .skilllist tbody {
+    height: fit-content !important;
+}
+
+#data-importer.app.window-app .window-content form {
+	padding: 0px 5px 0px 20px;
+}
+
+#swa-importer.app.window-app .window-content form {
+	padding: 0px 5px 0px 20px;
+}
+
+#talent-checker.app.window-app .window-content form {
+	padding: 0px 5px 0px 20px;
+}
 
   .window-content .dialog-content > * {
     color: white;
@@ -7565,6 +7633,27 @@ background-image: linear-gradient(to right, #820f0f , #82820d);
   margin-right: 0.25em;
 }
 
+#module-management .enhanced-module-management button.modules-export .fas,
+#module-management .enhanced-module-management button.modules-import .fas {
+    color:whitesmoke;
+}
+
+#module-management .disable-all-modules {
+	background: rgb(0 98 199 / 50%) !important;
+	color: whitesmoke;
+}
+
+#module-management  button.disable-all-modules:hover {
+    box-shadow: 0 0 5px #c70000 !important;
+    cursor: var(--application-cursor-pointer);
+    background: url(../ui/sidebar_button-background_red.png) repeat !important;
+    color: white !important;
+}
+
+#module-management .enable-all-modules {
+    color: whitesmoke;
+}
+
 #module-management .window-content .notes {
   font-family: var(--actor-input-font-family);
   font-size: var(--actor-input-font-size);
@@ -7580,7 +7669,7 @@ background-image: linear-gradient(to right, #820f0f , #82820d);
 #module-management .window-content .directory-list.package-list {
   padding: 0px 6px 0px 0px;
   overflow-y: scroll;
-  height: 314px;
+  height: 85%;
   margin-bottom: 6px;
 }
   #module-management .window-content .directory-list.package-list .package {
