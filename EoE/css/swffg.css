@@ -121,6 +121,15 @@
   @return mix(white, $color, $percentage);
 }
 
+.ffg-star-wars-enhancements-opening-crawl .titles > div .episode {
+    margin-bottom: -2em;
+    font-size: 150%;
+}
+
+.ffg-star-wars-enhancements-opening-crawl .titles > div .text p {
+    font-size: 100%;
+}
+
 .swdatapad {
     background-image: url(/modules/ffg-star-wars-enhancements/artwork/datapad-template-700w.png) !important;
     background-repeat: no-repeat !important;
@@ -8294,6 +8303,10 @@ hr,
     /* pointer-events: auto; */
     /* height: 100px; */
 /* } */
+
+#destiny-tracker .window-content form{
+  background: none;
+}
 
 #destiny-tracker .window-content {
   background: transparent;

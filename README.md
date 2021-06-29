@@ -6,9 +6,9 @@
 
 * **Author**: Prolice#9101
 * **Special Thanks to**: Aljovin, StealthViper, Havoclivekiller, SnoringMountain
-* **Version**: ![](https://img.shields.io/badge/swffgUI--cc-v0.3.4.2-green)
-* **Foundry VTT Compatibility**: ![](https://img.shields.io/badge/Foundry-v0.7.6-informational) to ![](https://img.shields.io/badge/Foundry-v0.8.3-informational) the only version I ve tested !
-* **System Compatibility**: ![](https://img.shields.io/badge/Starwarsffg-v1.3-orange) to ![](https://img.shields.io/badge/Starwarsffg-v1.4-orange) 
+* **Version**: ![](https://img.shields.io/badge/swffgUI--cc-v1.0-green)
+* **Foundry VTT Compatibility**: ![](https://img.shields.io/badge/Foundry-v0.7.6-informational) to ![](https://img.shields.io/badge/Foundry-v0.8.8-informational) the only version I ve tested !
+* **System Compatibility**: ![](https://img.shields.io/badge/Starwarsffg-v1.3-orange) to ![](https://img.shields.io/badge/Starwarsffg-v1.6-orange) 
 * **Download**: ![Forge installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2FswffgUI-cc)![the latest version](https://img.shields.io/github/downloads/prolice/swffgUI-cc/latest/total) 
 
 * **Total Download**: [https://img.shields.io/github/downloads/prolice/swffgUI-cc/blob/swffgUI-cc/total.svg](https://github.com/prolice/swffgUI-cc/releases)
@@ -35,6 +35,9 @@ May the the Interface be with you !
 
 **The Galactic Empire UI:**
 ![](https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/screenshots/empire-overview.jpg)
+
+**Black Empire:**
+Still working beta version
 
 ## Installation
 ### Auto install Method (recommended)

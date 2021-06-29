@@ -65,6 +65,15 @@
   @return mix(white, $color, $percentage);
 }
 
+.ffg-star-wars-enhancements-opening-crawl .titles > div .episode {
+    margin-bottom: -2em;
+    font-size: 150%;
+}
+
+.ffg-star-wars-enhancements-opening-crawl .titles > div .text p {
+    font-size: 100%;
+}
+
 .swdatapad {
     background-image: url(/modules/ffg-star-wars-enhancements/artwork/datapad-template-700w.png) !important;
     background-repeat: no-repeat !important;

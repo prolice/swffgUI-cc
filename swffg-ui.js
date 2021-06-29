@@ -3,7 +3,8 @@ const IndicatorMode = {
     REBEL: 0,
     GALACTIC: 1,
 	EOE:2,
-	DEFAULT:3,
+	BLACKEMPIRE:3,
+	DEFAULT:4,
 };
 
 const IndicatorFonts = {
@@ -72,7 +73,8 @@ class swffgUIModule {
 				0: "SWFFG.options.indicator.choices.0",
 				1: "SWFFG.options.indicator.choices.1",
 				2: "SWFFG.options.indicator.choices.2",
-				3: "SWFFG.options.indicator.choices.3"
+				3: "SWFFG.options.indicator.choices.3",
+				4: "SWFFG.options.indicator.choices.4"
 			},
 			onChange: (value) => {
 				let state = Number(value);
@@ -97,6 +99,11 @@ class swffgUIModule {
 								document.documentElement.style.setProperty('--application-cursor-pointer', 'url(../ui/buttons/cursor-pyke.png), pointer');
 							hrefToApply= "EoE/css/swffg.css";
 							break;
+					case IndicatorMode.BLACKEMPIRE:
+					        if (stateEnableCursor)
+								document.documentElement.style.setProperty('--application-cursor-pointer', 'url(../ui/buttons/cursor-pyke.png), pointer');
+							hrefToApply= "blackEmpire/css/swffg.css";
+							break;				    
 					case IndicatorMode.DEFAULT:
 							hrefToApply= "swffg-default.css";
 							break;
@@ -117,6 +124,10 @@ class swffgUIModule {
 					}
 					else if (head.children[elem].href.endsWith("EoE/css/swffg.css")){
 						head.children[elem].href= head.children[elem].href.replace("EoE/css/swffg.css",hrefToApply);
+						break;
+					}
+					else if (head.children[elem].href.endsWith("blackEmpire/css/swffg.css")){
+						head.children[elem].href= head.children[elem].href.replace("blackEmpire/css/swffg.css",hrefToApply);
 						break;
 					}
 					else if (head.children[elem].href.endsWith("css/swffg.css")){
@@ -238,6 +249,9 @@ class swffgUIModule {
 					case IndicatorMode.EOE:
 							document.documentElement.style.setProperty('--application-cursor-pointer', 'url(../ui/buttons/cursor-pyke.png), pointer');
 							break;
+					case IndicatorMode.BLACKEMPIRE:
+					        document.documentElement.style.setProperty('--application-cursor-pointer', 'url(../ui/buttons/cursor-pyke.png), pointer');
+							break;
 					case IndicatorMode.DEFAULT:
 							document.documentElement.style.setProperty('--application-cursor-pointer', 'pointer');
 							break;
@@ -327,6 +341,11 @@ class swffgUIModule {
 								document.documentElement.style.setProperty('--application-cursor-pointer', 'url(../ui/buttons/cursor-pyke.png), pointer');
 							hrefToApply= "EoE/css/swffg.css";
 							break;
+					case IndicatorMode.BLACKEMPIRE:
+							if (stateEnableCursor)
+								document.documentElement.style.setProperty('--application-cursor-pointer', 'url(../ui/buttons/cursor-pyke.png), pointer');
+							hrefToApply= "blackEmpire/css/swffg.css";
+							break;
 					case IndicatorMode.DEFAULT:
 					        document.documentElement.style.setProperty('--application-cursor-pointer', 'pointer');
 							hrefToApply= "swffg-default.css";
@@ -348,6 +367,10 @@ class swffgUIModule {
 					}
 					else if (head.children[elem].href.endsWith("EoE/css/swffg.css")){
 						head.children[elem].href= head.children[elem].href.replace("EoE/css/swffg.css",hrefToApply);
+						break;
+					}
+					else if (head.children[elem].href.endsWith("blackEmpire/css/swffg.css")){
+						head.children[elem].href= head.children[elem].href.replace("blackEmpire/css/swffg.css",hrefToApply);
 						break;
 					}
 					else if (head.children[elem].href.endsWith("css/swffg.css")){

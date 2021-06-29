@@ -1,4 +1,10 @@
 ## Release Notes:
+
+**Version [1.0]**
+* Add compatibility with StarWars 1.6 and FondryVTT 0.8.8.
+* Beta theme black Empire (still in construction).
+* Fix Bug with StarWars Enhancement module crawl titles.
+
 **Version [0.3.4.2]**
 * Fix display text color in several part of the UI (including FFG SW enhancements module and starwarsffg system settings)
 
