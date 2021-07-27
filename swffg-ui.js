@@ -265,6 +265,36 @@ class swffgUIModule {
             }
         }
       });
+	  
+	  game.settings.register("swffgUI-cc", "active-cclink", {
+        name: "SWFFG.CCLinkSettings",
+        hint: "SWFFG.CCLinkSettingsHint",
+        scope: "Client",
+        config: true,
+        default: true,
+        type: Boolean,
+        onChange: (value) => { 
+            if (value){
+			    let myImg = document.createElement("img");
+				let myImgA = document.createElement("a");
+				myImgA.setAttribute("href", "https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/ImagesLicences.md");
+				myImg.setAttribute("id", "creative-common");
+				myImg.setAttribute("src", "modules/swffgUI-cc/CC-BY-license.png");
+				myImg.style.cssText = 'position:absolute;width:150px;opacity:0.7;z-index:60;bottom:7px;right: 450px;';
+				myImg.title = 'Images used by module swffg-cc are under Creative Common license\x0Afollow the link to get all the images licenses and owners...';
+				myImg.name = 'cclink';
+				myImgA.appendChild(myImg);
+
+				document.body.appendChild(myImgA);             
+            }
+			else {
+				var cclinkimg = document.getElementsByName('cclink')[0];
+				/*cclinkimg.style.display='none';*/
+				var cclinkimgParent = cclinkimg.parentNode;
+				cclinkimgParent.removeChild(cclinkimg);
+			}
+        }
+      });
 		
 		game.settings.register("swffgUI-cc", "verboseLogs", {
             name: "Enable more module logging.",
@@ -277,7 +307,7 @@ class swffgUIModule {
 		
 		this.switchStyleSheet();
 		
-		let myImg = document.createElement("img");
+		/*let myImg = document.createElement("img");
 		let myImgA = document.createElement("a");
 		myImgA.setAttribute("href", "https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/ImagesLicences.md");
 		myImg.setAttribute("id", "creative-common");
@@ -286,7 +316,7 @@ class swffgUIModule {
 		myImg.title = 'Images used by module swffg-cc are under Creative Common license\x0Afollow the link to get all the images licenses and owners...';
 		myImgA.appendChild(myImg);
 
-		document.body.appendChild(myImgA);
+		document.body.appendChild(myImgA);*/
 		
 		Hooks.on("renderActorSheet", (sheet, $element, templateData) => {
 			if (game.system.id !== "starwarsffg") return;
@@ -419,6 +449,23 @@ class swffgUIModule {
 		
 		let fontSize = game.settings.get("swffgUI-cc", "fontSize");
 		document.documentElement.style.setProperty('--major-button-font-size', fontSize+'px');
+		
+		let activeCClink = game.settings.get("swffgUI-cc", "active-cclink");
+		
+		if (activeCClink)
+		{
+			let myImg = document.createElement("img");
+			let myImgA = document.createElement("a");
+			myImgA.setAttribute("href", "https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/ImagesLicences.md");
+			myImg.setAttribute("id", "creative-common");
+			myImg.setAttribute("src", "modules/swffgUI-cc/CC-BY-license.png");
+			myImg.style.cssText = 'position:absolute;width:150px;opacity:0.7;z-index:60;bottom:7px;right: 450px;';
+			myImg.title = 'Images used by module swffg-cc are under Creative Common license\x0Afollow the link to get all the images licenses and owners...';
+			myImg.name = 'cclink';
+			myImgA.appendChild(myImg);
+
+			document.body.appendChild(myImgA);
+		}             
 				
 	}
 

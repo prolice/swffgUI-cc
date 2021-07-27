@@ -207,12 +207,21 @@ body{
 	font-size: var(--major-button-font-size);
 }
 button {
-	background: #6f6f6f;
+	background: #6f6f6f !important;
     font-family: var(--major-button-font-family), sans-serif;
     font-size: var(--major-button-font-size);
     color: white;
     border-color: white;
     border-width: medium;
+}
+
+button:hover, button:focus {
+    outline: none;
+    box-shadow: 0 0 5px white;
+}
+
+h2 {
+    border-bottom: 5px solid white;
 }
 
 .app {
@@ -226,6 +235,10 @@ button {
     z-index: 30;
 }
 
+.fa, .fab, .fad, .fal, .far, .fas {
+    color: white;
+}
+
 #settings h2 {
     margin: 6px 0;
     padding: 3px 8px;
@@ -237,16 +250,69 @@ button {
     color: white;
 }
 
+#settings h4 {
+    text-align: right;
+	color: white;
+}
+
+#client-settings section.content {
+    border-top: 1px solid white;
+    border-block-width: 3px;
+}
+
+form button {
+    background: #6f6f6f !important;
+    border: 2px groove #f0f0e0;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="time"]:focus {
+    box-shadow: 0 0 5px white;
+}
+
+input[type="text"], input[type="number"], input[type="password"], input[type="date"], input[type="time"] {
+    color: white;
+}
+
+textarea {
+    border: 1px solid #fff;
+    color: white;
+}
+
+textarea:focus {
+    box-shadow: 0 0 5px white;
+}
+
+select {
+	color:white;
+	background: #000000e8;
+}
+
+select:focus {
+    box-shadow: 0 0 5px white;
+}
+
+.window-app {
+    font-family: var(--major-button-font-family), sans-serif;
+}
 .window-app .window-content {
-    background: #6f6f6f;
-    font-size: 9pt;
 	font-family: var(--major-button-font-family), sans-serif;
-	font-size: var(--major-button-font-size);
+	font-size: var(--major-button-font-size) !important;
+	background: #00000099 !important;
+	color:white;
+    border: 3px solid #b7b7b7;
 }
 
 .window-app .window-header .window-title {
     font-family: "DistantGalaxy", sans-serif;
 }
+
+::-webkit-scrollbar-thumb {
+    outline: none;
+    border-radius: 3px;
+    background: whitesmoke;
+    border: 1px solid white;
+}
+
 /* ==================== XIV. STAR WARS FFG SPECIFIC ==================== */
 .starwarsffg .charname input {
     color: #771113;
@@ -493,4 +559,9 @@ button {
 }
 .token-tooltip-alt-tooltip-container.default .token-tooltip-alt-tooltip-item.title {
   border-bottom: 3px solid white !important;
+}
+
+#destiny-tracker .window-content {
+    background: transparent !important;
+    border: none;
 }
