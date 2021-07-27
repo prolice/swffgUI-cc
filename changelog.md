@@ -1,4 +1,6 @@
 ## Release Notes:
+**Version [1.1]**
+* Add settings to Enable/Disable the CC link to authors (Actif by default)
 
 **Version [1.0]**
 * Add compatibility with StarWars 1.6 and FondryVTT 0.8.8.

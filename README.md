@@ -6,7 +6,7 @@
 
 * **Author**: Prolice#9101
 * **Special Thanks to**: Aljovin, StealthViper, Havoclivekiller, SnoringMountain
-* **Version**: ![](https://img.shields.io/badge/swffgUI--cc-v1.0-green)
+* **Version**: ![](https://img.shields.io/badge/swffgUI--cc-v1.1-green)
 * **Foundry VTT Compatibility**: ![](https://img.shields.io/badge/Foundry-v0.7.6-informational) to ![](https://img.shields.io/badge/Foundry-v0.8.8-informational) the only version I ve tested !
 * **System Compatibility**: ![](https://img.shields.io/badge/Starwarsffg-v1.3-orange) to ![](https://img.shields.io/badge/Starwarsffg-v1.6-orange) 
 * **Download**: ![Forge installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2FswffgUI-cc)![the latest version](https://img.shields.io/github/downloads/prolice/swffgUI-cc/latest/total) 
