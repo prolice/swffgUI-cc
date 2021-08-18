@@ -235,6 +235,10 @@ h2 {
     z-index: 30;
 }
 
+table.vendor_item {
+	display: table !important;
+}
+
 .fa, .fab, .fad, .fal, .far, .fas {
     color: white;
 }

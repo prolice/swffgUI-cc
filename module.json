@@ -1,8 +1,8 @@
 {
   "name": "swffgUI-cc",
   "title": "Star Wars - User Interface Creative Common",
-  "description": "Starwars unofficial design - 1.1",
-  "version": "1.1",
+  "description": "Starwars unofficial design - 1.2",
+  "version": "1.2",
   "author": "Prolice",
   "authors": [
 		{
@@ -30,13 +30,13 @@
     }
   ],
   "minimumCoreVersion": "0.7.6",
-  "compatibleCoreVersion": "0.8.8",
+  "compatibleCoreVersion": "0.8.9",
   "bugs": "https://github.com/prolice/swffgUI-cc/issues",
   "url": "https://github.com/prolice/swffgUI-cc",
   "readme": "https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/README.md",
   "changelog": "https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/changelog.md",
   "manifest": "https://raw.githubusercontent.com/prolice/swffgUI-cc/swffgUI-cc/module.json",
-  "download": "https://github.com/prolice/swffgUI-cc/archive/v1.1.zip",
+  "download": "https://github.com/prolice/swffgUI-cc/archive/v1.2.zip",
   "flags": {
 		"allowBugReporter": true
 	}

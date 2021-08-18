@@ -1,4 +1,8 @@
 ## Release Notes:
+**Version [1.2]**
+* Compatibility with 0.8.9 (foundry vtt)
+* Issue with vendor creation (display table) fixed --> FFG Star Wars Enhancement module
+
 **Version [1.1]**
 * Add settings to Enable/Disable the CC link to authors (Actif by default)
 
