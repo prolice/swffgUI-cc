@@ -44,13 +44,13 @@ Still working beta version
 * Open the Foundry application and click **"Install Module"** in the **"Add-On Modules"** tab.
 * Type "Star Wars" in the Filter - window top right - 
 * Click "Install"
-* Activate the module in your World using **Manage Modules** under the **Game Settings** tab and find swffgUI-cc.
+* Activate the module in your World using **Manage Modules** under the **Game Settings** tab and find Star Wars - User Interface Creative Common.
 
 ### Manual Method
 * Open the Foundry application and click **"Install Module"** in the **"Add-On Modules"** tab.
 * Paste the following link: https://raw.githubusercontent.com/prolice/swffgUI-cc/swffgUI-cc/module.json
 * Click "Install" 
-* Activate the module in your World using **Manage Modules** under the **Game Settings** tab and find swffgUI-cc.
+* Activate the module in your World using **Manage Modules** under the **Game Settings** tab and find Star Wars - User Interface Creative Commo.
 
 ## Known issues and advices:
 * Do not overrule another UI, there is potential issues of compatibility.
