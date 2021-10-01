@@ -42,7 +42,7 @@ Still working beta version
 ## Installation
 ### Auto install Method (recommended)
 * Open the Foundry application and click **"Install Module"** in the **"Add-On Modules"** tab.
-* Type "swffg" in the Filter - window top right - 
+* Type "Star Wars" in the Filter - window top right - 
 * Click "Install"
 * Activate the module in your World using **Manage Modules** under the **Game Settings** tab and find swffgUI-cc.
 
