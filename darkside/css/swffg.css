@@ -8460,6 +8460,15 @@ img {
 	font-size : var(--actor-competence-font-size);
 }
 
+.gm-screen-app.gm-screen-drawer.expanded .gm-screen-actions button {
+    color: black;
+}
+
+#gm-screen-tabs-config .window-content {
+	background: #d8cbc0 url(../ui/frames/parchment.jpg) no-repeat !important; 
+	padding: 10px;
+}
+
 #ffg-star-wars-enhancements-opening-crawl-select.app.window-app.form{
 	width:300px !important;
 }

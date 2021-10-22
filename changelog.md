@@ -1,4 +1,7 @@
 ## Release Notes:
+**Version [1.3.1]**
+* Tab color to black in GM Screen module
+
 **Version [1.3]**
 * Fix --> Some text labels and text boxes not sized correctly
 * Fix --> Some font colours very difficult to read
