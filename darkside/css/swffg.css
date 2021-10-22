@@ -4680,7 +4680,7 @@ font-family: var(--actor-input-font-family);
         padding: 4px 3px;
         border: 1px solid #5d513e;
         background: #080808;
-        flex: 3
+        /* flex: 3 */
       }
       
       .trait-sheet .tab.details input[type="text"]{
@@ -4784,7 +4784,8 @@ font-family: var(--actor-input-font-family);
   .app.window-app .form-group .file-picker,
   .app.window-app button[type="button"],
   .app.window-app button[type="submit"],
-  .app.window-app button[type="reset"]
+  .app.window-app button[type="reset"],
+  .app.window-app button[class="reset"]
    {
     width: -webkit-fill-available;
     width: -moz-available;
@@ -6772,7 +6773,7 @@ a.inline-roll,
 }
 
 .scene-sheet .window-content .form-group.initial-position .form-fields .capture-position {
-  flex: 1;
+  /* flex: 1; */
   width: -webkit-fill-available;
   width: -moz-available;
   width: fill-available;
@@ -8457,6 +8458,24 @@ img {
 .pure-g [class*=pure-u] {
     font-family: var(--major-button-font-family), sans-serif !important;
 	font-size : var(--actor-competence-font-size);
+}
+
+#ffg-star-wars-enhancements-opening-crawl-select.app.window-app.form{
+	width:300px !important;
+}
+#ffg-star-wars-enhancements-opening-crawl-select .window-content {
+	background: #d8cbc0 url(../ui/frames/parchment.jpg) no-repeat !important; 
+	padding: 10px;
+}
+
+#ffg-star-wars-enhancements-shop-generator-create .window-content {
+	background: #d8cbc0 url(../ui/frames/parchment.jpg) no-repeat !important; 
+	padding: 10px;
+}
+
+#ffg-star-wars-enhancements-attack-animation-configure .window-content {
+	background: #d8cbc0 url(../ui/frames/parchment.jpg) no-repeat !important; 
+	padding: 10px;
 }
 
 /* Calendar */

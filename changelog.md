@@ -1,4 +1,8 @@
 ## Release Notes:
+**Version [1.3]**
+* Fix --> Some text labels and text boxes not sized correctly
+* Fix --> Some font colours very difficult to read
+
 **Version [1.2]**
 * Compatibility with 0.8.9 (foundry vtt)
 * Issue with vendor creation (display table) fixed --> FFG Star Wars Enhancement module
