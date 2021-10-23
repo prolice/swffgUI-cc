@@ -849,6 +849,14 @@ input::placeholder, placeholder, *placeholder {
     background-size: 9px 110px;
     box-shadow: none;
   }
+  
+#controls .scene-control.active, 
+#controls .control-tool.active, 
+#controls .scene-control:hover, 
+#controls .control-tool:hover {
+    border: 4px solid white !important;
+    border-radius: 8px;
+}
 	.window-app .window-content {
 	   background: url(../ui/parchment.jpg) round;
    }
@@ -4919,7 +4927,9 @@ font-family: var(--actor-input-font-family);
       #module-management .list-filters input {
         border: 1px solid #736953a6;
         height: 24px;
-        margin: 5px 0px
+        margin: 5px 0px;
+		min-width: -webkit-fill-available;
+		-webkit-text-stroke-width: thin;
       }
 
       #module-management .list-filters input::placeholder {
@@ -7647,6 +7657,11 @@ background-image: linear-gradient(to right, #820f0f , #82820d);
   margin-right: 0.25em;
 }
 
+#module-management.app.window-app {
+	/*height: 1080px;*/
+	width:680px !important;
+}  
+
 #module-management .enhanced-module-management button.modules-export .fas,
 #module-management .enhanced-module-management button.modules-import .fas {
     color:whitesmoke;
@@ -7683,7 +7698,7 @@ background-image: linear-gradient(to right, #820f0f , #82820d);
 #module-management .window-content .directory-list.package-list {
   padding: 0px 6px 0px 0px;
   overflow-y: scroll;
-  height: 85%;
+  height: 80%;
   margin-bottom: 6px;
 }
   #module-management .window-content .directory-list.package-list .package {

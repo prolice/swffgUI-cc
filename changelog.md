@@ -1,4 +1,8 @@
 ## Release Notes:
+**Version [1.3.2]**
+* Add some features on Dark Empire (still in dev)
+* Migrate module.json to be compliant with 0.8.9 foundryVtt 
+
 **Version [1.3.1]**
 * Tab color to black in GM Screen module
 

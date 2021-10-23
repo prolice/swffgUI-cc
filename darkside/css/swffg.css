@@ -4717,7 +4717,9 @@ font-family: var(--actor-input-font-family);
       #module-management .list-filters input {
         border: 1px solid #736953a6;
         height: 24px;
-        margin: 5px 0px
+        margin: 5px 0px;
+		min-width: -webkit-fill-available;
+		-webkit-text-stroke-width: thin;
       }
 
       #module-management .list-filters input::placeholder {
