@@ -321,9 +321,12 @@ select:focus {
     font-size: revert;
 }
 
+#tinymce .mce-content-body body{
+    color: white !important;
+}
 /* ==================== XIV. STAR WARS FFG SPECIFIC ==================== */
 .starwarsffg .charname input {
-    color: #771113;
+    color: #white;
     font-family: "DistantGalaxy", sans-serif;
 }
 
@@ -345,10 +348,66 @@ select:focus {
 }
 
 .starwarsffg .header-fields .row div {
-    color: #512326 !important;
+    color: cyan !important;
+}
+
+.starwarsffg .container input[type="text"], 
+.starwarsffg .container input[type="number"],
+.starwarsffg .container input[type="password"],
+.starwarsffg .container input[type="date"],
+.starwarsffg .container input[type="time"] {
+    color: black;
+}
+
+/*.starwarsffg.sheet .sheet-body .tab{
+	color:black;
+}*/
+
+.starwarsffg .sheet .editor-content{
+	color:white;
+}
+
+.starwarsffg .attribute,
+.starwarsffg .attribute .block-attribute,
+.starwarsffg .attribute .block-value.block-single input {
+	color:black;
+}
+
+.starwarsffg.sheet.actor .character .sheet-body .general .resource.full table,
+.starwarsffg.sheet.actor .character .sheet-body .general .resource.full table input,
+.starwarsffg.sheet.actor .character .sheet-body .obligation .resource.full table input,
+.starwarsffg.sheet.actor .character .sheet-body table textarea {
+    color:black;
+}
+
+.starwarsffg.sheet .sheet-body .tab .fa,
+.starwarsffg.sheet .sheet-body .tab .fab,
+.starwarsffg.sheet .sheet-body .tab .fad,
+.starwarsffg.sheet .sheet-body .tab .fal,
+.starwarsffg.sheet .sheet-body .tab .far,
+.starwarsffg.sheet .sheet-body .tab .fas {
+    color: black;
+}
+
+.starwarsffg.sheet .sheet-body .tab .items .fa,
+.starwarsffg.sheet .sheet-body .tab .items .fab,
+.starwarsffg.sheet .sheet-body .tab .items .fad,
+.starwarsffg.sheet .sheet-body .tab .items .fal,
+.starwarsffg.sheet .sheet-body .tab .items .far,
+.starwarsffg.sheet .sheet-body .tab .items .fas,
+.starwarsffg.sheet .sheet-body .tab .item-controls .fa,
+.starwarsffg.sheet .sheet-body .tab .item-controls .fab,
+.starwarsffg.sheet .sheet-body .tab .item-controls .fad,
+.starwarsffg.sheet .sheet-body .tab .item-controls .fal,
+.starwarsffg.sheet .sheet-body .tab .item-controls .far,
+.starwarsffg.sheet .sheet-body .tab .item-controls .fas {
+    color: white;
+}
+.starwarsffg .characteristic .characteristic-value input {
+	color:black;
 }
 .starwarsffg .character .characteristics .characteristic-item {
-	background: url(ui/frames/caracteristics-background.png) no-repeat;
+	background: url(../ui/frames/caracteristics-background.png) no-repeat;
 	background-size:100% 100%;
 	background-color: #ffffff00;
 }
@@ -390,7 +449,7 @@ select:focus {
 	--notchSize: 6px;
 	-webkit-clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
     clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
-	background-color: #771113;
+	background-color: #white;
 }
 
 .starwarsffg.sheet.actor .vehicle .header-fields .profile-block .auberesh-name {
@@ -440,6 +499,47 @@ select:focus {
 .starwarsffg.sheet.actor .character .header-fields .profile-img {
     display: block;
 }
+
+/*.starwarsffg.sheet.item.v2 .tabs .item.active,
+.starwarsffg.sheet.actor.v2 .tabs .item.active,
+.starwarsffg.v2 .tabs .item.active {
+  margin-right: 0px;
+  flex:0 0 2.5rem;
+  background-size: contain !important;
+}
+
+.starwarsffg.sheet.actor.v2 .tabs .item {
+  line-height: normal;
+  color:#66141a;
+  margin: 0px;
+  text-shadow: 0 0 black;
+  height: 35px;
+}
+
+.starwarsffg.sheet.actor.v2 .tabs .item.active {
+  flex: inherit;
+  height:36px;
+  color:red ;
+}
+
+.starwarsffg.sheet select:hover{
+	background: url(../ui/frames/parchment-texture.png) repeat;	
+}
+
+.starwarsffg.sheet.item.v2 .sheet-body {
+  margin: 0px 5px;
+}
+
+.starwarsffg.sheet.item.v2 .tabs .item {
+  line-height: normal;
+  color: #66141a;
+}
+
+.starwarsffg.sheet.item.v2 .tabs .item.active {
+  color: #6d0000;
+  text-shadow: 1px 1px 5px red;
+}*/
+
 .starwarsffg .minion .profile-block {
     min-width: 125px;
 }
@@ -463,7 +563,7 @@ select:focus {
 
 .starwarsffg.sheet.actor .character .header-fields .header-name input {
 	font-family: 'DistantGalaxy';
-	color:#771113;
+	color:white;
 }
 
 .starwarsffg .characteristic-item .characteristic {
