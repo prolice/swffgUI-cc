@@ -1,4 +1,7 @@
 ## Release Notes:
+**Version [1.3.3]**
+* Add og npc importer in the style css for (EOF / DARK & REBEL theme)
+
 **Version [1.3.2]**
 * Add some features on Dark Empire (still in dev)
 * Migrate module.json to be compliant with 0.8.9 foundryVtt 
