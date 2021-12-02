@@ -8966,12 +8966,46 @@ div#ogc-importer {
 
 
 #ogc-importer .window-content p{
-  color:white;
-  text-shadow: 0 1px 1px black;
+  color:black;
+  text-shadow: 0 1px 1px #7a7971;
   padding: 2px 5px 0px 5px;
 }
 
 #ogc-importer .window-content button{
+  margin: 0px 5px 6px 5px !important;
+  padding: 2px 0px 0px 0px;
+  height: 34px;
+  border: 1px solid black;
+  border-image: url(../ui/footer-button.png) 10 repeat;
+  border-image-width: 4px;
+  border-image-outset: 0px;
+  box-shadow: 4px 4px 1px #00000085;
+  background: url(../ui/sidebar_button-background.png) repeat;
+  background-origin: padding-box;
+  color: #3c2100;
+  font-family: KuiperBelt;
+  font-size: 20px;
+  font-weight: 500;
+  text-shadow: 0px 0px 1px #00000063;
+}
+
+#ognpc-importer .window-content {
+  background: transparent;
+}
+
+div#ognpc-importer {
+  width:auto !important;
+  height:auto !important;
+}
+
+
+#ognpc-importer .window-content p{
+  color:black;
+  text-shadow: 0 1px 1px #7a7971;
+  padding: 2px 5px 0px 5px;
+}
+
+#ognpc-importer .window-content button{
   margin: 0px 5px 6px 5px !important;
   padding: 2px 0px 0px 0px;
   height: 34px;

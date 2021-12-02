@@ -8588,6 +8588,42 @@ div#ogc-importer {
   text-shadow: 0px 0px 1px #00000063;
 }
 
+#ognpc-importer .window-content {
+  background: transparent;
+  border-image-slice: 27 27 27 27;
+  border-image-width: 30px 27px 30px 27px;
+  border-image-outset: 19px 7px 18px 6px;
+}
+
+div#ognpc-importer {
+  width:auto !important;
+  height:auto !important;
+}
+
+#ognpc-importer .window-content p{
+  color:white;
+  text-shadow: 0 1px 1px black;
+  padding: 2px 5px 0px 5px;
+}
+
+#ognpc-importer .window-content button{
+  margin: 0px 0px 6px 0px !important;
+  padding: 0px 5px 0px 5px;
+  height: 34px;
+  border: 1px solid black;
+  border-image: url(../ui/footer-button.png) 10 repeat;
+  border-image-width: 4px;
+  border-image-outset: 0px;
+  box-shadow: 4px 4px 1px #00000085;
+  background: url(../ui/sidebar_button-background_red.png) repeat;
+  background-origin: padding-box;
+  color: #dadada;
+  font-family: KuiperBelt;
+  font-size: 20px;
+  font-weight: 500;
+  text-shadow: 0px 0px 1px #00000063;
+}
+
 #OneJournalShell:not(.oj-wfrp4e) .one-journal-attached .window-content {
     background: url(../ui/frames/parchment-texture.png) !important;
 }
