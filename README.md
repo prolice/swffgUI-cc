@@ -6,7 +6,7 @@
 
 * **Author**: Prolice#9101
 * **Special Thanks to**: Aljovin, StealthViper, Havoclivekiller, SnoringMountain
-* **Version**: ![](https://img.shields.io/badge/swffgUI--cc-v1.3.3-green)
+* **Version**: ![](https://img.shields.io/badge/swffgUI--cc-v1.4.0-green)
 * **Foundry VTT Compatibility**: ![](https://img.shields.io/badge/Foundry-v0.7.6-informational) to ![](https://img.shields.io/badge/Foundry-v0.8.9-informational) the only version I ve tested !
 
 * **System Compatibility**: ![](https://img.shields.io/badge/Starwarsffg-v1.3-orange) to ![](https://img.shields.io/badge/Starwarsffg-v1.6-orange) 
@@ -38,7 +38,8 @@ May the the Interface be with you !
 ![](https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/screenshots/empire-overview.jpg)
 
 **Black Empire:**
-Still working beta version
+* The window border (auberesh) coming soon ...
+[](https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/screenshots/dark-empire-overview.jpg)
 
 ## Installation
 ### Auto install Method (recommended)

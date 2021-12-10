@@ -1,4 +1,9 @@
 ## Release Notes:
+
+**Version [1.4.0]**
+* Black Empire on release (v0.1)
+* Black Empire auberesh window borders coming soon ...
+
 **Version [1.3.3]**
 * Add og npc importer in the style css for (EOF / DARK & REBEL theme)
 

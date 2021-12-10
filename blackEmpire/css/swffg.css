@@ -359,6 +359,10 @@ select:focus {
     color: black;
 }
 
+.starwarsffg.sheet.actor .vehicle .header-fields .container.flex-group-center {
+    background: black;
+    border-radius: 5px
+}
 /*.starwarsffg.sheet .sheet-body .tab{
 	color:black;
 }*/
@@ -498,8 +502,41 @@ select:focus {
 
 .starwarsffg.sheet.actor .character .header-fields .profile-img {
     display: block;
+	background: black;
+    border: white !important;
+    border-radius: 5px;
 }
 
+.starwarsffg .talent-background .talent-header div input[type="checkbox"] {
+    height: 10px !important;
+    width: 16px !important;
+}
+.starwarsffg .talent-background {
+    background-color: black !important;
+	border: 3px solid white;
+    border-radius: 7px;
+}
+
+.starwarsffg .talent-background .talent-header div {
+    color: #f8ffc3 !important;
+}
+.starwarsffg .burst-8 {
+	left:5px !important;
+    background: rgb(253 199 76) !important;
+}
+
+.starwarsffg .burst-8:before {
+    background: rgb(253 199 76) !important;
+
+}
+
+.starwarsffg .talent-connector .talent-connector-up, .starwarsffg .talent-connector .talent-connector-side {
+    background-color: white;
+}
+
+.starwarsffg.sheet.actor .vehicle .header-fields .block-background.defense-group, .starwarsffg.sheet.actor .vehicle .header-fields .block-background.vehicle-img {
+    background: rgb(255 255 255) !important;
+}
 /*.starwarsffg.sheet.item.v2 .tabs .item.active,
 .starwarsffg.sheet.actor.v2 .tabs .item.active,
 .starwarsffg.v2 .tabs .item.active {
