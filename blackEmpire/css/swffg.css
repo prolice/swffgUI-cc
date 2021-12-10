@@ -356,7 +356,8 @@ select:focus {
 .starwarsffg .container input[type="password"],
 .starwarsffg .container input[type="date"],
 .starwarsffg .container input[type="time"] {
-    color: black;
+    color: black !important;
+	background: white !important;
 }
 
 .starwarsffg.sheet.actor .vehicle .header-fields .container.flex-group-center {
