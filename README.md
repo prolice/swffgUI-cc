@@ -39,7 +39,7 @@ May the the Interface be with you !
 
 **Black Empire:**
 * The window border (auberesh) coming soon ...
-[](https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/screenshots/dark-empire-overview.jpg)
+![](https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/screenshots/dark-empire-overview.jpg)
 
 ## Installation
 ### Auto install Method (recommended)
