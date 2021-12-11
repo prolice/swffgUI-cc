@@ -62,6 +62,42 @@ class swffgUIModule {
 	};*/
     async init() {
         
+		game.settings.register('swffgUI-cc', 'flickering', {
+        name: game.i18n.localize('SWFFG.flickering'),
+        hint: game.i18n.localize('SWFFG.flickeringHint'),
+        scope: 'client',
+        type: Boolean,
+        default: true,
+        config: true,
+        onChange: () => {
+            location.reload();
+        },
+    });
+    game.settings.register('swffgUI-cc', 'screenDoor', {
+        name: game.i18n.localize('SWFFG.screenDoor'),
+        hint: game.i18n.localize('SWFFG.screenDoorHint'),
+        scope: 'client',
+        type: Boolean,
+        default: true,
+        config: true,
+        onChange: () => {
+            location.reload();
+        },
+    });
+    game.settings.register('swffgUI-cc', 'scanline', {
+        name: game.i18n.localize('SWFFG.scanline'),
+        hint: game.i18n.localize('SWFFG.scanlineHint'),
+        scope: 'client',
+        type: Boolean,
+        default: true,
+        config: true,
+        onChange: () => {
+            location.reload();
+        },
+    });
+		
+		
+		
 		game.settings.register("swffgUI-cc", "selectSkin", {
             name: game.i18n.localize("SWFFG.selectSkin"),
             hint: game.i18n.localize("SWFFG.selectSkinHint"),
@@ -476,4 +512,16 @@ Hooks.on("ready", () => {
     swffgUIModule.singleton.init();
 });
 
+Hooks.once('ready', function () {
+    if (game.settings.get('swffgUI-cc', 'scanline')) {
+        const scanline = $('<div>').addClass('scanline');
+        $('body').append(scanline);
+    }
+    if (game.settings.get('swffgUI-cc', 'flickering')) {
+        $('body').addClass('flickering');
+    }
+    if (game.settings.get('swffgUI-cc', 'screenDoor')) {
+        $('body').addClass('screen-door');
+    }
+});
 //registerHooks();
