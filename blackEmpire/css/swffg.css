@@ -301,7 +301,7 @@ select:focus {
 .window-app .window-content {
 	font-family: var(--major-button-font-family), sans-serif;
 	font-size: var(--major-button-font-size) !important;
-	background: #00000099 !important;
+	background: #000000e3 !important;
 	color:white;
     border: 3px solid #b7b7b7;
 }
@@ -324,6 +324,268 @@ select:focus {
 #tinymce .mce-content-body body{
     color: white !important;
 }
+
+/* ================== 2. CONFIGURE SETTINGS ================= */
+    #client-settings {
+      border: 1px solid blue;
+      border-width: 10px;
+      border-image: url(../ui/game-settings-border.png) 5 repeat;
+      border-image-slice: 160 80 66 85;
+      border-image-width: 163px 81px 67px 80px;
+	  /*border-image-slice: 190 110 85 110;*/
+      border-image-outset: 0px;
+      background: none;
+      height: 850px !important;
+      width: 850px !important;
+      box-shadow: none !important;
+	  min-height: 500px !important;
+    }
+    #client-settings .window-header {
+      border: none;
+      min-height: 145px;
+      background: none;
+      justify-content: flex-end;
+      position: relative;
+      /* top: 38px; */
+	  margin: 0px;
+    }
+	
+	#client-settings .window-header a {
+		flex: none;
+		margin: 0 0 0 8px;
+		position: relative;
+		top: 58px;
+		left: -60px;
+	}
+	
+      #client-settings .window-header h4 {
+        display: none;
+      }
+      #client-settings .window-header .close {
+        position: relative;
+        top: 58px;
+		left:-60px;
+      }
+    #client-settings .window-content {
+    margin: 0px 53px 24px 48px;
+    padding: 0px;
+    border: none;
+    background: url(../ui/game-settings-background.png);
+    background-size: 199%;
+    background-position-x: center;
+	border-radius: 6px;
+    opacity: 0.95;
+    }
+      #client-settings .window-content form {
+        padding: 6px;
+        margin: 0px 0px 0px 0px;
+        border: none;
+        background: none;
+        /* box-shadow: inset 0px 0px 4px black; */
+        overflow-y: hidden;
+      }
+      #client-settings section.content {
+        border-top: none;
+        overflow: scroll;
+        overflow-x: auto;
+        /* max-height: 450px; */
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      #client-settings section.content .settings-list {
+        max-height: calc(100vh - 150px);
+        overflow-y: unset;
+        padding-right: 0.5em;
+      }
+      #client-settings .window-content form .form-group {
+        flex: 2;
+        line-height: 24px;
+        border: 1px solid #736953a6;
+        /* box-shadow: 0px 0px 10px inset black; */
+        background: #fff68640;
+        border-radius: 0px;
+        opacity: 0.9;
+        min-width: 93px;
+        color: #efefef;
+        padding: 6px;
+        margin: 8px 0px;
+        font-family: KuiperBelt;
+        font-weight: 500;
+        font-size: 16px;
+		border-radius: 5px;
+      }
+   /*   #client-settings .form-group input {
+        border-left: 1px solid #736953a6;
+      }
+      #client-settings .form-group input[type="checkbox"] {
+      top: 0px;
+      margin-top: 8px;
+      margin-right: 5px;
+      }
+      #client-settings .window-content form .form-group > label {
+        flex: 2;
+        line-height: normal;
+        padding: 6px 0px 0px 0px;
+        font-size: 16px;
+        color: #ffffff;
+        border: none;
+        text-align: left;
+        background: none;
+      }
+      #client-settings .window-content form h2 {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        color: #ccc6c6;
+        font-family: KuiperBelt;
+        font-size: 24px;
+        font-weight: 500;
+        text-shadow: 1px 1px 5px #000000;
+        text-align: center;
+        border: 3px double #736953a6;
+        background: #63000091;
+        box-shadow: inset 0px 0px 5px black;
+		border-radius: 8px;
+      }
+      #client-settings .window-content form .form-group select {
+        height: 25px;
+        max-width: 340px;
+        background: #6b4500;
+        color: #ffffff;
+        border: 1px solid #736953a6;
+        box-shadow: 0px 0px 10px inset black;
+        border-radius: 4px;
+        padding: 3px 0px 0px 0px;
+        text-overflow: ellipsis;
+        font-family: KuiperBelt;
+        font-weight: 500;
+        font-size: 14px;
+      }
+      #client-settings .window-content form .hint {
+        flex: 0 0 100%;
+        font-size: 14px;
+        color: #a09c88;
+        margin: 3px 0 0;
+        padding: 0px 0px;
+        border: none;
+        background: none;
+        line-height: initial;
+      }
+      #client-settings .window-content button {
+        flex: 2;
+        margin: 0px 4px 0px 4px;
+        padding: 3px 0px 3px 0px;
+        line-height: normal;
+        border: 3px double #736953a6;
+        box-shadow: 0px 0px 10px inset black;
+        border-radius: 0px;
+        opacity: 0.9;
+        text-align: center;
+        min-width: 95px;
+        color: #66141a;
+        font-family: KuiperBelt;
+        font-weight: 500;
+        font-size: 19px;
+        text-shadow: 0px 1px 1px #900000;
+	*/
+        /* border-image: url(../ui/footer-button.png) 10 repeat; */
+    /*    border-image-width: 4px;
+        border-image-outset: 0px;
+        background: url(../ui/sidebar_button-background.png) repeat;
+        background-origin: padding-box;
+		border-radius:8px;
+      }
+          #client-settings .window-content button i {
+            border: none;
+            background: none;
+            position: relative;
+            top: 2px;
+			color: #b9353f;
+			text-shadow: 0px 1px 0px #292929;
+			font-size: 16px;
+			border-radius:5px;
+          }
+          #client-settings .window-content button label {
+            border: none;
+            background: none;
+            position: relative;
+            top: 2px;
+			color: #66141a;
+          }
+		  #client-settings .window-content button:hover {
+			color: white;
+			cursor: var(--application-cursor-pointer);
+			background: url(../ui/sidebar_button-background_red.png) repeat !important;
+		}
+		 #client-settings .window-content button:hover > label {
+			color: white;
+			cursor: var(--application-cursor-pointer);
+		}
+		#client-settings .window-content button:hover > i {
+			color: white;
+			cursor: var(--application-cursor-pointer);
+		}
+        #client-settings .window-content button[name="permissions"] {
+          max-width: 68px;
+          min-width: 68px;
+          height: 28px;
+          padding: 0px 0px 0px 0px;
+          line-height: 23px;
+        }
+        #client-settings .window-content button[name="permissions"] label {
+          display: none;
+        }
+        #client-settings .window-content button[name="permissions"] i {
+          display: contents;
+          font-size: 16px;
+          color: #66141a;
+        }
+      #client-settings .window-content .far.fa-save {
+        display: none;
+      }
+
+      #client-settings input[type="checkbox"]:checked + label {
+        background: none;
+        border: 1px solid white;
+      }
+	 */
+
+/*************************************************************/
+/*=============== VI. PLAYERS LIST ==========================*/
+/*************************************************************/
+#players {
+    position: fixed;
+    bottom: 25px;
+    left: 10px;
+    width: 200px;
+    border-image: url(../ui/players-border.png) 21 repeat;
+    border-image-slice: 55 16 19 16;
+    border-image-width: 43px 9px 15px 13px;
+    border-image-outset: 41px 9px 9px 9px;
+    border-radius: 0px;
+    box-shadow: inset 0 0 10px #000000;
+    background: #0000009c;
+    font-family: KuiperBelt;
+    font-size: 16px;
+}
+
+#players ol .player-name.self {
+    color: #ffe254bf;
+}
+
+#players h3 .fas.fa-users {
+    margin-right: 10px;
+    display: none;
+  }
+#players ol .player-name {
+  /*overflow: hidden;
+  white-space: nowrap;
+  word-break: break-all;*/
+  padding-top: 1px;
+}
+/*************************************************************/
+/*************************************************************/
+
 /* ==================== XIV. STAR WARS FFG SPECIFIC ==================== */
 .starwarsffg .charname input {
     color: #white;
@@ -784,7 +1046,7 @@ select:focus {
     order: 2;
     color: white;
 }
-#players {
+/*#players {
     position: fixed;
     bottom: 12px;
     left: 15px;
@@ -793,7 +1055,7 @@ select:focus {
     padding: 0;
     border: 4px solid white;
     border-radius: 8px;
-}
+}*/
 
 #pause > h3
 {
