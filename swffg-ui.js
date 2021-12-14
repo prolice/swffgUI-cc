@@ -496,6 +496,7 @@ Hooks.once("init", async function () {
     CONFIG.debug.hooks = false;
 	CONFIG.ui.pause = PauseFFG;
 	CONFIG.ui.nav = NavigationFFG;
+	CONFIG.TinyMCE.content_css.push('modules/swffgUI-cc/css/mce.css');
 });
 
 Hooks.on("ready", () => {
@@ -521,10 +522,28 @@ Hooks.on("renderSidebarTab", async (object, html) => {
     const details = html.find("#game-details");
     const swffgUIDetails = document.createElement("li");
     swffgUIDetails.classList.add("donation-link");
-    let swffgUiVersion = game.i18n.localize('SWFFG.Version');
+    //let swffgUiVersion = game.i18n.localize('SWFFG.Version');
+	let swffgUiVersion = game.modules.get("swffgUI-cc").data.version
 	let swffgUiDonate = game.i18n.localize('SWFFG.donate');
-	swffgUIDetails.innerHTML = "<a style='animation: textShadow 1.6s infinite;'>SWFFG-UI-CC <a title='"+swffgUiDonate+"' href='https://ko-fi.com/prolice1403'><img src='https://storage.ko-fi.com/cdn/cup-border.png'></a><span style='font-size:var(--major-button-font-size);'>"+swffgUiVersion+"</span>";
+	let swffgUiThemeMaintenance = game.i18n.localize('SWFFG.thememaintenance');
+    let swffgUiReportThemeIssue = game.i18n.localize('SWFFG.reportthemeissue');
+	swffgUIDetails.innerHTML = "Star Wars UI (CC)<a style='animation: textShadow 1.6s infinite;' title='"+swffgUiDonate+"' href='https://ko-fi.com/prolice1403'><img src='https://storage.ko-fi.com/cdn/cup-border.png'></a><span style='font-size:var(--major-button-font-size);'>"+swffgUiVersion+"</span>";
     details.append(swffgUIDetails);
+	
+	this.section = document.createElement("section");
+	this.section.classList.add("swffgui-maintenance");
+	// Add menu before directory header
+	const dirHeader = html[0].querySelector("#settings-game").nextSibling;
+	dirHeader.parentNode.insertBefore(this.section, dirHeader);
+
+	//if (this.data !== undefined) 
+		section.insertAdjacentHTML(
+		  "afterbegin",
+		  `
+		  <h2>`+swffgUiThemeMaintenance+`</h2>
+		  <button class="swffgui-maintenance" onclick="window.open('https://github.com/prolice/swffgUI-cc/issues','_blank')"><i class="fas fa-paint-roller"></i>`+swffgUiReportThemeIssue+`</button>`
+		);
+	
   }
 });
 
@@ -666,5 +685,23 @@ Hooks.on("renderCombatTracker", (app, html, data) => {
 		section.insertAdjacentHTML(
 		  "afterbegin",
 		  `<h3 class="auberesh">Combat Tracker</h3>`
+		);
+});
+
+Hooks.on("renderSettingsConfig", (app, html, data) => {
+	this.section = document.createElement("section");
+	this.section.classList.add("swffgui");
+	// Add menu before directory header
+	const dirHeader = html[0].querySelector(".sheet-tabs");
+	dirHeader.parentNode.insertBefore(this.section, dirHeader);
+
+	//if (this.data !== undefined) 
+		section.insertAdjacentHTML(
+		  "afterbegin",
+		  `
+		  <h3 class="auberesh">Core Settings</h3>
+		  <h3 class="auberesh">System Settings</h3>
+		  <h3 class="auberesh">Module Settings</h3>
+		  `
 		);
 });

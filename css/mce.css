@@ -1,0 +1,214 @@
+/* ----------------------------------------- */
+/*  Fonts                                    */
+/* ----------------------------------------- */
+@font-face {
+  font-family: 'Signika';
+  src: url('../../../../fonts/signika/signika-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Signika';
+  src: url('../../../../fonts/signika/signika-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Modesto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../../../fonts/modesto-condensed/modesto-condensed.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Modesto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../../../fonts/modesto-condensed/modesto-condensed-bold.woff2') format('woff2');
+}
+@font-face {
+  font-family: "Auberesh";
+  src: url("../fonts/Aurebesh Bold.otf")format("opentype");
+}
+@font-face {
+  font-family: "KuiperBelt";
+  src: url("../fonts/KuiperBelt-Px0g.ttf")format("truetype");
+}
+/* ---------------------------------------- */
+/*  Text                                    */
+/* ---------------------------------------- */
+/* Headers */
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 0 0.5rem;
+  padding: 0;
+  font-weight: normal;
+}
+h1 {
+  font-size: 2em;
+  border-bottom: 2px solid #782e22;
+}
+h2 {
+  font-size: 1.5em;
+  border-bottom: 1px solid #782e22;
+}
+h3 {
+  font-size: 1.125em;
+}
+/* Links */
+a {
+  cursor: pointer;
+}
+a[href] {
+  color: #ff6400;
+}
+a:hover {
+  text-shadow: 0 0 8px red;
+}
+a.entity-link,
+a.inline-roll {
+  background: #DDD;
+  padding: 1px 4px;
+  border: 1px solid #4b4a44;
+  border-radius: 2px;
+  white-space: nowrap;
+  word-break: break-all;
+}
+a.entity-link i,
+a.inline-roll i {
+  color: #7a7971;
+}
+a.entity-link.broken {
+  background: rgba(255, 0, 0, 0.05);
+  border: 1px dashed red;
+}
+a.inline-roll.gmroll {
+  background: #e8e8ef;
+  border-color: #545469;
+}
+a.inline-roll.blindroll {
+  background: #f5eaf5;
+  border-color: #6b476b;
+}
+/* Paragraph */
+p {
+  margin: 0.5em 0;
+}
+::selection {
+  background: #82817d;
+  color: yellow;
+}
+/* Standard Lists */
+ul,
+ol {
+  margin: 0.5em 0;
+  padding: 0 0 0 1.5em;
+}
+/* Definition Lists */
+dl {
+  margin: 0.5em 0;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  padding-left: 5px;
+  margin: 3px 0;
+}
+/* HR separators */
+hr {
+  border: none;
+  border-top: 1px solid #b5b3a4;
+  border-bottom: 1px solid #f0f0e0;
+}
+/* Blockquote */
+blockquote {
+  margin: 0.5em 0 0.5em 10px;
+  padding: 0 0 0 20px;
+  border-left: 3px solid #7a7971;
+  font-style: italic;
+}
+blockquote em {
+  font-style: normal;
+}
+/* Secret Sections */
+section.secret {
+  padding: 0 5px;
+  background: rgba(53, 0, 121, 0.05);
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+/* ---------------------------------------- */
+/* Tables                                   */
+/* ---------------------------------------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(0, 0, 0, 0.05);
+  border-top: 1px solid #7a7971;
+  border-bottom: 1px solid #7a7971;
+  margin: 0.5em 0;
+}
+table thead {
+  background: rgba(0, 0, 0, 0.5);
+  color: #f0f0e0;
+  text-shadow: 1px 1px #000;
+  border-bottom: 1px solid #000;
+}
+table tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+table td:first-child {
+  padding-left: 2px;
+}
+table td,
+table th {
+  padding: 0.25em 0;
+}
+/* ----------------------------------------- */
+/* Scrollbar
+/* ----------------------------------------- */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: 0 0 1px #999 inset;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+    outline: none;
+    border-radius: 3px;
+    background: red;
+    border: 2px solid white;
+}
+:root {
+  scrollbar-width: thin;
+  scrollbar-color: #782e22 #111;
+}
+/* ----------------------------------------- */
+/* Images
+/* ----------------------------------------- */
+img {
+  box-sizing: border-box;
+  border: 1px solid #000;
+  border-radius: 2px;
+  max-width: 100%;
+}
+img.noborder {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+body {
+  height: calc(100vh - 16px);
+  margin: 0;
+  padding: 2px 4px 2px 4px;
+  overflow-y: auto;
+  font-family: "KuiperBelt","Signika", sans-serif;
+  font-size: 14px;
+  background: white;
+
+}
+
