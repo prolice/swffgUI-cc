@@ -1,0 +1,169 @@
+{{#*inline "folderPartial"}}
+<li class="directory-item folder flexcol {{#unless folder.expanded}}collapsed{{/unless}}"
+    data-folder-id="{{folder.id}}" data-folder-depth="{{folder.depth}}">
+  <header class="folder-header flexrow" style="background-color: {{folder.data.color}}">
+    <h3><i class="fas fa-folder-open fa-fw"></i>{{folder.name}}</h3>
+    {{#if @root.user.isGM}}
+      <a class="create-folder" data-parent-folder="{{folder.id}}"><i class="fas fa-folder-plus fa-fw"></i></a>
+      <a class="create-entity" data-folder="{{folder.id}}"><i class="fas fa-plus-circle fa-fw"></i></a>
+	{{/if}}
+  </header>
+  <ol class="subdirectory">
+	{{~#each folder.children as |child i|}}
+      {{> folderPartial folder=child}}
+    {{/each}}
+    {{#each folder.playlists}}
+      {{> playlistPartial playlist=this}}
+    {{/each~}}
+  </ol>
+</li>
+{{/inline}}
+
+{{#*inline "soundPartial"}}
+<li class="sound flexrow {{sound.css}}" data-playlist-id="{{sound.playlistId}}" data-sound-id="{{sound._id}}">
+    <h4 class="sound-name">{{sound.name}}</h4>
+    <div class="sound-controls flexrow">
+        {{#if @root.user.isGM}}
+        <a class="sound-control {{#unless sound.repeat}}inactive{{/unless}} {{sound.controlCSS}}"
+           data-action="sound-repeat" title="{{localize 'PLAYLIST.SoundLoop'}}">
+            <i class="fas fa-sync"></i>
+        </a>
+        {{/if}}
+
+        {{#if sound.playing}}
+        <a class="sound-control {{sound.controlCSS}}" data-action="sound-stop" title="{{localize 'PLAYLIST.SoundStop'}}">
+            <i class="{{sound.playIcon}}"></i>
+        </a>
+        {{else}}
+        <a class="sound-control {{sound.controlCSS}}" data-action="sound-play" title="{{localize sound.playTitle}}">
+            <i class="{{sound.playIcon}}"></i>
+        </a>
+        {{/if}}
+    </div>
+
+    {{#if playback}}
+    <div class="sound-playback flexrow">
+        <div class="sound-timer">
+            <span class="current">{{sound.currentTime}}</span>
+            <span class="sep">/</span>
+            <span class="duration">{{sound.durationTime}}</span>
+        </div>
+        <i class="volume-icon fas fa-volume-down"></i>
+        <input class="sound-volume" type="range" title="{{localize 'PLAYLIST.SoundVolume'}}"
+               value="{{sound.lvolume}}" min="0" max="1" step="0.05"/>
+        <a class="sound-control pause {{sound.controlCSS}} {{#if sound.isPaused}}disabled{{/if}}" data-action="sound-pause" title="{{localize 'PLAYLIST.SoundPause'}}">
+            <i class="{{sound.pauseIcon}}"></i>
+        </a>
+    </div>
+    {{/if}}
+</li>
+{{/inline}}
+
+{{#*inline "playlistPartial"}}
+<li class="directory-item entity playlist flexrow {{playlist.css}}" data-entity-id="{{playlist._id}}">
+    <header class="playlist-header flexrow" data-entity-id="{{playlist._id}}">
+        <h4 class="playlist-name">{{playlist.name}} <i class="collapse fa fa-angle-{{#if playlist.expanded}}down{{else}}up{{/if}}"></i></h4>
+        <div class="sound-controls playlist-controls flexrow">
+            {{#unless playlist.playing}}
+            {{#if @root.user.isGM}}
+            <a class="sound-control" data-action="sound-create" title="{{localize 'PLAYLIST.SoundCreate'}}">
+                <i class="fas fa-plus"></i>
+            </a>
+            {{/if}}
+            {{/unless}}
+            <a class="sound-control {{#unless @root.user.isGM}}disabled{{/unless}}" data-action="playlist-mode" title="{{playlist.modeTooltip}}">
+                {{{playlist.modeIcon}}}
+            </a>
+
+            {{#if playlist.playing}}
+            <a class="sound-control {{playlist.controlCSS}}" data-action="playlist-backward" title="{{localize 'PLAYLIST.Backward'}}">
+                <i class="fas fa-backward"></i>
+            </a>
+            <a class="sound-control {{playlist.controlCSS}}" data-action="playlist-forward" title="{{localize 'PLAYLIST.Forward'}}">
+                <i class="fas fa-forward"></i>
+            </a>
+            <a class="sound-control {{playlist.controlCSS}}" data-action="playlist-stop" title="{{localize 'PLAYLIST.Stop'}}">
+                <i class="fas fa-square"></i>
+            </a>
+            {{else}}
+            <a class="sound-control {{playlist.controlCSS}}" data-action="playlist-play" title="{{localize 'PLAYLIST.Play'}}">
+                <i class="fas fa-play"></i>
+            </a>
+            {{/if}}
+        </div>
+    </header>
+    <ol class="playlist-sounds">
+    {{#each playlist.sounds as |sound|}}
+        {{> soundPartial sound=sound playback=false}}
+    {{/each}}
+    </ol>
+</li>
+{{/inline}}
+
+<section class="tab sidebar-tab directory flexcol" id="playlists" data-tab="playlists">
+
+    <!-- Directory Header -->
+    <header class="directory-header">
+        <div class="header-actions action-buttons flexrow">
+            {{#if canCreate }}
+            <button class="create-entity"><i class="fas fa-music"></i> {{localize 'PLAYLIST.Create'}}</button>
+            <button class="create-folder"><i class="fas fa-folder"></i> {{localize 'FOLDER.Create'}}</button>
+            {{/if}}
+        </div>
+        <div class="header-search flexrow">
+            <i class="fas fa-search"></i>
+            <input type="text" name="search" value="" placeholder="{{localize 'PLAYLIST.Search'}}" autocomplete="off"/>
+            <a class="header-control collapse-all" title="{{localize 'FOLDER.Collapse'}}"><i class="fas fa-sort-amount-up fa-fw"></i></a>
+        </div>
+    </header>
+
+    <div id="global-volume" class="global-control flexrow {{#unless volumeExpanded}}collapsed{{/unless}}">
+        <header class="playlist-header flexrow">
+            <h4>{{localize "PLAYLIST.GlobalVolume"}} <i class="collapse fa fa-angle-{{#if volumeExpanded}}down{{else}}up{{/if}}"></i></h4>
+        </header>
+        <ol class="playlist-sounds">
+            <li class="sound flexrow">
+                <h4 class="sound-name">{{localize "PLAYLIST.VolPlaylist"}}</h4>
+                <i class="volume-icon fas fa-volume-down"></i>
+                <input class="global-volume-slider" name="globalPlaylistVolume" type="range" min="0" max="1" step="0.05" value="{{playlistModifier}}"/>
+            </li>
+            <li class="sound flexrow">
+                <h4 class="sound-name">{{localize "PLAYLIST.VolAmbient"}}</h4>
+                <i class="volume-icon fas fa-volume-down"></i>
+                <input class="global-volume-slider" name="globalAmbientVolume" type="range" min="0" max="1" step="0.05" value="{{ambientModifier}}"/>
+            </li>
+            <li class="sound flexrow">
+                <h4 class="sound-name">{{localize "PLAYLIST.VolInterface"}}</h4>
+                <i class="volume-icon fas fa-volume-down"></i>
+                <input class="global-volume-slider" name="globalInterfaceVolume" type="range" min="0" max="1" step="0.05" value="{{interfaceModifier}}"/>
+            </li>
+        </ol>
+    </div>
+
+    {{#if showPlaying}}
+    <div id="currently-playing" class="global-control flexrow">
+        <header class="playlist-header flexrow">
+            <h4>{{localize "PLAYLIST.CurrentlyPlaying"}}</h4>
+        </header>
+        <ol class="playlist-sounds">
+            {{#each playingSounds as |sound|}}
+                {{> soundPartial sound=sound playback=true}}
+            {{/each}}
+        </ol>
+    </div>
+    {{/if}}
+
+    <!-- Directories List -->
+	<ol class="directory-list">
+	    {{~#each tree.children as |f fi|}}
+        {{> folderPartial folder=f}}
+	    {{/each}}
+	    {{#each tree.playlists}}
+        {{> playlistPartial playlist=this}}
+	    {{/each~}}
+	</ol>
+
+	<!-- Directory Footer -->
+	<footer class="directory-footer"></footer>
+</section>
+

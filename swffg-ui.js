@@ -17,7 +17,40 @@ const IndicatorFonts = {
 	ERAS: 6,
 };
 
+class NavigationFFG extends SceneNavigation {
+	 static get defaultOptions() {
+            const options = super.defaultOptions;
+			options.id = "navigation";
+			options.template = "modules/swffgUI-cc/templates/parts/ffg-navigation.html";
+			options.popOut = false;
+			return options;
+        }
+} 
+
+class PauseFFG extends Pause {
+  static get defaultOptions() {
+    const options = super.defaultOptions;
+    options.id = "pause";
+    options.template = "modules/swffgUI-cc/templates/parts/ffg-paused.html";
+    options.popOut = false;
+    return options;
+  }
+
+  getData() {
+    let icon = game.settings.get("starwarsffg", "ui-pausedImage");
+    if (icon?.length <= 0) {
+      icon = "icons/svg/clockwork.svg";
+    }
+
+    return {
+      paused: game.paused,
+      icon,
+    };
+  }
+}
+
 class swffgUIModule {
+	
     constructor() {
         this.swffgUIModule = new Map();
         this.TIMEOUT_INTERVAL = 50; // ms
@@ -33,36 +66,10 @@ class swffgUIModule {
         }
     }
 
-	/*addChatMessageContextOptions(html, options){
-		options.push(
-		  {
-			name: game.i18n.localize("CHATOPT.ApplyDamage"),
-			icon: '<i class="fas fa-user-minus"></i>',
-			condition: canApply,
-			callback: li => {
-
-			  if (li.find(".dice-roll").length)
-			  {
-				let amount = li.find('.dice-total').text();
-				game.user.targets.forEach(t => t.actor.applyBasicDamage(amount))
-			  }
-			  else 
-			  {
-				let cardData = game.messages.get(li.attr("data-message-id")).data.flags.opposeData
-				let defenderSpeaker = game.messages.get(li.attr("data-message-id")).data.flags.opposeData.speakerDefend;
-
-				if (!WFRP_Utility.getSpeaker(defenderSpeaker).owner)
-				  return ui.notifications.error(game.i18n.localize("ERROR.DamagePermission"))
-
-				let updateMsg = ActorWfrp4e.applyDamage(defenderSpeaker, cardData,  game.wfrp4e.config.DAMAGE_TYPE.NORMAL)
-				OpposedWFRP.updateOpposedMessage(updateMsg, li.attr("data-message-id"));
-			  }
-			}
-		  })
-	};*/
     async init() {
         
-		game.settings.register('swffgUI-cc', 'flickering', {
+	game.settings.set("starwarsffg", "ui-pausedImage", "/modules/swffgUI-cc/default-ui/pause-icon.png");
+	game.settings.register('swffgUI-cc', 'flickering', {
         name: game.i18n.localize('SWFFG.flickering'),
         hint: game.i18n.localize('SWFFG.flickeringHint'),
         scope: 'client',
@@ -343,17 +350,6 @@ class swffgUIModule {
 		
 		this.switchStyleSheet();
 		
-		/*let myImg = document.createElement("img");
-		let myImgA = document.createElement("a");
-		myImgA.setAttribute("href", "https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/ImagesLicences.md");
-		myImg.setAttribute("id", "creative-common");
-		myImg.setAttribute("src", "modules/swffgUI-cc/CC-BY-license.png");
-		myImg.style.cssText = 'position:absolute;width:150px;opacity:0.7;z-index:60;bottom:7px;right: 450px;';
-		myImg.title = 'Images used by module swffg-cc are under Creative Common license\x0Afollow the link to get all the images licenses and owners...';
-		myImgA.appendChild(myImg);
-
-		document.body.appendChild(myImgA);*/
-		
 		Hooks.on("renderActorSheet", (sheet, $element, templateData) => {
 			if (game.system.id !== "starwarsffg") return;
 			
@@ -371,18 +367,7 @@ class swffgUIModule {
 			console.log("[SWFFG-UI-CC] is rendering " + tokenName + "actor sheet with Auberesh");
 			
 		});
-		
-			
-		/*Hooks.on("getChatLogEntryContext", this.addChatMessageContextOptions);
-				
-		Hooks.on('renderChatMessage', (_0, html) => {
-			
-			if (_0.data.content === "1D100")
-				return;
-			
-		});*/
     }
-	
 	
 	switchStyleSheet(){
 		var head = document.getElementsByTagName('head')[0];
@@ -501,11 +486,17 @@ class swffgUIModule {
 			myImgA.appendChild(myImg);
 
 			document.body.appendChild(myImgA);
-		}             
-				
+		} 
+        
 	}
 
 }
+Hooks.once("init", async function () {
+	// TURN ON OR OFF HOOK DEBUGGING
+    CONFIG.debug.hooks = false;
+	CONFIG.ui.pause = PauseFFG;
+	CONFIG.ui.nav = NavigationFFG;
+});
 
 Hooks.on("ready", () => {
     swffgUIModule.singleton = new swffgUIModule();
@@ -524,4 +515,156 @@ Hooks.once('ready', function () {
         $('body').addClass('screen-door');
     }
 });
-//registerHooks();
+
+Hooks.on("renderSidebarTab", async (object, html) => {
+  if (object instanceof Settings) {
+    const details = html.find("#game-details");
+    const swffgUIDetails = document.createElement("li");
+    swffgUIDetails.classList.add("donation-link");
+    let swffgUiVersion = game.i18n.localize('SWFFG.Version');
+	let swffgUiDonate = game.i18n.localize('SWFFG.donate');
+	swffgUIDetails.innerHTML = "<a style='animation: textShadow 1.6s infinite;'>SWFFG-UI-CC <a title='"+swffgUiDonate+"' href='https://ko-fi.com/prolice1403'><img src='https://storage.ko-fi.com/cdn/cup-border.png'></a><span style='font-size:var(--major-button-font-size);'>"+swffgUiVersion+"</span>";
+    details.append(swffgUIDetails);
+  }
+});
+
+Hooks.on("renderActorDirectory", (app, html, data) => {
+	this.section = document.createElement("section");
+	this.section.classList.add("swffgui");
+	// Add menu before directory header
+	const dirHeader = html[0].querySelector(".directory-header");
+	dirHeader.parentNode.insertBefore(this.section, dirHeader);
+
+	//if (this.data !== undefined) 
+		section.insertAdjacentHTML(
+		  "afterbegin",
+		  `<h3 class="auberesh">Actors Directory</h3>`
+		);
+});
+
+Hooks.on("renderSceneDirectory", (app, html, data) => {
+	this.section = document.createElement("section");
+	this.section.classList.add("swffgui");
+	// Add menu before directory header
+	const dirHeader = html[0].querySelector(".directory-header");
+	dirHeader.parentNode.insertBefore(this.section, dirHeader);
+
+	//if (this.data !== undefined) 
+		section.insertAdjacentHTML(
+		  "afterbegin",
+		  `<h3 class="auberesh">Scenes Directory</h3>`
+		);
+});
+
+
+Hooks.on("renderJournalDirectory", (app, html, data) => {
+	this.section = document.createElement("section");
+	this.section.classList.add("swffgui");
+	// Add menu before directory header
+	const dirHeader = html[0].querySelector(".directory-header");
+	dirHeader.parentNode.insertBefore(this.section, dirHeader);
+
+	//if (this.data !== undefined) 
+		section.insertAdjacentHTML(
+		  "afterbegin",
+		  `<h3 class="auberesh">Journal Directory</h3>`
+		);
+});
+
+Hooks.on("renderItemDirectory", (app, html, data) => {
+	this.section = document.createElement("section");
+	this.section.classList.add("swffgui");
+	// Add menu before directory header
+	const dirHeader = html[0].querySelector(".directory-header");
+	dirHeader.parentNode.insertBefore(this.section, dirHeader);
+
+	//if (this.data !== undefined) 
+		section.insertAdjacentHTML(
+		  "afterbegin",
+		  `<h3 class="auberesh">Items Directory</h3>`
+		);
+});
+
+Hooks.on("renderRollTableDirectory", (app, html, data) => {
+	this.section = document.createElement("section");
+	this.section.classList.add("swffgui");
+	// Add menu before directory header
+	const dirHeader = html[0].querySelector(".directory-header");
+	dirHeader.parentNode.insertBefore(this.section, dirHeader);
+
+	//if (this.data !== undefined) 
+		section.insertAdjacentHTML(
+		  "afterbegin",
+		  `<h3 class="auberesh">RollTable Directory</h3>`
+		);
+});
+
+Hooks.on("renderCompendiumDirectory", (app, html, data) => {
+	this.section = document.createElement("section");
+	this.section.classList.add("swffgui");
+	// Add menu before directory header
+	const dirHeader = html[0].querySelector(".directory-header");
+	dirHeader.parentNode.insertBefore(this.section, dirHeader);
+
+	//if (this.data !== undefined) 
+		section.insertAdjacentHTML(
+		  "afterbegin",
+		  `<h3 class="auberesh">Compendium Directory</h3>`
+		);
+});
+
+Hooks.on("renderPlaylistDirectory", (app, html, data) => {
+	this.section = document.createElement("section");
+	this.section.classList.add("swffgui");
+	// Add menu before directory header
+	const dirHeader = html[0].querySelector(".directory-header");
+	dirHeader.parentNode.insertBefore(this.section, dirHeader);
+
+	//if (this.data !== undefined) 
+		section.insertAdjacentHTML(
+		  "afterbegin",
+		  `<h3 class="auberesh">Playlists Directory</h3>`
+		);
+});
+
+Hooks.on("renderChatLog", (app, html, data) => {
+	this.section = document.createElement("section");
+	this.section.classList.add("swffgui");
+	// Add menu before directory header
+	const dirHeader = html[0].querySelector("#chat-log");
+	dirHeader.parentNode.insertBefore(this.section, dirHeader);
+
+	//if (this.data !== undefined) 
+		section.insertAdjacentHTML(
+		  "afterbegin",
+		  `<h3 class="auberesh">Chat Log</h3>`
+		);
+});
+
+Hooks.on("renderSettings", (app, html, data) => {
+	this.section = document.createElement("section");
+	this.section.classList.add("swffgui");
+	// Add menu before directory header
+	const dirHeader = html[0].querySelector("h2");
+	dirHeader.parentNode.insertBefore(this.section, dirHeader);
+
+	//if (this.data !== undefined) 
+		section.insertAdjacentHTML(
+		  "afterbegin",
+		  `<h3 class="auberesh">Settings</h3>`
+		);
+});
+
+Hooks.on("renderCombatTracker", (app, html, data) => {
+	this.section = document.createElement("section");
+	this.section.classList.add("swffgui");
+	// Add menu before directory header
+	const dirHeader = html[0].querySelector("#combat-round");
+	dirHeader.parentNode.insertBefore(this.section, dirHeader);
+
+	//if (this.data !== undefined) 
+		section.insertAdjacentHTML(
+		  "afterbegin",
+		  `<h3 class="auberesh">Combat Tracker</h3>`
+		);
+});

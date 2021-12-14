@@ -356,8 +356,13 @@ button:hover, button:focus {
 
 h2 {
     border-bottom: 5px solid white;
+	text-shadow: 0 0 15px white;
 }
 
+em {
+    font-style: italic;
+	text-shadow: 0 0 9px white;	
+}
 .app {
     max-height: 100%;
     background: url(../ui/denim075.png) repeat;
@@ -375,6 +380,47 @@ table.vendor_item {
 
 .fa, .fab, .fad, .fal, .far, .fas {
     color: white;
+}
+
+form h1.form-header, form h2.form-header, form h3.form-header {
+    color: white;
+}
+
+form .notes, form .hint {
+    color: rgb(251 232 170);
+}
+
+form .form-group span.units {
+    color: #fff4b4;
+}
+
+.vendor_item a.entity-link {
+    background: black;
+    border: 1px solid white;
+    border-radius: 0px;
+}
+
+p {
+	color: white !important;
+	text-shadow: 1px 1px 5px black;
+}
+
+h3.auberesh {
+    font-family: 'Auberesh';
+}
+
+.swffgui h3 {
+    flex: 0 100%;
+    margin: 3px;
+    text-align: center;
+}
+
+section.swffgui {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+	max-height: 30px;
 }
 
 #settings h2 {
@@ -396,6 +442,16 @@ table.vendor_item {
 #client-settings section.content {
     border-top: 1px solid white;
     border-block-width: 3px;
+}
+
+#scenes .scene h3 {
+    line-height: 45px;
+}
+
+
+#scenes .scene h3 span {
+    font-size: medium;
+    font-family: 'Auberesh';
 }
 
 form button {
@@ -963,6 +1019,10 @@ select:focus {
     border-radius: 5px;
 }
 
+.starwarsffg .item-sheet-gear .characteristic-item .characteristic-label, .starwarsffg .item-sheet-talent .characteristic-item .characteristic-label, .starwarsffg .item-sheet-weapon .characteristic-item .characteristic-label, .starwarsffg .item-sheet-armor .characteristic-item .characteristic-label, .starwarsffg .item-sheet-vehicle-weapon .characteristic-item .characteristic-label, .starwarsffg .item-sheet-vehicle-attachment .characteristic-item .characteristic-label {
+    color:black !important;
+}
+
 .starwarsffg .talent-background .talent-header div input[type="checkbox"] {
     height: 10px !important;
     width: 16px !important;
@@ -993,6 +1053,161 @@ select:focus {
 .starwarsffg.sheet.actor .vehicle .header-fields .block-background.defense-group, .starwarsffg.sheet.actor .vehicle .header-fields .block-background.vehicle-img {
     background: rgb(255 255 255) !important;
 }
+
+
+.starwarsffg span.dietype.ability {
+  color: green;
+}
+
+.starwarsffg span.dietype.advantage {
+  color: white !important;
+}
+
+.starwarsffg span.dietype.boost {
+  color: lightskyblue;
+}
+
+.starwarsffg span.dietype.challenge {
+  color: red;
+}
+
+.starwarsffg span.dietype.dark {
+  color: white !important;
+}
+
+.starwarsffg span.dietype.despair {
+  color: white !important;
+}
+
+.starwarsffg span.dietype.difficulty {
+  color: purple;
+}
+
+.starwarsffg span.dietype.forcepoint {
+  color: white !important;
+}
+
+.starwarsffg span.dietype.failure {
+  color: white !important;
+}
+
+.starwarsffg span.dietype.force {
+  color: white !important;
+}
+
+.starwarsffg span.dietype.light {
+  color: white !important;
+}
+
+.starwarsffg span.dietype.proficiency {
+  color: yellow;
+}
+
+.starwarsffg span.dietype.remsetback {
+  color: white !important;
+}
+
+.starwarsffg span.dietype.remsetback::after {
+  content: "-";
+  color: white !important;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.starwarsffg span.dietype.restricted {
+  color: #8b0000;
+}
+
+.starwarsffg span.dietype.restricted::after {
+  content: "-";
+  color: white !important;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.starwarsffg span.dietype.setback {
+  color: white !important;
+}
+
+.starwarsffg span.dietype.success {
+  color: white !important;
+}
+
+.starwarsffg span.dietype.threat {
+  color: white !important;
+}
+
+.starwarsffg span.dietype.triumph {
+  color: white !important;
+}
+
+.starwarsffg span.dietype.adddifficulty {
+  color: purple;
+}
+
+.starwarsffg span.dietype.adddifficulty::after {
+  content: "+";
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  transform: translateX(-50%);
+}
+
+.starwarsffg span.dietype.updifficulty {
+  color: purple;
+}
+
+.starwarsffg span.dietype.updifficulty::after {
+  content: "\2191";
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  transform: translateX(-50%);
+}
+
+.starwarsffg span.dietype.cancelthreat {
+  color: white !important;
+}
+
+.starwarsffg span.dietype.cancelthreat::after {
+  content: "\2716";
+  color: red;
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  transform: translateX(-50%);
+}
+
+.starwarsffg .item-sheet-criticalinjury .block-background.block-editor {
+    background-color: #4c1c1c !important;
+}
+
+.starwarsffg .item-sheet-gear .editor-content {
+    background-color: #2c0344;
+	--notchSize: 0.5rem;
+	clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
+}
+
+.starwarsffg .block-background {
+    margin: 10px 0 0 0;
+}
+
+.chat-message .table-draw .table-results .table-result .result-text {
+    color: white;
+}
+
+.chat-message .table-draw .table-results .table-result img.result-image {
+	color: white;
+}
+
+.chat-message a.entity-link {
+	color: black;
+}
+
 /*.starwarsffg.sheet.item.v2 .tabs .item.active,
 .starwarsffg.sheet.actor.v2 .tabs .item.active,
 .starwarsffg.v2 .tabs .item.active {
@@ -1110,6 +1325,18 @@ select:focus {
 #navigation #scene-list .scene {
     border: 2px solid white !important;
     border-radius: 6px;
+	/*margin: -15px 0 0 0;*/
+	margin: 0em;
+	display: block;
+}
+
+#navigation #scene-list .scene span {
+    font-family: auberesh;
+	font-size: xx-small;
+	margin: -10px 0 0 0;
+	/*margin: 0em;*/
+	display: block;
+	animation: textShadow 1.6s infinite;
 }
 
 #navigation #scene-list .scene.view, 
@@ -1254,6 +1481,14 @@ select:focus {
 {
   color: #CCC;
   font-family:Auberesh;
+  background:none;
+  text-shadow: 0px 0px 25px #f30000;
+  animation: textShadow 1.6s infinite;
+}
+
+#pause > h3 span
+{
+  font-family: 'DistantGalaxy';
 }
 
 #pause > img {

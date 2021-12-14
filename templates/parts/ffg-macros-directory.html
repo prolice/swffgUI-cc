@@ -1,0 +1,32 @@
+{{#*inline "entityPartial"}}
+<li class="directory-item entity macro flexrow" data-entity-id="{{this.id}}">
+  <img class="profile" title="{{this.data.name}}" data-src="{{this.data.img}}"/>
+  <h4 class="entity-name"><a>{{this.data.name}}</a></h4>
+</li>
+{{/inline}}
+
+<section class="tab sidebar-tab directory flexcol" id="macros" data-tab="macros">
+
+    <!-- Directory Header -->
+    <header class="directory-header">
+        <div class="header-actions action-buttons flexrow">
+            {{#if user.isGM}}
+                <button class="create-entity"><i class="fas fa-suitcase"></i> {{localize 'MACRO.Create'}}</button>
+            {{/if}}
+        </div>
+        <div class="header-search flexrow">
+            <i class="fas fa-search"></i>
+            <input type="text" name="search" value="{{search}}" placeholder="{{localize 'MACRO.Search'}}" autocomplete="off"/>
+        </div>
+    </header>
+
+    <!-- Directories List -->
+	<ol class="directory-list">
+	    {{#each tree.content}}
+        {{> entityPartial}}
+	    {{/each~}}
+	</ol>
+
+	<!-- Directory Footer -->
+	<footer class="directory-footer"></footer>
+</section>

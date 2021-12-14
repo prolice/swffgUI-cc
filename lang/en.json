@@ -23,6 +23,13 @@
   "SWFFG.CursorSettingsHint": "If you only knew the power of the cursor.",
   "SWFFG.CCLinkSettings":"Creative Common Authors Link:", 
   "SWFFG.CCLinkSettingsHint":"Activate/Deactivate the display Creative Common Link on the main canvas",
-  
+  "SWFFG.Version":"1.4.1",
+  "SWFFG.flickering":"Flickering screen effect.",
+  "SWFFG.flickeringHint":"Flickering effect like an old CRT screen.",
+  "SWFFG.screenDoor":"Screen lines.",
+  "SWFFG.screenDoorHint":"Display screen horizontal lines.",
+  "SWFFG.scanline":"Refresh screen effect.",
+  "SWFFG.scanlineHint":"Refresh screen like an old CRT monitor.",
+  "SWFFG.donate":"Thanks for the coffee ;-)",
   "GAME.Paused": "Pause"
 }
