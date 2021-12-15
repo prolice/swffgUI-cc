@@ -33,6 +33,8 @@
   "SWFFG.donate":"Thanks for the coffee ;-)",
   "SWFFG.thememaintenance":"Theme Maintenance",
   "SWFFG.reportthemeissue":"Report theme issue",
+   "SWFFG.autocolorfolder": "Force gradient folder color.",
+  "SWFFG.autocolorfolderHint": "Colorize folders (level#1) with a single gradient color",
   
   "GAME.Paused": "Pause"
 }

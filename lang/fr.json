@@ -33,6 +33,8 @@
   "SWFFG.donate":"Un petit café",
   "SWFFG.thememaintenance":"Maintenance du thème",
   "SWFFG.reportthemeissue":"Mentionner un problème",
+  "SWFFG.autocolorfolder": "Coloriser mes dossiers en dégradé.",
+  "SWFFG.autocolorfolderHint": "Permet de coloriser les dossiers Acteurs, Scènes, ... avec un dégradé de couleur unique",
   
   "CHAT.Export": "Exporter la Discussion",
   "CHAT.FlushTitle": "Vider la Discussion",

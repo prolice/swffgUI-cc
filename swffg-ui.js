@@ -49,6 +49,7 @@ class PauseFFG extends Pause {
   }
 }
 
+
 class swffgUIModule {
 	
     constructor() {
@@ -67,7 +68,7 @@ class swffgUIModule {
     }
 
     async init() {
-        
+	
 	game.settings.set("starwarsffg", "ui-pausedImage", "/modules/swffgUI-cc/default-ui/pause-icon.png");
 	game.settings.register('swffgUI-cc', 'flickering', {
         name: game.i18n.localize('SWFFG.flickering'),
@@ -367,6 +368,8 @@ class swffgUIModule {
 			console.log("[SWFFG-UI-CC] is rendering " + tokenName + "actor sheet with Auberesh");
 			
 		});
+		
+		//here
     }
 	
 	switchStyleSheet(){
@@ -489,14 +492,73 @@ class swffgUIModule {
 		} 
         
 	}
+	static interpolateColor(color1, color2, factor) {
+		if (arguments.length < 3) { 
+			factor = 0.5; 
+		}
+		var result = color1.slice();
+		for (var i = 0; i < 3; i++) {
+			result[i] = Math.round(result[i] + factor * (color2[i] - color1[i]));
+		}
+		return result;
+	};
+	// My function to interpolate between two colors completely, returning an array
+	// call --> var colorArray = swffgUIModule.interpolateColors("rgb(255, 0, 0)","rgb(0, 0, 255)",5);
+	static interpolateColors(color1, color2, steps) {
+		var stepFactor = 1 / (steps - 1);
+		const interpolatedColorArray = [];
+
+		color1 = color1.match(/\d+/g).map(Number);
+		color2 = color2.match(/\d+/g).map(Number);
+
+		for(var i = 0; i < steps; i++) {
+			interpolatedColorArray.push(this.interpolateColor(color1, color2, stepFactor * i));
+		}
+
+		return interpolatedColorArray;
+	}
+	
+	static AutoColorFolders (red, green, blue, max, htmlarray){
+		let boolRed = red != -1;
+		let boolGreen = green != -1;
+		let boolBlue = blue != -1;
+		if (!boolRed)red = 0;
+		if (!boolGreen)green = 0;
+		if (!boolBlue)blue = 0;
+		let colorRatioRed = (max-red) / (htmlarray.length-1);
+		let colorRatioGreen = (max-green) / (htmlarray.length-1);
+		let colorRatioBlue = (max-blue) / (htmlarray.length-1);
+		for(const dirItem of htmlarray){
+			if (dirItem.children[0].attributes.style)
+				dirItem.children[0].attributes.style.nodeValue = 'background-color: rgb('+red+','+green+','+blue+',0.5)';
+			if (boolRed) red = red + colorRatioRed;
+			if (boolGreen) green = green + colorRatioGreen;
+			if (boolBlue) blue = blue + colorRatioBlue;
+		}
+		return;
+	}
 
 }
+
+
 Hooks.once("init", async function () {
 	// TURN ON OR OFF HOOK DEBUGGING
     CONFIG.debug.hooks = false;
 	CONFIG.ui.pause = PauseFFG;
 	CONFIG.ui.nav = NavigationFFG;
 	CONFIG.TinyMCE.content_css.push('modules/swffgUI-cc/css/mce.css');
+	
+	game.settings.register('swffgUI-cc', 'autoColorFolder', {
+        name: game.i18n.localize('SWFFG.autocolorfolder'),
+        hint: game.i18n.localize('SWFFG.autocolorfolderHint'),
+        scope: 'client',
+        type: Boolean,
+        default: true,
+        config: true,
+        onChange: () => {
+            location.reload();
+        },
+    });
 });
 
 Hooks.on("ready", () => {
@@ -553,9 +615,13 @@ Hooks.on("renderActorDirectory", (app, html, data) => {
 	// Add menu before directory header
 	const dirHeader = html[0].querySelector(".directory-header");
 	dirHeader.parentNode.insertBefore(this.section, dirHeader);
-
-	//if (this.data !== undefined) 
-		section.insertAdjacentHTML(
+	
+	if (game.settings.get('swffgUI-cc', 'autoColorFolder')) {
+		const dirlist = html[0].querySelector("ol.directory-list");
+		swffgUIModule.AutoColorFolders(100,-1,-1,255,dirlist.children);
+	}	
+	
+	section.insertAdjacentHTML(
 		  "afterbegin",
 		  `<h3 class="auberesh">Actors Directory</h3>`
 		);
@@ -567,7 +633,11 @@ Hooks.on("renderSceneDirectory", (app, html, data) => {
 	// Add menu before directory header
 	const dirHeader = html[0].querySelector(".directory-header");
 	dirHeader.parentNode.insertBefore(this.section, dirHeader);
-
+    
+	if (game.settings.get('swffgUI-cc', 'autoColorFolder')) {
+		const dirlist = html[0].querySelector("ol.directory-list");
+		swffgUIModule.AutoColorFolders(0,0,0,150,dirlist.children);
+	}
 	//if (this.data !== undefined) 
 		section.insertAdjacentHTML(
 		  "afterbegin",
@@ -582,7 +652,11 @@ Hooks.on("renderJournalDirectory", (app, html, data) => {
 	// Add menu before directory header
 	const dirHeader = html[0].querySelector(".directory-header");
 	dirHeader.parentNode.insertBefore(this.section, dirHeader);
-
+	
+	if (game.settings.get('swffgUI-cc', 'autoColorFolder')) {
+		const dirlist = html[0].querySelector("ol.directory-list");
+		swffgUIModule.AutoColorFolders(-1,51,153,255,dirlist.children);
+	}
 	//if (this.data !== undefined) 
 		section.insertAdjacentHTML(
 		  "afterbegin",
@@ -596,6 +670,11 @@ Hooks.on("renderItemDirectory", (app, html, data) => {
 	// Add menu before directory header
 	const dirHeader = html[0].querySelector(".directory-header");
 	dirHeader.parentNode.insertBefore(this.section, dirHeader);
+	
+	if (game.settings.get('swffgUI-cc', 'autoColorFolder')) {
+		const dirlist = html[0].querySelector("ol.directory-list");
+		swffgUIModule.AutoColorFolders(-1,-1,50,255,dirlist.children);
+	}	
 
 	//if (this.data !== undefined) 
 		section.insertAdjacentHTML(
@@ -705,3 +784,4 @@ Hooks.on("renderSettingsConfig", (app, html, data) => {
 		  `
 		);
 });
+

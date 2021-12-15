@@ -339,7 +339,7 @@
 input::placeholder, placeholder, *placeholder {
     color: #a1972a !important;
 	text-shadow: 1px 1px black;
-	font-family: 'Auberesh';
+	/*font-family: 'Auberesh';*/
 }
 
 body{
@@ -424,6 +424,7 @@ form .form-group span.units {
 p {
 	color: white !important;
 	text-shadow: 1px 1px 5px black;
+	font-family: var(--major-button-font-family), sans-serif;
 }
 
 h3.auberesh {
@@ -436,6 +437,7 @@ h3.auberesh {
     margin: 3px;
     text-align: center;
 }
+
 
 section.swffgui {
     display: flex;
@@ -450,13 +452,13 @@ section.swffgui {
 .window-app .window-content input::placeholder {
    color:#a1972a;
    text-shadow: 1px 1px black;
-   font-family: 'Auberesh';
+   /*font-family: 'Auberesh';*/
 }
 
 #module-management .list-filters input::placeholder {
 	color: #a1972a;
 	text-shadow: 1px 1px black;
-	font-family: 'Auberesh';
+	/*font-family: 'Auberesh';*/
 }
 
 #settings h2 {
@@ -481,8 +483,8 @@ section.swffgui {
 }
 
 #client-settings.app.window-app.form #config-tabs .settings-list div.form-group input[type="checkbox"] {
-    top: 7px;
-    left: 7px;
+    top: 7px !important;
+    left: 7px !important;
 }
 
 #scenes .scene h3 {
@@ -521,6 +523,7 @@ textarea:focus {
 select {
 	color:white;
 	background: #000000e8;
+	font-family: var(--major-button-font-family);
 }
 
 select:focus {
@@ -1235,6 +1238,12 @@ select:focus {
     background-color: #4c1c1c !important;
 }
 
+.starwarsffg .item-sheet-weapon .block-attribute p {
+    color: black !important;
+    text-shadow: 0px 0px 0px black;
+    font-size: initial;
+}
+
 .starwarsffg .item-sheet-gear .editor-content {
     background-color: #2c0344;
 	--notchSize: 0.5rem;
@@ -1246,6 +1255,11 @@ select:focus {
     position: relative !important; 
     height: 11rem !important;
     max-width: 20rem !important;
+}
+
+.starwarsffg .item-details .item-properties {
+    font-weight: inherit !important;
+	color: white !important;
 }
 
 .starwarsffg .head
