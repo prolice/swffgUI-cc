@@ -421,6 +421,11 @@ form .form-group span.units {
     border-radius: 0px;
 }
 
+a.entity-link, a.inline-roll {
+	color:black;
+}
+
+
 p {
 	color: white !important;
 	text-shadow: 1px 1px 5px black;
