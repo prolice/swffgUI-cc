@@ -3,6 +3,12 @@ We assumed the racine directory as [https://github.com/prolice/swffgUI-cc](https
 
 **Image under CC0 1.0 Universal (CC0 1.0) Public Domain Dedication**
 
+# New images in Black Imperial theme
+## ui && art/ui
+* game-settings-border.png
+* players-border.png
+All images in this section are created from [https://static.wikia.nocookie.net/starwars/images/e/ef/TIE_Silencer_TFOWM.png/revision/latest?cb=20190629200209]
+
 # New images with EoE update
 ## ui && art/ui && ui/buttons
 * sidebar.png

@@ -1,5 +1,12 @@
 ## Release Notes:
 
+**Version [1.4.1]**
+* Black Imperial on release (v1.0).
+* Add Kylo Ren Vessel image (CC) see licence image link ![](https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/ImagesLicences.md).
+* Add Auberesh font and title everywhere.
+* Add effect on screen (screen line, screen refresh, screen flickering) more immersif and deactivable in the options
+* Add more ...
+
 **Version [1.4.0]**
 * Black Empire on release (v0.1)
 * Black Empire auberesh window borders coming soon ...
