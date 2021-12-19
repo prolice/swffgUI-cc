@@ -7,7 +7,8 @@ We assumed the racine directory as [https://github.com/prolice/swffgUI-cc](https
 ## ui && art/ui
 * game-settings-border.png
 * players-border.png
-All images in this section are created from [https://static.wikia.nocookie.net/starwars/images/e/ef/TIE_Silencer_TFOWM.png/revision/latest?cb=20190629200209]
+All images in this section are created from [https://wordpress.org/openverse/photos/06ea420a-3446-4664-98ba-f742bb62af74](https://wordpress.org/openverse/photos/06ea420a-3446-4664-98ba-f742bb62af74)
+found via https://wordpress.org/openverse/search/image?q=TIE%20Silencer
 
 # New images with EoE update
 ## ui && art/ui && ui/buttons
