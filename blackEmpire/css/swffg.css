@@ -454,11 +454,19 @@ section.swffgui {
     flex-wrap: wrap;
 }
 
+.flexrow > *, .flexcol > * {
+    flex: auto;
+}
+
 .window-app .window-content input::placeholder {
    color:#a1972a;
    text-shadow: 1px 1px black;
    /*font-family: 'Auberesh';*/
 }
+
+#ui-left {
+    width: 250px;
+} 
 
 #module-management .list-filters input::placeholder {
 	color: #a1972a;
@@ -928,6 +936,10 @@ select:focus {
 
 .starwarsffg .sheet .editor-content{
 	color:white;
+}
+
+.starwarsffg.sheet nav.sheet-tabs {
+    display: grid;
 }
 
 .starwarsffg .attribute,
@@ -1470,7 +1482,7 @@ select:focus {
 
 #sidebar-tabs > .item {
     position: relative;
-    flex: 0 0 27px;
+    flex: 0 0 20px;
     line-height: 32px;
     border: 1px solid transparent;
     border-radius: 0;

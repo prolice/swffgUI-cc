@@ -338,6 +338,10 @@ table.vendor_item {
   
  /* #client-settings .fa, */
  /* #client-settings  .fas { */
+#ui-left {
+    width: 250px;
+} 
+
  #client-settings .far {
     font-family: "Font Awesome 5 Free";
 	color:whitesmoke !important;
@@ -963,6 +967,26 @@ input::placeholder, placeholder, *placeholder {
 }
 	.window-app .window-content {
 	   background: url(../ui/parchment.jpg) round;
+   }
+   
+#keybindings.window-app.app.form .window-content {
+	background: url(../ui/parchment.jpg) round;
+	background-position: -75px -100px !important;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    padding: 15px 16px 20px 16px;
+    margin: 0px;
+    box-shadow: 0px 0px 30px black inset;
+    font-family: KuiperBelt;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+   }
+   
+#keybindings.window-app.app.form .window-content .notes{
+    color: #000000;
    }
  
 	
@@ -8504,6 +8528,10 @@ img {
 
 .starwarsffg .skillsGrid .skillTable .skillsHeader div {
     font-size: var(--major-button-font-size) !important;
+}
+
+.starwarsffg.sheet nav.sheet-tabs {
+    display: grid;
 }
 
 .starwarsffg.sheet .sheet-body {

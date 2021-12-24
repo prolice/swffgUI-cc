@@ -502,17 +502,17 @@ Hooks.once("init", async function () {
 	CONFIG.ui.nav = NavigationFFG;
 	CONFIG.TinyMCE.content_css.push('modules/swffgUI-cc/css/mce.css');
 	
-	game.settings.register('swffgUI-cc', 'autoColorFolder', {
-        name: game.i18n.localize('SWFFG.autocolorfolder'),
-        hint: game.i18n.localize('SWFFG.autocolorfolderHint'),
-        scope: 'client',
-        type: Boolean,
-        default: true,
-        config: true,
-        onChange: () => {
-            location.reload();
-        },
-    });
+	// game.settings.register('swffgUI-cc', 'autoColorFolder', {
+        // name: game.i18n.localize('SWFFG.autocolorfolder'),
+        // hint: game.i18n.localize('SWFFG.autocolorfolderHint'),
+        // scope: 'client',
+        // type: Boolean,
+        // default: true,
+        // config: true,
+        // onChange: () => {
+            // location.reload();
+        // },
+    // });
 });
 
 Hooks.on("ready", () => {
@@ -543,7 +543,7 @@ Hooks.on("renderSidebarTab", async (object, html) => {
 	let swffgUiDonate = game.i18n.localize('SWFFG.donate');
 	let swffgUiThemeMaintenance = game.i18n.localize('SWFFG.thememaintenance');
     let swffgUiReportThemeIssue = game.i18n.localize('SWFFG.reportthemeissue');
-	swffgUIDetails.innerHTML = "Star Wars UI (CC)<a style='animation: textShadow 1.6s infinite;' title='"+swffgUiDonate+"' href='https://ko-fi.com/prolice1403'><img src='https://storage.ko-fi.com/cdn/cup-border.png'></a><span style='font-size:var(--major-button-font-size);'>"+swffgUiVersion+"</span>";
+	swffgUIDetails.innerHTML = "Star Wars UI (CC)<a style='animation: textShadow 1.6s infinite;' title='"+swffgUiDonate+"' href='https://ko-fi.com/prolice1403'><img src='https://storage.ko-fi.com/cdn/cup-border.png' height='12px'></a><span style='font-size:var(--major-button-font-size);'>"+swffgUiVersion+"</span>";
     details.append(swffgUIDetails);
 	
 	this.section = document.createElement("section");

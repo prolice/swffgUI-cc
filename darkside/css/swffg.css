@@ -277,6 +277,11 @@ table.vendor_item {
     position: relative !important;
     left: 0px !important;
   }
+
+#ui-left {
+    width: 250px;
+} 
+
 #client-settings .far {
     font-family: "Font Awesome 5 Free";
 	color:whitesmoke !important;
@@ -8233,6 +8238,10 @@ img {
 
 .starwarsffg .item-sheet-species .characteristic {
     background: #eee8d9;
+}
+
+.starwarsffg.sheet nav.sheet-tabs {
+    display: grid;
 }
 
 .starwarsffg.sheet.actor .character .characteristic-item .characteristic-label {
