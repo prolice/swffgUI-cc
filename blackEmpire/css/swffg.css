@@ -938,13 +938,9 @@ select:focus {
 	color:white;
 }
 
-.starwarsffg.sheet.actor .tabs {
-    height: 21px;
-    display: flex;
-}
-
 .starwarsffg.sheet nav.sheet-tabs {
-    display: grid;
+    height: 21px !important;
+	display: flex;
 }
 
 .starwarsffg .attribute,

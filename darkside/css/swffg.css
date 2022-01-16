@@ -1636,6 +1636,9 @@ input::placeholder, placeholder, *placeholder {
   #sidebar-tabs > [data-tab~="settings"] {
     background: url(../ui/sidebar-button-settings.png);
   }
+  #sidebar-tabs > [data-tab~="cards"] {
+    background: url(../ui/sidebar-button-cards.png);
+  }
 
 /* ==================== (C) SIDEBAR (CHAT) ==================== */
     #sidebar .sidebar-tab .directory-list .folder-header {/*       border-bottom: 2px groove #800000; */margin-top: 2px;margin-left: 2px;}
