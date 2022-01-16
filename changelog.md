@@ -1,6 +1,10 @@
 ## Release Notes:
 
-**Version [1.4.1]**
+**Version [2.0.1]**
+* Fix missing buttons (rebel/edge of Empire and Drak Side Theme)
+* Fix rendering actor sheet v1 (tab button)
+
+**Version [2.0.0]**
 * Black Imperial on release (v1.0).
 * Add Kylo Ren Vessel image (CC) see licence image link ![](https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/ImagesLicences.md).
 * Add Auberesh font and title everywhere.
