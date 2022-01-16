@@ -1605,6 +1605,21 @@ input::placeholder, placeholder, *placeholder {
     visibility: visible;
     background: url(../ui/sidebar-button-settings-active.png);
   }
+  #sidebar-tabs > .item.active .fas.fa-id-badge {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 30px;
+    width: 30px;
+    border-radius: 0px;
+    box-shadow: none;
+    border: none;
+    border-bottom: none;
+    text-shadow: 0 0 10px #ff000000;
+    visibility: visible;
+    background: url(../ui/sidebar-button-cards-active.png);
+	
+  }
 
   #sidebar-tabs > [data-tab~="chat"] {
     background: url(../ui/sidebar-button-chat.png);
