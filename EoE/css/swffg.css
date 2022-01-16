@@ -377,7 +377,6 @@ table.vendor_item {
   a:hover {
     /* color: #480000; */
 	color:white;
-    font-size: 17px;
     text-shadow: 1px 1px 7px #b50000 !important;
     font-family: var(--major-button-font-family), serif;
     cursor: var(--application-cursor-pointer);
@@ -8546,6 +8545,8 @@ img {
 /*    width: 42px !important; */
     padding-left: 9px;
     margin-right: -7px !important;
+    height: 21px !important;
+	display: flex;
 }
 
 .starwarsffg .vehicle .grid-3col {

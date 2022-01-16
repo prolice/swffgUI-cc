@@ -8241,7 +8241,8 @@ img {
 }
 
 .starwarsffg.sheet nav.sheet-tabs {
-    display: grid;
+    height: 21px !important;
+	display: flex;
 }
 
 .starwarsffg.sheet.actor .character .characteristic-item .characteristic-label {
