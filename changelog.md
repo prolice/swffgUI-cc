@@ -1,4 +1,7 @@
 ## Release Notes:
+**Version [2.0.2]**
+* Fix Bug when uninstall module and loss of pause image
+* Fix Compendium browsing unreadable
 
 **Version [2.0.1]**
 * Fix missing buttons (rebel/edge of Empire and Drak Side Theme)

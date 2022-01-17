@@ -395,6 +395,11 @@ table.vendor_item {
   font-size: var(--major-button-font-size) !important;
 }
 
+.window-app .window-content .compendium{
+	background: #cab4a7 url(../ui/frames/parchment-texture.png) no-repeat;
+    background-position-x: -110px;
+    background-position-y: -120px;
+}
 
 body.vtt.game.screen-door::before {
     content: " ";

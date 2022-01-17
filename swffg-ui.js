@@ -39,7 +39,7 @@ class PauseFFG extends Pause {
   getData() {
     let icon = game.settings.get("starwarsffg", "ui-pausedImage");
     if (icon?.length <= 0) {
-      icon = "icons/svg/clockwork.svg";
+      icon = "/modules/swffgUI-cc/default-ui/pause-icon.png";
     }
 
     return {
@@ -69,7 +69,7 @@ class swffgUIModule {
 
     async init() {
 	
-	game.settings.set("starwarsffg", "ui-pausedImage", "/modules/swffgUI-cc/default-ui/pause-icon.png");
+	//game.settings.set("starwarsffg", "ui-pausedImage", "/modules/swffgUI-cc/default-ui/pause-icon.png");
 	game.settings.register('swffgUI-cc', 'flickering', {
         name: game.i18n.localize('SWFFG.flickering'),
         hint: game.i18n.localize('SWFFG.flickeringHint'),
