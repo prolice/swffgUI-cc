@@ -37,8 +37,8 @@
   "url": "https://github.com/prolice/swffgUI-cc",
   "readme": "https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/README.md",
   "changelog": "https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/changelog.md",
-  "manifest": "https://raw.githubusercontent.com/prolice/swffgUI-cc/swffgUI-cc/module.json",
-  "download": "https://github.com/prolice/swffgUI-cc/archive/v2.0.2.zip",
+  "manifest": "https://github.com/prolice/swffgUI-cc/releases/download/v2.0.2/module.json",
+  "download": "https://github.com/prolice/swffgUI-cc/releases/download/v2.0.2/module.zip",
   "flags": {
 		"allowBugReporter": true
 	},

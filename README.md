@@ -18,7 +18,7 @@ https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/ImagesLicences.md
 
 * **Total Download**: 
 		![GitHub release](https://img.shields.io/github/release-date/prolice/swffgUI-cc)
-		[![Github all releases](https://img.shields.io/github/downloads/prolice/swffgUI-cc/total.svg)](https://GitHub.com/prolice/swffgUI-cc/releases/)
+		![GitHub release](https://img.shields.io/github/release-date/prolice/swffgUI-cc/total)
 		
 * **Issues**:
 		[![GitHub issues](https://img.shields.io/github/issues/prolice/swffgUI-cc/bug.svg)](https://GitHub.com/prolice/swffgUI-cc/issues/)
