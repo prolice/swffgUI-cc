@@ -17,7 +17,9 @@ All images, buttons, artwork, and other assets taken from sources which are lice
 * **Total Download**: 
 		![GitHub release](https://img.shields.io/github/release-date/prolice/swffgUI-cc)
 		[![Github all releases](https://img.shields.io/github/downloads/prolice/swffgUI-cc/total.svg)](https://GitHub.com/prolice/swffgUI-cc/releases/)
-		[https://img.shields.io/github/downloads/prolice/swffgUI-cc/blob/swffgUI-cc/total.svg](https://github.com/prolice/swffgUI-cc/releases)
+		
+* **Issues**:
+		[![GitHub issues](https://img.shields.io/github/issues/prolice/swffgUI-cc/bug.svg)](https://GitHub.com/prolice/swffgUI-cc/issues/)
  
 ### Link(s) to Module
 * [https://github.com/prolice/swffgUI-cc](https://github.com/prolice/swffgUI-cc)
