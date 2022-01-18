@@ -1,7 +1,9 @@
 
 ## swffgUI-cc Module
 * **Licences**:
-All images, buttons, artwork, and other assets taken from sources which are licensed Creative Commons CC-BY. For a list of each image and a link to its source and license please see: https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/ImagesLicences.md
+All images, buttons, artwork, and other assets taken from sources which are licensed Creative Commons CC-BY. For a list of each image and a link to its source and license please see: 
+https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/ImagesLicences.md
+
 ![](https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/cc-by.svg)
 
 * **Author**: Prolice#9101
