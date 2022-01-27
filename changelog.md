@@ -1,4 +1,9 @@
 ## Release Notes:
+
+**Version [2.0.4]**
+* Fix Display Bug: Actor Sheet
+* [BUG] chat-message-border-private.png is missing #15 --> Add missing Images 
+
 **Version [2.0.3]**
 * Fix Display Bug: Actor Sheet / Vehicule Sheet Tab 
 
