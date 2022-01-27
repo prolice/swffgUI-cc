@@ -1,4 +1,7 @@
 ## Release Notes:
+**Version [2.0.3]**
+* Fix Display Bug: Actor Sheet / Vehicule Sheet Tab 
+
 **Version [2.0.2]**
 * Fix Bug when uninstall module and loss of pause image
 * Fix Compendium browsing unreadable

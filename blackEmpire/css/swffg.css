@@ -938,10 +938,10 @@ select:focus {
 	color:white;
 }
 
-.starwarsffg.sheet nav.sheet-tabs {
+/*.starwarsffg.sheet nav.sheet-tabs {
     height: 21px !important;
 	display: flex;
-}
+}*/
 
 .starwarsffg .attribute,
 .starwarsffg .attribute .block-attribute,
