@@ -119,6 +119,63 @@
   @return mix(white, $color, $percentage);
 }
 
+/* ==================== (E) GLOBAL CSS VARIABLES ============== */
+  :root {
+  /* =================== 1. ACTOR SHEET FONT STYLES =========== */
+    --character-sheet-name-auberesh:Auberesh;
+	
+	--window-header-title-font-family: DistantGalaxy;
+    --window-header-title-font-size: 17px;
+	--window-header-vehicle-font-size: xx-large;
+    --window-header-title-font-weight: normal;
+    --window-header-title-color: #f5f5f5;
+
+    --major-button-font-family: KuiperBelt;
+    --major-button-font-size: 20px;
+    --major-button-font-weight: normal;
+    --major-button-color: #dadada;
+
+    --tab-header-font-family: EarthOrbiter;
+    --tab-header-font-size: 18px;
+    --tab-header-font-weight: 700;
+    --tab-header-color: #ffc100;
+    --tab-header-color-active: #1febff;
+
+    --actor-input-font-family: KuiperBelt;
+    --actor-input-font-size: 16px;
+	--chatform-input-font-size: 16px;
+    --actor-input-font-weight: 500;
+    --actor-input-color: #000000;
+	
+    --actor-label-font-family: KuiperBelt;
+    --actor-label-font-size: 22px;
+    --actor-label-font-weight: 700;
+    --actor-label-color: #1400ffc4;
+	
+	--actor-competence-font-family: KuiperBelt;
+    --actor-competence-font-size: 16px;
+    --actor-competence-font-weight: 700;
+    --actor-competence-color: #1400ffc4;
+
+  /* =================== 2. DEBUGGING HIGHLIGHTERS ============ */ 
+    --debug-background-color-red: #ff000054;
+    --debug-background-color-blue: #1d00ff54;
+    --debug-background-color-green: #54ff0054;
+
+    --debug-box-shadow-red: inset 0 0 2px red;
+    --debug-box-shadow-blue: inset 0 0 2px blue;
+    --debug-box-shadow-green: inset 0 0 2px green;
+	
+  /* =================== 3. WINDOW BORDER SIZE ================ */
+	--window-content-border-image-width: 10px 10px 10px 10px;
+	--window-content-border-image-outset: 8px 8px 8px 8px;
+	--window-header-margin: 0px 0px 8px 0px;
+	--window-border-image-slice: 20 14 20 14;
+	
+  /* ================== 4. APPLICATION CURSOR ================= */
+    --application-cursor-pointer : pointer;
+  }
+
 .ffg-star-wars-enhancements-opening-crawl .titles > div .episode {
     margin-bottom: -2em;
     font-size: 150%;
@@ -321,6 +378,14 @@ table.vendor_item {
   button:hover {
     box-shadow: 0 0 5px #ef0000 !important;
 	cursor: var(--application-cursor-pointer);
+  }
+  
+  option {
+    background: #a06101;
+  }
+  
+   #chat option {
+	 background: whitesmoke; 
   }
   input[type="text"]:focus, 
   input[type="password"]:focus {
@@ -688,62 +753,7 @@ li.folder > .folder-header h3 {
 	font-size: 20px;
   }
 
-/* ==================== (E) GLOBAL CSS VARIABLES ============== */
-  :root {
-  /* =================== 1. ACTOR SHEET FONT STYLES =========== */
-    --character-sheet-name-auberesh:Auberesh;
-	
-	--window-header-title-font-family: DistantGalaxy;
-    --window-header-title-font-size: 17px;
-	--window-header-vehicle-font-size: xx-large;
-    --window-header-title-font-weight: normal;
-    --window-header-title-color: #f5f5f5;
 
-    --major-button-font-family: KuiperBelt;
-    --major-button-font-size: 20px;
-    --major-button-font-weight: normal;
-    --major-button-color: #dadada;
-
-    --tab-header-font-family: EarthOrbiter;
-    --tab-header-font-size: 18px;
-    --tab-header-font-weight: 700;
-    --tab-header-color: #ffc100;
-    --tab-header-color-active: #1febff;
-
-    --actor-input-font-family: KuiperBelt;
-    --actor-input-font-size: 16px;
-	--chatform-input-font-size: 16px;
-    --actor-input-font-weight: 500;
-    --actor-input-color: #000000;
-	
-    --actor-label-font-family: KuiperBelt;
-    --actor-label-font-size: 22px;
-    --actor-label-font-weight: 700;
-    --actor-label-color: #1400ffc4;
-	
-	--actor-competence-font-family: KuiperBelt;
-    --actor-competence-font-size: 16px;
-    --actor-competence-font-weight: 700;
-    --actor-competence-color: #1400ffc4;
-
-  /* =================== 2. DEBUGGING HIGHLIGHTERS ============ */ 
-    --debug-background-color-red: #ff000054;
-    --debug-background-color-blue: #1d00ff54;
-    --debug-background-color-green: #54ff0054;
-
-    --debug-box-shadow-red: inset 0 0 2px red;
-    --debug-box-shadow-blue: inset 0 0 2px blue;
-    --debug-box-shadow-green: inset 0 0 2px green;
-	
-  /* =================== 3. WINDOW BORDER SIZE ================ */
-	--window-content-border-image-width: 10px 10px 10px 10px;
-	--window-content-border-image-outset: 8px 8px 8px 8px;
-	--window-header-margin: 0px 0px 8px 0px;
-	--window-border-image-slice: 20 14 20 14;
-	
-  /* ================== 4. APPLICATION CURSOR ================= */
-    --application-cursor-pointer : pointer;
-  }
   
 input::placeholder, placeholder, *placeholder {
     color: #4f0000b8 !important;
@@ -8390,6 +8400,9 @@ img {
 .starwarsffg.sheet.actor.v2 .tabs .item,
 .starwarsffg.v2 .tabs .item {
   background: url(../ui/controls-background36x36.png) !important;
+  margin: 0px;
+  width: 36px;
+  height: 36px;
 }
 
 .starwarsffg.sheet.item.v2 .tabs .item.active,
@@ -8398,6 +8411,7 @@ img {
   text-decoration: none;
   text-shadow: none;
   background: url(../ui/controls-active-background36x36.png) !important;
+  margin-right: 0px;
 }
 
 .starwarsffg.sheet.actor.v2 .tabs .item {
@@ -8408,6 +8422,7 @@ img {
 .starwarsffg.sheet.actor.v2 .tabs .item.active {
   flex: inherit;
   height:36px;
+  width :36px;
   color:Yellow ;
 }
 
@@ -8444,6 +8459,16 @@ img {
 .starwarsffg .vehicle .injuries .block-background {
 	height:auto;
 	/* bottom:5px; */
+}
+
+.starwarsffg.sheet.actor.v2 nav.sheet-tabs {
+    display: grid;
+	height : 280px !important;
+}
+
+.starwarsffg.sheet nav.sheet-tabs {
+    display: flex;
+	height : 45px !important;
 }
 /* .starwarsffg.sheet.actor .character .biography-values:hover{ */
 	/* height:185px; */
@@ -8522,11 +8547,10 @@ img {
   line-height: 35px;
   font-size: 14pt;
   margin: 8px 0px 1px 5px;
- 
-    height: 40px;
-    width: 40px;
-    padding-top: 8px;
-    padding-left: 1px;
+  height: 40px;
+  width: 40px;
+  padding-top: 10px;
+  padding-left: 6px;
 }
 
 .starwarsffg.v2 .tabs .item.active {

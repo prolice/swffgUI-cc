@@ -380,6 +380,15 @@ table.vendor_item {
     box-shadow: 0 0 5px #00c7ff !important;
 	cursor: var(--application-cursor-pointer);
   }
+  
+  option {
+    background: #00486b;
+  }
+  
+  #chat option {
+	 background: whitesmoke; 
+  }
+  
   input[type="text"]:focus, 
   input[type="password"]:focus {
     box-shadow: 0 0 5px #00c7ff !important;
@@ -8399,6 +8408,9 @@ img {
 .starwarsffg.sheet.actor.v2 .tabs .item,
 .starwarsffg.v2 .tabs .item {
   background: url(../ui/controls-background36x36.png) !important;
+  margin: 0px;
+  width: 36px;
+  height: 36px;
 }
 
 .starwarsffg.sheet.item.v2 .tabs .item.active,
@@ -8418,6 +8430,7 @@ img {
 .starwarsffg.sheet.actor.v2 .tabs .item.active {
   flex: inherit;
   height:36px;
+  width :36px;
   color:cyan ;
 }
 
@@ -8466,6 +8479,16 @@ img {
 
 .starwarsffg.sheet.actor .vehicle .characteristic-item .characteristic {
     background: whitesmoke;
+}
+
+.starwarsffg.sheet.actor.v2 nav.sheet-tabs {
+    display: grid;
+	height : 280px !important;
+}
+
+.starwarsffg.sheet nav.sheet-tabs {
+    display: flex;
+	height : 45px !important;
 }
 /* .starwarsffg.sheet.actor .character .biography-values:hover{ */
 	/* height:185px; */
@@ -8519,7 +8542,7 @@ img {
 .starwarsffg.v2 .tabs {
 	position: absolute !important;
 	width: 40px !important;
-	right: -40px !important;
+	right: -45px !important;
 	top: 60px !important;
 	height: auto !important;
 	
@@ -8541,14 +8564,13 @@ img {
 }
 
 .starwarsffg.v2 .tabs .item {
-  line-height: 35px;
-  font-size: 14pt;
-  margin: 8px 0px 1px 5px;
- 
-    height: 40px;
-    width: 40px;
-    padding-top: 8px;
-    padding-left: 1px;
+    line-height: 35px;
+    font-size: 13pt;
+    margin: 6px 0px 1px 5px;
+    height: 36px;
+    width: 36px;
+    padding-top: 9px;
+    padding-left: 4px;
 }
 
 .starwarsffg.v2 .tabs .item.active {

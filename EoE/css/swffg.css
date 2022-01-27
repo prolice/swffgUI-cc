@@ -393,7 +393,13 @@ table.vendor_item {
   button:hover i{
 	color:white !important; 
   }
+  option {
+    background: #6b4500;
+  }
   
+  #chat option {
+	 background: whitesmoke; 
+  }
   input[type="text"]:focus, 
   input[type="password"]:focus {
     box-shadow: 0 0 5px #c70000 !important;
@@ -8556,9 +8562,14 @@ img {
 .starwarsffg .skillsGrid .skillTable .skillsHeader div {
     font-size: var(--major-button-font-size) !important;
 }
+.starwarsffg.sheet.actor.v2 nav.sheet-tabs {
+    display: grid;
+	height : 270px !important;
+}
 
 .starwarsffg.sheet nav.sheet-tabs {
-    display: grid;
+    display: flex;
+	height : 45px !important;
 }
 
 .starwarsffg.sheet .sheet-body {
@@ -8569,13 +8580,13 @@ img {
     border-bottom: 3px double #66141a;
 }
 
-.starwarsffg.sheet nav.sheet-tabs {
-/*    width: 42px !important; */
+/*.starwarsffg.sheet nav.sheet-tabs {
+
     padding-left: 9px;
     margin-right: -7px !important;
     height: 21px !important;
 	display: flex;
-}
+}*/
 
 .starwarsffg .vehicle .grid-3col {
     /* grid-column: span 3/ span 3; */
@@ -8806,12 +8817,14 @@ img {
   margin: 0px;
   text-shadow: 0 0 black;
   height: 35px;
+  margin-left: 5px;
 }
 
 .starwarsffg.sheet.actor.v2 .tabs .item.active {
   flex: inherit;
   height:36px;
   color:red ;
+  margin-left: 5px;
 }
 
 .starwarsffg.sheet select:hover{
@@ -8920,7 +8933,7 @@ img {
 .starwarsffg.v2 .tabs {
 	position: absolute !important;
 	width: 40px !important;
-	right: -40px !important;
+	right: -47px !important;
 	top: 60px !important;
 	height: auto !important;
 	

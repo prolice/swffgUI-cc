@@ -361,6 +361,10 @@ button:hover, button:focus {
     box-shadow: 0 0 5px white;
 }
 
+option {
+    background: #000000;
+}
+
 h2 {
     border-bottom: 5px solid white;
 	text-shadow: 0 0 15px white;
