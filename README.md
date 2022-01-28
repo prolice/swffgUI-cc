@@ -33,7 +33,7 @@ Every images, buttons and all stuff are covered by licence Creative Common CC BY
 May the the Interface be with you !
 
 **Features Overview:**
-![](https://youtu.be/noCjBQDotD0)
+[![Features overview](https://img.youtube.com/vi/noCjBQDotD0/0.jpg)](https://www.youtube.com/watch?v=noCjBQDotD0)
 
 ## Installation
 ### Auto install Method (recommended)
