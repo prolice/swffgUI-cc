@@ -269,6 +269,8 @@ table.vendor_item {
  :root {
   /* =================== 1. ACTOR SHEET FONT STYLES =========== */
 	--character-sheet-name-auberesh:Auberesh;
+	--application-auberesh-title: none;
+	--application-auberesh-sidebar-title: none;
   
     --window-header-title-font-family: DistantGalaxy;
     --window-header-title-font-size: 17px;
@@ -476,6 +478,7 @@ body.vtt.game.screen-door::before {
     margin: -10px 0 0 0;
     display: none;
     animation: textShadow 1.6s infinite;
+	display: var(--application-auberesh-title);
 }
 
 #scenes .scene h3 span {
@@ -490,19 +493,19 @@ section.swffgui {
     justify-content: center;
     align-items: center;
     max-height: 30px;
-	display: none;
+	display: var(--application-auberesh-sidebar-title);
 }
 
 h3.auberesh {
     font-family: 'Auberesh';
-	display: none;
+	display: var(--application-auberesh-title);
 }
 
 .swffgui h3 {
     flex: 0 100%;
     margin: 3px;
     text-align: center;
-	display: none;
+	display: var(--application-auberesh-title);
 }
 
 /* ==================== (C) TINY MCE EDITOR FONT CHANGES ====== */
@@ -1875,7 +1878,10 @@ input::placeholder, placeholder, *placeholder {
   top: -75px;
   left: calc(50% - 132px);
 }
-
+#pause > h3 span
+{
+  font-family: 'DistantGalaxy';
+}
 
 /* ==================== (D) SIDEBAR (COMBAT TRACKER) ========== */
   #combat-popout #combat-round , #sidebar #combat #combat-round {

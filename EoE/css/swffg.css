@@ -269,6 +269,8 @@ table.vendor_item {
  :root {
   /* =================== 1. ACTOR SHEET FONT STYLES =========== */
 	--character-sheet-name-auberesh:Auberesh;
+	--application-auberesh-title: none;
+	--application-auberesh-sidebar-title: none;
   
     --window-header-title-font-family: DistantGalaxy;
     --window-header-title-font-size: 16px;
@@ -511,7 +513,7 @@ body.vtt.game.screen-door::before {
     font-family: auberesh;
     font-size: xx-small;
     margin: -10px 0 0 0;
-    display: block;
+    display: var(--application-auberesh-title);
     animation: textShadow 1.6s infinite;
 }
 
@@ -519,6 +521,7 @@ body.vtt.game.screen-door::before {
     font-size: medium;
     font-family: 'Auberesh';
 	animation: textShadow 1.6s infinite;
+	display:none;
 }
 
 #scenes .scene h3 {
@@ -530,18 +533,19 @@ body.vtt.game.screen-door::before {
 }
 
 section.swffgui {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 	max-height: 24px;
 	flex-direction: column;
     flex-wrap: wrap;
+	display: var(--application-auberesh-sidebar-title);
 }
 
 h3.auberesh {
     font-family: 'Auberesh' !important;
 	animation: textShadow 1.6s infinite;
+	display: var(--application-auberesh-title);
 }
 
 .swffgui h3 {
@@ -549,6 +553,7 @@ h3.auberesh {
     margin: 3px;
     text-align: center;
 	color:white;
+	display: var(--application-auberesh-title);
 }
 /* ==================== (C) TINY MCE EDITOR FONT CHANGES ====== */
   .app.window-app .editor {

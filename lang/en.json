@@ -33,8 +33,10 @@
   "SWFFG.donate":"Thanks for the coffee ;-)",
   "SWFFG.thememaintenance":"Theme Maintenance",
   "SWFFG.reportthemeissue":"Report theme issue",
-   "SWFFG.autocolorfolder": "Force gradient folder color.",
+  "SWFFG.autocolorfolder": "Force gradient folder color.",
   "SWFFG.autocolorfolderHint": "Colorize folders (level#1) with a single gradient color",
+  "SWFFG.AubereshSettings" : "Active the auberesh titles ?",
+  "SWFFG.AubereshSettingsHint" : "Navigation and sidebar will be enhanced with auberesh titles.",
   
   "GAME.Paused": "Pause"
 }

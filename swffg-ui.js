@@ -76,7 +76,7 @@ class swffgUIModule {
         scope: 'client',
         type: Boolean,
         default: true,
-        config: true,
+        config: false,
         onChange: () => {
             location.reload();
         },
@@ -87,7 +87,7 @@ class swffgUIModule {
         scope: 'client',
         type: Boolean,
         default: true,
-        config: true,
+        config: false,
         onChange: () => {
             location.reload();
         },
@@ -98,7 +98,7 @@ class swffgUIModule {
         scope: 'client',
         type: Boolean,
         default: true,
-        config: true,
+        config: false,
         onChange: () => {
             location.reload();
         },
@@ -111,7 +111,7 @@ class swffgUIModule {
             hint: game.i18n.localize("SWFFG.selectSkinHint"),
             scope: "client",
             config: true,
-            default: 0,
+            default: 4,
             type: Number,
 			choices: {
 				0: "SWFFG.options.indicator.choices.0",
@@ -278,7 +278,7 @@ class swffgUIModule {
         hint: "SWFFG.CursorSettingsHint",
         scope: "Client",
         config: true,
-        default: true,
+        default: false,
         type: Boolean,
         onChange: (value) => { 
             if (value){
@@ -307,6 +307,25 @@ class swffgUIModule {
             else {
               document.documentElement.style.setProperty('--application-cursor-pointer', 'pointer');
             }
+        }
+      });
+	  
+	  game.settings.register("swffgUI-cc", "enable-auberesh-title", {
+        name: "SWFFG.AubereshSettings",
+        hint: "SWFFG.AubereshSettingsHint",
+        scope: "Client",
+        config: true,
+        default: false,
+        type: Boolean,
+        onChange: (value) => { 
+            if (value){
+			  document.documentElement.style.setProperty('--application-auberesh-title', 'contents');
+		      document.documentElement.style.setProperty('--application-auberesh-sidebar-title', 'flex');
+			}
+            else {				
+              document.documentElement.style.setProperty('--application-auberesh-title', 'none');
+			  document.documentElement.style.setProperty('--application-auberesh-sidebar-title', 'none');
+			}
         }
       });
 	  
@@ -491,6 +510,16 @@ class swffgUIModule {
 			document.body.appendChild(myImgA);
 		} 
         
+		let isAubereshTitleEnabled = game.settings.get("swffgUI-cc", "enable-auberesh-title");
+		if (isAubereshTitleEnabled){
+			document.documentElement.style.setProperty('--application-auberesh-title', 'contents');
+		    document.documentElement.style.setProperty('--application-auberesh-sidebar-title', 'flex');
+		}
+        else {				
+            document.documentElement.style.setProperty('--application-auberesh-title', 'none');
+			document.documentElement.style.setProperty('--application-auberesh-sidebar-title', 'none');
+		}
+		
 	}
 }
 

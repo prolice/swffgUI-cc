@@ -8,7 +8,7 @@ https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/ImagesLicences.md
 
 * **Author**: Prolice#9101
 * **Special Thanks to**: Aljovin, StealthViper, Havoclivekiller, SnoringMountain
-* **Version**: ![](https://img.shields.io/badge/swffgUI--cc-v2.0.4-green)
+* **Version**: ![](https://img.shields.io/badge/swffgUI--cc-v2.1.0-green)
 * **Foundry VTT Compatibility**: ![](https://img.shields.io/badge/Foundry-v0.8.9-informational) to ![](https://img.shields.io/badge/Foundry-v9-informational)
 
 * **System Compatibility**: ![](https://img.shields.io/badge/Starwarsffg-v1.3-orange) to ![](https://img.shields.io/badge/Starwarsffg-v1.71-orange) 
@@ -32,21 +32,8 @@ swffgUI-cc for FoundryVTT - A full UI for starwarsffg, new button, windows style
 Every images, buttons and all stuff are covered by licence Creative Common CC BY 2.0 [https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich](https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=rich)
 May the the Interface be with you !
 
-**Default skin overview:**
-![](https://raw.githubusercontent.com/prolice/swffgUI-cc/AoR-dev/screenshots/default-overview.jpg)
-
-**Edge of Empire overview:**
-![](https://raw.githubusercontent.com/prolice/swffgUI-cc/swffgUI-cc/screenshots/EoE-overview.jpg)
-
-**The Rebel UI overview:**
-![](https://raw.githubusercontent.com/prolice/swffgUI-cc/swffgUI-cc/screenshots/rebel-overview.jpg)
-
-**The Galactic Empire UI:**
-![](https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/screenshots/empire-overview.jpg)
-
-**Black Empire:**
-* The window border (auberesh) coming soon ...
-![](https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/screenshots/dark-empire-overview.jpg)
+**Features Overview:**
+![](https://youtu.be/noCjBQDotD0)
 
 ## Installation
 ### Auto install Method (recommended)

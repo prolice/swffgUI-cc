@@ -35,6 +35,8 @@
   "SWFFG.reportthemeissue":"Mentionner un problème",
   "SWFFG.autocolorfolder": "Coloriser mes dossiers en dégradé.",
   "SWFFG.autocolorfolderHint": "Permet de coloriser les dossiers Acteurs, Scènes, ... avec un dégradé de couleur unique",
+  "SWFFG.AubereshSettings" : "Activer l'affichage des titres en Auberesh ?",
+  "SWFFG.AubereshSettingsHint" : "La barre de navigation et la barre de menu auront des titres en Auberesh.",
   
   "CHAT.Export": "Exporter la Discussion",
   "CHAT.FlushTitle": "Vider la Discussion",

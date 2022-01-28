@@ -265,9 +265,12 @@ body.vtt.game.screen-door::before {
     font-family: auberesh;
     font-size: xx-small;
     margin: -10px 0 0 0;
-    display: none;
+    display: var(--application-auberesh-title);
     animation: textShadow 1.6s infinite;
 }
+/*#scenes .scene h3 {
+    line-height: 45px;
+}*/
 
 #scenes .scene h3 span {
     font-size: medium;
@@ -276,24 +279,25 @@ body.vtt.game.screen-door::before {
 }
 
 section.swffgui {
-    display: flex;
+    /*display: flex;*/
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    max-height: 30px;
-	display: none;
+    max-height: 24px;
+    flex-direction: column;
+	display: var(--application-auberesh-sidebar-title);
 }
 
 h3.auberesh {
     font-family: 'Auberesh';
-	display: none;
+	display: var(--application-auberesh-title);
 }
 
 .swffgui h3 {
     flex: 0 100%;
     margin: 3px;
     text-align: center;
-	display: none;
+	display: var(--application-auberesh-title);
 }
 .ffg-star-wars-enhancements-opening-crawl .titles > div .episode {
     margin-bottom: -2em;
@@ -326,7 +330,7 @@ h3.auberesh {
 }
 
 .swdatapad-wanted .credits {
-    font-family: AurekBesh;
+    font-family: AubekBesh;
 }
 
 .swdatapad-wanted {
@@ -432,6 +436,8 @@ table.vendor_item {
 :root {
   /* =================== 1. ACTOR SHEET FONT STYLES =========== */
 	--character-sheet-name-auberesh:Auberesh;
+	--application-auberesh-title: none;
+	--application-auberesh-sidebar-title: none;
 	
 	--major-button-font-size: 16px;
 	--major-button-font-family: Eras;
@@ -444,6 +450,10 @@ button {
 	background: #dcd4c2;
     font-family: var(--major-button-font-family), sans-serif;
 	font-size: var(--major-button-font-size);
+}
+
+.starwarsffg.sheet.actor .tabs {
+    height: 45px;
 }
 
 .window-app .window-content {
@@ -631,7 +641,6 @@ button {
 #pause > h3 span
 {
   font-family: 'DistantGalaxy';
-  display:none;
 }
 
 #pause > img {

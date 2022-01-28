@@ -1,4 +1,8 @@
 ## Release Notes:
+**Version [2.1.0]**
+* Add auberesh settings to active or deactivate the auberesh display
+* New Features video
+* Default Skin is now more tiny
 
 **Version [2.0.4]**
 * Fix Display Bug: Actor Sheet
