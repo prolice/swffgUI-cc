@@ -75,8 +75,8 @@ class swffgUIModule {
         hint: game.i18n.localize('SWFFG.flickeringHint'),
         scope: 'client',
         type: Boolean,
-        default: true,
-        config: false,
+        default: false,
+        config: true,
         onChange: () => {
             location.reload();
         },
@@ -86,8 +86,8 @@ class swffgUIModule {
         hint: game.i18n.localize('SWFFG.screenDoorHint'),
         scope: 'client',
         type: Boolean,
-        default: true,
-        config: false,
+        default: false,
+        config: true,
         onChange: () => {
             location.reload();
         },
@@ -97,8 +97,8 @@ class swffgUIModule {
         hint: game.i18n.localize('SWFFG.scanlineHint'),
         scope: 'client',
         type: Boolean,
-        default: true,
-        config: false,
+        default: false,
+        config: true,
         onChange: () => {
             location.reload();
         },
