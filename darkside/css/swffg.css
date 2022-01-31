@@ -662,7 +662,7 @@ li.folder > .folder-header h3 {
   }
   
   .window-app.sheet.actor .window-content {
-  background: #d8cbc0 url(../ui/frames/parchment-texture.png) no-repeat;
+  background: #905f65 url(../ui/frames/parchment-texture.png) no-repeat !important;
 }
 
 .grid,
@@ -5176,7 +5176,9 @@ font-family: var(--actor-input-font-family);
       margin-top: 17px !important;
     }
 
-
+	.app.window-app.cards-config .window-content {
+     background: #905f65 url(../ui/frames/parchment-texture.png) no-repeat;
+    }
 
   /* ================== 4. SCENE NOTES ======================== */
     .app.window-app.sheet.scene-notes .window-content {
@@ -8423,6 +8425,8 @@ img {
 .starwarsffg.sheet.actor.v2 .tabs .item {
   line-height: normal;
   color:#fff;
+  font-size: 15px;
+  padding: 10px 0px 0px 3px;
 }
 
 .starwarsffg.sheet.actor.v2 .tabs .item.active {
@@ -8430,6 +8434,8 @@ img {
   height:36px;
   width :36px;
   color:Yellow ;
+  font-size: 15px;
+  padding: 10px 0px 0px 3px;
 }
 
 .starwarsffg.sheet select:hover{
@@ -8469,7 +8475,8 @@ img {
 
 .starwarsffg.sheet.actor.v2 nav.sheet-tabs {
     display: grid;
-	height : 280px !important;
+    height: fit-content !important;
+    align-content: space-around;
 }
 
 .starwarsffg.sheet nav.sheet-tabs {
@@ -8545,7 +8552,8 @@ img {
 	-ms-filter: "fliph";
 	
 	padding-bottom: 20px !important;
-	padding-top: 10px !important;
+	padding-top: 20px !important;
+	padding-left: 4px !important;
 	background-size: 40px 100% !important;
 }
 

@@ -452,10 +452,13 @@ button {
 	font-size: var(--major-button-font-size);
 }
 
-.starwarsffg.sheet.actor .tabs {
+/*.starwarsffg.sheet.actor .tabs {
     height: 45px;
+}*/
+.starwarsffg.sheet nav.sheet-tabs {
+    padding: 0;
 }
-
+.sheet nav.sheet-tabs {
 .window-app .window-content {
     background: #dcd4c2;
     font-size: 9pt;

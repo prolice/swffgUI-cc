@@ -1,4 +1,8 @@
 ## Release Notes:
+
+**Version [2.1.1]**
+* Adapt to version 1.72 of starwarffg system
+
 **Version [2.1.0]**
 * Add auberesh settings to active or deactivate the auberesh display
 * New Features video

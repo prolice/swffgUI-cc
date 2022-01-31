@@ -5235,7 +5235,11 @@ font-family: var(--actor-input-font-family);
     border: 1px solid #5d513e;
     background: #1f1f1fb5;
   }
-
+  
+  .app.window-app.cards-config .window-content {
+     background: #d8cbc0 url(../ui/frames/parchment-texture.png) no-repeat;
+	 background-position: -100px -120px !important;
+  }
   /* ================== 1. UPDATE OR CREATE FOLDER ============ */
     .app.window-app #folder-create label {
       max-width: 148px;
@@ -8569,7 +8573,10 @@ img {
 }
 .starwarsffg.sheet.actor.v2 nav.sheet-tabs {
     display: grid;
-	height : 270px !important;
+    height: fit-content !important;
+    align-content: space-around;
+    padding: 0;
+    margin: 0;
 }
 
 .starwarsffg.sheet nav.sheet-tabs {
@@ -8955,7 +8962,8 @@ img {
 	-ms-filter: "fliph";
 	
 	padding-bottom: 20px !important;
-	padding-top: 10px !important;
+	padding-top: 20px !important;
+	padding-left: 4px !important;
 	background-size: 40px 100% !important;
 }
 
