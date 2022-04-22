@@ -7826,7 +7826,7 @@ input[name="dd-import.importPath"] {
   visibility: hidden;
 }
 #navigation #scene-list {
-  padding-right: 100px;
+  padding-right: 400px;
 }
 
 .app.window-app .window-header > a {

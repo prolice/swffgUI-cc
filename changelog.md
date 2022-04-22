@@ -1,5 +1,9 @@
 ## Release Notes:
 
+**Version [2.1.2]**
+* Bug fix color display (minor).
+* Bug fix navigation menu hide by the sidebar.
+
 **Version [2.1.1]**
 * Adapt to version 1.72 of starwarffg system
 

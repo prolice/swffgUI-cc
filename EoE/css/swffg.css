@@ -525,11 +525,13 @@ body.vtt.game.screen-door::before {
 }
 
 #scenes .scene h3 {
-    line-height: 45px;
+    /*line-height: 45px;*/
     text-align: center;
     font-size: 1.5em;
     font-weight: normal;
-    text-shadow: 1px 1px 3px #000;
+    /*text-shadow: 1px 1px 3px #000;*/
+	line-height: 43px;
+    text-shadow: 2px 1px 2px #000;
 }
 
 section.swffgui {
@@ -8100,7 +8102,7 @@ input[name="dd-import.importPath"] {
   visibility: hidden;
 }
 #navigation #scene-list {
-  padding-right: 100px;
+  padding-right: 400px;
 }
 
 .app.window-app .window-header > a {
