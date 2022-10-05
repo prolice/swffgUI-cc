@@ -1,5 +1,8 @@
 ## Release Notes:
 
+**Version [2.2.0]**
+* Update to FoundryVTT 10+
+
 **Version [2.1.2]**
 * Bug fix color display (minor).
 * Bug fix navigation menu hide by the sidebar.

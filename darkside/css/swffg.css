@@ -1497,7 +1497,7 @@ input::placeholder, placeholder, *placeholder {
     visibility: visible;
     background: url(../ui/sidebar-button-chat-active.png);
   }
-  #sidebar-tabs > .item.active .fas.fa-fist-raised {
+  #sidebar-tabs > .item.active .fas.fa-swords {
     position: relative;
     top: 0px;
     left: 0px;
@@ -1525,7 +1525,7 @@ input::placeholder, placeholder, *placeholder {
     visibility: visible;
     background: url(../ui/sidebar-button-scenes-active.png);
   }
-  #sidebar-tabs > .item.active .fas.fa-users {
+  #sidebar-tabs > .item.active .fas.fa-user {
     position: relative;
     top: 0px;
     left: 0px;
@@ -1623,7 +1623,7 @@ input::placeholder, placeholder, *placeholder {
     visibility: visible;
     background: url(../ui/sidebar-button-settings-active.png);
   }
-  #sidebar-tabs > .item.active .fas.fa-id-badge {
+  #sidebar-tabs > .item.active .fas.fa-cards {
     position: relative;
     top: 0px;
     left: 0px;
@@ -1857,11 +1857,16 @@ input::placeholder, placeholder, *placeholder {
       outline: none;
       box-shadow: none;
     }
+#pause.paused {
+    text-align: center;
+    text-decoration: none;
+}
 
 #pause > h3
 {
   color: #CCC;
   font-family:Auberesh;
+  border-bottom: 0px;
 }
 
 #pause > img {
@@ -4452,6 +4457,7 @@ border-image-outset: 0px !important;
         border-image-outset: 0px;
         background: url(../ui/sidebar_button-background_red.png) repeat;
         background-origin: padding-box;
+		max-height:50px;
       }
           #client-settings .window-content button i {
             border: none;
@@ -4488,7 +4494,10 @@ border-image-outset: 0px !important;
         background: none;
         border: 1px solid white;
       }
-
+	  
+	.package-configuration aside.sidebar nav.tabs .category-tab {
+		color: white;
+	}
   /* ================== 3. GAME CONTROLS REFERENCE ============ */
     #controls-reference {
       max-width: 600px;

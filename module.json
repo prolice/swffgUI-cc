@@ -1,47 +1,55 @@
 {
-  "name": "swffgUI-cc",
   "title": "Star Wars - User Interface Creative Common",
-  "description": "Starwars unofficial design-2.1.2",
-  "version": "2.1.2",
-  "author": "Prolice",
+  "description": "Starwars unofficial design-2.2.0",
+  "version": "2.2.0",
   "authors": [
-		{
-			"name": "Prolice",
-			"discord": "Prolice#9101"
-		}
-	],
-  "system": [
-      "starwarsffg"
+    {
+      "name": "Prolice",
+      "discord": "Prolice#9101",
+      "flags": {}
+    }
   ],
-  "styles": ["swffg-default.css"],
-  "packs": [],
-  "scripts": ["./swffg-ui.js"],
+  "styles": [
+    "swffg-default.css"
+  ],
+  "scripts": [
+    "swffg-ui.js"
+  ],
   "languages": [
     {
       "lang": "en",
       "name": "English",
-      "path": "lang/en.json"
+      "path": "lang/en.json",
+      "flags": {}
     },
     {
       "lang": "fr",
       "name": "Français",
-      "path": "lang/fr.json"
+      "path": "lang/fr.json",
+      "flags": {}
     }
   ],
-  "dependencies": [],
-  "socket": false,
-  "minimumCoreVersion": "0.8.9",
-  "compatibleCoreVersion": "9",
-  "flags": {},
+  "flags": {
+    "allowBugReporter": true
+  },
   "bugs": "https://github.com/prolice/swffgUI-cc/issues",
   "url": "https://github.com/prolice/swffgUI-cc",
   "readme": "https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/README.md",
   "changelog": "https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/changelog.md",
   "manifest": "https://github.com/prolice/swffgUI-cc/raw/swffgUI-cc/module.json",
-  "download": "https://github.com/prolice/swffgUI-cc/releases/download/v2.1.2/module.zip",
-  "flags": {
-		"allowBugReporter": true
-	},
-  "coreTranslation": false,
-  "library": false
+  "download": "https://github.com/prolice/swffgUI-cc/releases/download/v2.2.0/module.zip",
+  "id": "swffgUI-cc",
+  "relationships": {
+    "systems": [
+      {
+        "id": "starwarsffg",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10"
+  }
 }

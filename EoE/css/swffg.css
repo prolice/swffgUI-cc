@@ -1620,7 +1620,7 @@ input::placeholder, placeholder, *placeholder {
     visibility: visible;
     background: url(../ui/sidebar-button-chat-active.png);
   }
-  #sidebar-tabs > .item.active .fas.fa-fist-raised {
+  #sidebar-tabs > .item.active .fas.fa-swords {
     position: relative;
     top: 0px;
     left: 0px;
@@ -1648,7 +1648,7 @@ input::placeholder, placeholder, *placeholder {
     visibility: visible;
     background: url(../ui/sidebar-button-scenes-active.png);
   }
-  #sidebar-tabs > .item.active .fas.fa-users {
+  #sidebar-tabs > .item.active .fas.fa-user {
     position: relative;
     top: 0px;
     left: 0px;
@@ -1747,7 +1747,7 @@ input::placeholder, placeholder, *placeholder {
     background: url(../ui/sidebar-button-settings-active.png);
 	
   }
-  #sidebar-tabs > .item.active .fas.fa-id-badge {
+  #sidebar-tabs > .item.active .fa-solid.fa-cards {
     position: relative;
     top: 0px;
     left: 0px;
@@ -1999,12 +1999,18 @@ input::placeholder, placeholder, *placeholder {
       box-shadow: none;
     }
 
+#pause.paused {
+    text-align: center;
+    text-decoration: none;
+}
+
 #pause > h3
 {
   color: #c1ac9dc7;
   font-family:Auberesh;
   font-size: 40px;
   text-shadow: 3px 3px 3px #1f0000;
+  border-bottom: 0px;
 }
 #pause > img {
   content: url(../art/ui/pyke-syndicate-256x256.png);
@@ -4672,6 +4678,7 @@ border-image-outset: 0px !important;
         background: url(../ui/sidebar_button-background.png) repeat;
         background-origin: padding-box;
 		border-radius:8px;
+		max-height:50px;
       }
           #client-settings .window-content button i {
             border: none;
@@ -8832,6 +8839,7 @@ img {
   text-shadow: 0 0 black;
   height: 35px;
   margin-left: 5px;
+  padding: 10px 2px 0px 0px;
 }
 
 .starwarsffg.sheet.actor.v2 .tabs .item.active {
