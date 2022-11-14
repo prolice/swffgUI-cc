@@ -1,7 +1,13 @@
 ## Release Notes:
 
+**Version [2.2.1]**
+* Bug fix display pause auberesh in the default theme
+
 **Version [2.2.0]**
 * Update to FoundryVTT 10+
+
+**Version [2.1.3]**
+* Bug fix display pause auberesh in the default theme
 
 **Version [2.1.2]**
 * Bug fix color display (minor).
