@@ -330,7 +330,7 @@ h3.auberesh {
 }
 
 .swdatapad-wanted .credits {
-    font-family: AubekBesh;
+    font-family: AurekBesh;
 }
 
 .swdatapad-wanted {
@@ -635,10 +635,18 @@ button {
     flex: 0 0 503px;
 }
 
+#pause.paused {
+    text-align: center;
+    text-decoration: none;
+}
+
 #pause > h3
 {
   color: #CCC;
   font-family:Auberesh;
+  background:none;
+  font-size: 40px;
+  border-bottom: 0px;
 }
 
 #pause > h3 span
