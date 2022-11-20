@@ -716,7 +716,7 @@ Hooks.on("renderCombatTracker", (app, html, data) => {
 	this.section = document.createElement("section");
 	this.section.classList.add("swffgui");
 	// Add menu before directory header
-	const dirHeader = html[0].querySelector("#combat-round");
+	const dirHeader = html[0].querySelector("#combat-tracker");
 	dirHeader.parentNode.insertBefore(this.section, dirHeader);
 
 	//if (this.data !== undefined) 
