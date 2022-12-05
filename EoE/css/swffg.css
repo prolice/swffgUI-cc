@@ -6002,7 +6002,7 @@ font-family: var(--actor-input-font-family);
     }
     .window-app.app.journal-sheet .window-content form {
         margin: 5px 5px 5px 20px;
-		height: 100%;
+		/*height: 100%;*/
 		padding: 5px;
 		box-shadow: 0px 0px 3px #00000069 inset;
 		border-radius: 10px;
