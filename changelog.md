@@ -1,5 +1,8 @@
 ## Release Notes:
 
+**Version [2.2.2]**
+* Bug fix display journal in several themes (thx to RhapsodyInGeek)
+
 **Version [2.2.1]**
 * Bug fix display pause auberesh in the default theme
 

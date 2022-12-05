@@ -8,7 +8,7 @@ https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/ImagesLicences.md
 
 * **Author**: Prolice#9101
 * **Special Thanks to**: Aljovin, StealthViper, Havoclivekiller, SnoringMountain
-* **Version**: ![](https://img.shields.io/badge/swffgUI--cc-v2.2.1-green)
+* **Version**: ![](https://img.shields.io/badge/swffgUI--cc-v2.2.2-green)
 * **Foundry VTT Compatibility**: ![](https://img.shields.io/badge/Foundry-v10-informational) to ![](https://img.shields.io/badge/Foundry-v10-informational)
 
 * **System Compatibility**: ![](https://img.shields.io/badge/Starwarsffg-v1.8.alpha5-orange) to ![](https://img.shields.io/badge/Starwarsffg-v1.8.alpha5-orange) 
