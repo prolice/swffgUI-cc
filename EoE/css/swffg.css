@@ -2025,6 +2025,17 @@ input::placeholder, placeholder, *placeholder {
   font-family: 'DistantGalaxy';
 }
 
+#pause > figcaption
+{
+   font-family:Auberesh; 
+}
+
+#pause > figcaption span
+{
+   font-family:'DistantGalaxy'; 
+}
+
+
 /* ==================== (D) SIDEBAR (COMBAT TRACKER) ========== */
   #combat li.combatant .token-name h4 {
     color: #cccbb5;
@@ -9285,6 +9296,3 @@ div#transition-form.app.window-app.sheet.transition-form{
 .swade.sheet.item .window-content {
     background: url(../ui/frames/parchment-texture.png) !important;
 }
-
-
-

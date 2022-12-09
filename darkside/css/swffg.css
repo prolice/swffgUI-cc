@@ -1882,6 +1882,17 @@ input::placeholder, placeholder, *placeholder {
   font-family: 'DistantGalaxy';
 }
 
+#pause > figcaption
+{
+   font-family:Auberesh; 
+}
+
+#pause > figcaption span
+{
+   font-family:'DistantGalaxy'; 
+}
+
+
 
 /* ==================== (D) SIDEBAR (COMBAT TRACKER) ========== */
   #combat-popout #combat-round , #sidebar #combat #combat-round {

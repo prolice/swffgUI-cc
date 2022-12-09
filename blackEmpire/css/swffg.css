@@ -1603,6 +1603,17 @@ select:focus {
   left: calc(50% - 64px);
 }
 
+#pause > figcaption
+{
+   font-family:Auberesh; 
+}
+
+#pause > figcaption span
+{
+   font-family:'DistantGalaxy'; 
+}
+
+
 #tooltip-manager .window-content {
     /* background: url(../ui/parchment.jpg); */
     padding: 0px 10px 10px 10px;
