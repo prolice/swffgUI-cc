@@ -1,13 +1,14 @@
-<nav id="navigation" class="app flexrow {{#if collapsed}}collapsed{{/if}}">
+<nav id="navigation" class="app flexrow {{#if collapsed}}collapsed{{/if}}" data-tooltip-direction="CENTER"
+     aria-label="{{localize 'SCENES.NavLabel'}}">
     {{#if scenes}}
-	<a id="nav-toggle" class="nav-item" title="{{ localize "SCENES.ToggleNav" }}">
+	<a id="nav-toggle" class="nav-item" data-tooltip="SCENES.ToggleNav" alt="{{localize 'SCENES.ToggleNav'}}">
 		<i class="fas fa-caret-{{#if collapsed}}down{{else}}up{{/if}}"></i>
 	</a>
     {{/if}}
-    
+
     <ol id="scene-list">
 		{{#each scenes}}
-        <li class="scene nav-item {{this.css}}" data-scene-id="{{this._id}}">
+        <li class="scene nav-item {{this.css}}" data-scene-id="{{this.id}}" {{#if this.tooltip}}data-tooltip="{{this.tooltip}}"{{/if}}>
             <a class="scene-name">
                 {{#if this.active}}<i class="fas fa-bullseye"></i>{{/if}}
                 {{{this.name}}}<br><span class="Auberesh"> {{{this.name}}} </span>
