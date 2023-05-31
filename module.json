@@ -49,7 +49,7 @@
     ]
   },
   "compatibility": {
-    "minimum": "10",
+    "minimum": "11",
     "verified": "11.299",
 	"maximum": "11"
   }
