@@ -1,4 +1,6 @@
 ## Release Notes:
+**Version [2.2.4]**
+* Update to FoundryVTT 11+
 
 **Version [2.2.3]**
 * Bug fix display Auberesh in pause text
