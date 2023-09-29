@@ -6,7 +6,7 @@ https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/ImagesLicences.md
 
 ![](https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/cc-by.svg)
 
-* **Author**: Prolice#9101
+* **Author**: .prolice
 * **Special Thanks to**: Aljovin, StealthViper, Havoclivekiller, SnoringMountain
 * **Version**: ![](https://img.shields.io/badge/swffgUI--cc-v2.3.0-green)
 * **Foundry VTT Compatibility**: ![](https://img.shields.io/badge/Foundry-v10-informational) to ![](https://img.shields.io/badge/Foundry-v11-informational)
