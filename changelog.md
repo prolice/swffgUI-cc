@@ -1,4 +1,10 @@
 ## Release Notes:
+**Version [2.3.0]**
+* Auberesh title was disapear in actor sheet [Fixed]
+* Left navigate menu background passed to full transparent
+* Context menu on top scene menu was not displayed in v11 Foundry VTT [Fixed]
+* Color and display screen optimization
+
 **Version [2.2.4]**
 * Update to FoundryVTT 11+
 
