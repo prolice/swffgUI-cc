@@ -544,10 +544,17 @@ section.swffgui {
 	display: var(--application-auberesh-sidebar-title);
 }
 
+div.swffgui-settings {
+    flex: 0;
+    text-align: center;
+    background:url(../ui/game-settings-background.png);
+    margin : 0 60px 0 60px;
+}
+
 h3.auberesh {
     font-family: 'Auberesh' !important;
 	animation: textShadow 1.6s infinite;
-	display: var(--application-auberesh-title);
+	display: var(--application-auberesh-title)!important;
 }
 
 .swffgui h3 {
@@ -571,6 +578,7 @@ h3.auberesh {
     overflow-y: auto;
     overflow-x: hidden;
   }
+  
   .app.window-app .editor-content img {
     min-height: none !important;
     max-height: none !important;
@@ -654,6 +662,11 @@ h3.auberesh {
     border: none;
     width: 100%;
   }
+  
+  #world-config.app.window-app .editor .editor-content p {
+    color: whitesmoke;
+  }
+  
   .app.window-app .editor .editor-content ul li {
     font-size: 14px;
     font-family: var( --actor-input-font-family);
@@ -1402,8 +1415,8 @@ input::placeholder, placeholder, *placeholder {
     flex: 0 0 24px;
     height: 32px;
     position: relative;
-    top: -1px;
-    left: -6px;
+    top: -6px;
+    left: 0px;
   }
     .sidebar-popout .directory-header .fas.fa-sort-amount-up,
     .sidebar-tab .directory-header .fas.fa-sort-amount-up {
@@ -2510,6 +2523,9 @@ input::placeholder, placeholder, *placeholder {
 
 
 /* ==================== (J) SIDEBAR (COMPENDIUM) ============== */
+    .Compendium-sidebar .directory .directory-item .document-name {
+      color: black;
+    }
    #compendium-popout .directory-list,
     #sidebar #compendium .directory-list {
     flex: 1;
@@ -2571,6 +2587,24 @@ input::placeholder, placeholder, *placeholder {
   #sidebar #settings h2 {
     flex: 1;
     margin: 0px 5px;
+    padding: 0px;
+    text-align: center;
+    line-height: normal;
+    font-family: 'KuiperBelt';
+    font-size: var(--window-header-title-font-size);
+    font-weight: var(--window-header-title-font-weight);
+    color: #d6d6d6;
+    border: 3px double #9e2029;
+    background: #080808;
+    box-shadow: 0px 0px 10px inset black;
+    border-radius: 0px;
+    opacity: 0.8;
+    text-shadow: 1px 1px 5px #000000;
+	border-radius: 8px;
+  }
+  #sidebar #settings h4 {
+    flex: 1;
+    margin: 0px;
     padding: 0px;
     text-align: center;
     line-height: normal;
@@ -2907,7 +2941,14 @@ input::placeholder, placeholder, *placeholder {
         box-shadow: none;
 		cursor: var(--application-cursor-pointer);
       }
-	  
+	 .app.window-app.sheet.cards-config.deck .sheet-tabs.tabs .item{
+         color : black !important;
+     }
+     
+     .cards-config ol.cards {
+       margin: 0px 10px 8px;
+      }
+     
     .app.window-app.sheet.item-sheet .sheet-tabs.edges.left {
       margin: 0px;
       height: 25px;
@@ -3928,6 +3969,9 @@ input::placeholder, placeholder, *placeholder {
     }
 
 
+.sheet.journal-entry .pages-list {
+    color : #464331c4;
+}
 
 /******************************************************************/
 /*=============== V. ACTOR SHEET (CHARACTER) =====================*/
@@ -4346,7 +4390,10 @@ input::placeholder, placeholder, *placeholder {
     font-size: 13px;
     box-shadow: inset 0 0 3px #000000;
   }
- 
+#controls {
+    background: transparent;
+}
+
 #controls .control-tool.toggle.active, #controls .control-tool.toggle:hover {
     color: #8c53fb !important;
     text-shadow: 1px 1px 3px #42005f;
@@ -5041,6 +5088,19 @@ font-family: var(--actor-input-font-family);
     height: fit-content;
     max-height: none;
   }
+  
+.app.window-app.package-configuration .window-content {
+    color: whitesmoke;
+    background-size: cover;
+    background-position-y: center !important;
+    background-position-x: center !important;
+}
+
+#keybindings .binding .key.uneditable {
+    background: #cac9c5;
+    color: black;
+}
+
     .app.window-app h4 {
       font-family: var(--actor-input-font-family);
       font-size: var(--actor-input-font-size);
@@ -5204,6 +5264,41 @@ font-family: var(--actor-input-font-family);
 	text-shadow: 1px 1px 5px #562300;
 	border-radius: 8px;
   }
+  
+  .app.window-app .editor .dialog-buttons button,
+  .app.window-app .editor .sheet-footer button,
+  .app.window-app .editor .form-group .file-picker,
+  .app.window-app .editor button[type="button"],
+  .app.window-app .editor button[type="submit"],
+  .app.window-app .editor button[type="reset"],
+  .app.window-app .editorbutton[class="reset"]
+   {
+    margin: 0 3px 4px 3px;
+    border: 3px solid #66141a;
+    border-image-width: 4px;
+    border-image-outset: 0px;
+    box-shadow: none;
+    background: url(../ui/sidebar_button-background.png) repeat;
+    background-origin: padding-box;
+    font-family: var(--major-button-font-family);
+    font-size: var(--major-button-font-size);
+    font-weight: var(--major-button-font-weight);
+    color: var(--major-button-color);
+	text-shadow: 1px 1px 5px #562300;
+	border-radius: 8px;
+  }
+  
+  .app.window-app .editor .dialog-buttons button:hover,
+  .app.window-app .editor .sheet-footer button:hover,
+  .app.window-app .editor .form-group .file-picker:hover,
+  .app.window-app .editor button[type="button"] > ul:hover,
+  .app.window-app .editor button[type="submit"]:hover,
+  .app.window-app .editor button[type="reset"]:hover,
+  .app.window-app .editorbutton[class="reset"]:hover
+   {
+    color: var(--major-button-color) !important;
+  }
+  
 
   .app.window-app.sheet.scene-sheet .grid-config {
     max-width: 60px;

@@ -439,9 +439,9 @@ p {
 }
 
 h3.auberesh {
-    font-family: 'Auberesh';
+    font-family: 'Auberesh' !important;
 	animation: textShadow 1.6s infinite;
-	display: var(--application-auberesh-title);
+	display: var(--application-auberesh-title) !important;
 }
 
 .swffgui h3 {
@@ -460,6 +460,13 @@ section.swffgui {
 	flex-direction: column;
     flex-wrap: wrap;
 	display: var(--application-auberesh-sidebar-title);
+}
+
+div.swffgui-settings {
+    flex: 0;
+    text-align: center;
+    background:url(../ui/game-settings-background.png);
+    margin : 0 60px 0 60px;
 }
 
 .window-app .window-content input::placeholder {
@@ -891,6 +898,12 @@ select:focus {
   word-break: break-all;*/
   padding-top: 1px;
 }
+
+
+.sheet.journal-entry .journal-entry-content {
+    background : none;
+}
+
 /*************************************************************/
 /*************************************************************/
 

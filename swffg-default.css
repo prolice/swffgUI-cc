@@ -256,6 +256,15 @@ body.vtt.game.screen-door::before {
 
 }
 
+.settings-sidebar h4 {
+    margin: 6px 0;
+    padding: 3px 8px;
+    border-top: 1px solid var(--color-border-dark-4);
+    border-bottom: 1px solid var(--color-border-dark-4);
+    background: rgba(255, 255, 255, 0.1);
+    font-size: var(--font-size-16);
+}
+
 #client-settings.app.window-app.form 
 #config-tabs .settings-list div.form-group input[type="checkbox"] {
     height: 18px;
@@ -286,6 +295,14 @@ section.swffgui {
     max-height: 24px;
     flex-direction: column;
 	display: var(--application-auberesh-sidebar-title);
+}
+
+div.swffgui-settings {
+    flex: 0;
+    text-align: center;
+    background:#d8cbc0 url(../images/bgWindow.jpg) no-repeat;
+    color:black;
+    margin : 0;
 }
 
 h3.auberesh {

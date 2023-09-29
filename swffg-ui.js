@@ -717,6 +717,7 @@ Hooks.on("renderCombatTracker", (app, html, data) => {
 	this.section.classList.add("swffgui");
 	// Add menu before directory header
 	const dirHeader = html[0].querySelector("#combat-tracker");
+	//const dirHeader = html[0].querySelector("#combat-tracker");
 	dirHeader.parentNode.insertBefore(this.section, dirHeader);
 
 	//if (this.data !== undefined) 
@@ -727,19 +728,23 @@ Hooks.on("renderCombatTracker", (app, html, data) => {
 });
 
 Hooks.on("renderSettingsConfig", (app, html, data) => {
-	this.section = document.createElement("section");
-	this.section.classList.add("swffgui");
+	this.section = document.createElement("div");
+	this.section.classList.add("swffgui-settings");
+	//this.section.style.flex='0';
+	//this.section.style.textAlign = 'center';
+	//this.section.style.margin='0 50px 0 50px';
+	//this.section.style.background='url(../ui/game-settings-background.png)';
+	//this.section.style.add("flex:0;text-align:center;margin: 0px 50px 0px 50px;background: url(../ui/denim.png) repeat;");
 	// Add menu before directory header
-	const dirHeader = html[0].querySelector(".sheet-tabs");
+	const dirHeader = html[0].querySelector("section");
+	//const dirHeader = html[0].querySelector("aside.sidebar");
 	dirHeader.parentNode.insertBefore(this.section, dirHeader);
 
 	//if (this.data !== undefined) 
 		section.insertAdjacentHTML(
 		  "afterbegin",
 		  `
-		  <h3 class="auberesh">Core Settings</h3>
-		  <h3 class="auberesh">System Settings</h3>
-		  <h3 class="auberesh">Module Settings</h3>
+		  <h3 class="auberesh">Configure Game Settings</h3>
 		  `
 		);
 });
