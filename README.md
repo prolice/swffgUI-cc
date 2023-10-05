@@ -19,7 +19,7 @@ https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/ImagesLicences.md
 		
 * **Issues**:
 		[![GitHub issues](https://img.shields.io/github/issues/prolice/swffgUI-cc/bug.svg)](https://GitHub.com/prolice/swffgUI-cc/issues/)
- 
+		[![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/prolice/swffgUI-cc/bug.svg)](https://GitHub.com/prolice/swffgUI-cc/issues-closed-raw/)
 ### Link(s) to Module
 * [https://github.com/prolice/swffgUI-cc](https://github.com/prolice/swffgUI-cc)
 
