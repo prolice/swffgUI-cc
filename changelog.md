@@ -1,4 +1,7 @@
 ## Release Notes:
+**Version [2.3.1]**
+* Compatiblity verified FVTT 11.313
+
 **Version [2.3.0]**
 * Auberesh title was disapear in actor sheet [Fixed]
 * Left navigate menu background passed to full transparent
