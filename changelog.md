@@ -1,4 +1,8 @@
 ## Release Notes:
+**Version [2.3.2]**
+* Compatiblity verified FVTT 11.313
+* Retro compatibility version 10
+
 **Version [2.3.1]**
 * Compatiblity verified FVTT 11.313
 

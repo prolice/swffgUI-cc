@@ -749,3 +749,5 @@ Hooks.on("renderSettingsConfig", (app, html, data) => {
 		);
 });
 
+//renderActorSheetFFG
+
