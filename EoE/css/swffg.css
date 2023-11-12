@@ -548,7 +548,7 @@ div.swffgui-settings {
     flex: 0;
     text-align: center;
     background:url(../ui/game-settings-background.png);
-    margin : 0 60px 0 60px;
+    margin : 0 53px 0 48px;
 }
 
 h3.auberesh {
@@ -4588,9 +4588,10 @@ border-image-outset: 0px !important;
       border-image-width: 162px 81px 67px 80px;
       border-image-outset: 0px;
       background: none;
-      height: 802px !important;
-      width: 800px !important;
+      /*height: 802px !important;
+      width: 800px !important;*/
       box-shadow: none !important;
+      max-width:1100px;
     }
     #client-settings .window-header {
       border: none;
@@ -4600,6 +4601,10 @@ border-image-outset: 0px !important;
       position: relative;
       /* top: 38px; */
 	  margin: 0px;
+    }
+    #client-settings  .window-resizable-handle {
+        right: 32px;
+        bottom: 5px;
     }
       #client-settings .window-header h4 {
         display: none;
@@ -4614,7 +4619,7 @@ border-image-outset: 0px !important;
     padding: 0px;
     border: none;
     background: url(../ui/game-settings-background.png);
-    background-size: 199%;
+    background-size: contain;
     background-position-x: center;
 	border-radius: 6px;
     opacity: 0.95;
@@ -8794,15 +8799,18 @@ img {
     position: absolute;
     width: 120px;
     z-index: 40;
-    bottom: 70px;
+    bottom: 90px;
     padding-top: 5px;
 	--notchSize: 6px;
 	-webkit-clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
     clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
 	background-color: #84725e;
-	max-height: 36px;
-	max-width:120px;
+	/*max-height: 36px;*/
+	max-width:124px;
 	/* top:102px; */
+    opacity : 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s, opacity 0.8s;
 }
 
 .starwarsffg.sheet.actor .character .header-fields .profile-block .auberesh-name {
@@ -8822,6 +8830,9 @@ img {
     clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
 	background-color: #771113;
 	max-height: 36px;
+    opacity : 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s, opacity 0.8s;
 }
 
 .starwarsffg.sheet.actor .vehicle .header-fields .profile-block .auberesh-name {
@@ -8842,13 +8853,40 @@ img {
 	-webkit-clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
     clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
 	background-color: #00304f;
+    opacity : 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s, opacity 0.8s;
 }
 
+.starwarsffg.sheet.actor .character .header-fields .profile-block:hover .auberesh-name {
+    opacity: 0.75;
+    transform: translateX(0);
+}
+.starwarsffg.sheet.actor .character .header-fields .profile-block .auberesh-name:hover {
+    opacity: 0.75;
+    transform: translateX(0);
+}
+.starwarsffg.sheet.actor .vehicle .header-fields .profile-block:hover .auberesh-name  {
+  opacity: 0.75;
+  transform: translateX(0);
+}
+.starwarsffg.sheet.actor .vehicle .header-fields .profile-block .auberesh-name:hover  {
+  opacity: 0.75;
+  transform: translateX(0);
+}
+
+.starwarsffg.sheet.actor .minion .header-fields .profile-block:hover .auberesh-name {
+    opacity: 0.75;
+    transform: translateX(0);
+}
+.starwarsffg.sheet.actor .minion .header-fields .profile-block .auberesh-name:hover {
+    opacity: 0.75;
+    transform: translateX(0);    
+}
 .starwarsffg .item-display {
     border: 2px solid #782e22 !important;
     background: rgb(102 20 26 / 20%) !important;
     border-radius: 10px;
-}
 }
 
 .destiny-flip .destiny-left {

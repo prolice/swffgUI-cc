@@ -487,6 +487,10 @@ body.vtt.game.screen-door::before {
 	display:none;
 }
 
+.sheet nav.sheet-tabs {
+    color: whitesmoke;
+}
+
 section.swffgui {
     display: flex;
     flex-wrap: wrap;
@@ -522,6 +526,7 @@ h3.auberesh {
     position: relative;
     max-height: 100%;
     word-break: break-word;
+    background: whitesmoke;
   }
   .app.window-app .editor-content {
     /*height: calc(100% - 60px);*/
@@ -1778,6 +1783,50 @@ input::placeholder, placeholder, *placeholder {
     }
 
   /* ================== 2. CHAT CONTROLS ====================== */
+    #keybindings .binding .binding-controls .control {
+      color: whitesmoke;
+    }
+    #keybindings .binding .key.uneditable {
+        background: rgb(245 245 75 / 50%);
+    }
+    #keybindings .binding .key {
+        flex: none;
+        padding: 0 4px;
+        min-width: 24px;
+        background: rgba(245, 245, 75, 0.8);
+        border: 1px solid var(--color-border-light-2);
+        border-radius: 5px;
+        box-shadow: 1px 1px #444;
+        text-align: center;
+        color: black;
+    }
+    
+    #keybindings .scrollable h2 {
+      color: whitesmoke;
+    }
+    
+    #support-details .sheet-tab  h2 {
+      color: whitesmoke;
+    }
+    #support-details .tab.active  h2,
+    #support-details .tab.active  pre    {
+      color: whitesmoke;
+    }
+    #support-details .window-content { 
+        background-position: 0px 0px !important;
+        background-size: contain;
+    }
+    
+    #documentation .window-content { 
+        background-position: 0px 0px !important;
+        background-size: contain;
+    }
+    
+    #keybindings .window-content { 
+        background-position: 0px 0px !important;
+        background-size: contain;
+    }
+    
     #sidebar .sidebar-tab #chat-controls {
       position: relative;
       flex: 0 0 45px;
@@ -1885,10 +1934,10 @@ input::placeholder, placeholder, *placeholder {
 }
 #pause > img {
   content: url(../art/ui/Blacksun-centered-256-redshadow.png);
-  height: 256px;
-  width: 256px;
-  top: -75px;
-  left: calc(50% - 132px);
+  height: 128px;
+  width: 128px;
+  top: -38px;
+  left: calc(50% - 66px);
 }
 #pause > h3 span
 {
@@ -4353,9 +4402,10 @@ border-image-outset: 0px !important;
       border-image-width: 162px 81px 67px 80px;
       border-image-outset: 0px;
       background: none;
-      height: 802px !important;
-      width: 800px !important;
+      /*height: 802px !important;
+      width: 800px !important;*/
       box-shadow: none !important;
+      max-width : 1095px;
     }
     #client-settings .window-header {
       border: none;
@@ -4374,12 +4424,16 @@ border-image-outset: 0px !important;
         top: 58px;
 		left:-35px;
       }
+    #client-settings  .window-resizable-handle {
+        right: 32px;
+        bottom: 5px;
+    }
     #client-settings .window-content {
-    margin: 0px 70px 57px 70px;
+    margin: 0px 54px 28px 52px;
     padding: 0px;
     border: none;
     background: url(../ui/game-settings-background.png);
-    background-size: 199%;
+    background-size: contain;
     background-position-x: center;
     }
       #client-settings .window-content form {
@@ -4771,14 +4825,15 @@ font-family: var(--actor-input-font-family);
 
 /* ==================== (A) DEFAULT WINDOWS =================== */
   .app.window-app {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    position: absolute;
-    box-shadow: 2px 2px 8px #000000;
-    padding: 0;
-    margin: 0px;
-	background: #d8cbc0 url(../ui/frames/parchment-texture.png) no-repeat;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      position: absolute;
+      box-shadow: none;
+      padding: 0;
+      margin: 0px;
+      background: transparent;
+      border: none;
   }
   .app.window-app .window-header {
     flex: 0 0 45px;
@@ -4791,7 +4846,7 @@ font-family: var(--actor-input-font-family);
     align-items: center;
     justify-content: flex-end;
     display: inline-flex;
-	margin: var(--window-header-margin);
+	/*margin: var(--window-header-margin);*/
   }
     .app.window-app .window-header .window-title {
       flex: 1;
@@ -8384,6 +8439,29 @@ img {
 	background-color: #771113;
 	min-width:130px;
 	max-height:36px;
+    opacity : 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s, opacity 0.8s;
+}
+
+.starwarsffg.sheet.actor .character .header-fields .profile-block:hover .auberesh-name {
+    opacity: 0.75;
+    transform: translateX(0);
+}
+
+.starwarsffg.sheet.actor .character .header-fields .profile-block .auberesh-name:hover {
+    opacity: 0.75;
+    transform: translateX(0);
+}
+
+.starwarsffg.sheet.actor .vehicle .header-fields .profile-block:hover .auberesh-name  {
+  opacity: 0.75;
+  transform: translateX(0);
+}
+
+.starwarsffg.sheet.actor .vehicle .header-fields .profile-block .auberesh-name:hover  {
+  opacity: 0.75;
+  transform: translateX(0);
 }
 
 .starwarsffg.sheet.actor .vehicle .header-fields .profile-block .profile-img {
@@ -8414,6 +8492,18 @@ img {
     max-height: 59px;
     /* width: 220px; */
     left: 2%;
+    opacity : 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s, opacity 0.8s;
+}
+
+.starwarsffg.sheet.actor .minion .header-fields .profile-block:hover .auberesh-name {
+    opacity: 0.75;
+    transform: translateX(0);
+}
+.starwarsffg.sheet.actor .minion .header-fields .profile-block .auberesh-name:hover {
+    opacity: 0.75;
+    transform: translateX(0);    
 }
 
 .starwarsffg.sheet.actor .minion .header-fields .profile-block .auberesh-name {
@@ -8425,15 +8515,18 @@ img {
     position: absolute;
     width: 120px;
     z-index: 40;
-    bottom: 70px;
+    bottom: 90px;
     padding-top: 5px;
 	--notchSize: 6px;
 	-webkit-clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
     clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
 	background-color: #84725e;
-	max-height: 36px;
-	max-width:120px;
+	/*max-height: 36px;*/
+	max-width:124px;
 	/* top:102px; */
+    opacity : 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s, opacity 0.8s;
 }
 .starwarsffg .item-sheet-species .characteristics .characteristic-item .characteristic-label {
     position: relative;

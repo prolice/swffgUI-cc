@@ -1,4 +1,13 @@
 ## Release Notes:
+
+**Version [2.4.0]**
+* Compatiblity verified FVTT 11.315
+* Auberesh name for minion, vehicle and actor retractable
+* Settings windows border (theme Rebel and Galatic Empire) re-designed
+* Settings windows resizing fixed
+* Add option to deactivate auberesh name
+* Some color adaptation 
+
 **Version [2.3.2]**
 * Compatiblity verified FVTT 11.313
 * Retro compatibility version 10

@@ -485,6 +485,10 @@ body.vtt.game.screen-door::before {
 	display:none;
 }
 
+.sheet nav.sheet-tabs {
+    color: whitesmoke;
+}
+
 section.swffgui {
     display: flex;
     flex-wrap: wrap;
@@ -1770,6 +1774,49 @@ input::placeholder, placeholder, *placeholder {
     }										  
 
   /* ================== 2. CHAT CONTROLS ====================== */
+  #keybindings .binding .binding-controls .control {
+      color: whitesmoke;
+    }
+    #keybindings .binding .key.uneditable {
+        background: rgb(245 245 75 / 50%);
+    }
+    #keybindings .binding .key {
+        flex: none;
+        padding: 0 4px;
+        min-width: 24px;
+        background: rgba(245, 245, 75, 0.8);
+        border: 1px solid var(--color-border-light-2);
+        border-radius: 5px;
+        box-shadow: 1px 1px #444;
+        text-align: center;
+        color: black;
+    }
+    
+    #keybindings .scrollable h2 {
+      color: whitesmoke;
+    }
+    
+    #support-details .sheet-tab  h2 {
+      color: whitesmoke;
+    }
+    #support-details .tab.active  h2,
+    #support-details .tab.active  pre    {
+      color: whitesmoke;
+    }
+    #support-details .window-content { 
+        background-position: 0px 0px !important;
+        background-size: contain;
+    }
+    
+    #documentation .window-content { 
+        background-position: 0px 0px !important;
+        background-size: contain;
+    }
+    
+    #keybindings .window-content { 
+        background-position: 0px 0px !important;
+        background-size: contain;
+    }
     #sidebar .sidebar-tab #chat-controls {
       position: relative;
       flex: 0 0 45px;
@@ -4349,9 +4396,10 @@ border-image-outset: 0px !important;
       border-image-width: 162px 81px 67px 80px;
       border-image-outset: 0px;
       background: none;
-      height: 802px !important;
-      width: 800px !important;
+      /*height: 802px !important;
+      width: 800px !important;*/
       box-shadow: none !important;
+      max-width: 1100px;
     }
     #client-settings .window-header {
     border: none;
@@ -4361,6 +4409,10 @@ border-image-outset: 0px !important;
     position: relative;
     /* top: 38px; */
 	margin:0px;
+    }
+    #client-settings  .window-resizable-handle {
+        right: 32px;
+        bottom: 5px;
     }
       #client-settings .window-header h4 {
         display: none;
@@ -4772,14 +4824,15 @@ font-family: var(--actor-input-font-family);
     flex-direction: column;
     flex-wrap: nowrap;
     position: absolute;
-    box-shadow: 2px 2px 8px #000000;
+    /*box-shadow: 2px 2px 8px #000000;*/
+    box-shadow:none;
     padding: 0;
     margin: 0px;
-	background: #d8cbc0 url(../ui/frames/parchment-texture.png) no-repeat;
+	/*background: #d8cbc0 url(../ui/frames/parchment-texture.png) no-repeat;*/
+    background:transparent;
   }
   .app.window-app .window-header {
     flex: 0 0 45px;
-    margin: var(--window-header-margin);
     border: 1px solid blue;
     border-image: url(../ui/frames/window-app-header-blank.png) 5 repeat;
     border-image-slice: 19 21 19 21 fill;
@@ -4788,7 +4841,7 @@ font-family: var(--actor-input-font-family);
     align-items: center;
     justify-content: flex-end;
     display: inline-flex;
-	margin: var(--window-header-margin);				  
+			  
   }
     .app.window-app .window-header .window-title {
       flex: 1;

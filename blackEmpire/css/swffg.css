@@ -650,10 +650,11 @@ select:focus {
 	  /*border-image-slice: 190 110 85 110;*/
       border-image-outset: 0px;
       background: none;
-      height: 850px !important;
-      width: 850px !important;
+      /*height: 850px !important;
+      width: 850px !important;*/
       box-shadow: none !important;
 	  min-height: 500px !important;
+      max-width: 1068px;
     }
     #client-settings .window-header {
       border: none;
@@ -672,14 +673,17 @@ select:focus {
 		top: 58px;
 		left: -60px;
 	}
-	
+	#client-settings  .window-resizable-handle {
+        right: 32px;
+        bottom: 5px;
+    }
       #client-settings .window-header h4 {
         display: none;
       }
       #client-settings .window-header .close {
         position: relative;
-        top: 58px;
-		left:-60px;
+        top: 117px;
+		left:-50px;
       }
     #client-settings .window-content {
     margin: 0px 53px 24px 48px;
@@ -1044,6 +1048,9 @@ select:focus {
     clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
 	background-color: #white;
 	animation: textShadow 1.6s infinite;
+    opacity : 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s, opacity 0.8s;
 }
 
 .starwarsffg.sheet.actor .vehicle .header-fields .profile-block .auberesh-name {
@@ -1065,6 +1072,9 @@ select:focus {
     clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
 	background-color: #00304f;
 	animation: textShadow 1.6s infinite;
+    opacity : 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s, opacity 0.8s;
 }
 
 .starwarsffg.sheet.actor .minion .header-fields .profile-block .auberesh-name {
@@ -1086,6 +1096,35 @@ select:focus {
 	max-width:130px;
 	/* top:102px; */
 	animation: textShadow 1.6s infinite;
+    opacity : 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s, opacity 0.8s;
+}
+
+.starwarsffg.sheet.actor .character .header-fields .profile-block:hover .auberesh-name {
+    opacity: 0.75;
+    transform: translateX(0);
+}
+.starwarsffg.sheet.actor .character .header-fields .profile-block .auberesh-name:hover {
+    opacity: 0.75;
+    transform: translateX(0);
+}
+.starwarsffg.sheet.actor .vehicle .header-fields .profile-block:hover .auberesh-name  {
+  opacity: 0.75;
+  transform: translateX(0);
+}
+.starwarsffg.sheet.actor .vehicle .header-fields .profile-block .auberesh-name:hover  {
+  opacity: 0.75;
+  transform: translateX(0);
+}
+
+.starwarsffg.sheet.actor .minion .header-fields .profile-block:hover .auberesh-name {
+    opacity: 0.75;
+    transform: translateX(0);
+}
+.starwarsffg.sheet.actor .minion .header-fields .profile-block .auberesh-name:hover {
+    opacity: 0.75;
+    transform: translateX(0);    
 }
 
 .starwarsffg.sheet.actor .character .header-fields .profile-block {

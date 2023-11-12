@@ -382,7 +382,11 @@ class swffgUIModule {
 			}
 			
 			let profileImg = $element.find('.profile-img');
-			profileImg.before('<div class="auberesh-name">' + tokenName + '</div>');
+			//let profileBlock = $element.find('.profile-block');
+			let isAubereshTitleEnabled = game.settings.get("swffgUI-cc", "enable-auberesh-title");
+			if (isAubereshTitleEnabled)
+				profileImg.before('<div class="auberesh-name">' + tokenName + '</div>');
+				//profileBlock.before('<div class="auberesh-name">' + tokenName + '</div>');
 						
 			console.log("[SWFFG-UI-CC] is rendering " + tokenName + "actor sheet with Auberesh");
 			
@@ -530,18 +534,6 @@ Hooks.once("init", async function () {
 	CONFIG.ui.pause = PauseFFG;
 	CONFIG.ui.nav = NavigationFFG;
 	CONFIG.TinyMCE.content_css.push('modules/swffgUI-cc/css/mce.css');
-	
-	// game.settings.register('swffgUI-cc', 'autoColorFolder', {
-        // name: game.i18n.localize('SWFFG.autocolorfolder'),
-        // hint: game.i18n.localize('SWFFG.autocolorfolderHint'),
-        // scope: 'client',
-        // type: Boolean,
-        // default: true,
-        // config: true,
-        // onChange: () => {
-            // location.reload();
-        // },
-    // });
 });
 
 Hooks.on("ready", () => {
@@ -581,7 +573,6 @@ Hooks.on("renderSidebarTab", async (object, html) => {
 	const dirHeader = html[0].querySelector("#settings-game").nextSibling;
 	dirHeader.parentNode.insertBefore(this.section, dirHeader);
 
-	//if (this.data !== undefined) 
 		section.insertAdjacentHTML(
 		  "afterbegin",
 		  `
@@ -649,7 +640,6 @@ Hooks.on("renderRollTableDirectory", (app, html, data) => {
 	const dirHeader = html[0].querySelector(".directory-header");
 	dirHeader.parentNode.insertBefore(this.section, dirHeader);
 
-	//if (this.data !== undefined) 
 		section.insertAdjacentHTML(
 		  "afterbegin",
 		  `<h3 class="auberesh">RollTable Directory</h3>`
@@ -663,7 +653,6 @@ Hooks.on("renderCompendiumDirectory", (app, html, data) => {
 	const dirHeader = html[0].querySelector(".directory-header");
 	dirHeader.parentNode.insertBefore(this.section, dirHeader);
 
-	//if (this.data !== undefined) 
 		section.insertAdjacentHTML(
 		  "afterbegin",
 		  `<h3 class="auberesh">Compendium Directory</h3>`
@@ -677,7 +666,6 @@ Hooks.on("renderPlaylistDirectory", (app, html, data) => {
 	const dirHeader = html[0].querySelector(".directory-header");
 	dirHeader.parentNode.insertBefore(this.section, dirHeader);
 
-	//if (this.data !== undefined) 
 		section.insertAdjacentHTML(
 		  "afterbegin",
 		  `<h3 class="auberesh">Playlists Directory</h3>`
@@ -691,7 +679,6 @@ Hooks.on("renderChatLog", (app, html, data) => {
 	const dirHeader = html[0].querySelector("#chat-log");
 	dirHeader.parentNode.insertBefore(this.section, dirHeader);
 
-	//if (this.data !== undefined) 
 		section.insertAdjacentHTML(
 		  "afterbegin",
 		  `<h3 class="auberesh">Chat Log</h3>`
@@ -705,7 +692,6 @@ Hooks.on("renderSettings", (app, html, data) => {
 	const dirHeader = html[0].querySelector("h2");
 	dirHeader.parentNode.insertBefore(this.section, dirHeader);
 
-	//if (this.data !== undefined) 
 		section.insertAdjacentHTML(
 		  "afterbegin",
 		  `<h3 class="auberesh">Settings</h3>`
@@ -717,10 +703,9 @@ Hooks.on("renderCombatTracker", (app, html, data) => {
 	this.section.classList.add("swffgui");
 	// Add menu before directory header
 	const dirHeader = html[0].querySelector("#combat-tracker");
-	//const dirHeader = html[0].querySelector("#combat-tracker");
+
 	dirHeader.parentNode.insertBefore(this.section, dirHeader);
 
-	//if (this.data !== undefined) 
 		section.insertAdjacentHTML(
 		  "afterbegin",
 		  `<h3 class="auberesh">Combat Tracker</h3>`
@@ -730,17 +715,9 @@ Hooks.on("renderCombatTracker", (app, html, data) => {
 Hooks.on("renderSettingsConfig", (app, html, data) => {
 	this.section = document.createElement("div");
 	this.section.classList.add("swffgui-settings");
-	//this.section.style.flex='0';
-	//this.section.style.textAlign = 'center';
-	//this.section.style.margin='0 50px 0 50px';
-	//this.section.style.background='url(../ui/game-settings-background.png)';
-	//this.section.style.add("flex:0;text-align:center;margin: 0px 50px 0px 50px;background: url(../ui/denim.png) repeat;");
-	// Add menu before directory header
 	const dirHeader = html[0].querySelector("section");
-	//const dirHeader = html[0].querySelector("aside.sidebar");
-	dirHeader.parentNode.insertBefore(this.section, dirHeader);
 
-	//if (this.data !== undefined) 
+	dirHeader.parentNode.insertBefore(this.section, dirHeader);
 		section.insertAdjacentHTML(
 		  "afterbegin",
 		  `
@@ -749,5 +726,4 @@ Hooks.on("renderSettingsConfig", (app, html, data) => {
 		);
 });
 
-//renderActorSheetFFG
 
