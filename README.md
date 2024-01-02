@@ -11,7 +11,7 @@ https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/ImagesLicences.md
 * **Version**: ![](https://img.shields.io/github/v/release/prolice/swffgUI-cc?color=green&label=swffgUI-cc)
 * **Foundry VTT Compatibility**: ![](https://img.shields.io/badge/Foundry-v10-informational) to ![](https://img.shields.io/badge/Foundry-v11.314-informational)
 
-* **System Compatibility**: ![](https://img.shields.io/badge/Starwarsffg-v1.801-orange) to ![](https://img.shields.io/badge/Starwarsffg-v1.801-orange) 
+* **System Compatibility**: ![](https://img.shields.io/badge/Starwarsffg-v1.801-orange) to ![](https://img.shields.io/badge/Starwarsffg-v1.803-orange) 
 * **Repository size**: ![](https://img.shields.io/github/repo-size/prolice/swffgUI-cc)
 * **Download**: ![Forge installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2FswffgUI-cc)
 				![the latest version](https://img.shields.io/github/downloads/prolice/swffgUI-cc/latest/total) 
