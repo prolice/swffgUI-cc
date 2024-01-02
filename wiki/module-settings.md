@@ -3,12 +3,12 @@ Welcome to the swffgUI-cc wiki!
 # Activate the module
 
 Go in the "manage module" menu and search for "swff.." in the <filter modules> input.
-![](https://raw.githubusercontent.com/prolice/swffgUI-cc/swffgUI-cc/wiki/module-activation.jpg)
+![](https://raw.githubusercontent.com/prolice/swffgUI-cc/swffgUI-cc/wiki/module-activation.webp)
 
 # Module Setting
 
 There is 10 different settings available for the swffgUI-cc module.
-![](https://raw.githubusercontent.com/prolice/swffgUI-cc/swffgUI-cc/wiki/module-settings.jpg)
+![](https://raw.githubusercontent.com/prolice/swffgUI-cc/swffgUI-cc/wiki/module-settings.webp)
 
 ## 1. Flickering screen effect
 * Add a old CRT screen effect on your UI
