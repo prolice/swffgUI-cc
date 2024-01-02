@@ -326,7 +326,7 @@ h3.auberesh {
 }
 
 .swdatapad {
-    background-image: url(/modules/ffg-star-wars-enhancements/artwork/datapad-template-700w.png) !important;
+    background-image: url(/modules/ffg-star-wars-enhancements/artwork/datapad-template-700w.webp) !important;
     background-repeat: no-repeat !important;
     width: 700px;
     min-height: 1000px;
@@ -351,7 +351,7 @@ h3.auberesh {
 }
 
 .swdatapad-wanted {
-    background-image: url(/modules/ffg-star-wars-enhancements/artwork/datapad-template-wanted-700w.png) !important;
+    background-image: url(/modules/ffg-star-wars-enhancements/artwork/datapad-template-wanted-700w.webp) !important;
     background-repeat: no-repeat !important;
     width: 700px;
     min-height: 1000px;
@@ -513,7 +513,7 @@ button {
     color: #512326 !important;
 }
 .starwarsffg .character .characteristics .characteristic-item {
-	background: url(ui/frames/caracteristics-background.png) no-repeat;
+	background: url(ui/frames/caracteristics-background.webp) no-repeat;
 	background-size:100% 100%;
 	background-color: #ffffff00;
 }
@@ -523,7 +523,7 @@ button {
 }
 
 .starwarsffg .vehicle .characteristics .characteristic-item {
-	background: url(ui/frames/vehicles-caracteristics-background.png) no-repeat;
+	background: url(ui/frames/vehicles-caracteristics-background.webp) no-repeat;
 	background-size:100% 100%;
 	background-color: #ffffff00;
 }
@@ -549,7 +549,7 @@ button {
     z-index: 40;
     /* bottom: 78px; */
 	top:108px;
-    /* background: url(../ui/frames/auberesh-name-background.png) no-repeat; */
+    /* background: url(../ui/frames/auberesh-name-background.webp) no-repeat; */
     /* background-size: 100% 100%; */
     padding-top: 2px;
 	--notchSize: 6px;
@@ -591,7 +591,7 @@ button {
     width: calc(100% - var(--rightNotchSize));
     z-index: 40;
     bottom: 5px;
-    /* background: url(../ui/frames/auberesh-name-background.png) no-repeat; */
+    /* background: url(../ui/frames/auberesh-name-background.webp) no-repeat; */
     /* background-size: 100% 100%; */
     padding-top: 2px;
 	--notchSize: 6px;
@@ -661,7 +661,7 @@ button {
 }
 
 .starwarsffg .characteristics .characteristic-item {
-   background: url(ui/frames/caracteristics-background.png) no-repeat;
+   background: url(ui/frames/caracteristics-background.webp) no-repeat;
 	background-size:100% 100%;
 	background-color: #ffffff00 !important;
 }
@@ -690,7 +690,7 @@ button {
 }
 
 #sidebar {
-    background: url(default-ui/sidebar.png) !important;
+    background: url(default-ui/sidebar.webp) !important;
     background-position-y: 45px !important;
 }
 
@@ -718,7 +718,7 @@ button {
 }
 
 #pause > img {
-  content: url(default-ui/pause-icon.png);
+  content: url(default-ui/pause-icon.webp);
   height: 128px;
   width: 128px;
   left: calc(50% - 64px);

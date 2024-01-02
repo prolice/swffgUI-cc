@@ -1,5 +1,8 @@
 ## Release Notes:
 
+**Version [2.5.0]**
+* All png/jpg images have been converted to webp format
+
 **Version [2.4.0]**
 * Compatiblity verified FVTT 11.315
 * Auberesh name for minion, vehicle and actor retractable

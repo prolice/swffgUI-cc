@@ -131,7 +131,7 @@
 }
 
 .swdatapad {
-    background-image: url(/modules/ffg-star-wars-enhancements/artwork/datapad-template-700w.png) !important;
+    background-image: url(/modules/ffg-star-wars-enhancements/artwork/datapad-template-700w.webp) !important;
     background-repeat: no-repeat !important;
     width: 700px;
     min-height: 1000px;
@@ -156,7 +156,7 @@
 }
 
 .swdatapad-wanted {
-    background-image: url(/modules/ffg-star-wars-enhancements/artwork/datapad-template-wanted-700w.png) !important;
+    background-image: url(/modules/ffg-star-wars-enhancements/artwork/datapad-template-wanted-700w.webp) !important;
     background-repeat: no-repeat !important;
     width: 700px;
     min-height: 1000px;
@@ -255,7 +255,7 @@ table.vendor_item {
 /******************************************************************/
 /******************************************************************/
 #logo {
-  content : url("../art/ui/logo-foundryVTswffg-ui100x42.png");
+  content : url("../art/ui/logo-foundryVTswffg-ui100x42.webp");
   width: 100px;
   height: 42px;
 }
@@ -388,7 +388,7 @@ table.vendor_item {
   button:hover {
     box-shadow: 0 0 5px #c70000 !important;
 	cursor: var(--application-cursor-pointer);
-	background: url(../ui/sidebar_button-background_red.png) repeat !important;
+	background: url(../ui/sidebar_button-background_red.webp) repeat !important;
 	color:white !important;
   }
   
@@ -444,7 +444,7 @@ tbody {
 }
 
 .window-app .window-content .compendium{
-	background: #cab4a7 url(../ui/frames/parchment-texture.png) no-repeat;
+	background: #cab4a7 url(../ui/frames/parchment-texture.webp) no-repeat;
     background-position-x: -110px;
     background-position-y: -120px;
 }
@@ -547,7 +547,7 @@ section.swffgui {
 div.swffgui-settings {
     flex: 0;
     text-align: center;
-    background:url(../ui/game-settings-background.png);
+    background:url(../ui/game-settings-background.webp);
     margin : 0 53px 0 48px;
 }
 
@@ -723,7 +723,7 @@ li.folder > .folder-header h3 {
 
   .app.sheet .editor-content {
     padding:5px;
-	/* background: #d8cbc0 url(../ui/frames/parchment-texture.png) no-repeat; */
+	/* background: #d8cbc0 url(../ui/frames/parchment-texture.webp) no-repeat; */
   }
   
   .app.gm-notes.sheet .editor-content {
@@ -736,7 +736,7 @@ li.folder > .folder-header h3 {
 	}
   
   .window-app.sheet.actor .window-content {
-  background: #d8cbc0 url(../ui/frames/parchment-texture.png) no-repeat;
+  background: #d8cbc0 url(../ui/frames/parchment-texture.webp) no-repeat;
 }
 
 .grid,
@@ -806,7 +806,7 @@ li.folder > .folder-header h3 {
     margin: 0;;
     padding: 0px;
     overflow: hidden;
-    background: url(../ui/background.png) repeat;
+    background: url(../ui/background.webp) repeat;
     font-size: 14px;
 	font-family: var(--major-button-font-family), sans-serif;
 	font-size: var(--major-button-font-size);
@@ -865,8 +865,8 @@ input::placeholder, placeholder, *placeholder {
     outline: none;
     border-radius: 3px;
     background: none;
-    /* background: url(../ui/scrollbar.png) no-repeat;  */
-    border-image: url(../ui/scrollbars/sheet-light-scrollbar-thumb.png) 10 repeat;
+    /* background: url(../ui/scrollbar.webp) no-repeat;  */
+    border-image: url(../ui/scrollbars/sheet-light-scrollbar-thumb.webp) 10 repeat;
     border-image-width: 5px;
     border-image-outset: 0px;
   }
@@ -876,14 +876,14 @@ input::placeholder, placeholder, *placeholder {
     border: none;
   }
   .app.window-app .editor ::-webkit-scrollbar-button:start:decrement {
-    background: url(../ui/scrollbars/sheet-light-scrollbar-button-vertical-decrement.png) no-repeat;
+    background: url(../ui/scrollbars/sheet-light-scrollbar-button-vertical-decrement.webp) no-repeat;
     box-shadow: none;
     height: 16px;
     background-position-y: 0px;
     /* background: red; */
   } 
   .app.window-app .editor ::-webkit-scrollbar-button:end:increment {
-    background: url(../ui/scrollbars/sheet-light-scrollbar-button-vertical-increment.png) no-repeat;
+    background: url(../ui/scrollbars/sheet-light-scrollbar-button-vertical-increment.webp) no-repeat;
     background-position-y: 0px;
     box-shadow: none; 
     height: 16px;
@@ -894,7 +894,7 @@ input::placeholder, placeholder, *placeholder {
       display: none;
   }
   .app.window-app .editor ::-webkit-scrollbar-track {
-    background: url(../ui/scrollbars/sheet-light-scrollbar-track.png) repeat-y;
+    background: url(../ui/scrollbars/sheet-light-scrollbar-track.webp) repeat-y;
     background-position: center;
     background-size: 4px 68px;
     box-shadow: none;
@@ -911,8 +911,8 @@ input::placeholder, placeholder, *placeholder {
     outline: none;
     border-radius: 3px;
     background: none;
-    /* background: url(../ui/scrollbar.png) no-repeat;  */
-    border-image: url(../ui/scrollbars/sheet-light-scrollbar-thumb.png) 10 repeat;
+    /* background: url(../ui/scrollbar.webp) no-repeat;  */
+    border-image: url(../ui/scrollbars/sheet-light-scrollbar-thumb.webp) 10 repeat;
     border-image-width: 5px;
     border-image-outset: 0px;
   }
@@ -922,14 +922,14 @@ input::placeholder, placeholder, *placeholder {
     border: none;
   }
   .app.window-app.sheet.item-sheet ::-webkit-scrollbar-button:start:decrement {
-    background: url(../ui/scrollbars/sheet-light-scrollbar-button-vertical-decrement.png) no-repeat;
+    background: url(../ui/scrollbars/sheet-light-scrollbar-button-vertical-decrement.webp) no-repeat;
     box-shadow: none;
     height: 16px;
     background-position-y: 0px;
     /* background: red; */
   } 
   .app.window-app.sheet.item-sheet ::-webkit-scrollbar-button:end:increment {
-    background: url(../ui/scrollbars/sheet-light-scrollbar-button-vertical-increment.png) no-repeat;
+    background: url(../ui/scrollbars/sheet-light-scrollbar-button-vertical-increment.webp) no-repeat;
     background-position-y: 0px;
     box-shadow: none; 
     height: 16px;
@@ -940,7 +940,7 @@ input::placeholder, placeholder, *placeholder {
       display: none;
   }
   .app.window-app.sheet.item-sheet ::-webkit-scrollbar-track {
-    background: url(../ui/scrollbars/sheet-light-scrollbar-track.png) repeat-y;
+    background: url(../ui/scrollbars/sheet-light-scrollbar-track.webp) repeat-y;
     background-position: center;
     background-size: 4px 68px;
     box-shadow: none;
@@ -955,8 +955,8 @@ input::placeholder, placeholder, *placeholder {
     outline: none;
     border-radius: 3px;
     background: none;
-    /* background: url(../ui/scrollbar.png) no-repeat; */
-    border-image: url(../ui/scrollbars/scrollbar-thumb.png) 25 repeat;
+    /* background: url(../ui/scrollbar.webp) no-repeat; */
+    border-image: url(../ui/scrollbars/scrollbar-thumb.webp) 25 repeat;
     border-image-width: 25px;
     border-image-outset: 0px;
     min-height: 40px;
@@ -967,13 +967,13 @@ input::placeholder, placeholder, *placeholder {
     border: none;
   }
   #sidebar ::-webkit-scrollbar-button:start:decrement {
-    background: url(../ui/scrollbars/scrollbar-button-vertical-decrement.png) no-repeat;
+    background: url(../ui/scrollbars/scrollbar-button-vertical-decrement.webp) no-repeat;
     background-position: center;
     box-shadow: none;
     box-shadow: none; 
   } 
   #sidebar ::-webkit-scrollbar-button:end:increment {
-    background: url(../ui/scrollbars/scrollbar-button-vertical-increment.png) no-repeat;
+    background: url(../ui/scrollbars/scrollbar-button-vertical-increment.webp) no-repeat;
     background-position: center;
     box-shadow: none;
     box-shadow: none; 
@@ -983,7 +983,7 @@ input::placeholder, placeholder, *placeholder {
       display: none;
   }
   #sidebar ::-webkit-scrollbar-track {
-    background: url(../ui/scrollbars/scrollbar-track.png) repeat-y;
+    background: url(../ui/scrollbars/scrollbar-track.webp) repeat-y;
     background-position: center;
     background-size: 9px 110px;
     box-shadow: none;
@@ -997,11 +997,11 @@ input::placeholder, placeholder, *placeholder {
     border-radius: 8px;
 }
 	.window-app .window-content {
-	   background: url(../ui/parchment.jpg) round;
+	   background: url(../ui/parchment.webp) round;
    }
    
 #keybindings.window-app.app.form .window-content {
-	background: url(../ui/parchment.jpg) round;
+	background: url(../ui/parchment.webp) round;
 	background-position: -75px -100px !important;
     display: flex;
     flex-direction: column;
@@ -1044,8 +1044,8 @@ input::placeholder, placeholder, *placeholder {
     outline: none;
     border-radius: 3px;
     background: none;
-    /* background: url(../ui/scrollbar.png) no-repeat; */
-    border-image: url(../ui/scrollbars/scrollbar-thumb.png) 25 repeat;
+    /* background: url(../ui/scrollbar.webp) no-repeat; */
+    border-image: url(../ui/scrollbars/scrollbar-thumb.webp) 25 repeat;
     border-image-width: 25px;
     border-image-outset: 0px;
     min-height: 40px;
@@ -1056,13 +1056,13 @@ input::placeholder, placeholder, *placeholder {
     border: none;
   }
   .app.window-app.form ::-webkit-scrollbar-button:start:decrement {
-    background: url(../ui/scrollbars/scrollbar-button-vertical-decrement.png) no-repeat;
+    background: url(../ui/scrollbars/scrollbar-button-vertical-decrement.webp) no-repeat;
     background-position: center;
     box-shadow: none;
     box-shadow: none; 
   } 
   .app.window-app.form ::-webkit-scrollbar-button:end:increment {
-    background: url(../ui/scrollbars/scrollbar-button-vertical-increment.png) no-repeat;
+    background: url(../ui/scrollbars/scrollbar-button-vertical-increment.webp) no-repeat;
     background-position: center;
     box-shadow: none;
     box-shadow: none; 
@@ -1072,7 +1072,7 @@ input::placeholder, placeholder, *placeholder {
       display: none;
   }
   .app.window-app.form ::-webkit-scrollbar-track {
-    background: url(../ui/scrollbars/scrollbar-track.png) repeat-y;
+    background: url(../ui/scrollbars/scrollbar-track.webp) repeat-y;
     background-position: center;
     background-size: 9px 110px;
     box-shadow: none;
@@ -1086,8 +1086,8 @@ input::placeholder, placeholder, *placeholder {
     outline: none;
     border-radius: 3px;
     background: none;
-    /* background: url(../ui/scrollbar.png) no-repeat;  */
-    border-image: url(../ui/scrollbars/sheet-dark-scrollbar-thumb.png) 10 repeat;
+    /* background: url(../ui/scrollbar.webp) no-repeat;  */
+    border-image: url(../ui/scrollbars/sheet-dark-scrollbar-thumb.webp) 10 repeat;
     border-image-width: 5px;
     border-image-outset: 0px;
   }
@@ -1097,14 +1097,14 @@ input::placeholder, placeholder, *placeholder {
     border: none;
   }
   .window-app.app.filepicker ::-webkit-scrollbar-button:start:decrement {
-    background: url(../ui/scrollbars/sheet-dark-scrollbar-button-vertical-decrement.png) no-repeat;
+    background: url(../ui/scrollbars/sheet-dark-scrollbar-button-vertical-decrement.webp) no-repeat;
     box-shadow: none;
     height: 16px;
     background-position-y: 0px;
     /* background: red; */
   } 
   .window-app.app.filepicker ::-webkit-scrollbar-button:end:increment {
-    background: url(../ui/scrollbars/sheet-dark-scrollbar-button-vertical-increment.png) no-repeat;
+    background: url(../ui/scrollbars/sheet-dark-scrollbar-button-vertical-increment.webp) no-repeat;
     background-position-y: 0px;
     box-shadow: none; 
     height: 16px;
@@ -1115,7 +1115,7 @@ input::placeholder, placeholder, *placeholder {
       display: none;
   }
   .window-app.app.filepicker ::-webkit-scrollbar-track {
-    background: url(../ui/scrollbars/sheet-dark-scrollbar-track.png) repeat-y;
+    background: url(../ui/scrollbars/sheet-dark-scrollbar-track.webp) repeat-y;
     background-position: center;
     background-size: 4px 68px;
     box-shadow: none;
@@ -1130,8 +1130,8 @@ input::placeholder, placeholder, *placeholder {
     outline: none;
     border-radius: 3px;
     background: none;
-    /* background: url(../ui/scrollbar.png) no-repeat; */
-    border-image: url(../ui/scrollbars/scrollbar-thumb.png) 25 repeat;
+    /* background: url(../ui/scrollbar.webp) no-repeat; */
+    border-image: url(../ui/scrollbars/scrollbar-thumb.webp) 25 repeat;
     border-image-width: 25px;
     border-image-outset: 0px;
     min-height: 40px;
@@ -1142,13 +1142,13 @@ input::placeholder, placeholder, *placeholder {
     border: none;
   }
   .app.window-app.dialog ::-webkit-scrollbar-button:start:decrement {
-    background: url(../ui/scrollbars/scrollbar-button-vertical-decrement.png) no-repeat;
+    background: url(../ui/scrollbars/scrollbar-button-vertical-decrement.webp) no-repeat;
     background-position: center;
     box-shadow: none;
     box-shadow: none; 
   } 
   .app.window-app.dialog ::-webkit-scrollbar-button:end:increment {
-    background: url(../ui/scrollbars/scrollbar-button-vertical-increment.png) no-repeat;
+    background: url(../ui/scrollbars/scrollbar-button-vertical-increment.webp) no-repeat;
     background-position: center;
     box-shadow: none;
     box-shadow: none; 
@@ -1158,7 +1158,7 @@ input::placeholder, placeholder, *placeholder {
       display: none;
   }
   .app.window-app.dialog ::-webkit-scrollbar-track {
-    background: url(../ui/scrollbars/scrollbar-track.png) repeat-y;
+    background: url(../ui/scrollbars/scrollbar-track.webp) repeat-y;
     background-position: center;
     background-size: 9px 110px;
     box-shadow: none;
@@ -1171,8 +1171,8 @@ input::placeholder, placeholder, *placeholder {
     outline: none;
     border-radius: 3px;
     background: none;
-    /* background: url(../ui/scrollbar.png) no-repeat; */
-    border-image: url(../ui/scrollbars/scrollbar-thumb.png) 25 repeat;
+    /* background: url(../ui/scrollbar.webp) no-repeat; */
+    border-image: url(../ui/scrollbars/scrollbar-thumb.webp) 25 repeat;
     border-image-width: 25px;
     border-image-outset: 0px;
     min-height: 40px;
@@ -1182,19 +1182,19 @@ input::placeholder, placeholder, *placeholder {
     height: 25px;
     border: none;
 	background:#000;
-	border-image: url(../ui/scrollbars/scrollbar-thumb.png) 25 repeat !important;
+	border-image: url(../ui/scrollbars/scrollbar-thumb.webp) 25 repeat !important;
     border-image-width: 25px;
     border-image-outset: 0px;
     min-height: 40px;
   }
   .app.window-app ::-webkit-scrollbar-button:start:decrement {
-    background: url(../ui/scrollbars/scrollbar-button-vertical-decrement.png) no-repeat;
+    background: url(../ui/scrollbars/scrollbar-button-vertical-decrement.webp) no-repeat;
     background-position: center;
     box-shadow: none;
     box-shadow: none; 
   } 
   .app.window-app ::-webkit-scrollbar-button:end:increment {
-    background: url(../ui/scrollbars/scrollbar-button-vertical-increment.png) no-repeat;
+    background: url(../ui/scrollbars/scrollbar-button-vertical-increment.webp) no-repeat;
     background-position: center;
     box-shadow: none;
     box-shadow: none; 
@@ -1204,7 +1204,7 @@ input::placeholder, placeholder, *placeholder {
       display: none;
   }
   .app.window-app ::-webkit-scrollbar-track {
-    background: url(../ui/scrollbars/scrollbar-track.png) repeat-y;
+    background: url(../ui/scrollbars/scrollbar-track.webp) repeat-y;
     background-position: center;
     background-size: 9px 110px;
     box-shadow: none;
@@ -1217,7 +1217,7 @@ input::placeholder, placeholder, *placeholder {
     outline: none !important;
     border-radius: 3px !important;
     background: none !important;
-    border-image: url(../ui/scrollbars/sheet-dark-scrollbar-thumb.png) 10 repeat !important;
+    border-image: url(../ui/scrollbars/sheet-dark-scrollbar-thumb.webp) 10 repeat !important;
     border-image-width: 5px !important;
     border-image-outset: 0px !important;
   }
@@ -1227,13 +1227,13 @@ input::placeholder, placeholder, *placeholder {
     border: none !important;
   }
   #sidebar #chat-form ::-webkit-scrollbar-button:start:decrement {
-    background: url(../ui/scrollbars/sheet-dark-scrollbar-button-vertical-decrement.png) no-repeat !important;
+    background: url(../ui/scrollbars/sheet-dark-scrollbar-button-vertical-decrement.webp) no-repeat !important;
     box-shadow: none !important;
     height: 16px !important;
     background-position-y: 1px !important;
   } 
   #sidebar #chat-form ::-webkit-scrollbar-button:end:increment {
-    background: url(../ui/scrollbars/sheet-dark-scrollbar-button-vertical-increment.png) no-repeat !important;
+    background: url(../ui/scrollbars/sheet-dark-scrollbar-button-vertical-increment.webp) no-repeat !important;
     background-position-y: -1px !important;
     box-shadow: none !important; 
     height: 16px !important;
@@ -1243,7 +1243,7 @@ input::placeholder, placeholder, *placeholder {
       display: none !important;
   }
   #sidebar #chat-form ::-webkit-scrollbar-track {
-    background: url(../ui/scrollbars/sheet-dark-scrollbar-track.png) repeat-y !important;
+    background: url(../ui/scrollbars/sheet-dark-scrollbar-track.webp) repeat-y !important;
     background-position: center !important;
     background-size: 4px 68px !important;
     box-shadow: none !important;
@@ -1257,7 +1257,7 @@ input::placeholder, placeholder, *placeholder {
     outline: none !important;
     border-radius: 3px !important;
     background: none !important;
-    border-image: url(../ui/scrollbars/sheet-dark-scrollbar-thumb.png) 10 repeat !important;
+    border-image: url(../ui/scrollbars/sheet-dark-scrollbar-thumb.webp) 10 repeat !important;
     border-image-width: 5px !important;
     border-image-outset: 0px !important;
   }
@@ -1267,13 +1267,13 @@ input::placeholder, placeholder, *placeholder {
     border: none !important;
   }
   .window-app.dialog .talent-selector ::-webkit-scrollbar-button:start:decrement {
-    background: url(../ui/scrollbars/sheet-dark-scrollbar-button-vertical-decrement.png) no-repeat !important;
+    background: url(../ui/scrollbars/sheet-dark-scrollbar-button-vertical-decrement.webp) no-repeat !important;
     box-shadow: none !important;
     height: 16px !important;
     background-position-y: 1px !important;
   } 
   .window-app.dialog .talent-selector ::-webkit-scrollbar-button:end:increment {
-    background: url(../ui/scrollbars/sheet-dark-scrollbar-button-vertical-increment.png) no-repeat !important;
+    background: url(../ui/scrollbars/sheet-dark-scrollbar-button-vertical-increment.webp) no-repeat !important;
     background-position-y: -1px !important;
     box-shadow: none !important; 
     height: 16px !important;
@@ -1283,7 +1283,7 @@ input::placeholder, placeholder, *placeholder {
       display: none !important;
   }
   .window-app.dialog .talent-selector ::-webkit-scrollbar-track {
-    background: url(../ui/scrollbars/sheet-dark-scrollbar-track.png) repeat-y !important;
+    background: url(../ui/scrollbars/sheet-dark-scrollbar-track.webp) repeat-y !important;
     background-position: center !important;
     background-size: 4px 68px !important;
     box-shadow: none !important;
@@ -1315,7 +1315,7 @@ input::placeholder, placeholder, *placeholder {
     width: 452px !important;
     margin: 0px;
     padding: 0px;
-    background: url(../ui/sidebar.png) !important;
+    background: url(../ui/sidebar.webp) !important;
     background-position-y: 45px !important;
     border-radius: 0px;
     box-shadow: 0 0 0px #000;
@@ -1342,7 +1342,7 @@ input::placeholder, placeholder, *placeholder {
     padding: 20px 0px 20px 18px;
     margin: 3px 0px 0px 0px;
     /*border: 1px solid black;*/
-    border-image: url(../ui/frames/sidebar-collapsed.png);
+    border-image: url(../ui/frames/sidebar-collapsed.webp);
     border-image-slice: 9 fill;
     border-image-width: 9px;
     border-image-outset: 0px 0px 0px 0px;
@@ -1390,10 +1390,10 @@ input::placeholder, placeholder, *placeholder {
       line-height: 20px;
       width: calc(100% - 45px);
       margin: 3px;
-      background: url(../ui/frames/parchment-texture.png);
+      background: url(../ui/frames/parchment-texture.webp);
       box-shadow: inset 0 0 10px #000000;
       border: 2px groove #790000;
-      border-image: url(../ui/chat-controls-border.png) 4 repeat;
+      border-image: url(../ui/chat-controls-border.webp) 4 repeat;
       border-image-width: 4px;
       border-image-outset: 1px;
       font-family: var(--actor-input-font-family);
@@ -1425,7 +1425,7 @@ input::placeholder, placeholder, *placeholder {
       position: relative;
       top: 4px;
       left: 5px;
-      background: url(../ui/buttons/sidebar-search-buttons-collapse-all.png);
+      background: url(../ui/buttons/sidebar-search-buttons-collapse-all.webp);
       color: #ffffff00;
       font-size: 23px;
       padding-top: 6px;
@@ -1481,11 +1481,11 @@ input::placeholder, placeholder, *placeholder {
       padding: 2px 0px 0px 0px;
       height: 34px;
       border: 3px solid #670000;
-      /* border-image: url(../ui/footer-button.png) 10 repeat; */
+      /* border-image: url(../ui/footer-button.webp) 10 repeat; */
       border-image-width: 4px;
       border-image-outset: 0px;
       box-shadow: 4px 4px 1px #00000085;
-      background: url(../ui/sidebar_button-background.png) repeat;
+      background: url(../ui/sidebar_button-background.webp) repeat;
       background-origin: padding-box;
       color: #66141a;
       font-family: KuiperBelt;
@@ -1510,7 +1510,7 @@ input::placeholder, placeholder, *placeholder {
 
    #context-menu ol.context-items {
       opacity: 0.95;
-      background-image: url(../ui/frames/window-app-background-bookshelf.png);
+      background-image: url(../ui/frames/window-app-background-bookshelf.webp);
       border: 4px solid #66141a;
       border-radius: 10px;
 	  background-size:contain;
@@ -1523,7 +1523,7 @@ input::placeholder, placeholder, *placeholder {
    #context-menu li.context-item:hover {
     color: white;
     text-shadow: 3px 3px 7px #d40010;
-    background: url(../ui/sidebar_button-background_red.png) repeat;
+    background: url(../ui/sidebar_button-background_red.webp) repeat;
     cursor: var(--application-cursor-pointer);
 	opacity:0.8;
   }
@@ -1542,7 +1542,7 @@ input::placeholder, placeholder, *placeholder {
 	flex: 0 0 45px;
     margin: 0px;
     border: 4px solid #66141a;
-    background: url(../ui/frames/window-app-header-blank.png);
+    background: url(../ui/frames/window-app-header-blank.webp);
     border-image-slice: 19 21 19 21 fill;
     border-image-width: 19px 21px 21px 21px;
     border-image-outset: 0px;
@@ -1587,11 +1587,11 @@ input::placeholder, placeholder, *placeholder {
     border-bottom: none;
     text-shadow: 0 0 10px #ff000000;
     visibility: visible;
-    background: url(../ui/sidebar-button-settings-active.png);
-    background: url(../ui/sidebar-button-collapse.png);
+    background: url(../ui/sidebar-button-settings-active.webp);
+    background: url(../ui/sidebar-button-collapse.webp);
   }   
   #sidebar.collapsed .collapse {
-    background: url(../ui/sidebar-button-collapse-active.png);
+    background: url(../ui/sidebar-button-collapse-active.webp);
   }
   #sidebar-tabs .item > i {
     height: inherit;
@@ -1631,7 +1631,7 @@ input::placeholder, placeholder, *placeholder {
     border-bottom: none;
     text-shadow: 0 0 10px #ff000000;
     visibility: visible;
-    background: url(../ui/sidebar-button-chat-active.png);
+    background: url(../ui/sidebar-button-chat-active.webp);
   }
   #sidebar-tabs > .item.active .fas.fa-swords {
     position: relative;
@@ -1645,7 +1645,7 @@ input::placeholder, placeholder, *placeholder {
     border-bottom: none;
     text-shadow: 0 0 10px #ff000000;
     visibility: visible;
-    background: url(../ui/sidebar-button-combat-active.png);
+    background: url(../ui/sidebar-button-combat-active.webp);
   }
   #sidebar-tabs > .item.active .fas.fa-map {
     position: relative;
@@ -1659,7 +1659,7 @@ input::placeholder, placeholder, *placeholder {
     border-bottom: none;
     text-shadow: 0 0 10px #ff000000;
     visibility: visible;
-    background: url(../ui/sidebar-button-scenes-active.png);
+    background: url(../ui/sidebar-button-scenes-active.webp);
   }
   #sidebar-tabs > .item.active .fas.fa-user {
     position: relative;
@@ -1673,7 +1673,7 @@ input::placeholder, placeholder, *placeholder {
     border-bottom: none;
     text-shadow: 0 0 10px #ff000000;
     visibility: visible;
-    background: url(../ui/sidebar-button-actors-active.png);
+    background: url(../ui/sidebar-button-actors-active.webp);
   }
   #sidebar-tabs > .item.active .fas.fa-suitcase {
     position: relative;
@@ -1687,7 +1687,7 @@ input::placeholder, placeholder, *placeholder {
     border-bottom: none;
     text-shadow: 0 0 10px #ff000000;
     visibility: visible;
-    background: url(../ui/sidebar-button-items-active.png);
+    background: url(../ui/sidebar-button-items-active.webp);
   }
   #sidebar-tabs > .item.active .fas.fa-book-open {
     position: relative;
@@ -1701,7 +1701,7 @@ input::placeholder, placeholder, *placeholder {
     border-bottom: none;
     text-shadow: 0 0 10px #ff000000;
     visibility: visible;
-    background: url(../ui/sidebar-button-journal-active.png)
+    background: url(../ui/sidebar-button-journal-active.webp)
   }
   #sidebar-tabs > .item.active .fas.fa-th-list {
     position: relative;
@@ -1715,7 +1715,7 @@ input::placeholder, placeholder, *placeholder {
     border-bottom: none;
     text-shadow: 0 0 10px #ff000000;
     visibility: visible;
-    background: url(../ui/sidebar-button-tables-active.png);
+    background: url(../ui/sidebar-button-tables-active.webp);
   }
   #sidebar-tabs > .item.active .fas.fa-music {
     position: relative;
@@ -1729,7 +1729,7 @@ input::placeholder, placeholder, *placeholder {
     border-bottom: none;
     text-shadow: 0 0 10px #ff000000;
     visibility: visible;
-    background: url(../ui/sidebar-button-playlists-active.png);
+    background: url(../ui/sidebar-button-playlists-active.webp);
   }
   #sidebar-tabs > .item.active .fas.fa-atlas {
     position: relative;
@@ -1743,7 +1743,7 @@ input::placeholder, placeholder, *placeholder {
     border-bottom: none;
     text-shadow: 0 0 10px #ff000000;
     visibility: visible;
-    background: url(../ui/sidebar-button-compendium-active.png);
+    background: url(../ui/sidebar-button-compendium-active.webp);
   }
   #sidebar-tabs > .item.active .fas.fa-cogs {
     position: relative;
@@ -1757,7 +1757,7 @@ input::placeholder, placeholder, *placeholder {
     border-bottom: none;
     text-shadow: 0 0 10px #ff000000;
     visibility: visible;
-    background: url(../ui/sidebar-button-settings-active.png);
+    background: url(../ui/sidebar-button-settings-active.webp);
 	
   }
   #sidebar-tabs > .item.active .fa-solid.fa-cards {
@@ -1772,47 +1772,47 @@ input::placeholder, placeholder, *placeholder {
     border-bottom: none;
     text-shadow: 0 0 10px #ff000000;
     visibility: visible;
-    background: url(../ui/sidebar-button-cards-active.png);
+    background: url(../ui/sidebar-button-cards-active.webp);
 	
   }
   
   #sidebar-tabs > [data-tab~="settings"] {
-    background: url(../ui/sidebar-button-cards.png);
+    background: url(../ui/sidebar-button-cards.webp);
   }
 	
   #sidebar-tabs > [data-tab~="chat"] {
-    background: url(../ui/sidebar-button-chat.png);
+    background: url(../ui/sidebar-button-chat.webp);
   }
   #sidebar-tabs > [data-tab~="combat"] {
-    background: url(../ui/sidebar-button-combat.png);
+    background: url(../ui/sidebar-button-combat.webp);
   }
   #sidebar-tabs > [data-tab~="scenes"] {
-    background: url(../ui/sidebar-button-scenes.png);
+    background: url(../ui/sidebar-button-scenes.webp);
 
   }
   #sidebar-tabs > [data-tab~="actors"] {
-    background: url(../ui/sidebar-button-actors.png);
+    background: url(../ui/sidebar-button-actors.webp);
   }
   #sidebar-tabs > [data-tab~="items"] {
-    background: url(../ui/sidebar-button-items.png);
+    background: url(../ui/sidebar-button-items.webp);
   }
   #sidebar-tabs > [data-tab~="journal"] {
-    background: url(../ui/sidebar-button-journal.png);
+    background: url(../ui/sidebar-button-journal.webp);
   }
   #sidebar-tabs > [data-tab~="tables"] {
-    background: url(../ui/sidebar-button-tables.png);
+    background: url(../ui/sidebar-button-tables.webp);
   }
   #sidebar-tabs > [data-tab~="playlists"] {
-    background: url(../ui/sidebar-button-playlists.png);
+    background: url(../ui/sidebar-button-playlists.webp);
   }
   #sidebar-tabs > [data-tab~="compendium"] {
-    background: url(../ui/sidebar-button-compendium.png);
+    background: url(../ui/sidebar-button-compendium.webp);
   }
   #sidebar-tabs > [data-tab~="settings"] {
-    background: url(../ui/sidebar-button-settings.png);
+    background: url(../ui/sidebar-button-settings.webp);
   }
   #sidebar-tabs > [data-tab~="cards"] {
-    background: url(../ui/sidebar-button-cards.png);
+    background: url(../ui/sidebar-button-cards.webp);
   }
 
 /* ==================== (C) SIDEBAR (CHAT) ==================== */
@@ -1837,11 +1837,11 @@ input::placeholder, placeholder, *placeholder {
       padding: 4px 1px 4px 1px;
       /* margin: calc(var(--window-content-border-image-width) * 2) calc(var(--window-content-border-image-width) * 1.25) var(--window-content-border-image-width) calc(var(--window-content-border-image-width) * 1.25); */
 	  margin:25px 16px 25px 21px;
-      border-image: url(../ui/frames/chat-message-border.png) 21 repeat;
+      border-image: url(../ui/frames/chat-message-border.webp) 21 repeat;
       border-image-width: 16px;
       border-image-outset: 12px;
       border-radius: 4px;
-      background: url(../ui/frames/parchment-texture.png) repeat !important;
+      background: url(../ui/frames/parchment-texture.webp) repeat !important;
       box-shadow: none;
       color: #000000;
       font-family: KuiperBelt;
@@ -1930,7 +1930,7 @@ input::placeholder, placeholder, *placeholder {
       height: 30px;
       position: relative;
       top: 3px;
-      background: url(../ui/buttons/chat-button-d20.png);
+      background: url(../ui/buttons/chat-button-d20.webp);
     }
 
     #sidebar .sidebar-tab #chat-controls .roll-type-select {
@@ -1943,12 +1943,12 @@ input::placeholder, placeholder, *placeholder {
       height: 32px;
       top: 2px;
       padding-top: 3px;
-      background: url(../ui/frames/parchment-texture.png) repeat;
+      background: url(../ui/frames/parchment-texture.webp) repeat;
       background-position-x: 0%;
       background-position-y: 0%;
       background-position: initial;
       box-shadow: inset 0 0 10px #000000;
-      border-image: url(../ui/chat-controls-border.png) 4 repeat;
+      border-image: url(../ui/chat-controls-border.webp) 4 repeat;
       border-image-width: 4px;
       border-image-outset: 3px 2px 2px 2px;
       color: #111;
@@ -1961,12 +1961,12 @@ input::placeholder, placeholder, *placeholder {
       color: #f0f8ff00;
     }
     #sidebar .sidebar-tab #chat-controls .control-buttons .export-log i {
-      background: url(../ui/buttons/chat-button-export.png);
+      background: url(../ui/buttons/chat-button-export.webp);
       position: relative;
       right: 20px;
     }
     #sidebar .sidebar-tab #chat-controls .control-buttons .delete i {
-      background: url(../ui/buttons/chat-button-clear.png);
+      background: url(../ui/buttons/chat-button-clear.webp);
       position: relative;
       right: 10px;
     }
@@ -1979,9 +1979,9 @@ input::placeholder, placeholder, *placeholder {
 		right: -5px;
 		display: flex;
 		margin: 11px 0 0 0;
-		background: url(../ui/frames/parchment-texture.png) repeat;
+		background: url(../ui/frames/parchment-texture.webp) repeat;
 		border: 3px solid #66141a;
-		border-image: url(../ui/chat-form-border.png) 10 repeat;
+		border-image: url(../ui/chat-form-border.webp) 10 repeat;
 		border-image-width: 19px;
 		border-image-outset: 6px;
 		box-shadow: inset 0 0 40px #000000;
@@ -2026,7 +2026,7 @@ input::placeholder, placeholder, *placeholder {
   border-bottom: 0px;
 }
 #pause > img {
-  content: url(../art/ui/pyke-syndicate-256x256.png);
+  content: url(../art/ui/pyke-syndicate-256x256.webp);
   height: 256px;
   width: 256px;
   top: -75px;
@@ -2108,7 +2108,7 @@ input::placeholder, placeholder, *placeholder {
       text-shadow: none;
       position: relative;
       top: 0px;
-      background: url(../ui/buttons/combat-button-previous-encounter.png);
+      background: url(../ui/buttons/combat-button-previous-encounter.webp);
     }
     #combat-popout #combat-round a[title="Activate Next Encounter"] , #sidebar #combat #combat-round a[title="Activate Next Encounter"] {
       padding: 0px;
@@ -2119,7 +2119,7 @@ input::placeholder, placeholder, *placeholder {
       text-shadow: none;
       position: relative;
       top: 0px;
-      background: url(../ui/buttons/combat-button-next-encounter.png);
+      background: url(../ui/buttons/combat-button-next-encounter.webp);
     }
     #combat-popout #combat-round .combat-control , #sidebar #combat #combat-round .combat-control {
       padding: 0px;
@@ -2130,7 +2130,7 @@ input::placeholder, placeholder, *placeholder {
       text-shadow: none;
       position: relative;
       top: 0px;
-      background: url(../ui/buttons/combat-button-reset-initiative.png);
+      background: url(../ui/buttons/combat-button-reset-initiative.webp);
     }
     #combat-popout #combat-round .combat-settings , #sidebar #combat #combat-round .combat-settings {
       padding: 0px;
@@ -2141,7 +2141,7 @@ input::placeholder, placeholder, *placeholder {
       text-shadow: none;
       position: relative;
       top: 0px;
-      background: url(../ui/buttons/combat-button-tracker-settings.png);
+      background: url(../ui/buttons/combat-button-tracker-settings.webp);
     }
     #combat-popout #combat-round a[title="Create Encounter"] , #sidebar #combat #combat-round a[title="Create Encounter"] {
       padding: 0px;
@@ -2152,7 +2152,7 @@ input::placeholder, placeholder, *placeholder {
       text-shadow: none;
       position: relative;
       top: 2px;
-      background: url(../ui/buttons/combat-button-create-encounter.png);
+      background: url(../ui/buttons/combat-button-create-encounter.webp);
     }
     #combat-popout #combat-round a[title="Roll NPCs"] , #sidebar #combat #combat-round a[title="Roll NPCs"] {
       padding: 0px;
@@ -2163,7 +2163,7 @@ input::placeholder, placeholder, *placeholder {
       text-shadow: none;
       position: relative;
       top: 2px;
-      background: url(../ui/buttons/combat-button-roll-npcs.png);
+      background: url(../ui/buttons/combat-button-roll-npcs.webp);
     }
     #combat-popout #combat-round a[title="Roll All"] , #sidebar #combat #combat-round a[title="Roll All"] {
       padding: 0px;
@@ -2174,7 +2174,7 @@ input::placeholder, placeholder, *placeholder {
       text-shadow: none;
       position: relative;
       top: 2px;
-      background: url(../ui/buttons/combat-button-roll-all.png);
+      background: url(../ui/buttons/combat-button-roll-all.webp);
     }
     #combat-popout #combat-round a[title="Delete Encounter"] , #sidebar #combat #combat-round a[title="Delete Encounter"] {
       padding: 0px;
@@ -2185,7 +2185,7 @@ input::placeholder, placeholder, *placeholder {
       text-shadow: none;
       position: relative;
       top: 2px;
-      background: url(../ui/buttons/combat-button-delete-encounter.png);
+      background: url(../ui/buttons/combat-button-delete-encounter.webp);
     }
     
   #combat-popout #combat-tracker , #sidebar #combat #combat-tracker {
@@ -2210,13 +2210,13 @@ input::placeholder, placeholder, *placeholder {
       display: block;
       width: 40px;
       height: 48px;
-      /* background: url(../ui/buttons/d10.png) no-repeat 50% 50%; */
+      /* background: url(../ui/buttons/d10.webp) no-repeat 50% 50%; */
       background-size: 32px;
       margin: 0 0.5em;
       opacity: 1.0;
     }
       #combat-popout li.combatant .roll:hover , #sidebar #combat li.combatant .roll:hover {
-        /* background-image: url(../ui/buttons/d10-highlight.png); */
+        /* background-image: url(../ui/buttons/d10-highlight.webp); */
 		cursor: var(--application-cursor-pointer);
       }
     #combat-popout li.combatant .token-initiative , #sidebar #combat li.combatant .token-initiative {
@@ -2243,11 +2243,11 @@ input::placeholder, placeholder, *placeholder {
     padding: 8px 0px 0px 0px;
     height: 34px;
     border: 3px solid #66141a;
-    /* border-image: url(../ui/footer-button.png) 10 repeat; */
+    /* border-image: url(../ui/footer-button.webp) 10 repeat; */
     border-image-width: 4px;
     border-image-outset: 0px;
     box-shadow: 4px 4px 1px #00000085;
-    background: url(../ui/sidebar_button-background.png) repeat;
+    background: url(../ui/sidebar_button-background.webp) repeat;
     background-origin: padding-box;
     color: #3c2100;
     font-family: KuiperBelt;
@@ -2259,7 +2259,7 @@ input::placeholder, placeholder, *placeholder {
   #combat-popout #combat-controls a:hover , #sidebar #combat #combat-controls a:hover {
     box-shadow: 0 0 5px #c70000 !important;
 	cursor: var(--application-cursor-pointer);
-	background: url(../ui/sidebar_button-background_red.png) repeat;
+	background: url(../ui/sidebar_button-background_red.webp) repeat;
 	color:white;
   }
   #combat #combat-controls a.center {
@@ -2647,11 +2647,11 @@ input::placeholder, placeholder, *placeholder {
     width: -moz-available;
     width: fill-available;
     border: 3px solid #66141a;
-    /* border-image: url(../ui/footer-button.png) 10 repeat; */
+    /* border-image: url(../ui/footer-button.webp) 10 repeat; */
     border-image-width: 4px;
     border-image-outset: 0px;
     box-shadow: 4px 4px 1px #00000085;
-    background: url(../ui/sidebar_button-background.png) repeat;
+    background: url(../ui/sidebar_button-background.webp) repeat;
     background-origin: padding-box;
     font-family: var(--major-button-font-family);
     font-size: var(--major-button-font-size);
@@ -2665,7 +2665,7 @@ input::placeholder, placeholder, *placeholder {
   #sidebar #settings button:hover {
 	color: #ffffff;
     cursor: var(--application-cursor-pointer);
-    background: url(../ui/sidebar_button-background_red.png) repeat;
+    background: url(../ui/sidebar_button-background_red.webp) repeat;
   }
   #sidebar #settings button i {
     display: none;
@@ -2692,7 +2692,7 @@ input::placeholder, placeholder, *placeholder {
     box-shadow: none;
     background: none;
     border: 1px solid blue;
-    border-image: url(../ui/item-sheet.png);
+    border-image: url(../ui/item-sheet.webp);
     border-image-slice: 59;
     border-image-width: 59px;
     border-image-outset: 0px;
@@ -2702,67 +2702,67 @@ input::placeholder, placeholder, *placeholder {
     /* height: 552px !important; */
   }
     .app.window-app.sheet.item-sheet.career-sheet {
-      border-image: url(../ui/item-sheet-red.png);
+      border-image: url(../ui/item-sheet-red.webp);
       border-image-slice: 59;
       border-image-width: 59px;
       border-image-outset: 0px;
     }
     .app.window-app.sheet.item-sheet.disease-sheet {
-      border-image: url(../ui/item-sheet-green.png);
+      border-image: url(../ui/item-sheet-green.webp);
       border-image-slice: 59;
       border-image-width: 59px;
       border-image-outset: 0px;
     }
     .app.window-app.sheet.item-sheet.equipment-sheet {
-      border-image: url(../ui/item-sheet.png);
+      border-image: url(../ui/item-sheet.webp);
       border-image-slice: 59;
       border-image-width: 59px;
       border-image-outset: 0px;
     }
     .app.window-app.sheet.item-sheet.injury-sheet {
-      border-image: url(../ui/item-sheet-black.png);
+      border-image: url(../ui/item-sheet-black.webp);
       border-image-slice: 59;
       border-image-width: 59px;
       border-image-outset: 0px;
     }
     .app.window-app.sheet.item-sheet.mutation-sheet {
-      border-image: url(../ui/item-sheet-black.png);
+      border-image: url(../ui/item-sheet-black.webp);
       border-image-slice: 59;
       border-image-width: 59px;
       border-image-outset: 0px;
     }
     .app.window-app.sheet.item-sheet.prayer-sheet {
-      border-image: url(../ui/item-sheet-white.png);
+      border-image: url(../ui/item-sheet-white.webp);
       border-image-slice: 59;
       border-image-width: 59px;
       border-image-outset: 0px;
     }
     .app.window-app.sheet.item-sheet.psychology-sheet {
-      border-image: url(../ui/item-sheet-black.png);
+      border-image: url(../ui/item-sheet-black.webp);
       border-image-slice: 59;
       border-image-width: 59px;
       border-image-outset: 0px;
     }
     .app.window-app.sheet.item-sheet.skill-sheet {
-      border-image: url(../ui/item-sheet-yellow.png);
+      border-image: url(../ui/item-sheet-yellow.webp);
       border-image-slice: 59;
       border-image-width: 59px;
       border-image-outset: 0px;
     }
     .app.window-app.sheet.item-sheet.spell-sheet {
-      border-image: url(../ui/item-sheet-purple.png);
+      border-image: url(../ui/item-sheet-purple.webp);
       border-image-slice: 59;
       border-image-width: 59px;
       border-image-outset: 0px;
     }
     .app.window-app.sheet.item-sheet.talent-sheet {
-      border-image: url(../ui/item-sheet-blue.png);
+      border-image: url(../ui/item-sheet-blue.webp);
       border-image-slice: 59;
       border-image-width: 59px;
       border-image-outset: 0px;
     }
     .app.window-app.sheet.item-sheet.creature-trait-sheet {
-      border-image: url(../ui/item-sheet-blue.png);
+      border-image: url(../ui/item-sheet-blue.webp);
       border-image-slice: 59;
       border-image-width: 59px;
       border-image-outset: 0px;
@@ -2784,7 +2784,7 @@ input::placeholder, placeholder, *placeholder {
     display: inline-block;
     flex-direction: column;
     flex-wrap: nowrap;
-    background: url(../ui/frames/parchment-texture.png);
+    background: url(../ui/frames/parchment-texture.webp);
     padding: 8px;
     color: #111;
     overflow-y: hidden;
@@ -2813,7 +2813,7 @@ input::placeholder, placeholder, *placeholder {
     padding: 1px 3px;
     margin: 0;
     border: 1px solid blue;
-    /*border-image: url(../ui/item-sheet-header.png) repeat;*/
+    /*border-image: url(../ui/item-sheet-header.webp) repeat;*/
     border-image-slice: 5;
     border-image-width: 4px;
     border-image-outset: 0px;
@@ -2953,7 +2953,7 @@ input::placeholder, placeholder, *placeholder {
       margin: 0px;
       height: 25px;
       width: 7px;
-      background: url(../ui/item-sheet-tab-edges.png) repeat;
+      background: url(../ui/item-sheet-tab-edges.webp) repeat;
       background-position-x: right;
       position: absolute;
       top: 169px;
@@ -2964,7 +2964,7 @@ input::placeholder, placeholder, *placeholder {
       margin: 0px;
       height: 25px;
       width: 7px;
-      background: url(../ui/item-sheet-tab-edges.png) repeat;
+      background: url(../ui/item-sheet-tab-edges.webp) repeat;
       background-position-x: right;
       position: absolute;
       top: 169px;
@@ -2993,7 +2993,7 @@ input::placeholder, placeholder, *placeholder {
         border-image-outset: 0px;
         color: #403f3e;
         border: 1px solid blue;
-        border-image: url(../ui/actor-sheet-tab-border.png) 4 repeat;
+        border-image: url(../ui/actor-sheet-tab-border.webp) 4 repeat;
         border-image-width: 4px;
         padding: 3px 0px 0px 0px;
       }
@@ -3191,7 +3191,7 @@ input::placeholder, placeholder, *placeholder {
       margin: 0px;
       height: 25px;
       width: 7px;
-      background: url(../ui/item-sheet-tab-edges.png) repeat;
+      background: url(../ui/item-sheet-tab-edges.webp) repeat;
       background-position-x: right;
       position: absolute;
       top: 161px;
@@ -3202,7 +3202,7 @@ input::placeholder, placeholder, *placeholder {
       margin: 0px;
       height: 25px;
       width: 7px;
-      background: url(../ui/item-sheet-tab-edges.png) repeat;
+      background: url(../ui/item-sheet-tab-edges.webp) repeat;
       background-position-x: right;
       position: absolute;
       top: 161px;
@@ -3262,7 +3262,7 @@ input::placeholder, placeholder, *placeholder {
       margin: 0px;
       height: 25px;
       width: 7px;
-      background: url(../ui/item-sheet-tab-edges.png) repeat;
+      background: url(../ui/item-sheet-tab-edges.webp) repeat;
       background-position-x: right;
       position: absolute;
       top: 161px;
@@ -3273,7 +3273,7 @@ input::placeholder, placeholder, *placeholder {
       margin: 0px;
       height: 25px;
       width: 7px;
-      background: url(../ui/item-sheet-tab-edges.png) repeat;
+      background: url(../ui/item-sheet-tab-edges.webp) repeat;
       background-position-x: right;
       position: absolute;
       top: 161px;
@@ -3326,7 +3326,7 @@ input::placeholder, placeholder, *placeholder {
       margin: 0px;
       height: 25px;
       width: 7px;
-      background: url(../ui/item-sheet-tab-edges.png) repeat;
+      background: url(../ui/item-sheet-tab-edges.webp) repeat;
       background-position-x: right;
       position: absolute;
       top: 161px;
@@ -3337,7 +3337,7 @@ input::placeholder, placeholder, *placeholder {
       margin: 0px;
       height: 25px;
       width: 7px;
-      background: url(../ui/item-sheet-tab-edges.png) repeat;
+      background: url(../ui/item-sheet-tab-edges.webp) repeat;
       background-position-x: right;
       position: absolute;
       top: 161px;
@@ -3398,7 +3398,7 @@ input::placeholder, placeholder, *placeholder {
       margin: 0px;
       height: 25px;
       width: 7px;
-      background: url(../ui/item-sheet-tab-edges.png) repeat;
+      background: url(../ui/item-sheet-tab-edges.webp) repeat;
       background-position-x: right;
       position: absolute;
       top: 161px;
@@ -3409,7 +3409,7 @@ input::placeholder, placeholder, *placeholder {
       margin: 0px;
       height: 25px;
       width: 7px;
-      background: url(../ui/item-sheet-tab-edges.png) repeat;
+      background: url(../ui/item-sheet-tab-edges.webp) repeat;
       background-position-x: right;
       position: absolute;
       top: 161px;
@@ -3505,7 +3505,7 @@ input::placeholder, placeholder, *placeholder {
       margin: 0px;
       height: 25px;
       width: 7px;
-      background: url(../ui/item-sheet-tab-edges.png) repeat;
+      background: url(../ui/item-sheet-tab-edges.webp) repeat;
       background-position-x: right;
       position: absolute;
       top: 161px;
@@ -3516,7 +3516,7 @@ input::placeholder, placeholder, *placeholder {
         margin: 0px;
         height: 25px;
         width: 7px;
-        background: url(../ui/item-sheet-tab-edges.png) repeat;
+        background: url(../ui/item-sheet-tab-edges.webp) repeat;
         background-position-x: right;
         position: absolute;
         top: 161px;
@@ -3551,7 +3551,7 @@ input::placeholder, placeholder, *placeholder {
       margin: 0px;
       height: 25px;
       width: 7px;
-      background: url(../ui/item-sheet-tab-edges.png) repeat;
+      background: url(../ui/item-sheet-tab-edges.webp) repeat;
       background-position-x: right;
       position: absolute;
       top: 161px;
@@ -3562,7 +3562,7 @@ input::placeholder, placeholder, *placeholder {
       margin: 0px;
       height: 25px;
       width: 7px;
-      background: url(../ui/item-sheet-tab-edges.png) repeat;
+      background: url(../ui/item-sheet-tab-edges.webp) repeat;
       background-position-x: right;
       position: absolute;
       top: 161px;
@@ -3658,7 +3658,7 @@ input::placeholder, placeholder, *placeholder {
       margin: 0px;
       height: 25px;
       width: 7px;
-      background: url(../ui/item-sheet-tab-edges.png) repeat;
+      background: url(../ui/item-sheet-tab-edges.webp) repeat;
       background-position-x: right;
       position: absolute;
       top: 161px;
@@ -3669,7 +3669,7 @@ input::placeholder, placeholder, *placeholder {
       margin: 0px;
       height: 25px;
       width: 7px;
-      background: url(../ui/item-sheet-tab-edges.png) repeat;
+      background: url(../ui/item-sheet-tab-edges.webp) repeat;
       background-position-x: right;
       position: absolute;
       top: 161px;
@@ -3775,7 +3775,7 @@ input::placeholder, placeholder, *placeholder {
       margin: 0px;
       height: 25px;
       width: 7px;
-      background: url(../ui/item-sheet-tab-edges.png) repeat;
+      background: url(../ui/item-sheet-tab-edges.webp) repeat;
       background-position-x: right;
       position: absolute;
       top: 161px;
@@ -3786,7 +3786,7 @@ input::placeholder, placeholder, *placeholder {
       margin: 0px;
       height: 25px;
       width: 7px;
-      background: url(../ui/item-sheet-tab-edges.png) repeat;
+      background: url(../ui/item-sheet-tab-edges.webp) repeat;
       background-position-x: right;
       position: absolute;
       top: 161px;
@@ -3882,7 +3882,7 @@ input::placeholder, placeholder, *placeholder {
       margin: 0px;
       height: 25px;
       width: 7px;
-      background: url(../ui/item-sheet-tab-edges.png) repeat;
+      background: url(../ui/item-sheet-tab-edges.webp) repeat;
       background-position-x: right;
       position: absolute;
       top: 161px;
@@ -3893,7 +3893,7 @@ input::placeholder, placeholder, *placeholder {
       margin: 0px;
       height: 25px;
       width: 7px;
-      background: url(../ui/item-sheet-tab-edges.png) repeat;
+      background: url(../ui/item-sheet-tab-edges.webp) repeat;
       background-position-x: right;
       position: absolute;
       top: 161px;
@@ -4006,32 +4006,32 @@ input::placeholder, placeholder, *placeholder {
     }
 
     .app.window-app .window-header .close {
-      background: url(../ui/buttons/button-close.png);
+      background: url(../ui/buttons/button-close.webp);
     }
     .app.window-app .window-header .configure-sheet {
-      background: url(../ui/buttons/button-configure-sheet.png);
+      background: url(../ui/buttons/button-configure-sheet.webp);
     }
     .app.window-app .window-header .configure-token {
-      background: url(../ui/buttons/button-configure-token.png);
+      background: url(../ui/buttons/button-configure-token.webp);
     }
     .app.window-app .window-header .entry-image {
-      background: url(../ui/buttons/button-image.png);
+      background: url(../ui/buttons/button-image.webp);
     }
     .app.window-app .window-header .entry-text {
-      background: url(../ui/buttons/button-text.png);
+      background: url(../ui/buttons/button-text.webp);
     }
     .app.window-app .window-header .share-image {
-      background: url(../ui/buttons/button-show-players.png);
+      background: url(../ui/buttons/button-show-players.webp);
     }
     .app.window-app .window-header .post {
-      background: url(../ui/buttons/button-post.png);
+      background: url(../ui/buttons/button-post.webp);
     }
     .app.window-app .window-header .import {
-      background: url(../ui/buttons/button-import.png);
+      background: url(../ui/buttons/button-import.webp);
     }
 
     .window-app .window-header .help {
-      background: url(../ui/buttons/button-help.png);
+      background: url(../ui/buttons/button-help.webp);
     }
 
 
@@ -4267,7 +4267,7 @@ input::placeholder, placeholder, *placeholder {
   left: 23px;
   width: 200px;
   border: 3px solid #66141a;
-  border-image: url(../ui/players-border.png) 21 repeat;
+  border-image: url(../ui/players-border.webp) 21 repeat;
   border-image-slice: 75 16 25 16;
   border-image-width: 43px 10px 15px 10px;
   border-image-outset: 41px 9px 9px 9px;
@@ -4306,9 +4306,9 @@ input::placeholder, placeholder, *placeholder {
 #navigation #scene-list .scene.view, #navigation #scene-list .scene.context {
   cursor: var(--application-cursor-pointer); 
   color: #FFF;
-  background: url(../ui/sidebar_button-background.png) repeat;
+  background: url(../ui/sidebar_button-background.webp) repeat;
   background-origin: padding-box;
-  border-image: url(../ui/footer-button.png) 10 repeat;
+  border-image: url(../ui/footer-button.webp) 10 repeat;
   border-image-width: 4px;
   border-image-outset: 0px;
   box-shadow: 0 0 3px #4e0c0c;
@@ -4317,9 +4317,9 @@ input::placeholder, placeholder, *placeholder {
 #navigation #nav-toggle {
   cursor: var(--application-cursor-pointer); 
   color: whitesmoke;
-  background: url(../ui/sidebar_button-background_red.png) repeat;
+  background: url(../ui/sidebar_button-background_red.webp) repeat;
   background-origin: padding-box;
-  /* border-image: url(../ui/footer-button.png) 10 repeat; */
+  /* border-image: url(../ui/footer-button.webp) 10 repeat; */
   border-image-width: 4px;
   border-image-outset: 0px;
   font-family: KuiperBelt;
@@ -4339,9 +4339,9 @@ input::placeholder, placeholder, *placeholder {
 #navigation #scene-list .scene.nav-item {
   cursor: var(--application-cursor-pointer); 
   color: #460004;
-  background: url(../ui/sidebar_button-background_grey.png) repeat;
+  background: url(../ui/sidebar_button-background_grey.webp) repeat;
   background-origin: padding-box;
-  /* border-image: url(../ui/footer-button.png) 10 repeat; */
+  /* border-image: url(../ui/footer-button.webp) 10 repeat; */
   border-image-width: 4px;
   border-image-outset: 0px;
   font-family: KuiperBelt;
@@ -4355,9 +4355,9 @@ input::placeholder, placeholder, *placeholder {
 #navigation #scene-list .scene.nav-item.gm {
   cursor: var(--application-cursor-pointer);
   color: #500106;
-  background: url(../ui/sidebar_button-background.png) repeat;
+  background: url(../ui/sidebar_button-background.webp) repeat;
   background-origin: padding-box;
-  /* border-image: url(../ui/footer-button.png) 10 repeat; */
+  /* border-image: url(../ui/footer-button.webp) 10 repeat; */
   border-image-width: 4px;
   border-image-outset: 0px;
   font-family: KuiperBelt;
@@ -4369,7 +4369,7 @@ input::placeholder, placeholder, *placeholder {
 }
 
 #navigation #scene-list .scene.nav-item.active {
-  background: url(../ui/sidebar_button-background_red.png) repeat;
+  background: url(../ui/sidebar_button-background_red.webp) repeat;
   color: whitesmoke;
   box-shadow: 1px 1px 3px 1px #ffa426;
 }
@@ -4414,9 +4414,9 @@ input::placeholder, placeholder, *placeholder {
 #controls .scene-control.active, #controls .control-tool.active, #controls .scene-control:hover, #controls .control-tool:hover {
 cursor: default; 
 color:red !important;
-background: url(../ui/controls-active-background.png) !important;
+background: url(../ui/controls-active-background.webp) !important;
 background-origin: padding-box !important;
-border-image: url(../ui/footer-button.png) 10 repeat !important;
+border-image: url(../ui/footer-button.webp) 10 repeat !important;
 border-image-width: 0px !important;
 border-image-outset: 0px !important;
 box-shadow: 0 0 0px #4e0c0c !important;
@@ -4432,7 +4432,7 @@ height: 42px !important;
 box-sizing: content-box !important;
 font-size: 19px !important;
 line-height: 42px !important;
-background: url(../ui/controls-background.png) !important;
+background: url(../ui/controls-background.webp) !important;
 box-shadow: 0 0 0px #000 !important;
 margin: 0 0 8px !important;
 text-align: center !important;
@@ -4440,7 +4440,7 @@ border: 0px solid #000 !important;
 border-radius: 5px !important;
 cursor: pointer !important; 
 color:#66141a !important;
-background: url(../ui/controls-background.png) !important;
+background: url(../ui/controls-background.webp) !important;
 background-origin: padding-box !important;
 border-image: none !important;
 border-image-width: 0px !important;
@@ -4465,7 +4465,7 @@ border-image-outset: 0px !important;
     }
     #module-management .window-content {
       overflow: auto;
-      background: url(../ui/frames/window-app-background-bookshelf.png);
+      background: url(../ui/frames/window-app-background-bookshelf.webp);
 	  border-image-slice: 24 30 24 26;
 	  border-image-width: var(--window-content-border-image-width);
       border-image-outset: var(--window-content-border-image-outset);						   																 
@@ -4557,10 +4557,10 @@ border-image-outset: 0px !important;
           margin: 0px;
           line-height: normal;
           border: 1px solid black;
-          border-image: url(../ui/footer-button.png) 10 repeat;
+          border-image: url(../ui/footer-button.webp) 10 repeat;
           border-image-width: 4px;
           border-image-outset: 0px;
-          background: url(../ui/sidebar_button-background.png) repeat;
+          background: url(../ui/sidebar_button-background.webp) repeat;
           font-family: var(--major-button-font-family);
           font-size: 17px;
           font-weight: var(--major-button-font-weight);
@@ -4583,7 +4583,7 @@ border-image-outset: 0px !important;
     #client-settings {
       border: 1px solid blue;
       border-width: 10px;
-      border-image: url(../ui/game-settings-border.png) 5 repeat;
+      border-image: url(../ui/game-settings-border.webp) 5 repeat;
       border-image-slice: 160 80 66 85;
       border-image-width: 162px 81px 67px 80px;
       border-image-outset: 0px;
@@ -4618,7 +4618,7 @@ border-image-outset: 0px !important;
     margin: 0px 53px 24px 48px;
     padding: 0px;
     border: none;
-    background: url(../ui/game-settings-background.png);
+    background: url(../ui/game-settings-background.webp);
     background-size: contain;
     background-position-x: center;
 	border-radius: 6px;
@@ -4735,10 +4735,10 @@ border-image-outset: 0px !important;
         font-weight: 500;
         font-size: 19px;
         text-shadow: 0px 1px 1px #900000;
-        /* border-image: url(../ui/footer-button.png) 10 repeat; */
+        /* border-image: url(../ui/footer-button.webp) 10 repeat; */
         border-image-width: 4px;
         border-image-outset: 0px;
-        background: url(../ui/sidebar_button-background.png) repeat;
+        background: url(../ui/sidebar_button-background.webp) repeat;
         background-origin: padding-box;
 		border-radius:8px;
 		max-height:50px;
@@ -4763,7 +4763,7 @@ border-image-outset: 0px !important;
 		  #client-settings .window-content button:hover {
 			color: white;
 			cursor: var(--application-cursor-pointer);
-			background: url(../ui/sidebar_button-background_red.png) repeat !important;
+			background: url(../ui/sidebar_button-background_red.webp) repeat !important;
 		}
 		 #client-settings .window-content button:hover > label {
 			color: white;
@@ -4805,7 +4805,7 @@ border-image-outset: 0px !important;
     #controls-reference .window-content {
       padding: 7px 2px 7px 7px;
       max-height: none;
-      background: url(../ui/frames/bookshelf-texture.png);
+      background: url(../ui/frames/bookshelf-texture.webp);
     }
     #controls-reference .window-content div {
       overflow-y: scroll;
@@ -4881,7 +4881,7 @@ border-image-outset: 0px !important;
   margin: 0px;
   line-height: 30px;
   border: none;
-  background: url(../ui/frames/window-app-header-blank.png) repeat;
+  background: url(../ui/frames/window-app-header-blank.webp) repeat;
 }
 
   .window-app.dialog.dice-pool-dialog .window-content{
@@ -4900,14 +4900,14 @@ border-image-outset: 0px !important;
   color: #ececec;
   border: 1px solid blue;
   border-width: 10px;
-  border-image: url(../ui/window-app-dialog-content.png) 5 repeat;
+  border-image: url(../ui/window-app-dialog-content.webp) 5 repeat;
   border-image-slice: 10 13 13 13;
   border-image-width: 10px 13px 13px 13px;
   border-image-outset: 8px;
 }
 
   .window-app.dialog.dice-pool-dialog .window-content{
-    background: url(../ui/window-app-dialog-backgrounds-characteristic.png);
+    background: url(../ui/window-app-dialog-backgrounds-characteristic.webp);
   }
 
 .window-app.dialog .window-content .dialog-content {
@@ -4977,7 +4977,7 @@ font-family: var(--actor-input-font-family);
       border: 1px solid #736953a6;
       border-radius: 0px;
       box-shadow: 0px 0px 10px inset black;
-      background: url(../ui/frames/parchment-texture.png);
+      background: url(../ui/frames/parchment-texture.webp);
     }
     .window-app.dialog .window-content .dialog-content .dialog-row .talent-selector select option {
       white-space: pre-wrap;
@@ -5010,10 +5010,10 @@ font-family: var(--actor-input-font-family);
     font-weight: 500;
     font-size: 15px;
     padding-top: 5px;
-    border-image: url(../ui/footer-button.png) 10 repeat;
+    border-image: url(../ui/footer-button.webp) 10 repeat;
     border-image-width: 4px;
     border-image-outset: 0px;
-    background: url(../ui/sidebar_button-background.png) repeat;
+    background: url(../ui/sidebar_button-background.webp) repeat;
     background-origin: padding-box;
   } */
 
@@ -5037,13 +5037,13 @@ font-family: var(--actor-input-font-family);
     box-shadow: 2px 2px 8px #000000;
     padding: 0;
     margin: 0px;
-	background: #d8cbc0 url(../ui/frames/parchment-texture.png) no-repeat;
+	background: #d8cbc0 url(../ui/frames/parchment-texture.webp) no-repeat;
   }
   .app.window-app .window-header {
     flex: 0 0 45px;
     margin: 0px;
     border: 1px solid black;
-    border-image: url(../ui/frames/window-app-header-blank.png) 5 repeat;
+    border-image: url(../ui/frames/window-app-header-blank.webp) 5 repeat;
     border-image-slice: 10 fill;
     border-image-width: 9px;
     border-image-outset: 0;
@@ -5074,7 +5074,7 @@ font-family: var(--actor-input-font-family);
     }
 
   .app.window-app .window-content {
-    background: url(../ui/frames/window-app-background-bookshelf.png);
+    background: url(../ui/frames/window-app-background-bookshelf.webp);
     background-position: -43px -120px !important;
     display: flex;
     flex-direction: column;
@@ -5086,7 +5086,7 @@ font-family: var(--actor-input-font-family);
     box-shadow: 0px 0px 20px black inset;
     border: 1px solid blue;
     border-width: 10px;
-    border-image: url(../ui/window-app-dialog-content.png) 5 repeat;
+    border-image: url(../ui/window-app-dialog-content.webp) 5 repeat;
     border-image-slice: 25;
     border-image-width: 26px;
     border-image-outset: 8px;
@@ -5260,7 +5260,7 @@ font-family: var(--actor-input-font-family);
     border-image-width: 4px;
     border-image-outset: 0px;
     box-shadow: none;
-    background: url(../ui/sidebar_button-background.png) repeat;
+    background: url(../ui/sidebar_button-background.webp) repeat;
     background-origin: padding-box;
     font-family: var(--major-button-font-family);
     font-size: var(--major-button-font-size);
@@ -5283,7 +5283,7 @@ font-family: var(--actor-input-font-family);
     border-image-width: 4px;
     border-image-outset: 0px;
     box-shadow: none;
-    background: url(../ui/sidebar_button-background.png) repeat;
+    background: url(../ui/sidebar_button-background.webp) repeat;
     background-origin: padding-box;
     font-family: var(--major-button-font-family);
     font-size: var(--major-button-font-size);
@@ -5357,7 +5357,7 @@ font-family: var(--actor-input-font-family);
   }
   
   .app.window-app.cards-config .window-content {
-     background: #d8cbc0 url(../ui/frames/parchment-texture.png) no-repeat;
+     background: #d8cbc0 url(../ui/frames/parchment-texture.webp) no-repeat;
 	 background-position: -100px -120px !important;
   }
   /* ================== 1. UPDATE OR CREATE FOLDER ============ */
@@ -5377,7 +5377,7 @@ font-family: var(--actor-input-font-family);
       flex-grow: 0;
       color: whitesmoke;
       border: none;
-      background: url(../ui/frames/window-app-title-permissions.png);
+      background: url(../ui/frames/window-app-title-permissions.webp);
       min-width: 235px;
       max-width: 235px;
       min-height: 45px;
@@ -5546,7 +5546,7 @@ font-family: var(--actor-input-font-family);
       padding: 15px;
       border: 1px solid blue;
       border-width: 10px;
-      border-image: url(../ui/frames/window-app-journal-sheet-content.png) 5 repeat;
+      border-image: url(../ui/frames/window-app-journal-sheet-content.webp) 5 repeat;
       border-image-slice: 25 fill;
       border-image-width: 25px;
       border-image-outset: 0px;
@@ -5611,7 +5611,7 @@ font-family: var(--actor-input-font-family);
   /* ================== 8. SHOW ARTWORK ======================= */
 
     .window-app.app.image-popout .window-content {
-      background: url(../ui/frames/parchment-texture.png);
+      background: url(../ui/frames/parchment-texture.webp);
       background-position: -43px -120px;
       display: flex;
       flex-direction: column;
@@ -5626,7 +5626,7 @@ font-family: var(--actor-input-font-family);
       color: #000000;
       border: 1px solid blue;
       border-width: 10px;
-      border-image: url(../ui/frames/window-app-journal-sheet-content.png) 5 repeat;
+      border-image: url(../ui/frames/window-app-journal-sheet-content.webp) 5 repeat;
       border-image-slice: 25;
       border-image-width: 25px;
       border-image-outset: 0px 0px 0px 0px;
@@ -6091,7 +6091,7 @@ font-family: var(--actor-input-font-family);
     }
 
     .window-app.app.journal-sheet .window-content {
-      background: url(../ui/frames/parchment-texture.png);
+      background: url(../ui/frames/parchment-texture.webp);
       background-position: -75px -100px !important;
       display: flex;
       flex-direction: column;
@@ -6105,7 +6105,7 @@ font-family: var(--actor-input-font-family);
       font-size: 14px;
       color: #000000;
       border-width: 10px;
-      border-image: url(../ui/frames/window-app-journal-sheet-content.png) 5 repeat;
+      border-image: url(../ui/frames/window-app-journal-sheet-content.webp) 5 repeat;
       border-image-slice: 28;
       border-image-width: 20px;
       border-image-outset: 5px;
@@ -6174,11 +6174,11 @@ font-family: var(--actor-input-font-family);
 		font-size: 20px;
 		padding-top: 5px;
 		margin: 3px 0px 0px 1px !important;
-		/* border-image: url(../ui/footer-button.png) 10 repeat; */
+		/* border-image: url(../ui/footer-button.webp) 10 repeat; */
 		border-image-width: 4px;
 		border-image-outset: 0px;
 		/* box-shadow: inset 0 0 20px #000000; */
-		background: url(../ui/sidebar_button-background.png) repeat;
+		background: url(../ui/sidebar_button-background.webp) repeat;
 		background-origin: padding-box;
 		border-radius: 10px;
 		text-shadow: 0 0 black;
@@ -6238,11 +6238,11 @@ font-family: var(--actor-input-font-family);
       font-size: 15px;
       padding-top: 3px;
       margin: 0px 3px 2px 0px;
-      border-image: url(../ui/footer-button.png) 10 repeat;
+      border-image: url(../ui/footer-button.webp) 10 repeat;
       border-image-width: 4px;
       border-image-outset: 0px;
       /* box-shadow: inset 0 0 20px #000000; */
-      background: url(../ui/sidebar_button-background.png) repeat;
+      background: url(../ui/sidebar_button-background.webp) repeat;
       background-origin: padding-box;
     }    
       .window-app.journal-sheet.image-popout .form-group button i {
@@ -6274,10 +6274,10 @@ font-family: var(--actor-input-font-family);
         line-height: 20px;
         width: calc(100% - 45px);
         margin: 3px;
-        background: url(../ui/frames/parchment-texture.png);
+        background: url(../ui/frames/parchment-texture.webp);
         box-shadow: inset 0 0 10px #000000;
         border: 2px groove #790000;
-        border-image: url(../ui/chat-controls-border.png) 4 repeat;
+        border-image: url(../ui/chat-controls-border.webp) 4 repeat;
         border-image-width: 4px;
         border-image-outset: 2px 2px 2px 2px;
         font-family: var(--actor-input-font-family);
@@ -6296,7 +6296,7 @@ font-family: var(--actor-input-font-family);
         width: 24px;
         height: 24px;
         position: relative;
-        background: url(../ui/frames/search-field-icon.png);
+        background: url(../ui/frames/search-field-icon.webp);
         color: #ffffff00;
 		background-size: contain;
       }
@@ -6318,11 +6318,11 @@ font-family: var(--actor-input-font-family);
     }
     .app.window-app.filepicker .form-group button {
       border: 1px solid black;
-      border-image: url(../ui/footer-button.png) 10 repeat;
+      border-image: url(../ui/footer-button.webp) 10 repeat;
       border-image-width: 4px;
       border-image-outset: 0px;
       box-shadow: none;
-      background: url(../ui/sidebar_button-background.png) repeat;
+      background: url(../ui/sidebar_button-background.webp) repeat;
       margin-bottom: 0px;
     }
       .app.window-app.filepicker .form-group button i {
@@ -6334,18 +6334,18 @@ font-family: var(--actor-input-font-family);
       }
     .app.window-app.filepicker .form-fields.display-modes a {
       border: 1px solid black;
-      border-image: url(../ui/footer-button.png) 10 repeat;
+      border-image: url(../ui/footer-button.webp) 10 repeat;
       border-image-width: 4px;
       border-image-outset: 0px;
       box-shadow: none;
-      background: url(../ui/sidebar_button-background.png) repeat;
+      background: url(../ui/sidebar_button-background.webp) repeat;
       margin-bottom: 0px;
       padding-top: 2px;
     }
 	
 	.app.window-app.filepicker .form-group button:hover {
 		
-		background: url(../ui/sidebar_button-background_red.png) repeat;
+		background: url(../ui/sidebar_button-background_red.webp) repeat;
 		color:white !important;
 		
 	}
@@ -6378,7 +6378,7 @@ font-family: var(--actor-input-font-family);
     .app.window-app.filepicker .filepicker-body .directory.files-list.thumbs-list,
     .app.window-app.filepicker .filepicker-body .directory.files-list.details-list,
     .app.window-app.filepicker .filepicker-body .directory.folders-list.details-list {
-      background: url(../ui/frames/bookshelf-texture.png) repeat;
+      background: url(../ui/frames/bookshelf-texture.webp) repeat;
       border: 3px solid #66141a;
       border-radius: 8px;
       box-shadow: 0px 0px 23px #330004 inset;
@@ -6523,13 +6523,13 @@ font-family: var(--actor-input-font-family);
       padding: 8px 0px 4px 0px;
       border-radius: 10px;
       justify-content: center;
-      background: url(../ui/frames/hotkeybox-macro-list.png);
+      background: url(../ui/frames/hotkeybox-macro-list.webp);
       box-shadow: 1px 1px 4px #734d05;
     }
 	  
     
       #hotbar #action-bar .macro {
-        border-image: url(../ui/frames/hotkeybox.png) 21 repeat;
+        border-image: url(../ui/frames/hotkeybox.webp) 21 repeat;
         border-image-slice: 6 6 6 6 fill;
         border-image-width: 6px 6px 6px 6px;
         border-image-outset: 0px 0px 0px 0px;
@@ -6609,7 +6609,7 @@ font-weight: normal;
 font-size: 19px;
 color: #ececec;
 border: 1px solid blue;
-border-image: url(../ui/menu-border.png) 21 repeat;
+border-image: url(../ui/menu-border.webp) 21 repeat;
 border-image-slice: 78 4 81 4;
 border-image-width: 80px 6px 80px 6px;
 border-image-outset: 76px 0px 76px 0px;
@@ -6673,7 +6673,7 @@ font-style : normal;
   margin: 0px;
   line-height: 30px;
   border: none;
-  background: url(../ui/frames/window-app-header-blank.png) repeat;
+  background: url(../ui/frames/window-app-header-blank.webp) repeat;
 } 
   .window-app.dialog.cast-channel .window-header .window-title {
     position: absolute;
@@ -6701,7 +6701,7 @@ font-style : normal;
   }
 
 .window-app.dialog.cast-channel .window-content {
-  background: url(../ui/window-app-dialog-backgrounds-characteristic.png);
+  background: url(../ui/window-app-dialog-backgrounds-characteristic.webp);
   background-position: -43px -120px;
   display: flex;
   flex-direction: column;
@@ -6717,7 +6717,7 @@ font-style : normal;
   color: #ececec;
   border: 1px solid blue;
   border-width: 10px;
-  border-image: url(../ui/window-app-dialog-content.png) 5 repeat;
+  border-image: url(../ui/window-app-dialog-content.webp) 5 repeat;
   border-image-slice: 10 13 13 13;
   border-image-width: 10px 13px 13px 13px;
   border-image-outset: 8px;
@@ -6771,10 +6771,10 @@ font-style : normal;
     font-size: 15px;
     padding-top: 5px;
     margin: 0px;
-    border-image: url(../ui/footer-button.png) 10 repeat;
+    border-image: url(../ui/footer-button.webp) 10 repeat;
     border-image-width: 4px;
     border-image-outset: 0px;
-    background: url(../ui/sidebar_button-background.png) repeat;
+    background: url(../ui/sidebar_button-background.webp) repeat;
     background-origin: padding-box;
   } 
 
@@ -6849,7 +6849,7 @@ font-style : normal;
 
       
       .app.window-app.sheet.item-sheet .configure-sheet {
-        background: url(../ui/buttons/button-configure-sheet.png);
+        background: url(../ui/buttons/button-configure-sheet.webp);
       }
       
       .compendium .entry-name {
@@ -6959,7 +6959,7 @@ font-style : normal;
 }
 
 #OneJournalDirectory .window-content{
-  background: url(../ui/frames/parchment-texture.png);
+  background: url(../ui/frames/parchment-texture.webp);
 }
 
 .card-edit {
@@ -7053,7 +7053,7 @@ font-style : normal;
 }
 
 #sidebar #tables .directory-list .directory-item .profile{
-  /* content: url(../ui/buttons/d10.png); */
+  /* content: url(../ui/buttons/d10.webp); */
 }
 
 #av-config .sheet-tabs .item {
@@ -7292,7 +7292,7 @@ a.inline-roll,
 .app.window-app .window-header .popout {
   color: #00c2d800;
   text-align: center;
-  background: url(../ui/buttons/popout.png);
+  background: url(../ui/buttons/popout.webp);
   height: 30px;
   width: 30px;
   /* position: absolute; */
@@ -7321,11 +7321,11 @@ a.inline-roll,
   width: fill-available;
   margin: 0 3px 0px 3px !important;
   border: 1px solid black;
-  border-image: url(../ui/footer-button.png) 10 repeat;
+  border-image: url(../ui/footer-button.webp) 10 repeat;
   border-image-width: 4px;
   border-image-outset: 0px;
   box-shadow: none;
-  background: url(../ui/sidebar_button-background.png) repeat;
+  background: url(../ui/sidebar_button-background.webp) repeat;
   background-origin: padding-box;
   font-family: var(--major-button-font-family);
   font-size: var(--major-button-font-size);
@@ -7483,11 +7483,11 @@ our-box[data-location="lArm"] .armour-property .armour-flaw.comma:last-of-type {
 #chat-log .message.whisper {
   padding: 4px 1px 4px 1px;
   margin: 25px 16px 25px 21px;
-  border-image: url(../ui/frames/chat-message-border-private.png) 21 repeat;
+  border-image: url(../ui/frames/chat-message-border-private.webp) 21 repeat;
   border-image-width: 16px;
   border-image-outset: 12px;
   border-radius: 4px;
-  background: url(../ui/frames/parchment-texture.png) repeat;
+  background: url(../ui/frames/parchment-texture.webp) repeat;
   box-shadow: none;
   color: #000000;
   font-family: KuiperBelt;
@@ -7502,11 +7502,11 @@ our-box[data-location="lArm"] .armour-property .armour-flaw.comma:last-of-type {
 #chat-log .message.whisper.blind {
   padding: 4px 1px 4px 1px;
   margin: 25px 16px 25px 21px;
-  border-image: url(../ui/frames/chat-message-border-blind.png) 21 repeat;
+  border-image: url(../ui/frames/chat-message-border-blind.webp) 21 repeat;
   border-image-width: 16px;
   border-image-outset: 12px;
   border-radius: 4px;
-  background: url(../ui/frames/parchment-texture.png) repeat;
+  background: url(../ui/frames/parchment-texture.webp) repeat;
   box-shadow: none;
   color: #000000;
   font-family: KuiperBelt;
@@ -7969,7 +7969,7 @@ background-image: linear-gradient(to right, #820f0f , #82820d);
 #module-management  button.disable-all-modules:hover {
     box-shadow: 0 0 5px #c70000 !important;
     cursor: var(--application-cursor-pointer);
-    background: url(../ui/sidebar_button-background_red.png) repeat !important;
+    background: url(../ui/sidebar_button-background_red.webp) repeat !important;
     color: white !important;
 }
 
@@ -8137,7 +8137,7 @@ input[name="dd-import.importPath"] {
 }
 
 #mass-combat.mass-combat .window-content {
-  background: url(../ui/background.png) repeat;
+  background: url(../ui/background.webp) repeat;
 }
 .sidebar-tab.compendium.flexcol .directory-list {
     padding-right: 5px;
@@ -8247,17 +8247,17 @@ input[name="dd-import.importPath"] {
 /** UNIVERSAL MODULE SETTING **/
 #cub-triggler-form form {
   overflow: hidden;
-  background: #d8cbc0 url(../ui/frames/parchment-texture.png) no-repeat !important; 	
+  background: #d8cbc0 url(../ui/frames/parchment-texture.webp) no-repeat !important; 	
 }
 #cub-condition-lab form {
   overflow: hidden;
-  background: #d8cbc0 url(../ui/frames/parchment-texture.png) no-repeat !important; 
+  background: #d8cbc0 url(../ui/frames/parchment-texture.webp) no-repeat !important; 
   background-size: contain !important;
   background-position: -40px 0 !important;
 } 
 
 #cub-puter .window-content {
-	background: #d8cbc0 url(../ui/frames/parchment-texture.png) no-repeat !important; 
+	background: #d8cbc0 url(../ui/frames/parchment-texture.webp) no-repeat !important; 
 	padding: 10px 5px 0px 115px;
 }
 
@@ -8267,7 +8267,7 @@ input[name="dd-import.importPath"] {
 
 .active-effect-sheet form {
   overflow: hidden;
-  background: #d8cbc0 url(../ui/frames/parchment-texture.png) no-repeat !important; 
+  background: #d8cbc0 url(../ui/frames/parchment-texture.webp) no-repeat !important; 
 }
 
 .forien-quest-preview h1,
@@ -8411,11 +8411,11 @@ hr,
   margin: 0 3px 4px 3px;
 
   border: 1px solid black;
-  border-image: url(../ui/footer-button.png) 10 repeat;
+  border-image: url(../ui/footer-button.webp) 10 repeat;
   border-image-width: 4px;
   border-image-outset: 0px;
   box-shadow: none;
-  background: url(../ui/sidebar_button-background.png) repeat;
+  background: url(../ui/sidebar_button-background.webp) repeat;
   background-origin: padding-box;
 
   font-family: var(--major-button-font-family);
@@ -8427,10 +8427,10 @@ hr,
 #forien-quest-log-form .btn:hover,
 #forien-quest-log .new-quest-btn:hover {
   border: 1px solid black;
-  border-image: url(../ui/footer-button.png) 10 repeat;
+  border-image: url(../ui/footer-button.webp) 10 repeat;
   border-image-width: 4px;
   border-image-outset: 0px;
-  background: url(../ui/sidebar_button-background.png) repeat;
+  background: url(../ui/sidebar_button-background.webp) repeat;
   background-origin: padding-box;
   color: var(--major-button-color);
   cursor: var(--application-cursor-pointer);
@@ -8475,9 +8475,9 @@ hr,
   border-radius: 0px
 }
 
-#forien-quest-log .window-content { background: url(../ui/frames/parchment-texture.png);  }
-#forien-quest-log-form .window-content { background:url(../ui/frames/parchment-texture.png); }
-.forien-quest-preview .window-content { background: url(../ui/frames/parchment-texture.png) !important; }
+#forien-quest-log .window-content { background: url(../ui/frames/parchment-texture.webp);  }
+#forien-quest-log-form .window-content { background:url(../ui/frames/parchment-texture.webp); }
+.forien-quest-preview .window-content { background: url(../ui/frames/parchment-texture.webp) !important; }
 
 #forien-quest-log .window-header a, .forien-quest-preview .window-header a {
     position: absolute;
@@ -8506,7 +8506,7 @@ hr,
 }
 
 #forien-quest-log .quest-log.bookmarks nav .item{
-  background: url(../ui/sidebar_button-background.png) repeat !important;
+  background: url(../ui/sidebar_button-background.webp) repeat !important;
 }
 
 .forien-quest-preview .add-abstract,
@@ -8525,7 +8525,7 @@ hr,
 
 /* #destiny-tracker { */
   /* box-shadow: none !important; */
-  /* background: url(../ui/parchment.jpg) repeat; */
+  /* background: url(../ui/parchment.webp) repeat; */
   /* position: absolute; */
   /* border-image: none !important; */
   /* width: 260px !important; */
@@ -8550,23 +8550,23 @@ hr,
 /* } */
 
 /* .swffg-destiny #destinyLight { */
-  /* background : url(../ui/lightside-UI-CC.png) no-repeat center; */
+  /* background : url(../ui/lightside-UI-CC.webp) no-repeat center; */
   /* background-size: contain; */
 /* } */
 
 /* .swffg-destiny #destinyDark { */
-  /* background : url(../ui/darkside-UI-CC.png) no-repeat center; */
+  /* background : url(../ui/darkside-UI-CC.webp) no-repeat center; */
   /* background-size: contain; */
 /* } */
 
 /* section#destinyLight.destiny-points:hover { */
-  /* background : url(../ui/lightside-UI-CC-active.png) no-repeat center; */
+  /* background : url(../ui/lightside-UI-CC-active.webp) no-repeat center; */
   /* background-size: contain; */
   /* cursor: var(--application-cursor-pointer); */
 /* } */
 
 /* section#destinyDark.destiny-points:hover { */
-  /* background : url(../ui/darkside-UI-CC-active.png) no-repeat center; */
+  /* background : url(../ui/darkside-UI-CC-active.webp) no-repeat center; */
   /* background-size: contain; */
   /* cursor: var(--application-cursor-pointer); */
 /* } */
@@ -8739,13 +8739,13 @@ img {
 }
 
 .starwarsffg .character .characteristics .characteristic-item {
-	background: url(../ui/frames/caracteristics-background.png) no-repeat;
+	background: url(../ui/frames/caracteristics-background.webp) no-repeat;
 	background-size:100% 100%;
 	background-color: #ffffff00;
 }
 
 .starwarsffg .vehicle .characteristics .characteristic-item {
-	background: url(../ui/frames/vehicles-caracteristics-background.png) no-repeat;
+	background: url(../ui/frames/vehicles-caracteristics-background.webp) no-repeat;
 	background-size:100% 100%;
 	background-color: #ffffff00;
 }
@@ -8846,7 +8846,7 @@ img {
     width: calc(100% - var(--rightNotchSize));
     z-index: 40;
     bottom: 5px;
-    /* background: url(../ui/frames/auberesh-name-background.png) no-repeat; */
+    /* background: url(../ui/frames/auberesh-name-background.webp) no-repeat; */
     /* background-size: 100% 100%; */
     padding-top: 2px;
 	--notchSize: 0.25rem;
@@ -8915,7 +8915,7 @@ img {
 }
 
 .starwarsffg .characteristics .characteristic-item {
-   background: url(../ui/frames/caracteristics-background.png) no-repeat;
+   background: url(../ui/frames/caracteristics-background.webp) no-repeat;
 	background-size:100% 100%;
 	background-color: #ffffff00 !important;
 }
@@ -8945,10 +8945,10 @@ img {
 
 /* @TODO CVB */
 .skill-label.rollable.roll-button.starwarsffg.item-rollable:hover {
-	background-image: url(../ui/buttons/d10.png) !important;
+	background-image: url(../ui/buttons/d10.webp) !important;
 }
 .starwarsffg .item-rollable.rollable:hover {
-    background-image: url(../ui/buttons/d10.png) !important;
+    background-image: url(../ui/buttons/d10.webp) !important;
 }
 /*.starwarsffg .item-sheet-itemattachment .characteristic-item, .starwarsffg .item-sheet-itemattachment {
     background-color: #bffebf;
@@ -8961,7 +8961,7 @@ img {
 .starwarsffg.sheet.item.v2 .tabs .item,
 .starwarsffg.sheet.actor.v2 .tabs .item,
 .starwarsffg.v2 .tabs .item {
-  background: url(../ui/controls-background36x36.png) no-repeat !important;
+  background: url(../ui/controls-background36x36.webp) no-repeat !important;
   background-size: contain !important;
 }
 
@@ -8970,7 +8970,7 @@ img {
 .starwarsffg.v2 .tabs .item.active {
   text-decoration: none;
   text-shadow: none;
-  background: url(../ui/controls-active-background36x36.png) no-repeat !important;
+  background: url(../ui/controls-active-background36x36.webp) no-repeat !important;
   margin-right: 0px;
   flex:0 0 2.5rem;
   background-size: contain !important;
@@ -8994,7 +8994,7 @@ img {
 }
 
 .starwarsffg.sheet select:hover{
-	background: url(../ui/frames/parchment-texture.png) repeat;	
+	background: url(../ui/frames/parchment-texture.webp) repeat;	
 }
 
 .starwarsffg.sheet.item.v2 .sheet-body {
@@ -9013,7 +9013,7 @@ img {
 
 .starwarsffg form {
   overflow: hidden;
-  background: #cab4a7 url(../ui/frames/parchment-texture.png) no-repeat;
+  background: #cab4a7 url(../ui/frames/parchment-texture.webp) no-repeat;
   background-position-x: -90px;
   background-position-y: -120px;
   font-weight: bold;
@@ -9030,7 +9030,7 @@ img {
 
 .starwarsffg.roll-builder-dialog form {
   overflow: scroll;
-  background: #d0beb0e6 url(../ui/frames/parchment-texture.png) round;
+  background: #d0beb0e6 url(../ui/frames/parchment-texture.webp) round;
   padding: 10px;
   margin: 0;
   font-size:20px;
@@ -9066,7 +9066,7 @@ img {
 
  .roll-builder-dialog .window-content button { 
 	margin: 3px 5px 6px 5px !important;
-    background: url(../ui/sidebar_button-background.png) repeat;
+    background: url(../ui/sidebar_button-background.webp) repeat;
     font-family: 'DistantGalaxy';
     font-size: 33px;
     font-weight: 500;
@@ -9081,11 +9081,11 @@ img {
     padding: 2px 0px 0px 0px;
     height: 34px;
     border: 3px solid #66141a;
-    /* border-image: url(../ui/footer-button.png) 10 repeat; */
+    /* border-image: url(../ui/footer-button.webp) 10 repeat; */
     border-image-width: 4px;
     border-image-outset: 0px;
     box-shadow: 4px 4px 1px #00000085;
-    background: url(../ui/sidebar_button-background.png) repeat;
+    background: url(../ui/sidebar_button-background.webp) repeat;
     background-origin: padding-box;
     color: #66141a;
     font-family: KuiperBelt;
@@ -9103,7 +9103,7 @@ img {
 	top: 60px !important;
 	height: auto !important;
 	
-	border-image: url(../ui/frames/sidebar-collapsed.png) 5 repeat !important;
+	border-image: url(../ui/frames/sidebar-collapsed.webp) 5 repeat !important;
     border-image-slice: 29 26 30 26 fill !important;
     border-image-width: 19px 21px 21px 21px !important;
     border-image-outset: 0px !important;
@@ -9211,7 +9211,7 @@ img {
 }
 
 #gm-screen-tabs-config .window-content {
-	background: #d8cbc0 url(../ui/frames/parchment.jpg) no-repeat !important; 
+	background: #d8cbc0 url(../ui/frames/parchment.webp) no-repeat !important; 
 	padding: 10px;
 }
 
@@ -9219,17 +9219,17 @@ img {
 	width:300px !important;
 }
 #ffg-star-wars-enhancements-opening-crawl-select .window-content {
-	background: #d8cbc0 url(../ui/frames/parchment.jpg) no-repeat !important; 
+	background: #d8cbc0 url(../ui/frames/parchment.webp) no-repeat !important; 
 	padding: 10px;
 }
 
 #ffg-star-wars-enhancements-shop-generator-create .window-content {
-	background: #d8cbc0 url(../ui/frames/parchment.jpg) no-repeat !important; 
+	background: #d8cbc0 url(../ui/frames/parchment.webp) no-repeat !important; 
 	padding: 10px;
 }
 
 #ffg-star-wars-enhancements-attack-animation-configure .window-content {
-	background: #d8cbc0 url(../ui/frames/parchment.jpg) no-repeat !important; 
+	background: #d8cbc0 url(../ui/frames/parchment.webp) no-repeat !important; 
 	padding: 10px;
 }
 
@@ -9243,7 +9243,7 @@ img {
 	border-image-width: 53px 14px 25px 14px !important;
     border-image-outset: 45px 10px 11px 10px !important;
     border-image-repeat: repeat repeat !important;
-    border-image-source: url(../ui/players-border.png) !important;
+    border-image-source: url(../ui/players-border.webp) !important;
     /* background: none; */
 }
 
@@ -9321,11 +9321,11 @@ div#ogc-importer {
   padding: 2px 0px 0px 0px;
   height: 34px;
   border: 1px solid black;
-  border-image: url(../ui/footer-button.png) 10 repeat;
+  border-image: url(../ui/footer-button.webp) 10 repeat;
   border-image-width: 4px;
   border-image-outset: 0px;
   box-shadow: 4px 4px 1px #00000085;
-  background: url(../ui/sidebar_button-background.png) repeat;
+  background: url(../ui/sidebar_button-background.webp) repeat;
   background-origin: padding-box;
   color: #3c2100;
   font-family: KuiperBelt;
@@ -9355,11 +9355,11 @@ div#ognpc-importer {
   padding: 2px 0px 0px 0px;
   height: 34px;
   border: 1px solid black;
-  border-image: url(../ui/footer-button.png) 10 repeat;
+  border-image: url(../ui/footer-button.webp) 10 repeat;
   border-image-width: 4px;
   border-image-outset: 0px;
   box-shadow: 4px 4px 1px #00000085;
-  background: url(../ui/sidebar_button-background.png) repeat;
+  background: url(../ui/sidebar_button-background.webp) repeat;
   background-origin: padding-box;
   color: #3c2100;
   font-family: KuiperBelt;
@@ -9369,11 +9369,11 @@ div#ognpc-importer {
 }
 
 #OneJournalShell:not(.oj-wfrp4e) .one-journal-attached .window-content {
-    background: url(../ui/frames/parchment-texture.png) !important;
+    background: url(../ui/frames/parchment-texture.webp) !important;
 }
 
 #transition-form .window-content {
-    background: url(../ui/frames/parchment-texture.png) !important;
+    background: url(../ui/frames/parchment-texture.webp) !important;
 }
 
 div#transition-form.app.window-app.sheet.transition-form{
@@ -9386,13 +9386,13 @@ div#transition-form.app.window-app.sheet.transition-form{
 }
 
 #tooltip-manager .window-content {
-    background: url(../ui/parchment.jpg);
+    background: url(../ui/parchment.webp);
     padding: 0px 10px 10px 10px;
     margin: 0px;
 }
 
 #tooltip-editor-default .window-content {
-    background: url(../ui/parchment.jpg);
+    background: url(../ui/parchment.webp);
     padding: 0px 10px 10px 10px;
     margin: 0px;
 }
@@ -9427,5 +9427,5 @@ div#transition-form.app.window-app.sheet.transition-form{
 /* ##########  SWADE SYSTEM SPECIFICS ############# */
 
 .swade.sheet.item .window-content {
-    background: url(../ui/frames/parchment-texture.png) !important;
+    background: url(../ui/frames/parchment-texture.webp) !important;
 }

@@ -208,7 +208,7 @@
 }
 
 .swdatapad {
-    background-image: url(/modules/ffg-star-wars-enhancements/artwork/datapad-template-700w.png) !important;
+    background-image: url(/modules/ffg-star-wars-enhancements/artwork/datapad-template-700w.webp) !important;
     background-repeat: no-repeat !important;
     width: 700px;
     min-height: 1000px;
@@ -233,7 +233,7 @@
 }
 
 .swdatapad-wanted {
-    background-image: url(/modules/ffg-star-wars-enhancements/artwork/datapad-template-wanted-700w.png) !important;
+    background-image: url(/modules/ffg-star-wars-enhancements/artwork/datapad-template-wanted-700w.webp) !important;
     background-repeat: no-repeat !important;
     width: 700px;
     min-height: 1000px;
@@ -392,7 +392,7 @@ em {
 
 .app {
     max-height: 100%;
-    background: url(../ui/denim075.png) repeat;
+    background: url(../ui/denim075.webp) repeat;
     border-radius: 5px;
     box-shadow: 0 0 20px #000;
     margin: 3px 0;
@@ -465,7 +465,7 @@ section.swffgui {
 div.swffgui-settings {
     flex: 0;
     text-align: center;
-    background:url(../ui/game-settings-background.png);
+    background:url(../ui/game-settings-background.webp);
     margin : 0 60px 0 60px;
 }
 
@@ -644,7 +644,7 @@ select:focus {
     #client-settings {
       border: 1px solid blue;
       border-width: 10px;
-      border-image: url(../ui/game-settings-border.png) 5 repeat;
+      border-image: url(../ui/game-settings-border.webp) 5 repeat;
       border-image-slice: 160 80 66 85;
       border-image-width: 163px 81px 67px 80px;
 	  /*border-image-slice: 190 110 85 110;*/
@@ -689,7 +689,7 @@ select:focus {
     margin: 0px 53px 24px 48px;
     padding: 0px;
     border: none;
-    background: url(../ui/game-settings-background.png);
+    background: url(../ui/game-settings-background.webp);
     background-size: 199%;
     background-position-x: center;
 	border-radius: 6px;
@@ -807,10 +807,10 @@ select:focus {
         font-size: 19px;
         text-shadow: 0px 1px 1px #900000;
 	*/
-        /* border-image: url(../ui/footer-button.png) 10 repeat; */
+        /* border-image: url(../ui/footer-button.webp) 10 repeat; */
     /*    border-image-width: 4px;
         border-image-outset: 0px;
-        background: url(../ui/sidebar_button-background.png) repeat;
+        background: url(../ui/sidebar_button-background.webp) repeat;
         background-origin: padding-box;
 		border-radius:8px;
       }
@@ -834,7 +834,7 @@ select:focus {
 		  #client-settings .window-content button:hover {
 			color: white;
 			cursor: var(--application-cursor-pointer);
-			background: url(../ui/sidebar_button-background_red.png) repeat !important;
+			background: url(../ui/sidebar_button-background_red.webp) repeat !important;
 		}
 		 #client-settings .window-content button:hover > label {
 			color: white;
@@ -877,7 +877,7 @@ select:focus {
     bottom: 25px;
     left: 10px;
     width: 200px;
-    border-image: url(../ui/players-border.png) 21 repeat;
+    border-image: url(../ui/players-border.webp) 21 repeat;
     border-image-slice: 55 16 19 16;
     border-image-width: 43px 9px 15px 13px;
     border-image-outset: 41px 9px 9px 9px;
@@ -1004,7 +1004,7 @@ select:focus {
 	color:black;
 }
 .starwarsffg .character .characteristics .characteristic-item {
-	background: url(../ui/frames/caracteristics-background.png) no-repeat;
+	background: url(../ui/frames/caracteristics-background.webp) no-repeat;
 	background-size:100% 100%;
 	background-color: #ffffff00;
 }
@@ -1014,7 +1014,7 @@ select:focus {
 }
 
 .starwarsffg .vehicle .characteristics .characteristic-item {
-	background: url(../ui/frames/vehicles-caracteristics-background.png) no-repeat;
+	background: url(../ui/frames/vehicles-caracteristics-background.webp) no-repeat;
 	background-size:100% 100%;
 	background-color: #ffffff00;
 }
@@ -1040,7 +1040,7 @@ select:focus {
     z-index: 40;
     /* bottom: 78px; */
 	top:108px;
-    /* background: url(../ui/frames/auberesh-name-background.png) no-repeat; */
+    /* background: url(../ui/frames/auberesh-name-background.webp) no-repeat; */
     /* background-size: 100% 100%; */
     padding-top: 2px;
 	--notchSize: 6px;
@@ -1064,7 +1064,7 @@ select:focus {
     width: calc(100% - var(--rightNotchSize));
     z-index: 40;
     bottom: 5px;
-    /* background: url(../ui/frames/auberesh-name-background.png) no-repeat; */
+    /* background: url(../ui/frames/auberesh-name-background.webp) no-repeat; */
     /* background-size: 100% 100%; */
     padding-top: 2px;
 	--notchSize: 6px;
@@ -1377,7 +1377,7 @@ select:focus {
 }
 
 .starwarsffg.sheet select:hover{
-	background: url(../ui/frames/parchment-texture.png) repeat;	
+	background: url(../ui/frames/parchment-texture.webp) repeat;	
 }
 
 .starwarsffg.sheet.item.v2 .sheet-body {
@@ -1410,7 +1410,7 @@ select:focus {
 }
 
 .starwarsffg .characteristics .characteristic-item {
-   background: url(../ui/frames/caracteristics-background.png) no-repeat;
+   background: url(../ui/frames/caracteristics-background.webp) no-repeat;
 	background-size:100% 100%;
 	background-color: #ffffff00 !important;
 }
@@ -1529,7 +1529,7 @@ select:focus {
 }
 
 #sidebar {
-    background: url(../default-ui/sidebar.png) !important;
+    background: url(../default-ui/sidebar.webp) !important;
     background-position-y: 45px !important;
     border: 3px solid white;
 	width:305px;
@@ -1649,7 +1649,7 @@ select:focus {
 }
 
 #pause > img {
-  content: url(../default-ui/pause-icon.png);
+  content: url(../default-ui/pause-icon.webp);
   height: 128px;
   width: 128px;
   left: calc(50% - 64px);
@@ -1667,13 +1667,13 @@ select:focus {
 
 
 #tooltip-manager .window-content {
-    /* background: url(../ui/parchment.jpg); */
+    /* background: url(../ui/parchment.webp); */
     padding: 0px 10px 10px 10px;
     margin: 0px;
 }
 
 #tooltip-editor-default .window-content {
-    /* background: url(../ui/parchment.jpg); */
+    /* background: url(../ui/parchment.webp); */
     padding: 0px 10px 10px 10px;
     margin: 0px;
 }
@@ -1711,7 +1711,7 @@ select:focus {
 }
 
 #logo {
-  content : url("../art/ui/logo-foundryVTswffg-ui100x42.png");
+  content : url("../art/ui/logo-foundryVTswffg-ui100x42.webp");
   width: 100px;
   height: 42px;
 }
