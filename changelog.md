@@ -2,6 +2,7 @@
 
 **Version [2.5.0]**
 * All png/jpg images have been converted to webp format
+* A substantial space gain was performed --> from 31.8Mb to 2.91Mb
 
 **Version [2.4.0]**
 * Compatiblity verified FVTT 11.315
