@@ -560,7 +560,7 @@ Hooks.on("renderSidebarTab", async (object, html) => {
     const swffgUIDetails = document.createElement("li");
     swffgUIDetails.classList.add("donation-link");
     //let swffgUiVersion = game.i18n.localize('SWFFG.Version');
-	let swffgUiVersion = game.modules.get("swffgUI-cc").data.version
+	let swffgUiVersion = game.modules.get("swffgUI-cc").version
 	let swffgUiDonate = game.i18n.localize('SWFFG.donate');
 	let swffgUiThemeMaintenance = game.i18n.localize('SWFFG.thememaintenance');
     let swffgUiReportThemeIssue = game.i18n.localize('SWFFG.reportthemeissue');

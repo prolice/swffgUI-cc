@@ -188,7 +188,7 @@
 }
 
 .swdatapad {
-    background-image: url(/modules/ffg-star-wars-enhancements/artwork/datapad-template-700w.webp) !important;
+    background-image: url(/modules/ffg-star-wars-enhancements/artwork/datapad-template-700w.png) !important;
     background-repeat: no-repeat !important;
     width: 700px;
     min-height: 1000px;
@@ -213,7 +213,7 @@
 }
 
 .swdatapad-wanted {
-    background-image: url(/modules/ffg-star-wars-enhancements/artwork/datapad-template-wanted-700w.webp) !important;
+    background-image: url(/modules/ffg-star-wars-enhancements/artwork/datapad-template-wanted-700w.png) !important;
     background-repeat: no-repeat !important;
     width: 700px;
     min-height: 1000px;

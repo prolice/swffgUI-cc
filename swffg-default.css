@@ -326,7 +326,7 @@ h3.auberesh {
 }
 
 .swdatapad {
-    background-image: url(/modules/ffg-star-wars-enhancements/artwork/datapad-template-700w.webp) !important;
+    background-image: url(/modules/ffg-star-wars-enhancements/artwork/datapad-template-700w.png) !important;
     background-repeat: no-repeat !important;
     width: 700px;
     min-height: 1000px;
@@ -351,7 +351,7 @@ h3.auberesh {
 }
 
 .swdatapad-wanted {
-    background-image: url(/modules/ffg-star-wars-enhancements/artwork/datapad-template-wanted-700w.webp) !important;
+    background-image: url(/modules/ffg-star-wars-enhancements/artwork/datapad-template-wanted-700w.png) !important;
     background-repeat: no-repeat !important;
     width: 700px;
     min-height: 1000px;
@@ -481,6 +481,11 @@ button {
     font-size: 9pt;
 	font-family: var(--major-button-font-family), sans-serif;
 	font-size: var(--major-button-font-size);
+}
+
+.window-app.starwarsffg.sheet.actor .window-content > * {
+    display: flex;
+    flex-direction: column;
 }
 
 .window-app .window-header .window-title {
