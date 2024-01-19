@@ -1,4 +1,6 @@
 ## Release Notes:
+**Version [2.5.1]**
+* [FIX issue#30] webp for module StarWarsFFG enhancement compatibility was not necessary. 
 
 **Version [2.5.0]**
 * All png/jpg images have been converted to webp format
