@@ -1335,7 +1335,7 @@ input::placeholder, placeholder, *placeholder {
 
   #sidebar.collapsed {
     width: 50px !important;
-    height: 364px !important;
+    height: 380px !important;
     position: absolute;
     top: 15px;
     right: -1px;
@@ -1358,8 +1358,8 @@ input::placeholder, placeholder, *placeholder {
     flex-wrap: nowrap;
     justify-content: space-evenly;
     position: relative;
-    top: 126px;
-    left: -81px;
+    top: -18px;
+    left: -78px;
     width: 35px;
     height: 54px;
     margin: 0px;
@@ -1535,7 +1535,7 @@ input::placeholder, placeholder, *placeholder {
     width: 383px;
     height: 52px;
     margin: 0px;
-	padding-left:20px;
+	padding-left:8px;
 	padding-right:20px;
 	padding-bottom:18px;
     box-shadow: none;
@@ -8701,7 +8701,12 @@ img {
 
 .starwarsffg.sheet nav.sheet-tabs {
     display: flex;
-	height : 45px !important;
+	height : 135px !important;
+}
+
+.sheet nav.sheet-tabs > [data-tab] i {
+    margin-right: -10px;
+    margin-top: 2px;
 }
 
 .starwarsffg.sheet .sheet-body {

@@ -1232,17 +1232,17 @@ input::placeholder, placeholder, *placeholder {
 }
 
   #sidebar.collapsed {
-    width: 50px !important;
-    height: 364px !important;
+    wwidth: 55px !important;
+    height: 392px !important;
     position: absolute;
     top: 15px;
-    right: -3px;
+    right: 0px;
     padding: 20px 0px 20px 18px;
-    margin: 3px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     /* border: 1px solid black; */
     border-image: url(../ui/frames/sidebar-collapsed.webp);
-    border-image-slice: 9 fill;
-    border-image-width: 9px;
+    border-image-slice: 35 20 35 30 fill;
+    border-image-width: 40px;
     border-image-outset: 0px 0px 0px 0px;
     border-image-repeat: repeat;
     border-top-left-radius: 7px;
@@ -1256,8 +1256,8 @@ input::placeholder, placeholder, *placeholder {
     flex-wrap: nowrap;
     justify-content: space-evenly;
     position: relative;
-    top: 126px;
-    left: -81px;
+    top: -10px;
+    left: -76px;
     width: 35px;
     height: 54px;
     margin: 0px;
@@ -1413,7 +1413,7 @@ input::placeholder, placeholder, *placeholder {
     height: 52px;
     margin: 0px;
     /* padding: 0px 80px 0px 10px; */
-	padding-left:20px;
+	padding-left:10px;
 	padding-right:20px;
 	padding-bottom:18px;
     /* border: none; */
