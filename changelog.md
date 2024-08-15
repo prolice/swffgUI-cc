@@ -1,4 +1,10 @@
 ## Release Notes:
+**Version [2.6.1]**
+* Release for Compatiblity on FVTT 12.330 + Starwars System 1.903
+
+**Version [2.6.0-rc]**
+* Release Candidate for Compatiblityon FVTT 12.330 + Starwars System 1.902
+
 **Version [2.5.1]**
 * [FIX issue#30] webp for module StarWarsFFG enhancement compatibility was not necessary. 
 
