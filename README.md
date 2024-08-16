@@ -9,11 +9,11 @@ https://github.com/prolice/swffgUI-cc/blob/swffgUI-cc/ImagesLicences.md
 * **Author**: .prolice
 * **Special Thanks to**: Aljovin, StealthViper, Havoclivekiller, SnoringMountain
 * **Version**: ![](https://img.shields.io/github/v/release/prolice/swffgUI-cc?color=green&label=swffgUI-cc)
+* **Release Date**: ![GitHub Release Date](https://img.shields.io/github/release-date/prolice/swffgUI-cc?color=green&label=Release-Date)
 * **Foundry VTT Compatibility**: ![](https://img.shields.io/badge/Foundry-v10-informational) to ![](https://img.shields.io/badge/Foundry-v12.331-informational)
 
 * **System Compatibility**: ![](https://img.shields.io/badge/Starwarsffg-v1.801-orange) to ![](https://img.shields.io/badge/Starwarsffg-v1.903-orange) 
 * **Repository size**: ![](https://img.shields.io/github/repo-size/prolice/swffgUI-cc)
-* **Repository file count**: ![](https://img.shields.io/github/directory-file-count/prolice/swffgUI-cc)
 * **Download**: ![Forge installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2FswffgUI-cc)
 				![the latest version](https://img.shields.io/github/downloads/prolice/swffgUI-cc/latest/total) 
 				
