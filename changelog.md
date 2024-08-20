@@ -1,4 +1,7 @@
 ## Release Notes:
+**Version [2.6.3]**
+* Fix error when showing actor sheet, call sheet.token.data.name but data doesn't exist anymore. replace by sheet.token.name
+
 **Version [2.6.2]**
 * Release for Compatiblity on FVTT 12.331
 

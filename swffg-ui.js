@@ -375,7 +375,7 @@ class swffgUIModule {
 			
 			let tokenName = null;
 			if(sheet.token !== null){
-				tokenName = sheet.token.data.name;
+				tokenName = sheet.token.name;
 			}
 			else {
 				tokenName = templateData.actor.name;
