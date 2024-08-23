@@ -36,64 +36,64 @@
 
 @font-face {
   font-family: "Auberesh";
-  src: url("../fonts/Aurebesh Bold.otf")format("opentype");
+  src: url("../../fonts/Aurebesh Bold.otf")format("opentype");
 }
 
 @font-face {
   font-family: "Mons";
-  src: url("../fonts/MonsOlympiaBold-dq9x.ttf")format("truetype");
+  src: url("../../fonts/MonsOlympiaBold-dq9x.ttf")format("truetype");
 }
 
 @font-face {
   font-family: "EarthOrbiter";
-  src: url("../fonts/EarthOrbiterBold-vzD9.otf")format("opentype");
+  src: url("../../fonts/EarthOrbiterBold-vzD9.otf")format("opentype");
 }
 
 @font-face {
   font-family: "KuiperBelt";
-  src: url("../fonts/KuiperBelt-Px0g.ttf")format("truetype");
+  src: url("../../fonts/KuiperBelt-Px0g.ttf")format("truetype");
 }
 
 
 @font-face {
   font-family: "EotESymbol";
-  src: url("../fonts/EotESymbol-Regular-PLUS.otf") format("opentype");
+  src: url("../../fonts/EotESymbol-Regular-PLUS.otf") format("opentype");
 }
 
 @font-face {
   font-family: "SWRPG-Symbol-Regular";
-  src: url("../fonts/swrpg_symbol-regular_v1-webfont.woff2") format("woff2"), url("../fonts/swrpg_symbol-regular_v1-webfont.woff") format("woff");
+  src: url("../../fonts/swrpg_symbol-regular_v1-webfont.woff2") format("woff2"), url("../../fonts/swrpg_symbol-regular_v1-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Genesys";
-  src: url("../fonts/genesysglyphsanddice.woff2") format("woff2"), url("../fonts/genesysglyphsanddice.woff") format("woff");
+  src: url("../../fonts/genesysglyphsanddice.woff2") format("woff2"), url("../../fonts/genesysglyphsanddice.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "GenesysSymbol";
-  src: url("../fonts/Genesys.ttf") format("truetype");
+  src: url("../../fonts/Genesys.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "DistantGalaxy";
-  src: url("../fonts/SfDistantGalaxy-0l3d.ttf") format("truetype");
+  src: url("../../fonts/SfDistantGalaxy-0l3d.ttf") format("truetype");
 }
 
 @font-face {
 	font-family: "Eras";
-    src: url("../fonts/ERASMD.TTF") format("truetype");
+    src: url("../../fonts/ERASMD.TTF") format("truetype");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Eras";
-    src: url("../fonts/ERASBD.TTF") format("truetype");
+    src: url("../../fonts/ERASBD.TTF") format("truetype");
 	font-weight: Bold;
 	font-style: normal;
 }

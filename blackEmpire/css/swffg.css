@@ -7,39 +7,39 @@
 
 @font-face {
   font-family: "Auberesh";
-  src: url("../fonts/Aurebesh Bold.otf")format("opentype");
+  src: url("../../fonts/Aurebesh Bold.otf")format("opentype");
 }
 
 @font-face {
   font-family: "Mons";
-  src: url("../fonts/MonsOlympiaBold-dq9x.ttf")format("truetype");
+  src: url("../../fonts/MonsOlympiaBold-dq9x.ttf")format("truetype");
 }
 
 @font-face {
   font-family: "EarthOrbiter";
-  src: url("../fonts/EarthOrbiterBold-vzD9.otf")format("opentype");
+  src: url("../../fonts/EarthOrbiterBold-vzD9.otf")format("opentype");
 }
 
 @font-face {
   font-family: "KuiperBelt";
-  src: url("../fonts/KuiperBelt-Px0g.ttf")format("truetype");
+  src: url("../../fonts/KuiperBelt-Px0g.ttf")format("truetype");
 }
 
 @font-face {
   font-family: "DistantGalaxy";
-  src: url("../fonts/SfDistantGalaxy-0l3d.ttf") format("truetype");
+  src: url("../../fonts/SfDistantGalaxy-0l3d.ttf") format("truetype");
 }
 
 @font-face {
 	font-family: "Eras";
-    src: url("../fonts/ERASMD.TTF") format("truetype");
+    src: url("../../fonts/ERASMD.TTF") format("truetype");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Eras";
-    src: url("../fonts/ERASBD.TTF") format("truetype");
+    src: url("../../fonts/ERASBD.TTF") format("truetype");
 	font-weight: Bold;
 	font-style: normal;
 }
@@ -1529,7 +1529,7 @@ select:focus {
 }
 
 #sidebar {
-    background: url(../default-ui/sidebar.webp) !important;
+    background: url(../../default-ui/sidebar.webp) !important;
     background-position-y: 45px !important;
     border: 3px solid white;
 	width:305px;
@@ -1649,7 +1649,7 @@ select:focus {
 }
 
 #pause > img {
-  content: url(../default-ui/pause-icon.webp);
+  content: url(../../default-ui/pause-icon.webp);
   height: 128px;
   width: 128px;
   left: calc(50% - 64px);

@@ -17,6 +17,57 @@ const IndicatorFonts = {
 	ERAS: 6,
 };
 
+const themes = {
+    [IndicatorMode.GALACTIC]: {
+        css: "darkside/css/swffg.css",
+        cursor: "../ui/buttons/cursor-empire.webp"
+    },
+    [IndicatorMode.EOE]: {
+        css: "EoE/css/swffg.css",
+        cursor: "../ui/buttons/cursor-pyke.webp"
+    },
+    [IndicatorMode.BLACKEMPIRE]: {
+        css: "blackEmpire/css/swffg.css",
+        cursor: "../ui/buttons/cursor-pyke.webp"
+    },
+    [IndicatorMode.DEFAULT]: {
+        css: "swffg-default.css"
+    },
+    [IndicatorMode.REBEL]: {
+        css: "rebel/css/swffg.css",
+        cursor: "../ui/buttons/cursor-rebel.webp"
+    }
+};
+
+const applyTheme = (state) => {
+    const head = document.head;
+    const stateEnableCursor = Number(game.settings.get("swffgUI-cc", "enable-cursor"));
+
+    // Get the correct theme based on state
+    const theme = themes[state] || themes[IndicatorMode.DEFAULT];
+    const hrefToApply = theme.css;
+
+    // Apply the cursor if enabled
+    if (stateEnableCursor && theme.cursor) {
+        document.documentElement.style.setProperty('--application-cursor-pointer', `url(${theme.cursor}), pointer`);
+    }
+
+    // Iterate through head children and replace only the theme CSS value part in href
+    Array.from(head.children).some(child => {
+        if (child.href) {
+            // Iterate over each theme's CSS value
+            for (const cssPath of Object.values(themes).map(t => t.css)) {
+                if (child.href.includes(cssPath)) {
+                    // Replace only the matched theme CSS part
+                    child.href = child.href.replace(cssPath, hrefToApply);
+                    return true; // Stop the loop after replacement
+                }
+            }
+        }
+        return false; // Continue loop if no replacement was made
+    });
+};
+
 class NavigationFFG extends SceneNavigation {
 	 static get defaultOptions() {
             const options = super.defaultOptions;
@@ -120,67 +171,9 @@ class swffgUIModule {
 				3: "SWFFG.options.indicator.choices.3",
 				4: "SWFFG.options.indicator.choices.4"
 			},
-			onChange: (value) => {
-				let state = Number(value);
-				var head = document.getElementsByTagName('head')[0];
-				var locationOrigin= document.location.origin;
-				var hrefToApply = "swffg-default.css";
-				let stateEnableCursor = Number(game.settings.get("swffgUI-cc", "enable-cursor"));
-				
-				switch(state){
-					case IndicatorMode.GALACTIC:
-							hrefToApply= "darkside/css/swffg.css";
-							if (stateEnableCursor)
-								document.documentElement.style.setProperty('--application-cursor-pointer', 'url(../ui/buttons/cursor-empire.webp), pointer');
-							break;
-					case IndicatorMode.REBEL:
-							if (stateEnableCursor)
-								document.documentElement.style.setProperty('--application-cursor-pointer', 'url(../ui/buttons/cursor-rebel.webp), pointer');
-							hrefToApply= "css/swffg.css";
-							break;
-					case IndicatorMode.EOE:
-					        if (stateEnableCursor)
-								document.documentElement.style.setProperty('--application-cursor-pointer', 'url(../ui/buttons/cursor-pyke.webp), pointer');
-							hrefToApply= "EoE/css/swffg.css";
-							break;
-					case IndicatorMode.BLACKEMPIRE:
-					        if (stateEnableCursor)
-								document.documentElement.style.setProperty('--application-cursor-pointer', 'url(../ui/buttons/cursor-pyke.webp), pointer');
-							hrefToApply= "blackEmpire/css/swffg.css";
-							break;				    
-					case IndicatorMode.DEFAULT:
-							hrefToApply= "swffg-default.css";
-							break;
-					default:
-					  console.log('Something went wrong [$value] does not exists in fonts choices (in theme)');
-				}
-				
-				for(var elem = 0 ; elem < head.children.length; elem++){
-					if (typeof head.children[elem].href === 'undefined') continue;
-					
-					if (head.children[elem].href.endsWith("swffg-default.css")){
-						head.children[elem].href= head.children[elem].href.replace("swffg-default.css",hrefToApply);
-						break;
-					}
-					else if	(head.children[elem].href.endsWith("darkside/css/swffg.css")){
-						head.children[elem].href= head.children[elem].href.replace("darkside/css/swffg.css",hrefToApply);
-						break;
-					}
-					else if (head.children[elem].href.endsWith("EoE/css/swffg.css")){
-						head.children[elem].href= head.children[elem].href.replace("EoE/css/swffg.css",hrefToApply);
-						break;
-					}
-					else if (head.children[elem].href.endsWith("blackEmpire/css/swffg.css")){
-						head.children[elem].href= head.children[elem].href.replace("blackEmpire/css/swffg.css",hrefToApply);
-						break;
-					}
-					else if (head.children[elem].href.endsWith("css/swffg.css")){
-						head.children[elem].href= head.children[elem].href.replace("css/swffg.css",hrefToApply);
-						break;
-					}
-						
-				}
-			}
+            onChange: (value) => {
+                applyTheme(Number(value));
+            }
         });
 		
 		game.settings.register("swffgUI-cc", "fontSettings", {
@@ -400,63 +393,9 @@ class swffgUIModule {
 		var locationOrigin= document.location.origin;
 		let state = Number(game.settings.get("swffgUI-cc", "selectSkin"));
 		let stateEnableCursor = Number(game.settings.get("swffgUI-cc", "enable-cursor"));
+
+        applyTheme(Number(state));		
 		
-		var hrefToApply = "swffg-default.css";
-				switch(state){
-					case IndicatorMode.GALACTIC:
-							hrefToApply= "darkside/css/swffg.css";
-							if (stateEnableCursor)
-								document.documentElement.style.setProperty('--application-cursor-pointer', 'url(../ui/buttons/cursor-empire.webp), pointer');
-							break;
-					case IndicatorMode.REBEL:
-					        if (stateEnableCursor)
-								document.documentElement.style.setProperty('--application-cursor-pointer', 'url(../ui/buttons/cursor-rebel.webp), pointer');
-							hrefToApply= "css/swffg.css";
-							break;
-					case IndicatorMode.EOE:
-							if (stateEnableCursor)
-								document.documentElement.style.setProperty('--application-cursor-pointer', 'url(../ui/buttons/cursor-pyke.webp), pointer');
-							hrefToApply= "EoE/css/swffg.css";
-							break;
-					case IndicatorMode.BLACKEMPIRE:
-							if (stateEnableCursor)
-								document.documentElement.style.setProperty('--application-cursor-pointer', 'url(../ui/buttons/cursor-pyke.webp), pointer');
-							hrefToApply= "blackEmpire/css/swffg.css";
-							break;
-					case IndicatorMode.DEFAULT:
-					        document.documentElement.style.setProperty('--application-cursor-pointer', 'pointer');
-							hrefToApply= "swffg-default.css";
-							break;
-					default:
-					  console.log('Something went wrong [$value] does not exists in fonts choices (in theme)');
-				}
-				
-				for(var elem = 0 ; elem < head.children.length; elem++){
-					if (typeof head.children[elem].href === 'undefined') continue;
-					
-					if (head.children[elem].href.endsWith("swffg-default.css")){
-						head.children[elem].href= head.children[elem].href.replace("swffg-default.css",hrefToApply);
-						break;
-					}
-					else if	(head.children[elem].href.endsWith("darkside/css/swffg.css")){
-						head.children[elem].href= head.children[elem].href.replace("darkside/css/swffg.css",hrefToApply);
-						break;
-					}
-					else if (head.children[elem].href.endsWith("EoE/css/swffg.css")){
-						head.children[elem].href= head.children[elem].href.replace("EoE/css/swffg.css",hrefToApply);
-						break;
-					}
-					else if (head.children[elem].href.endsWith("blackEmpire/css/swffg.css")){
-						head.children[elem].href= head.children[elem].href.replace("blackEmpire/css/swffg.css",hrefToApply);
-						break;
-					}
-					else if (head.children[elem].href.endsWith("css/swffg.css")){
-						head.children[elem].href= head.children[elem].href.replace("css/swffg.css",hrefToApply);
-						break;
-					}
-						
-				}
-				
 		state = Number(game.settings.get("swffgUI-cc", "fontSettings"));
 		switch (state){
 			case IndicatorFonts.EARTHORBITER:

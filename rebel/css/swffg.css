@@ -2,7 +2,6 @@
 /******************************************************************/
 /*=============== TABLE OF CONTENTS ==============================*/
 /******************************************************************/
-/*   0. FFG Enhancement MOD                                       */
 /*   I. LOCAL FONTS                                               */
 /*   II. GENERAL USER INTERFACE                                   */
 /*   III. SIDEBAR                                                 */
@@ -254,6 +253,7 @@ table.vendor_item {
 }
 /******************************************************************/
 /******************************************************************/
+
 #logo {
   content : url("../art/ui/logo-foundryVTswffg-ui100x42.webp");
   width: 100px;
@@ -273,7 +273,7 @@ table.vendor_item {
 	--application-auberesh-sidebar-title: none;
   
     --window-header-title-font-family: DistantGalaxy;
-    --window-header-title-font-size: 16px;
+    --window-header-title-font-size: 17px;
 	--window-header-vehicle-font-size: xx-large;
     --window-header-title-font-weight: normal;
     --window-header-title-color: #f5f5f5;
@@ -281,13 +281,13 @@ table.vendor_item {
     --major-button-font-family: KuiperBelt;
     --major-button-font-size: 20px;
     --major-button-font-weight: normal;
-    --major-button-color: #66141a;
+    --major-button-color: #dadada;
 
     --tab-header-font-family: KuiperBelt;
     --tab-header-font-size: 18px;
     --tab-header-font-weight: 700;
     --tab-header-color: #ffffff;
-    --tab-header-color-active: #ff1f1f;
+    --tab-header-color-active: #1febff;
 
     --actor-input-font-family: KuiperBelt;
     --actor-input-font-size: 16px;
@@ -315,12 +315,12 @@ table.vendor_item {
     --debug-box-shadow-green: inset 0 0 2px green;
 	
   /* =================== 3. WINDOW BORDER SIZE ================ */
-	--window-content-border-image-width: 12px;
-	--window-content-border-image-outset: 4px;
+	--window-content-border-image-width: 10px 10px 10px 10px;
+	--window-content-border-image-outset: 8px 8px 8px 8px;
 	--window-header-margin: 0px 0px 8px 0px;
-	--window-border-image-slice: 13;
-
-  /* ================== 4. APPLICATION CURSOR ================= */
+	--window-border-image-slice: 20 14 20 14;
+	
+ /* ================== 4. APPLICATION CURSOR ================= */
     --application-cursor-pointer : pointer;
   }
 
@@ -338,13 +338,11 @@ table.vendor_item {
     left: 0px !important;
   }
   
- /* #client-settings .fa, */
- /* #client-settings  .fas { */
 #ui-left {
     width: 250px;
 } 
-
- #client-settings .far {
+ 
+#client-settings .far {
     font-family: "Font Awesome 5 Free";
 	color:whitesmoke !important;
 }
@@ -360,7 +358,7 @@ table.vendor_item {
 }
 
 #client-settings #config-tabs div.tab[data-tab="modules"] #searchField #clear {
-    border-radius: 8px !important; 
+    border-radius: 0px !important; 
 
 }
 
@@ -370,69 +368,34 @@ table.vendor_item {
 
 /* ==================== (B) BUTTON BEHAVIOR CHANGES =========== */
   a[href] {
-    color: #da0000;
-    /* color: #ffa16a; */
+    color: #2ed8ff;
     font-size: 16px;
     font-family: var(--major-button-font-family), serif;
-    text-shadow: 0px 0px 7px #ffffff;
+    text-shadow: 1px 1px 0px black;
 }
   a:hover {
-    /* color: #480000; */
+    text-shadow: 0 0 8px #00c7ff !important;
 	color:white;
-    text-shadow: 1px 1px 7px #b50000 !important;
-    font-family: var(--major-button-font-family), serif;
-    cursor: var(--application-cursor-pointer);
-    font-weight: bold;
   }
   
   button:hover {
-    box-shadow: 0 0 5px #c70000 !important;
+    box-shadow: 0 0 5px #00c7ff !important;
 	cursor: var(--application-cursor-pointer);
-	background: url(../ui/sidebar_button-background_red.webp) repeat !important;
-	color:white !important;
   }
   
-  button:hover i{
-	color:white !important; 
-  }
   option {
-    background: #6b4500;
+    background: #00486b;
   }
   
   #chat option {
 	 background: whitesmoke; 
   }
+  
   input[type="text"]:focus, 
   input[type="password"]:focus {
-    box-shadow: 0 0 5px #c70000 !important;
+    box-shadow: 0 0 5px #00c7ff !important;
     outline: none;
   }
-  
-  table {
-    width: 100%;
-    border-collapse: unset;
-    background: rgb(102 20 26 / 26%);
-    border-top: 1px solid #7a7971;
-    border-bottom: 1px solid #7a7971;
-    margin: 0.5em 0;
-    border-radius: 10px;
-}
-
-table td, table th {
-    padding: 0.25em 0;
-    border: 0px;
-    align-content: center;
-    /*width: 20px;*/
-}
-tbody {
-    display: contents;
-    vertical-align: middle;
-}
-
-.tabs .item {
-    color: whitesmoke;
-}
-
 .window-app {
   font-family: var(--major-button-font-family), sans-serif !important;
   font-size: var(--major-button-font-size);
@@ -513,34 +476,27 @@ body.vtt.game.screen-door::before {
     font-family: auberesh;
     font-size: xx-small;
     margin: -10px 0 0 0;
-    display: var(--application-auberesh-title);
+    display: none;
     animation: textShadow 1.6s infinite;
+	display: var(--application-auberesh-title);
 }
 
 #scenes .scene h3 span {
     font-size: medium;
     font-family: 'Auberesh';
-	animation: textShadow 1.6s infinite;
 	display:none;
 }
 
-#scenes .scene h3 {
-    /*line-height: 45px;*/
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: normal;
-    /*text-shadow: 1px 1px 3px #000;*/
-	line-height: 43px;
-    text-shadow: 2px 1px 2px #000;
+.sheet nav.sheet-tabs {
+    color: whitesmoke;
 }
 
 section.swffgui {
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-	max-height: 24px;
-	flex-direction: column;
-    flex-wrap: wrap;
+    max-height: 30px;
 	display: var(--application-auberesh-sidebar-title);
 }
 
@@ -548,22 +504,21 @@ div.swffgui-settings {
     flex: 0;
     text-align: center;
     background:url(../ui/game-settings-background.webp);
-    margin : 0 53px 0 48px;
+    margin : 0 70px 0 70px;
 }
 
 h3.auberesh {
     font-family: 'Auberesh' !important;
-	animation: textShadow 1.6s infinite;
-	display: var(--application-auberesh-title)!important;
+	display: var(--application-auberesh-title) !important;
 }
 
 .swffgui h3 {
     flex: 0 100%;
     margin: 3px;
     text-align: center;
-	color:white;
 	display: var(--application-auberesh-title);
 }
+
 /* ==================== (C) TINY MCE EDITOR FONT CHANGES ====== */
   .app.window-app .editor {
     width: 100%;
@@ -571,6 +526,7 @@ h3.auberesh {
     position: relative;
     max-height: 100%;
     word-break: break-word;
+    background: whitesmoke;
   }
   .app.window-app .editor-content {
     /*height: calc(100% - 60px);*/
@@ -578,7 +534,6 @@ h3.auberesh {
     overflow-y: auto;
     overflow-x: hidden;
   }
-  
   .app.window-app .editor-content img {
     min-height: none !important;
     max-height: none !important;
@@ -662,11 +617,6 @@ h3.auberesh {
     border: none;
     width: 100%;
   }
-  
-  #world-config.app.window-app .editor .editor-content p {
-    color: whitesmoke;
-  }
-  
   .app.window-app .editor .editor-content ul li {
     font-size: 14px;
     font-family: var( --actor-input-font-family);
@@ -678,7 +628,7 @@ h3.auberesh {
   
   li.folder.collapsed > .folder-header h3 {
     /* text-shadow: none; */
-    /* color: red !important; */
+    /* color: cyan !important; */
     text-shadow: 1px 1px 2px black;
 	opacity:0.7;
 	color: rgba(255, 255, 255, 1);
@@ -688,9 +638,9 @@ h3.auberesh {
 li.folder > .folder-header h3 {
     margin: 0;
     line-height: 24px;
-	text-shadow: 2px 2px 2px red;
+	text-shadow: 1px 1px 2px black;
 	opacity:0.7;
-	color: rgba(253, 235, 105, 1);
+	color: rgba(0, 255, 255, 1);
 	cursor: var(--application-cursor-pointer);
 }
   
@@ -723,20 +673,10 @@ li.folder > .folder-header h3 {
 
   .app.sheet .editor-content {
     padding:5px;
-	/* background: #d8cbc0 url(../ui/frames/parchment-texture.webp) no-repeat; */
   }
-  
-  .app.gm-notes.sheet .editor-content {
-    padding:5px;
-	background: #d8cbc0;
-  }
-  
-  .tox .tox-editor-container {
-    background: #d8cbc0 ;
-	}
   
   .window-app.sheet.actor .window-content {
-  background: #d8cbc0 url(../ui/frames/parchment-texture.webp) no-repeat;
+  background: #4a8596 url(../ui/frames/parchment-texture.webp) no-repeat !important;
 }
 
 .grid,
@@ -808,15 +748,8 @@ li.folder > .folder-header h3 {
     overflow: hidden;
     background: url(../ui/background.webp) repeat;
     font-size: 14px;
-	font-family: var(--major-button-font-family), sans-serif;
-	font-size: var(--major-button-font-size);
   }
-  
-  button {
-    font-family: var(--major-button-font-family), sans-serif;
-	font-size: var(--major-button-font-size);
-  }
-  
+
   input[type="text"], input[type="password"] {
     min-width: 20px;
     background: none;
@@ -833,23 +766,22 @@ li.folder > .folder-header h3 {
     -moz-user-select: text;
     -ms-user-select: text;
     user-select: text;
-	font-size: var(--major-button-font-size);
+	font-size: 20px;
   }
 
 /* ==================== (E) GLOBAL CSS VARIABLES ============== */
  
   
 input::placeholder, placeholder, *placeholder {
-    color: #ffb814b8 !important;
-	text-shadow: 1px 1px black;
+    color: #004f4fb8 !important;
 }
 /* ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */ 
-  /* color: #ffb814b8; */
+  /* color: #004f4fb8; */
   /* opacity: 1; /* Firefox */ 
 /* } */
 
 /* ::-webkit-input-placeholder { /* Edge */ 
-  /* color: #ffb814b8; */
+  /* color: #004f4fb8; */
 /* } */
 /* ==================== (F) SCROLLBAR ========================= */
   .app.window-app.sheet.starwarsffg.actor ::-webkit-scrollbar {
@@ -988,46 +920,17 @@ input::placeholder, placeholder, *placeholder {
     background-size: 9px 110px;
     box-shadow: none;
   }
-  
-#controls .scene-control.active, 
-#controls .control-tool.active, 
-#controls .scene-control:hover, 
-#controls .control-tool:hover {
-    border: 4px solid white !important;
-    border-radius: 8px;
-}
 	.window-app .window-content {
-	   background: url(../ui/parchment.webp) round;
-   }
-   
-#keybindings.window-app.app.form .window-content {
-	background: url(../ui/parchment.webp) round;
-	background-position: -75px -100px !important;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    overflow-y: hidden;
-    padding: 15px 16px 20px 16px;
-    margin: 0px;
-    box-shadow: 0px 0px 30px black inset;
-    font-family: KuiperBelt;
-    font-weight: 500;
-    font-size: 14px;
-    color: #000000;
-   }
-   
-#keybindings.window-app.app.form .window-content .notes{
-    color: #000000;
+	   background: url(../ui/parchment.jpg) repeat;
    }
  
 	
    .window-app .window-content input::placeholder {
-	   color:#ffb814b8;
-	   text-shadow: 1px 1px black;
+	   color:#00ffffb8;
    }
    
    .window-app .window-content textarea {
-	   color:#66141a;
+	   color:#006d6db8;
    }
    
   .app.window-app.form ::-webkit-scrollbar {
@@ -1334,22 +1237,22 @@ input::placeholder, placeholder, *placeholder {
 }
 
   #sidebar.collapsed {
-    width: 50px !important;
-    height: 380px !important;
+    width: 55px !important;
+    height: 392px !important;
     position: absolute;
     top: 15px;
-    right: -1px;
-    padding: 20px 0px 20px 18px;
-    margin: 3px 0px 0px 0px;
-    /*border: 1px solid black;*/
+    right: 0px;
+    padding: 2px 0px 20px 22px;
+    margin: 0px 0px 0px 0px;
+    /* border: 1px solid black; */
     border-image: url(../ui/frames/sidebar-collapsed.webp);
-    border-image-slice: 9 fill;
-    border-image-width: 9px;
-    border-image-outset: 0px 0px 0px 0px;
+    border-image-slice: 35 20 35 30 fill;
+    border-image-width: 40px;
+    border-image-outset: 1px 1px 1px 1px;
     border-image-repeat: repeat;
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
-    /* box-shadow: -2px 0px 8px #000; */
+    /* box-shadow: -2px 0px 8px #000;*/
   }
   #sidebar.collapsed #sidebar-tabs {
     display: flex;
@@ -1358,8 +1261,8 @@ input::placeholder, placeholder, *placeholder {
     flex-wrap: nowrap;
     justify-content: space-evenly;
     position: relative;
-    top: -18px;
-    left: -78px;
+    top: 6px;
+    left: -81px;
     width: 35px;
     height: 54px;
     margin: 0px;
@@ -1367,11 +1270,7 @@ input::placeholder, placeholder, *placeholder {
     border: none;
     box-shadow: none;
     background: none;
-  }    
-	.sidebar-tab .directory-header .header-search > * {
-		flex: 0 0 24px;
-	}
-  
+  }     
   .sidebar-popout .directory-header,
   .sidebar-tab .directory-header {
       line-height: 32px;
@@ -1392,7 +1291,7 @@ input::placeholder, placeholder, *placeholder {
       margin: 3px;
       background: url(../ui/frames/parchment-texture.webp);
       box-shadow: inset 0 0 10px #000000;
-      border: 2px groove #790000;
+      border: 2px groove #009dce;
       border-image: url(../ui/chat-controls-border.webp) 4 repeat;
       border-image-width: 4px;
       border-image-outset: 1px;
@@ -1405,9 +1304,9 @@ input::placeholder, placeholder, *placeholder {
     .sidebar-popout .directory-header .header-search input::placeholder,
       .sidebar-tab .directory-header .header-search input::placeholder {
       text-align: center;
-      color: #65373ab0;
+      color: #004f4fb8;
       position: relative;
-	  text-shadow: 0px 1px black;
+      top: 2px;
     }
   .sidebar-popout .directory-header .header-control,
     .sidebar-tab .directory-header .header-control {
@@ -1415,21 +1314,20 @@ input::placeholder, placeholder, *placeholder {
     flex: 0 0 24px;
     height: 32px;
     position: relative;
-    top: -6px;
-    left: 0px;
+    top: -1px;
+    left: -6px;
   }
     .sidebar-popout .directory-header .fas.fa-sort-amount-up,
     .sidebar-tab .directory-header .fas.fa-sort-amount-up {
-      width: 24px;
-      height: 24px;
+      width: 30px;
+      height: 30px;
       position: relative;
-      top: 4px;
-      left: 5px;
+      top: 2px;
+      left: 3px;
       background: url(../ui/buttons/sidebar-search-buttons-collapse-all.webp);
       color: #ffffff00;
       font-size: 23px;
       padding-top: 6px;
-	  background-size:contain;
     }
 
   .sidebar-popout.sidebar-directory .directory-list,
@@ -1441,14 +1339,14 @@ input::placeholder, placeholder, *placeholder {
   .sidebar-popout.sidebar-directory .directory-list header,
     .sidebar-tab.sidebar-directory .directory-list header {
     /* padding: 9px 3px 4px 3px; */
-    /* border: 3px groove #790000; */
+    /* border: 3px groove #009dce; */
     /* box-shadow: 0 0 6px #000 inset; */
     /* line-height: normal; */
-    /* background: #7b5c00d9; */
+    /* background: #016075d9; */
     font-family: var(--actor-input-font-family);
     font-size: 16px;
     font-weight: var(--actor-input-font-weight);
-    color: #3c2100;
+    color: #dadada;
     text-shadow: 1px 1px 2px black;
   }
   .sidebar-popout.sidebar-directory .directory-list li,
@@ -1477,78 +1375,66 @@ input::placeholder, placeholder, *placeholder {
     #macros .directory-footer button,
     #macros .directory-footer button,
     #sidebar .header-actions button {
-      margin: 1px 5px 6px 0px !important;
+      margin: 0px 5px 6px 5px !important;
       padding: 2px 0px 0px 0px;
       height: 34px;
-      border: 3px solid #670000;
-      /* border-image: url(../ui/footer-button.webp) 10 repeat; */
+      border: 1px solid black;
+      border-image: url(../ui/footer-button.webp) 10 repeat;
       border-image-width: 4px;
       border-image-outset: 0px;
       box-shadow: 4px 4px 1px #00000085;
-      background: url(../ui/sidebar_button-background.webp) repeat;
+      background: url(../ui/sidebar_button-background_red.webp) repeat;
       background-origin: padding-box;
-      color: #66141a;
+      color: #dadada;
       font-family: KuiperBelt;
       font-size: var(--major-button-font-size);
       font-weight: 500;
       text-shadow: 1px 1px 0px #00000063;
-	  border-radius: 8px;
     }
     #sidebar .header-actions i {
       display: none;
     }
 
   .sidebar-tab .directory-list .directory-item.context, .sidebar-tab .directory-list .directory-item.active {
-    margin-top: 5px !important;
+    margin-top: 0px;
     padding: 3px 3px !important;
-    border-top: 2px solid #ffdf00 !important;
-    border-bottom: 2px solid #af7700 !important;
-    box-shadow: 1px 1px 3px #4e0c0c !important;
-    background: #66141a !important;
-    margin-bottom: 5px !important;
+    border-top: 1px solid red !important;
+    border-bottom: 1px solid #3cbbff !important;
+    box-shadow: 0 0 3px #3cbbff !important;
+    background: #270601b0 !important;
   }
 
-   #context-menu ol.context-items {
-      opacity: 0.95;
-      background-image: url(../ui/frames/window-app-background-bookshelf.webp);
-      border: 4px solid #66141a;
-      border-radius: 10px;
-	  background-size:contain;
-   }
-   #context-menu.expand-down {
-      border-radius: 10px;
-	  opacity: 0.95;
-   }
-   
-   #context-menu li.context-item:hover {
-    color: white;
-    text-shadow: 3px 3px 7px #d40010;
-    background: url(../ui/sidebar_button-background_red.webp) repeat;
-    cursor: var(--application-cursor-pointer);
-	opacity:0.8;
-  }
 /* ==================== (B) SIDEBAR HEADER ==================== */
+
   #sidebar-tabs {
+    /*display: flex;
+    flex: none;
+    flex-direction: row;
+    flex-wrap: nowrap;*/
     justify-content: space-evenly;
     position: relative;
-    left: 69px;
+    left: 70px;
     width: 383px;
     height: 52px;
     margin: 0px;
-	padding-left:8px;
+    /* padding: 0px 80px 0px 10px; */
+	padding-left:10px;
 	padding-right:20px;
 	padding-bottom:18px;
+    /* border: none; */
     box-shadow: none;
+    /* background: url(../ui/sidebar-border.webp) repeat; */
+	
 	flex: 0 0 45px;
     margin: 0px;
-    border: 4px solid #66141a;
-    background: url(../ui/frames/window-app-header-blank.webp);
+    border: 1px solid blue;
+    border-image: url(../ui/frames/window-app-header-blank.webp) 5 repeat;
     border-image-slice: 19 21 19 21 fill;
     border-image-width: 19px 21px 21px 21px;
     border-image-outset: 0px;
     align-items: center;
+    /*justify-content: flex-end;*/
     display: inline-flex;
-	border-radius: 10px;
   }
 
   #sidebar-tabs > .item {
@@ -1597,12 +1483,6 @@ input::placeholder, placeholder, *placeholder {
     height: inherit;
     width: inherit;
   }
-  #sidebar-tabs .item:hover{
-    box-shadow: 2px 2px 8px 5px #66141a;
-    border-radius: 50%;
-  }
-
-  
   #sidebar-tabs > .item.active {
     display: inline-block;
     flex: none;
@@ -1758,9 +1638,9 @@ input::placeholder, placeholder, *placeholder {
     text-shadow: 0 0 10px #ff000000;
     visibility: visible;
     background: url(../ui/sidebar-button-settings-active.webp);
-	
   }
-  #sidebar-tabs > .item.active .fa-solid.fa-cards {
+  
+   #sidebar-tabs > .item.active .fas.fa-cards {
     position: relative;
     top: 0px;
     left: 0px;
@@ -1775,11 +1655,7 @@ input::placeholder, placeholder, *placeholder {
     background: url(../ui/sidebar-button-cards-active.webp);
 	
   }
-  
-  #sidebar-tabs > [data-tab~="settings"] {
-    background: url(../ui/sidebar-button-cards.webp);
-  }
-	
+
   #sidebar-tabs > [data-tab~="chat"] {
     background: url(../ui/sidebar-button-chat.webp);
   }
@@ -1788,7 +1664,6 @@ input::placeholder, placeholder, *placeholder {
   }
   #sidebar-tabs > [data-tab~="scenes"] {
     background: url(../ui/sidebar-button-scenes.webp);
-
   }
   #sidebar-tabs > [data-tab~="actors"] {
     background: url(../ui/sidebar-button-actors.webp);
@@ -1816,11 +1691,7 @@ input::placeholder, placeholder, *placeholder {
   }
 
 /* ==================== (C) SIDEBAR (CHAT) ==================== */
-    #sidebar .sidebar-tab .directory-list .folder-header {
-		margin-top: 0px;
-        margin-left: 0px;
-        border-radius: 9px;
-	}
+    #sidebar .sidebar-tab .directory-list .folder-header {/*       border-bottom: 2px groove #009dce; */margin-top: 2px;margin-left: 2px;}
   /* ================== 1. CHAT LOG =========================== */
     #sidebar .sidebar-tab #chat-log {
       flex: 4;
@@ -1835,23 +1706,24 @@ input::placeholder, placeholder, *placeholder {
 
     #chat-log .message {
       padding: 4px 1px 4px 1px;
-      /* margin: calc(var(--window-content-border-image-width) * 2) calc(var(--window-content-border-image-width) * 1.25) var(--window-content-border-image-width) calc(var(--window-content-border-image-width) * 1.25); */
-	  margin:25px 16px 25px 21px;
+      margin: calc(var(--window-content-border-image-width) * 2) calc(var(--window-content-border-image-width) * 1.25) var(--window-content-border-image-width) calc(var(--window-content-border-image-width) * 1.25);
       border-image: url(../ui/frames/chat-message-border.webp) 21 repeat;
-      border-image-width: 16px;
-      border-image-outset: 12px;
-      border-radius: 4px;
+      border-image-width: 10px;
+      border-image-outset: 8px;
+      border-radius: 0px;
       background: url(../ui/frames/parchment-texture.webp) repeat !important;
       box-shadow: none;
       color: #000000;
       font-family: KuiperBelt;
       font-size: 14px;
       font-weight: 500;
+      /* min-height: 80px; */
       vertical-align: middle;
-      /* border-image-slice: var(--window-border-image-slice); */
-	  /* border-image-width: var(--window-content-border-image-width); */
-	  /* border-image-outset: 9px; */
-	  background-position-x: center !important;
+      border-image-slice: var(--window-border-image-slice);
+	  border-image-width: var(--window-content-border-image-width);
+	  border-image-outset:var(--window-content-border-image-width);
+	  
+	  /*calc(100% - 60px);*/
     }
     #chat-log .message .message-header {
       margin: 0px;
@@ -1912,6 +1784,50 @@ input::placeholder, placeholder, *placeholder {
     }
 
   /* ================== 2. CHAT CONTROLS ====================== */
+    #keybindings .binding .binding-controls .control {
+      color: whitesmoke;
+    }
+    #keybindings .binding .key.uneditable {
+        background: rgb(245 245 75 / 50%);
+    }
+    #keybindings .binding .key {
+        flex: none;
+        padding: 0 4px;
+        min-width: 24px;
+        background: rgba(245, 245, 75, 0.8);
+        border: 1px solid var(--color-border-light-2);
+        border-radius: 5px;
+        box-shadow: 1px 1px #444;
+        text-align: center;
+        color: black;
+    }
+    
+    #keybindings .scrollable h2 {
+      color: whitesmoke;
+    }
+    
+    #support-details .sheet-tab  h2 {
+      color: whitesmoke;
+    }
+    #support-details .tab.active  h2,
+    #support-details .tab.active  pre    {
+      color: whitesmoke;
+    }
+    #support-details .window-content { 
+        background-position: 0px 0px !important;
+        background-size: contain;
+    }
+    
+    #documentation .window-content { 
+        background-position: 0px 0px !important;
+        background-size: contain;
+    }
+    
+    #keybindings .window-content { 
+        background-position: 0px 0px !important;
+        background-size: contain;
+    }
+    
     #sidebar .sidebar-tab #chat-controls {
       position: relative;
       flex: 0 0 45px;
@@ -1973,45 +1889,39 @@ input::placeholder, placeholder, *placeholder {
 
   /* ================== 3. CHAT FORM ========================== */
     #sidebar .sidebar-tab #chat-form {
-        min-height: 170px;
-		position: relative;
-		bottom: 8px;
-		right: -5px;
-		display: flex;
-		margin: 11px 0 0 0;
-		background: url(../ui/frames/parchment-texture.webp) repeat;
-		border: 3px solid #66141a;
-		border-image: url(../ui/chat-form-border.webp) 10 repeat;
-		border-image-width: 19px;
-		border-image-outset: 6px;
-		box-shadow: inset 0 0 40px #000000;
-		border-radius: 12px;
-		background-size: cover;
-		width: 96%;
-		border-image-slice: 12;
+      min-height: 150px;
+      position: relative;
+      bottom: 0px;
+      right: 0px;
+      display: flex;
+      margin: 0px;
+      background: url(../ui/frames/parchment-texture.webp) repeat;
+      border: 1px solid black;
+      border-image: url(../ui/chat-form-border.webp) 10 repeat;
+      border-image-width: 10px;
+      border-image-outset: 0px 0px;
+      box-shadow: inset 0 0 40px #000000;
     }
     #sidebar #chat-form textarea {
-		height: 80%;
-		width: 90%;
-		margin: 16px 17px 11px 35px;
-		padding: 5px 5px 5px 5px;
-		resize: none;
-		border: none;
-		border-radius: 0px;
-		background: none;
-		font-family: var(--actor-input-font-family);
-		font-size: var(--chatform-input-font-size);
-		font-weight: var(--actor-input-font-weight);
-		color: var(--actor-input-color);
-		line-height: normal;
-		border: 3px solid #66141a4d;
-		border-radius: 8px;
+      height: auto;
+      width: 100%;
+      margin: 11px 11px 11px 11px;
+      padding: 5px;
+      resize: none;
+      border: none;
+      border-radius: 0px;
+      background: none;
+      font-family: var(--actor-input-font-family);
+      font-size: var(--chatform-input-font-size);
+      font-weight: var(--actor-input-font-weight);
+      color: var(--actor-input-color);
+      line-height: normal;
+      border: 3px double #3e000078;
     }
     #sidebar #chat-form textarea:focus {
       outline: none;
       box-shadow: none;
     }
-
 #pause.paused {
     text-align: center;
     text-decoration: none;
@@ -2019,20 +1929,17 @@ input::placeholder, placeholder, *placeholder {
 
 #pause > h3
 {
-  color: #c1ac9dc7;
+  color: #CCC;
   font-family:Auberesh;
-  font-size: 40px;
-  text-shadow: 3px 3px 3px #1f0000;
   border-bottom: 0px;
 }
 #pause > img {
-  content: url(../art/ui/pyke-syndicate-256x256.webp);
-  height: 256px;
-  width: 256px;
-  top: -75px;
-  left: calc(50% - 132px);
+  content: url(../art/ui/Blacksun-centered-256-redshadow.webp);
+  height: 128px;
+  width: 128px;
+  top: -38px;
+  left: calc(50% - 66px);
 }
-
 #pause > h3 span
 {
   font-family: 'DistantGalaxy';
@@ -2050,11 +1957,6 @@ input::placeholder, placeholder, *placeholder {
 
 
 /* ==================== (D) SIDEBAR (COMBAT TRACKER) ========== */
-  #combat li.combatant .token-name h4 {
-    color: #cccbb5;
-}
-  
-  
   #combat-popout #combat-round , #sidebar #combat #combat-round {
     flex: 0 0 64px;
     min-height: 73px;
@@ -2085,7 +1987,7 @@ input::placeholder, placeholder, *placeholder {
       margin: 0px 30px;
       padding: 0px;
       height: 34px;
-      font-size: 20px;
+      font-size: 23px;
       text-align: center;
       line-height: normal;
       color: #d6d6d6;
@@ -2195,16 +2097,14 @@ input::placeholder, placeholder, *placeholder {
   }
   #combat-popout .directory-list .directory-item , #sidebar #combat .directory-list .directory-item {
     padding: 1px 3px;
-    border: 2px solid #790000;
+    border: 3px groove #009dce;
     box-shadow: 0 0 6px #000 inset;
     line-height: 48px;
     background: #000000b5;
     font-family: var(--actor-input-font-family);
     font-size: var(--actor-input-font-size);
     font-weight: var(--actor-input-font-weight);
-    color: #a7a296;
-	border-radius:10px;
-	margin: 1px 5px 1px 1px;
+    color: #dadada;
   }
     #combat-popout li.combatant .roll , #sidebar #combat li.combatant .roll {
       display: block;
@@ -2240,42 +2140,28 @@ input::placeholder, placeholder, *placeholder {
   }
   #combat-popout #combat-controls a , #sidebar #combat #combat-controls a {
     margin: 0 2%;
-    padding: 8px 0px 0px 0px;
+    padding: 2px 0px 0px 0px;
     height: 34px;
-    border: 3px solid #66141a;
-    /* border-image: url(../ui/footer-button.webp) 10 repeat; */
+    border: 1px solid black;
+    border-image: url(../ui/footer-button.webp) 10 repeat;
     border-image-width: 4px;
     border-image-outset: 0px;
     box-shadow: 4px 4px 1px #00000085;
-    background: url(../ui/sidebar_button-background.webp) repeat;
+    background: url(../ui/sidebar_button-background_red.webp) repeat;
     background-origin: padding-box;
-    color: #3c2100;
+    color: #dadada;
     font-family: KuiperBelt;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 500;
     text-shadow: 0px 0px 1px #00000063;
-	border-radius: 10px;
   }
   #combat-popout #combat-controls a:hover , #sidebar #combat #combat-controls a:hover {
-    box-shadow: 0 0 5px #c70000 !important;
+    box-shadow: 0 0 5px #00c7ff !important;
 	cursor: var(--application-cursor-pointer);
-	background: url(../ui/sidebar_button-background_red.webp) repeat;
-	color:white;
-  }
-  #combat #combat-controls a.center {
-    flex: 8;
-	line-height: unset;
-  }
-  
-  #combat #combat-controls a{
-    flex: 2;
-	line-height: unset;
-  }
-  #combat #combat-round .encounters a{
-	  color:#00000000;
   }
   #combat-popout #combat-controls .combat-control i , #sidebar #combat #combat-controls .combat-control i {
     display: contents;
+    color: #d0d0d0;
   }
     #combat-popout #combat-controls a[title="End Combat"] , #sidebar #combat #combat-controls a[title="End Combat"] {
       padding: 0px 0px 0px 0px;
@@ -2286,22 +2172,17 @@ input::placeholder, placeholder, *placeholder {
 
 /* ==================== (E) SIDEBAR (SCENES) ================== */
   #sidebar #scenes .directory-list .directory-item {
-    border: 2px solid #790000;
-    border-radius: 10px;
+    border: 3px groove #009dce;
   }
-  #scenes .subdirectory {
-    border-left: 26px solid #66141ab5;
-    border-bottom: none;
-}
    #scenes-popout .directory-list .directory-item .entity-name a,
     #sidebar #scenes .directory-list .directory-item .entity-name a {
-    /*background: #000000d4;*/
+    background: #000000d4;
     border-radius: 2px;
-    /*border: 3px double #790000;*/
+    border: 3px double #009dce;
     padding: 10px;
-    /*box-shadow: 0 0 5px #000000 inset;*/
+    box-shadow: 0 0 5px #000000 inset;
     font-family: var(--actor-input-font-family);
-    /*font-size: 18px;*/
+    font-size: 18px;
     font-weight: var(--actor-input-font-weight);
     position: relative;
     top: -2px;
@@ -2310,16 +2191,15 @@ input::placeholder, placeholder, *placeholder {
 /* ==================== (F) SIDEBAR (ACTORS) ================== */
   #sidebar #actors .directory-list .directory-item {
     padding: 1px 3px;
-    border: 3px groove #790000;
+    border: 3px groove #009dce;
     box-shadow: 0 0 6px #000 inset;
     line-height: normal;
     background: #000000b5;
     font-family: var(--actor-input-font-family);
     font-size: 16px;
     font-weight: var(--actor-input-font-weight);
-    color: #f9efdc;
+    color: #dadada;
     text-shadow: 1px 1px 2px black;
-	border-radius: 10px;
   }
   #sidebar #actors .directory-list .directory-item h4 {
     top: 17px;
@@ -2329,16 +2209,15 @@ input::placeholder, placeholder, *placeholder {
 /* ==================== (G) SIDEBAR (ITEMS) =================== */
   #sidebar #items .directory-list .directory-item {
     padding: 1px 3px;
-    border: 3px groove #790000;
+    border: 3px groove #009dce;
     box-shadow: 0 0 6px #000 inset;
     line-height: normal;
     background: #000000b5;
     font-family: var(--actor-input-font-family);
     font-size: 16px;
     font-weight: var(--actor-input-font-weight);
-    color: #f9efdc;
+    color: #dadada;
     text-shadow: 1px 1px 2px black;
-	border-radius: 10px;
   }
   #sidebar #items .directory-list .directory-item h4 {
     top: 17px;
@@ -2348,16 +2227,15 @@ input::placeholder, placeholder, *placeholder {
 /* ==================== (H) SIDEBAR (JOURNAL) ================= */
   #sidebar #journal .directory-list .directory-item {
     padding: 3px 3px;
-    border: 3px groove #790000;
+    border: 3px groove #009dce;
     box-shadow: 0 0 6px #000 inset;
     line-height: normal;
     background: #000000b5;
     font-family: var(--actor-input-font-family);
     font-size: 16px;
     font-weight: var(--actor-input-font-weight);
-    color: #f9efdc;
+    color: #dadada;
     text-shadow: 1px 1px 2px black;
-	border-radius: 10px;
   }
 /* ==================== (I) SIDEBAR (PLAYLISTS) =============== */
   #playlists-popout .directory-list,
@@ -2424,7 +2302,7 @@ input::placeholder, placeholder, *placeholder {
       width: 11px;
       border-radius: 5px;
       background: #212121;
-      cursor: pointer;
+      cursor: var(--application-cursor-pointer);
       margin-top: -4px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
       box-shadow: 1px 1px 1px #000000 inset, 0px 0px 2px #0d0d0d; /* Add cool effects to your sliders! */
     }
@@ -2449,8 +2327,8 @@ input::placeholder, placeholder, *placeholder {
     text-decoration: none;
     margin: 3px 0px;
     padding: 4px 5px 4px 5px;
-    border: 3px double #790000;
-    background: #7b5c00d9;
+    border: 3px double #009dce;
+    background: #016075d9;
   }
    #playlists-popout .directory-list .directory-item .playlist-header h4,
     #sidebar #playlists .directory-list .directory-item .playlist-header h4 {
@@ -2479,7 +2357,7 @@ input::placeholder, placeholder, *placeholder {
     #sidebar #playlists li.playlist:not(:first-of-type) li.sound {
     margin: 0px;
     padding: 4px 7px 4px 7px;
-    border: 1px solid #790000;
+    border: 1px solid #009dce;
     box-shadow: 0 0 6px #000 inset;
     line-height: normal;
     background: #272727c7;
@@ -2512,7 +2390,7 @@ input::placeholder, placeholder, *placeholder {
       width: 11px;
       border-radius: 5px;
       background: #212121;
-      cursor: pointer;
+      cursor: var(--application-cursor-pointer);
       margin-top: -4px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
       box-shadow: 1px 1px 1px #000000 inset, 0px 0px 2px #0d0d0d; /* Add cool effects to your sliders! */
     }
@@ -2523,9 +2401,6 @@ input::placeholder, placeholder, *placeholder {
 
 
 /* ==================== (J) SIDEBAR (COMPENDIUM) ============== */
-    .Compendium-sidebar .directory .directory-item .document-name {
-      color: black;
-    }
    #compendium-popout .directory-list,
     #sidebar #compendium .directory-list {
     flex: 1;
@@ -2539,29 +2414,28 @@ input::placeholder, placeholder, *placeholder {
     #sidebar #compendium .directory-list .compendium-entity h3 {
     padding: 9px 6px 4px 6px;
     margin: 0px 5px;
-    border: 3px double #790000;
+    border: 3px double #009dce;
     box-shadow: 0 0 6px #000 inset;
     line-height: normal;
-    background: #7b5c00d9;
+    background: #016075d9;
     font-family: var(--actor-input-font-family);
     font-size: 16px;
     font-weight: var(--actor-input-font-weight);
-    color: #f9efdc;
+    color: #dadada;
     text-shadow: 1px 1px 2px black;
   }
    #compendium-popout .directory-list .compendium-list .compendium-pack,
     #sidebar #compendium .directory-list .compendium-list .compendium-pack {
     padding: 9px 6px 4px 6px;
-    border: 3px groove #790000;
-    box-shadow: 0 0 6px #0c0000 inset;
+    border: 3px groove #009dce;
+    box-shadow: 0 0 6px #000 inset;
     line-height: normal;
-    background: #2d0609ba;
+    background: #000000b5;
     font-family: var(--actor-input-font-family);
     font-size: 16px;
     font-weight: var(--actor-input-font-weight);
-    color: #f9efdc;
+    color: #dadada;
     text-shadow: 1px 1px 2px black;
-    border-radius: 10px;
   }
      #compendium-popout .directory-list .compendium-list .compendium-pack a,
       #sidebar #compendium .directory-list .compendium-list .compendium-pack a {
@@ -2586,7 +2460,7 @@ input::placeholder, placeholder, *placeholder {
 /* ==================== (K) SIDEBAR (SETTINGS) ================ */
   #sidebar #settings h2 {
     flex: 1;
-    margin: 0px 5px;
+    margin: 0px 5px 0px 5px;
     padding: 0px;
     text-align: center;
     line-height: normal;
@@ -2594,17 +2468,16 @@ input::placeholder, placeholder, *placeholder {
     font-size: var(--window-header-title-font-size);
     font-weight: var(--window-header-title-font-weight);
     color: #d6d6d6;
-    border: 3px double #9e2029;
+    border: 3px double #5d513e;
     background: #080808;
     box-shadow: 0px 0px 10px inset black;
     border-radius: 0px;
-    opacity: 0.8;
+    opacity: 1;
     text-shadow: 1px 1px 5px #000000;
-	border-radius: 8px;
   }
   #sidebar #settings h4 {
     flex: 1;
-    margin: 0px;
+    margin: 0;
     padding: 0px;
     text-align: center;
     line-height: normal;
@@ -2612,13 +2485,12 @@ input::placeholder, placeholder, *placeholder {
     font-size: var(--window-header-title-font-size);
     font-weight: var(--window-header-title-font-weight);
     color: #d6d6d6;
-    border: 3px double #9e2029;
+    border: 3px double #5d513e;
     background: #080808;
     box-shadow: 0px 0px 10px inset black;
     border-radius: 0px;
-    opacity: 0.8;
+    opacity: 1;
     text-shadow: 1px 1px 5px #000000;
-	border-radius: 8px;
   }
   #sidebar #settings h2:not(:first-of-type) {
     margin-top: 30px;
@@ -2630,42 +2502,31 @@ input::placeholder, placeholder, *placeholder {
       font-family: var(--actor-input-font-family);
       font-size: 16px;
       font-weight: var(--actor-input-font-weight);
-      color: #3c2100;
-      background: #7b5c00d9;
+      color: #dadada;
+      background: #016075d9;
       border: 1px solid #5d513e;
       border-top: none;
       box-shadow: 0px 0px 20px inset black;
     }
-	
-	#settings #game-details {
-		color:white !important;
-	}
   #sidebar #settings button {
     margin: 4px 12px;
     padding: 3px 0px;
     width: -webkit-fill-available;
     width: -moz-available;
     width: fill-available;
-    border: 3px solid #66141a;
-    /* border-image: url(../ui/footer-button.webp) 10 repeat; */
+    border: 1px solid black;
+    border-image: url(../ui/footer-button.webp) 10 repeat;
     border-image-width: 4px;
     border-image-outset: 0px;
     box-shadow: 4px 4px 1px #00000085;
-    background: url(../ui/sidebar_button-background.webp) repeat;
+    background: url(../ui/sidebar_button-background_red.webp) repeat;
     background-origin: padding-box;
     font-family: var(--major-button-font-family);
     font-size: var(--major-button-font-size);
     font-weight: var(--major-button-font-weight);
     color: var(--major-button-color);
     line-height: normal;
-    text-shadow: 0px 1px 1px #424242;
-	border-radius: 10px;
-  }
-  
-  #sidebar #settings button:hover {
-	color: #ffffff;
-    cursor: var(--application-cursor-pointer);
-    background: url(../ui/sidebar_button-background_red.webp) repeat;
+    text-shadow: 2px 2px 0px #000000;
   }
   #sidebar #settings button i {
     display: none;
@@ -2939,16 +2800,8 @@ input::placeholder, placeholder, *placeholder {
       .app.window-app.sheet.item-sheet .item-details .input-text:hover {
         border: 1px dotted #463a3a;
         box-shadow: none;
-		cursor: var(--application-cursor-pointer);
       }
-	 .app.window-app.sheet.cards-config.deck .sheet-tabs.tabs .item{
-         color : black !important;
-     }
-     
-     .cards-config ol.cards {
-       margin: 0px 10px 8px;
-      }
-     
+	  
     .app.window-app.sheet.item-sheet .sheet-tabs.edges.left {
       margin: 0px;
       height: 25px;
@@ -3969,9 +3822,6 @@ input::placeholder, placeholder, *placeholder {
     }
 
 
-.sheet.journal-entry .pages-list {
-    color : #464331c4;
-}
 
 /******************************************************************/
 /*=============== V. ACTOR SHEET (CHARACTER) =====================*/
@@ -4266,32 +4116,27 @@ input::placeholder, placeholder, *placeholder {
   bottom: 25px;
   left: 23px;
   width: 200px;
-  border: 3px solid #66141a;
+  border: 1px solid blue;
   border-image: url(../ui/players-border.webp) 21 repeat;
   border-image-slice: 75 16 25 16;
   border-image-width: 43px 10px 15px 10px;
   border-image-outset: 41px 9px 9px 9px;
-  border-radius: 6px;
+  border-radius: 0px;
   box-shadow: inset 0 0 10px #000000;
-  background: #6f00009c;
+  background: #00a5d640;
   font-family: KuiperBelt;
-  /* font-weight: bold; */
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 14px;
 }
-
-#players ol .player-name.self {
-    color: #ffe254bf;
-}
-
 #players h3 .fas.fa-users {
     margin-right: 10px;
     display: none;
   }
 #players ol .player-name {
-  /*overflow: hidden;
+  overflow: hidden;
   white-space: nowrap;
-  word-break: break-all;*/
-  padding-top: 1px;
+  word-break: break-all;
+  padding-top: 3px;
 }
 /*************************************************************/
 /*************************************************************/
@@ -4304,22 +4149,22 @@ input::placeholder, placeholder, *placeholder {
 /*=============== VII. NAVIGATION BAR =========================*/
 /*************************************************************/
 #navigation #scene-list .scene.view, #navigation #scene-list .scene.context {
-  cursor: var(--application-cursor-pointer); 
+  cursor: default; 
   color: #FFF;
-  background: url(../ui/sidebar_button-background.webp) repeat;
+  background: url(../ui/sidebar_button-background_red.webp) repeat;
   background-origin: padding-box;
   border-image: url(../ui/footer-button.webp) 10 repeat;
   border-image-width: 4px;
   border-image-outset: 0px;
-  box-shadow: 0 0 3px #4e0c0c;
+  box-shadow: 0 0 3px #3cbbff;
 }
 
 #navigation #nav-toggle {
-  cursor: var(--application-cursor-pointer); 
-  color: whitesmoke;
-  background: url(../ui/sidebar_button-background_red.webp) repeat;
+  cursor: default; 
+  color: #FFF;
+  background: url(../ui/sidebar_button-background_cyan.webp) repeat;
   background-origin: padding-box;
-  /* border-image: url(../ui/footer-button.webp) 10 repeat; */
+  border-image: url(../ui/footer-button.webp) 10 repeat;
   border-image-width: 4px;
   border-image-outset: 0px;
   font-family: KuiperBelt;
@@ -4327,51 +4172,23 @@ input::placeholder, placeholder, *placeholder {
   font-size: 14px;
   padding-top: 3px;
   height: 36px;
-  border-radius: 8px;
-  border: 3px solid #66141a;
-}
-
-#navigation #scene-list .scene.gm {
-    border: 1px solid #3a00ae;
-    box-shadow: 2px 2px 4px 1px #3a00ae;
 }
 
 #navigation #scene-list .scene.nav-item {
-  cursor: var(--application-cursor-pointer); 
-  color: #460004;
-  background: url(../ui/sidebar_button-background_grey.webp) repeat;
+  cursor: default; 
+  color: #FFF;
+  background: url(../ui/sidebar_button-background_cyan.webp) repeat;
   background-origin: padding-box;
-  /* border-image: url(../ui/footer-button.webp) 10 repeat; */
+  border-image: url(../ui/footer-button.webp) 10 repeat;
   border-image-width: 4px;
   border-image-outset: 0px;
   font-family: KuiperBelt;
-  font-weight: bold;
-  font-size: 15px;
+  font-weight: 500;
+  font-size: 14px;
   padding-top: 2px;
-  text-shadow: 2px 2px 4px #5a5a5a; 
-  border-radius: 12px;
 }
-
-#navigation #scene-list .scene.nav-item.gm {
-  cursor: var(--application-cursor-pointer);
-  color: #500106;
-  background: url(../ui/sidebar_button-background.webp) repeat;
-  background-origin: padding-box;
-  /* border-image: url(../ui/footer-button.webp) 10 repeat; */
-  border-image-width: 4px;
-  border-image-outset: 0px;
-  font-family: KuiperBelt;
-  font-weight: bold;
-  font-size: 15px;
-  padding-top: 2px;
-  text-shadow: 2px 2px 4px #5a5a5a; 
-  border-radius: 12px;
-}
-
 #navigation #scene-list .scene.nav-item.active {
   background: url(../ui/sidebar_button-background_red.webp) repeat;
-  color: whitesmoke;
-  box-shadow: 1px 1px 3px 1px #ffa426;
 }
   #navigation #scene-list .scene li.scene-player {
     float: left;
@@ -4381,7 +4198,7 @@ input::placeholder, placeholder, *placeholder {
     line-height: 12px;
     padding-top: 1px;
     text-align: center;
-    color: #fff68640;
+    color: #00a5d640;
     font-weight: 600;
     background: #97dff4;
     border: 1px solid #000;
@@ -4390,14 +4207,10 @@ input::placeholder, placeholder, *placeholder {
     font-size: 13px;
     box-shadow: inset 0 0 3px #000000;
   }
-#controls {
-    background: transparent;
-}
-
+ 
 #controls .control-tool.toggle.active, #controls .control-tool.toggle:hover {
-    color: #8c53fb !important;
-    text-shadow: 1px 1px 3px #42005f;
-	cursor: var(--application-cursor-pointer);
+    color: #a498ff !important;
+    text-shadow: 0 0 #a166ff !important;
 }
 /*************************************************************/
 /*************************************************************/
@@ -4413,13 +4226,13 @@ input::placeholder, placeholder, *placeholder {
 
 #controls .scene-control.active, #controls .control-tool.active, #controls .scene-control:hover, #controls .control-tool:hover {
 cursor: default; 
-color:red !important;
+color:cyan !important;
 background: url(../ui/controls-active-background.webp) !important;
 background-origin: padding-box !important;
 border-image: url(../ui/footer-button.webp) 10 repeat !important;
 border-image-width: 0px !important;
 border-image-outset: 0px !important;
-box-shadow: 0 0 0px #4e0c0c !important;
+box-shadow: 0 0 0px #3cbbff !important;
 border: 0px !important;
 text-shadow: 2px 2px 3px black;
 /*cursor:pointer !important;*/
@@ -4435,11 +4248,13 @@ line-height: 42px !important;
 background: url(../ui/controls-background.webp) !important;
 box-shadow: 0 0 0px #000 !important;
 margin: 0 0 8px !important;
+color: #BBB !important;
 text-align: center !important;
 border: 0px solid #000 !important;
 border-radius: 5px !important;
 cursor: pointer !important; 
-color:#66141a !important;
+cursor: default !important; 
+color: #FFF !important;
 background: url(../ui/controls-background.webp) !important;
 background-origin: padding-box !important;
 border-image: none !important;
@@ -4482,7 +4297,7 @@ border-image-outset: 0px !important;
       #module-management .window-content .modules-list .module {
         padding: 6px;
         margin: 3px 0px 0px 0px;
-        border: 3px groove #790000;
+        border: 3px groove #009dce;
         box-shadow: 0 0 6px #000 inset;
         line-height: normal;
         background: #0b1115b5;
@@ -4508,7 +4323,7 @@ border-image-outset: 0px !important;
           border: 1px solid #736953a6;
           border-left: none;
           box-shadow: 0px 0px 8px inset black;
-          background: #6b4500;
+          background: #00486b;
           position: relative;
           top: 2px;
         }
@@ -4560,7 +4375,7 @@ border-image-outset: 0px !important;
           border-image: url(../ui/footer-button.webp) 10 repeat;
           border-image-width: 4px;
           border-image-outset: 0px;
-          background: url(../ui/sidebar_button-background.webp) repeat;
+          background: url(../ui/sidebar_button-background_red.webp) repeat;
           font-family: var(--major-button-font-family);
           font-size: 17px;
           font-weight: var(--major-button-font-weight);
@@ -4591,7 +4406,7 @@ border-image-outset: 0px !important;
       /*height: 802px !important;
       width: 800px !important;*/
       box-shadow: none !important;
-      max-width:1100px;
+      max-width : 1095px;
     }
     #client-settings .window-header {
       border: none;
@@ -4602,10 +4417,6 @@ border-image-outset: 0px !important;
       /* top: 38px; */
 	  margin: 0px;
     }
-    #client-settings  .window-resizable-handle {
-        right: 32px;
-        bottom: 5px;
-    }
       #client-settings .window-header h4 {
         display: none;
       }
@@ -4614,15 +4425,17 @@ border-image-outset: 0px !important;
         top: 58px;
 		left:-35px;
       }
+    #client-settings  .window-resizable-handle {
+        right: 32px;
+        bottom: 5px;
+    }
     #client-settings .window-content {
-    margin: 0px 53px 24px 48px;
+    margin: 0px 54px 28px 52px;
     padding: 0px;
     border: none;
     background: url(../ui/game-settings-background.webp);
     background-size: contain;
     background-position-x: center;
-	border-radius: 6px;
-    opacity: 0.95;
     }
       #client-settings .window-content form {
         padding: 6px;
@@ -4650,7 +4463,7 @@ border-image-outset: 0px !important;
         line-height: 24px;
         border: 1px solid #736953a6;
         /* box-shadow: 0px 0px 10px inset black; */
-        background: #fff68640;
+        background: #00a5d640;
         border-radius: 0px;
         opacity: 0.9;
         min-width: 93px;
@@ -4660,7 +4473,6 @@ border-image-outset: 0px !important;
         font-family: KuiperBelt;
         font-weight: 500;
         font-size: 16px;
-		border-radius: 5px;
       }
       #client-settings .form-group input {
         border-left: 1px solid #736953a6;
@@ -4675,7 +4487,7 @@ border-image-outset: 0px !important;
         line-height: normal;
         padding: 6px 0px 0px 0px;
         font-size: 16px;
-        color: #ffffff;
+        color: #e2e2e2;
         border: none;
         text-align: left;
         background: none;
@@ -4691,15 +4503,14 @@ border-image-outset: 0px !important;
         text-shadow: 1px 1px 5px #000000;
         text-align: center;
         border: 3px double #736953a6;
-        background: #63000091;
+        background: #01002991;
         box-shadow: inset 0px 0px 5px black;
-		border-radius: 8px;
       }
       #client-settings .window-content form .form-group select {
         height: 25px;
         max-width: 340px;
-        background: #6b4500;
-        color: #ffffff;
+        background: #00486b;
+        color: #e2e2e2;
         border: 1px solid #736953a6;
         box-shadow: 0px 0px 10px inset black;
         border-radius: 4px;
@@ -4730,17 +4541,16 @@ border-image-outset: 0px !important;
         opacity: 0.9;
         text-align: center;
         min-width: 95px;
-        color: #66141a;
+        color: #e2e2e2;
         font-family: KuiperBelt;
         font-weight: 500;
         font-size: 19px;
-        text-shadow: 0px 1px 1px #900000;
-        /* border-image: url(../ui/footer-button.webp) 10 repeat; */
+        text-shadow: 1px 1px 6px black;
+        border-image: url(../ui/footer-button.webp) 10 repeat;
         border-image-width: 4px;
         border-image-outset: 0px;
-        background: url(../ui/sidebar_button-background.webp) repeat;
+        background: url(../ui/sidebar_button-background_red.webp) repeat;
         background-origin: padding-box;
-		border-radius:8px;
 		max-height:50px;
       }
           #client-settings .window-content button i {
@@ -4748,31 +4558,13 @@ border-image-outset: 0px !important;
             background: none;
             position: relative;
             top: 2px;
-			color: #b9353f;
-			text-shadow: 0px 1px 0px #292929;
-			font-size: 16px;
-			border-radius:5px;
           }
           #client-settings .window-content button label {
             border: none;
             background: none;
             position: relative;
             top: 2px;
-			color: #66141a;
           }
-		  #client-settings .window-content button:hover {
-			color: white;
-			cursor: var(--application-cursor-pointer);
-			background: url(../ui/sidebar_button-background_red.webp) repeat !important;
-		}
-		 #client-settings .window-content button:hover > label {
-			color: white;
-			cursor: var(--application-cursor-pointer);
-		}
-		#client-settings .window-content button:hover > i {
-			color: white;
-			cursor: var(--application-cursor-pointer);
-		}
         #client-settings .window-content button[name="permissions"] {
           max-width: 68px;
           min-width: 68px;
@@ -4786,7 +4578,7 @@ border-image-outset: 0px !important;
         #client-settings .window-content button[name="permissions"] i {
           display: contents;
           font-size: 16px;
-          color: #66141a;
+          color: #b9b9b9;
         }
       #client-settings .window-content .far.fa-save {
         display: none;
@@ -4796,6 +4588,10 @@ border-image-outset: 0px !important;
         background: none;
         border: 1px solid white;
       }
+	  
+	.package-configuration aside.sidebar nav.tabs .category-tab {
+		color: white;
+	}
 
   /* ================== 3. GAME CONTROLS REFERENCE ============ */
     #controls-reference {
@@ -5013,7 +4809,7 @@ font-family: var(--actor-input-font-family);
     border-image: url(../ui/footer-button.webp) 10 repeat;
     border-image-width: 4px;
     border-image-outset: 0px;
-    background: url(../ui/sidebar_button-background.webp) repeat;
+    background: url(../ui/sidebar_button-background_red.webp) repeat;
     background-origin: padding-box;
   } */
 
@@ -5030,30 +4826,28 @@ font-family: var(--actor-input-font-family);
 
 /* ==================== (A) DEFAULT WINDOWS =================== */
   .app.window-app {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    position: absolute;
-    box-shadow: 2px 2px 8px #000000;
-    padding: 0;
-    margin: 0px;
-	background: #d8cbc0 url(../ui/frames/parchment-texture.webp) no-repeat;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      position: absolute;
+      box-shadow: none;
+      padding: 0;
+      margin: 0px;
+      background: transparent;
+      border: none;
   }
   .app.window-app .window-header {
     flex: 0 0 45px;
     margin: 0px;
-    border: 1px solid black;
+    border: 1px solid blue;
     border-image: url(../ui/frames/window-app-header-blank.webp) 5 repeat;
-    border-image-slice: 10 fill;
-    border-image-width: 9px;
-    border-image-outset: 0;
+    border-image-slice: 19 21 19 21 fill;
+    border-image-width: 19px 21px 21px 21px;
+    border-image-outset: 0px;
     align-items: center;
     justify-content: flex-end;
     display: inline-flex;
-    margin: var(--window-header-margin);
-    border-radius: 8px;
-    background: transparent;
-	max-height:38px;
+	/*margin: var(--window-header-margin);*/
   }
     .app.window-app .window-header .window-title {
       flex: 1;
@@ -5069,8 +4863,7 @@ font-family: var(--actor-input-font-family);
       box-shadow: 0px 0px 10px inset black;
       border-radius: 0px;
       opacity: 1;
-      text-shadow: 1px 1px 5px #000000;
-	  max-height: 45px;
+      text-shadow: 1px 1px 5px #000000
     }
 
   .app.window-app .window-content {
@@ -5087,25 +4880,12 @@ font-family: var(--actor-input-font-family);
     border: 1px solid blue;
     border-width: 10px;
     border-image: url(../ui/window-app-dialog-content.webp) 5 repeat;
-    border-image-slice: 25;
-    border-image-width: 26px;
-    border-image-outset: 8px;
+    border-image-slice: 30 27 26 27;
+    border-image-width: var(--window-content-border-image-width);
+    border-image-outset: var(--window-content-border-image-outset);
     height: fit-content;
     max-height: none;
   }
-  
-.app.window-app.package-configuration .window-content {
-    color: whitesmoke;
-    background-size: cover;
-    background-position-y: center !important;
-    background-position-x: center !important;
-}
-
-#keybindings .binding .key.uneditable {
-    background: #cac9c5;
-    color: black;
-}
-
     .app.window-app h4 {
       font-family: var(--actor-input-font-family);
       font-size: var(--actor-input-font-size);
@@ -5139,13 +4919,13 @@ font-family: var(--actor-input-font-family);
         font-family: var(--actor-input-font-family);
         font-size: var(--actor-input-font-size);
         font-weight: var(--actor-input-font-weight);
-        color: whitesmoke;
+        color: #d6d6d6;
         line-height: normal;
         text-align: center;
         padding: 4px 3px;
         border: 1px solid #5d513e;
         background: #080808;
-        /* flex: 3; */
+        /* flex: 3 */
       }
       
       .trait-sheet .tab.details input[type="text"]{
@@ -5175,7 +4955,7 @@ font-family: var(--actor-input-font-family);
         border: 1px solid #736953a6;
         border-left: none;
         box-shadow: 0px 0px 10px inset black;
-        background: #6b4500;
+        background: #00486b;
         /* height: auto; */
       }
 
@@ -5188,8 +4968,7 @@ font-family: var(--actor-input-font-family);
       }
 
       #module-management .list-filters input::placeholder {
-        color: #ffb814b8;
-		text-shadow: 1px 1px black;
+        color: #004f4fb8;
       }
 
       .app.window-app .form-group select {
@@ -5203,7 +4982,7 @@ font-family: var(--actor-input-font-family);
         border-left: none;
         border-radius: 0px;
         box-shadow: 0px 0px 10px inset black;
-        background: #6b4500;
+        background: #00486b;
         height: auto;
       }
       .app.window-app .form-group input[type="range"]::-webkit-slider-thumb {
@@ -5213,7 +4992,7 @@ font-family: var(--actor-input-font-family);
         width: 11px;
         border-radius: 5px;
         background: #212121;
-        cursor: pointer;
+        cursor: var(--application-cursor-pointer);
         margin-top: -4px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
         box-shadow: 1px 1px 1px #000000 inset, 0px 0px 2px #0d0d0d; /* Add cool effects to your sliders! */
       } 
@@ -5229,8 +5008,8 @@ font-family: var(--actor-input-font-family);
     font-weight: var(--actor-input-font-weight);
     color: #d6d6d6;
     line-height: normal;
-    border: 3px double #790000;
-    background: #7b5c00d9;
+    border: 3px double #009dce;
+    background: #016075d9;
     text-align: center;
   }
   .app.window-app.dialog .window-content .dialog-content p {
@@ -5255,55 +5034,25 @@ font-family: var(--actor-input-font-family);
   .app.window-app button[type="reset"],
   .app.window-app button[class="reset"]
    {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    width: fill-available;
     margin: 0 3px 4px 3px;
-    border: 3px solid #66141a;
+
+    border: 1px solid black;
+    border-image: url(../ui/footer-button.webp) 10 repeat;
     border-image-width: 4px;
     border-image-outset: 0px;
     box-shadow: none;
-    background: url(../ui/sidebar_button-background.webp) repeat;
+    background: url(../ui/sidebar_button-background_red.webp) repeat;
     background-origin: padding-box;
+
     font-family: var(--major-button-font-family);
     font-size: var(--major-button-font-size);
     font-weight: var(--major-button-font-weight);
     color: var(--major-button-color);
-	text-shadow: 1px 1px 5px #562300;
-	border-radius: 8px;
+	text-shadow: 2px 2px 0px black;
   }
-  
-  .app.window-app .editor .dialog-buttons button,
-  .app.window-app .editor .sheet-footer button,
-  .app.window-app .editor .form-group .file-picker,
-  .app.window-app .editor button[type="button"],
-  .app.window-app .editor button[type="submit"],
-  .app.window-app .editor button[type="reset"],
-  .app.window-app .editorbutton[class="reset"]
-   {
-    margin: 0 3px 4px 3px;
-    border: 3px solid #66141a;
-    border-image-width: 4px;
-    border-image-outset: 0px;
-    box-shadow: none;
-    background: url(../ui/sidebar_button-background.webp) repeat;
-    background-origin: padding-box;
-    font-family: var(--major-button-font-family);
-    font-size: var(--major-button-font-size);
-    font-weight: var(--major-button-font-weight);
-    color: var(--major-button-color);
-	text-shadow: 1px 1px 5px #562300;
-	border-radius: 8px;
-  }
-  
-  .app.window-app .editor .dialog-buttons button:hover,
-  .app.window-app .editor .sheet-footer button:hover,
-  .app.window-app .editor .form-group .file-picker:hover,
-  .app.window-app .editor button[type="button"] > ul:hover,
-  .app.window-app .editor button[type="submit"]:hover,
-  .app.window-app .editor button[type="reset"]:hover,
-  .app.window-app .editorbutton[class="reset"]:hover
-   {
-    color: var(--major-button-color) !important;
-  }
-  
 
   .app.window-app.sheet.scene-sheet .grid-config {
     max-width: 60px;
@@ -5340,7 +5089,7 @@ font-family: var(--actor-input-font-family);
   .app.window-app.sheet.scene-sheet .fas.fa-ruler-combined { 
     display: contents;
     font-size: 16px;
-    color: #66141a;
+    color: #b9b9b9;
   }
 
   #wall-config .notes {
@@ -5357,9 +5106,9 @@ font-family: var(--actor-input-font-family);
   }
   
   .app.window-app.cards-config .window-content {
-     background: #d8cbc0 url(../ui/frames/parchment-texture.webp) no-repeat;
-	 background-position: -100px -120px !important;
+     background: #4d889a url(../ui/frames/parchment-texture.webp) no-repeat;
   }
+
   /* ================== 1. UPDATE OR CREATE FOLDER ============ */
     .app.window-app #folder-create label {
       max-width: 148px;
@@ -5375,7 +5124,7 @@ font-family: var(--actor-input-font-family);
     }
     #permission .window-header .window-title {
       flex-grow: 0;
-      color: whitesmoke;
+      color: transparent;
       border: none;
       background: url(../ui/frames/window-app-title-permissions.webp);
       min-width: 235px;
@@ -5442,8 +5191,8 @@ font-family: var(--actor-input-font-family);
       font-weight: var(--actor-input-font-weight);
       color: #d6d6d6;
       line-height: normal;
-      border: 3px double #790000;
-      background: #7b5c00d9;
+      border: 3px double #009dce;
+      background: #016075d9;
       text-align: center;
     }
   
@@ -5465,15 +5214,11 @@ font-family: var(--actor-input-font-family);
     #sound-config .form-group .file-picker {
       margin: 0px 3px 0px 0px;
     }
-      .app.window-app.sheet.scene-sheet .form-group .file-picker button,
-	  #sound-config .form-group .file-picker button:hover > i{
-		  color:white;
-	  }
-	  .app.window-app.sheet.scene-sheet .form-group .file-picker i,
+      .app.window-app.sheet.scene-sheet .form-group .file-picker i,
       #sound-config .form-group .file-picker i {
         display: contents;
         font-size: 16px;
-        color: #66141a;
+        color: #b9b9b9;
       }
       #sound-config .form-group input[type="checkbox"] {
         position: relative;
@@ -5649,15 +5394,14 @@ font-family: var(--actor-input-font-family);
       font-weight: var(--actor-input-font-weight);
       color: #d6d6d6;
       line-height: normal;
-      border: 3px double #790000;
-      background: #563000de;
+      border: 3px double #009dce;
+      background: #220048d9;
     }
       .token-sheet .sheet-tabs .item:hover {
-        box-shadow: 0 0 8px #c70000 !important;
-		cursor: var(--application-cursor-pointer);
+        box-shadow: 0 0 8px #00c7ff !important;
       }
       .token-sheet .sheet-tabs .item.active {
-        background: #7b5c00d9;
+        background: #016075d9;
       }
       .token-sheet .sheet-tabs .item i {
         display: none;
@@ -5714,7 +5458,7 @@ font-family: var(--actor-input-font-family);
       .token-sheet .tab[data-tab="image"] button i {
         display: contents;
         font-size: 16px;
-        color: #66141a;
+        color: #b9b9b9;
       }
     .token-sheet .tab[data-tab="image"] input[type="checkbox"] {
       transform: scale(1);
@@ -5728,7 +5472,7 @@ font-family: var(--actor-input-font-family);
       width: 11px;
       border-radius: 5px;
       background: #212121;
-      cursor: pointer;
+      cursor: var(--application-cursor-pointer);
       margin-top: -4px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
       box-shadow: 1px 1px 1px #000000 inset, 0px 0px 2px #0d0d0d; /* Add cool effects to your sliders! */
     } 
@@ -5744,7 +5488,7 @@ font-family: var(--actor-input-font-family);
       border: 1px solid #736953a6;
       border-radius: 0px;
       box-shadow: 0px 0px 10px inset black;
-      background: #6b4500;
+      background: #00486b;
       padding-top: 11px
     }
     .token-sheet .tab[data-tab="image"]:not(:first-of-type) input[type="text"] {
@@ -5794,7 +5538,7 @@ font-family: var(--actor-input-font-family);
     .token-sheet .tab[data-tab="vision"] input[type="checkbox"] {
       transform: scale(1);
       position: absolute;
-      top: 140px;
+      top: 128px;
       left: 278px;
       opacity: 0.75;
       box-shadow: 0px 0px 4px inset black;
@@ -5828,7 +5572,7 @@ font-family: var(--actor-input-font-family);
       border-left: none;
       border-right: none;
       box-shadow: 0px 0px 10px inset black;
-      background: #6b4500;
+      background: #00486b;
     }
     .token-sheet .tab[data-tab="resources"] .form-group .bar2-value {
       padding: 1px 3px;
@@ -5841,7 +5585,7 @@ font-family: var(--actor-input-font-family);
       border-left: none;
       border-right: none;
       box-shadow: 0px 0px 10px inset black;
-      background: #6b4500;
+      background: #00486b;
     }
     .token-sheet .tab[data-tab="resources"] .form-group .sep {
       font-family: var(--actor-input-font-family);
@@ -5855,7 +5599,7 @@ font-family: var(--actor-input-font-family);
       border-left: none;
       border-right: none;
       box-shadow: 0px 0px 10px inset black;
-      background: #6b4500;  
+      background: #00486b;  
     }
 
     .token-sheet .range-value {
@@ -5900,15 +5644,14 @@ font-family: var(--actor-input-font-family);
       font-weight: var(--actor-input-font-weight);
       color: #d6d6d6;
       line-height: normal;
-      border: 3px double #790000;
-      background: #563000de;
+      border: 3px double #009dce;
+      background: #220048d9;
     }
       #drawing-config .sheet-tabs .item:hover {
-        box-shadow: 0 0 8px #c70000 !important;
-		cursor: var(--application-cursor-pointer);
+        box-shadow: 0 0 8px #00c7ff !important;
       }
       #drawing-config .sheet-tabs .item.active {
-        background: #7b5c00d9;
+        background: #016075d9;
       }
       #drawing-config .sheet-tabs .item i {
         display: none;
@@ -5949,7 +5692,7 @@ font-family: var(--actor-input-font-family);
       #drawing-config .tab[data-tab="image"] button i {
         display: contents;
         font-size: 16px;
-        color: #66141a;
+        color: #b9b9b9;
       }
     #drawing-config .tab[data-tab="image"] input[type="checkbox"] {
       transform: scale(1);
@@ -5966,7 +5709,7 @@ font-family: var(--actor-input-font-family);
       width: 11px;
       border-radius: 5px;
       background: #212121;
-      cursor: pointer;
+      cursor: var(--application-cursor-pointer);
       margin-top: -4px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
       box-shadow: 1px 1px 1px #000000 inset, 0px 0px 2px #0d0d0d; /* Add cool effects to your sliders! */
     } 
@@ -5982,7 +5725,7 @@ font-family: var(--actor-input-font-family);
       border: 1px solid #736953a6;
       border-radius: 0px;
       box-shadow: 0px 0px 10px inset black;
-      background: #6b4500;
+      background: #00486b;
     }
     #drawing-config .tab[data-tab="image"]:not(:first-of-type) input[type="text"] {
       text-align: center;
@@ -6036,7 +5779,7 @@ font-family: var(--actor-input-font-family);
       border-left: none;
       border-right: none;
       box-shadow: 0px 0px 10px inset black;
-      background: #6b4500;
+      background: #00486b;
     }
     #drawing-config .tab[data-tab="resources"] .form-group .bar2-value {
       padding: 1px 3px;
@@ -6049,7 +5792,7 @@ font-family: var(--actor-input-font-family);
       border-left: none;
       border-right: none;
       box-shadow: 0px 0px 10px inset black;
-      background: #6b4500;
+      background: #00486b;
     }
     #drawing-config .tab[data-tab="resources"] .form-group .sep {
       font-family: var(--actor-input-font-family);
@@ -6063,7 +5806,7 @@ font-family: var(--actor-input-font-family);
       border-left: none;
       border-right: none;
       box-shadow: 0px 0px 10px inset black;
-      background: #6b4500;  
+      background: #00486b;  
     }
     #drawing-config .file-picker {
       margin: 0px;
@@ -6071,7 +5814,7 @@ font-family: var(--actor-input-font-family);
     #drawing-config .file-picker .fas.fa-file-import.fa-fw {
       display: contents;
       font-size: 16px;
-      color: #66141a;
+      color: #b9b9b9;
     }
 
   /* ================== 11. JOUNRAL ENTRIES =================== */
@@ -6092,7 +5835,7 @@ font-family: var(--actor-input-font-family);
 
     .window-app.app.journal-sheet .window-content {
       background: url(../ui/frames/parchment-texture.webp);
-      background-position: -75px -100px !important;
+      /*background-position: -43px -120px;*/
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
@@ -6104,20 +5847,18 @@ font-family: var(--actor-input-font-family);
       font-weight: 500;
       font-size: 14px;
       color: #000000;
+      /* border: 1px solid blue; */
       border-width: 10px;
       border-image: url(../ui/frames/window-app-journal-sheet-content.webp) 5 repeat;
-      border-image-slice: 28;
-      border-image-width: 20px;
-      border-image-outset: 5px;
-	  border-radius: 24px;
+      border-image-slice: 35;
+      border-image-width: var(--window-content-border-image-width);
+      border-image-outset: 0px 0px 0px 0px;
     }
     .window-app.app.journal-sheet .window-content form {
-        margin: 5px 5px 5px 20px;
-		/*height: 100%;*/
-		padding: 5px;
-		box-shadow: 0px 0px 3px #00000069 inset;
-		border-radius: 10px;
-		border: 3px double #66141aa8;
+      margin: 15px;
+      /*height: 100%;*/
+      padding: 5px;
+      box-shadow: 0px 0px 3px #00000069 inset;
     }
     .window-app.app.journal-sheet .window-content .form-group.title {
       position: absolute;
@@ -6127,11 +5868,12 @@ font-family: var(--actor-input-font-family);
     }
       .window-app.app.journal-sheet .window-content input[name="name"],
       .window-app.app.journal-sheet .window-content input[name="title"] {
-        border: 3px solid #66141a;
+        border: 1px solid blue;
+        /*border-image: url(../ui/item-sheet-header.webp) repeat;*/
         border-image-slice: 5;
         border-image-width: 4px;
         border-image-outset: 0px;
-        border-radius: 10px;
+        border-radius: 0px;
         font-family: KuiperBelt;
         font-size: 20px;
         font-weight: 500;
@@ -6160,29 +5902,26 @@ font-family: var(--actor-input-font-family);
         box-shadow: 0px 0px 2px #2700009e inset;
       }
     .window-app.app.journal-sheet .window-content form button[type="submit"] {
-		flex: 2;
-		flex-grow: 0;
-		line-height: 23px;
-		border: 3px solid #66141a;
-		box-shadow: 0px 0px 10px inset black;
-		border-radius: 0px;
-		opacity: 0.9;
-		text-align: center;
-		color: #66141a;
-		font-family: KuiperBelt;
-		font-weight: bold;
-		font-size: 20px;
-		padding-top: 5px;
-		margin: 3px 0px 0px 1px !important;
-		/* border-image: url(../ui/footer-button.webp) 10 repeat; */
-		border-image-width: 4px;
-		border-image-outset: 0px;
-		/* box-shadow: inset 0 0 20px #000000; */
-		background: url(../ui/sidebar_button-background.webp) repeat;
-		background-origin: padding-box;
-		border-radius: 10px;
-		text-shadow: 0 0 black;
-
+      flex: 2;
+      flex-grow: 0;
+      line-height: 24px;
+      border: 3px double #736953a6;
+      box-shadow: 0px 0px 10px inset black;
+      border-radius: 0px;
+      opacity: 1.0;
+      text-align: center;
+      color: #dadada;
+      font-family: KuiperBelt;
+      font-weight: 500;
+      font-size: 15px;
+      padding-top: 5px;
+      margin: 3px 0px 0px 1px !important;
+      border-image: url(../ui/footer-button.webp) 10 repeat;
+      border-image-width: 4px;
+      border-image-outset: 0px;
+      /* box-shadow: inset 0 0 20px #000000; */
+      background: url(../ui/sidebar_button-background_red.webp) repeat;
+      background-origin: padding-box;
     } 
 
     .window-app.app.journal-sheet form.editable .editor {
@@ -6232,7 +5971,7 @@ font-family: var(--actor-input-font-family);
       border-radius: 0px;
       opacity: 1.0;
       text-align: center;
-      color: #3c2100;
+      color: #dadada;
       font-family: KuiperBelt;
       font-weight: 500;
       font-size: 15px;
@@ -6242,7 +5981,7 @@ font-family: var(--actor-input-font-family);
       border-image-width: 4px;
       border-image-outset: 0px;
       /* box-shadow: inset 0 0 20px #000000; */
-      background: url(../ui/sidebar_button-background.webp) repeat;
+      background: url(../ui/sidebar_button-background_red.webp) repeat;
       background-origin: padding-box;
     }    
       .window-app.journal-sheet.image-popout .form-group button i {
@@ -6276,7 +6015,7 @@ font-family: var(--actor-input-font-family);
         margin: 3px;
         background: url(../ui/frames/parchment-texture.webp);
         box-shadow: inset 0 0 10px #000000;
-        border: 2px groove #790000;
+        border: 2px groove #009dce;
         border-image: url(../ui/chat-controls-border.webp) 4 repeat;
         border-image-width: 4px;
         border-image-outset: 2px 2px 2px 2px;
@@ -6288,17 +6027,16 @@ font-family: var(--actor-input-font-family);
       }
       .window-app.app .sidebar-tab.compendium .compendium-search input::placeholder {
         text-align: center;
-        color: #ffb814b8;
+        color: #004f4fb8;
         position: relative;
-		text-shadow: 1px 1px black;
+        top: 2px;
       }
         .sidebar-tab .fas.fa-search {
-        width: 24px;
-        height: 24px;
+        width: 30px;
+        height: 30px;
         position: relative;
         background: url(../ui/frames/search-field-icon.webp);
         color: #ffffff00;
-		background-size: contain;
       }
     .window-app.app .sidebar-tab.compendium .pack-content {
       height: calc(100% - 43px);
@@ -6322,15 +6060,15 @@ font-family: var(--actor-input-font-family);
       border-image-width: 4px;
       border-image-outset: 0px;
       box-shadow: none;
-      background: url(../ui/sidebar_button-background.webp) repeat;
+      background: url(../ui/sidebar_button-background_red.webp) repeat;
       margin-bottom: 0px;
     }
       .app.window-app.filepicker .form-group button i {
-        color: #3c2100db;
+        color: #dadadadb;
         /* transform: scaleX(-1); */
         display: contents;
         font-size: 16px;
-        color: #66141a;
+        color: #b9b9b9;
       }
     .app.window-app.filepicker .form-fields.display-modes a {
       border: 1px solid black;
@@ -6338,35 +6076,16 @@ font-family: var(--actor-input-font-family);
       border-image-width: 4px;
       border-image-outset: 0px;
       box-shadow: none;
-      background: url(../ui/sidebar_button-background.webp) repeat;
+      background: url(../ui/sidebar_button-background_red.webp) repeat;
       margin-bottom: 0px;
       padding-top: 2px;
     }
-	
-	.app.window-app.filepicker .form-group button:hover {
-		
-		background: url(../ui/sidebar_button-background_red.webp) repeat;
-		color:white !important;
-		
-	}
-	.app.window-app.filepicker .form-group button:hover > i{
-		color:white !important;
-	}
-	
-	.filepicker .directory > li.dir {
-		color: white;
-    }
-    
-	.filepicker .directory > li {
-		color: white;
-	}
-	
-	.app.window-app.filepicker .form-fields.display-modes a i {
-        color: #3c2100db;
+      .app.window-app.filepicker .form-fields.display-modes a i {
+        color: #dadadadb;
         /* transform: scaleX(-1); */
         display: contents;
         font-size: 14px;
-        color: #66141a;
+        color: #b9b9b9;
         /* position: relative; */
         /* top: 9px; */
       }
@@ -6378,10 +6097,10 @@ font-family: var(--actor-input-font-family);
     .app.window-app.filepicker .filepicker-body .directory.files-list.thumbs-list,
     .app.window-app.filepicker .filepicker-body .directory.files-list.details-list,
     .app.window-app.filepicker .filepicker-body .directory.folders-list.details-list {
-      background: url(../ui/frames/bookshelf-texture.webp) repeat;
-      border: 3px solid #66141a;
-      border-radius: 8px;
-      box-shadow: 0px 0px 23px #330004 inset;
+      background: url(../ui/frames/parchment-texture.webp) repeat;
+      border: 3px ridge #5d513e;
+      border-radius: 0px;
+      box-shadow: 0px 0px 33px black inset;
     }
       .app.window-app.filepicker .filepicker-body .directory.folders-list.details-list {
         min-height: fit-content;
@@ -6484,7 +6203,7 @@ font-family: var(--actor-input-font-family);
     .app.window-app.sheet.tile-sheet .form-group .fas.fa-file-import.fa-fw {
       display: contents;
       font-size: 16px;
-      color: #66141a;
+      color: #b9b9b9;
     }
 
 
@@ -6505,7 +6224,7 @@ font-family: var(--actor-input-font-family);
       font-family: KuiperBelt;
       font-weight: 500;
       font-size: 14px;
-      width: 620px;
+      width: 660px;
       height: 65px;
     }    
 
@@ -6520,14 +6239,14 @@ font-family: var(--actor-input-font-family);
       height: 100%;
       list-style: none;
       margin: 0 0px;
-      padding: 8px 0px 4px 0px;
-      border-radius: 10px;
+      padding: 5px 0px 4px 0px;
+      border: none;
+      border-radius: 4px;
       justify-content: center;
       background: url(../ui/frames/hotkeybox-macro-list.webp);
-      box-shadow: 1px 1px 4px #734d05;
-    }
+      /* box-shadow: 2px 2px 5px #000000; */
 	  
-    
+    }
       #hotbar #action-bar .macro {
         border-image: url(../ui/frames/hotkeybox.webp) 21 repeat;
         border-image-slice: 6 6 6 6 fill;
@@ -6535,25 +6254,15 @@ font-family: var(--actor-input-font-family);
         border-image-outset: 0px 0px 0px 0px;
         border-radius: 0px;
 		cursor: var(--application-cursor-pointer);
-		border-radius:8px;
       } 
 
 		#hotbar #action-bar .macro:hover {
-		  box-shadow: 2px 2px 5px #66141a;
-		  cursor: var(--application-cursor-pointer);
+		  box-shadow: 2px 2px 5px #00ffff;
         }
       
 	  
 	  #hotbar .macro .macro-icon {
 	    cursor: var(--application-cursor-pointer);
-		width: 46px;
-		height: 46px;
-		border: none;
-		z-index: 0;
-		position: relative;
-		padding: 2px;
-		margin-left: 1px;
-		margin-top: 1px;
 	  }
   
         #hotbar .macro .macro-key {
@@ -6568,14 +6277,13 @@ font-family: var(--actor-input-font-family);
           max-height: 19px;
           border-radius: 6px;
           box-shadow: 0px 0px 5px black;
-		  z-index: 99;
         }
     #hotbar .bar-controls {
       background: #000000a8;
       box-shadow: 0 0 4px black;
       border-radius: 16px;
-      border: 2px solid #794100;
-      color: #f9a237;
+      border: 2px solid #00ffff;
+      color: #00efef;
     }
       #hotbar .bar-controls span.page-number {
         display: block;
@@ -6735,7 +6443,7 @@ font-style : normal;
   padding: 0px 0px 0px 0px;
   margin: 0px 0px;
   box-shadow: 0px 0px 10px inset black;
-  /* background: #fff68640; */
+  /* background: #00a5d640; */
 }
   .window-app.dialog.cast-channel .selection {
     flex: 2;
@@ -6774,18 +6482,23 @@ font-style : normal;
     border-image: url(../ui/footer-button.webp) 10 repeat;
     border-image-width: 4px;
     border-image-outset: 0px;
-    background: url(../ui/sidebar_button-background.webp) repeat;
+    background: url(../ui/sidebar_button-background_red.webp) repeat;
     background-origin: padding-box;
   } 
 
-  .window-content .notes {
+.window-content .notes {
     color: #BBB;
-  }
+}
+
+ .window-content .form-group.submenu p.notes {
+    color: #BBB;
+}
+  
 #data-importer .window-content .form-group p.notes {
     color: black;
 }
 
-#swa-importer .window-content p.notes {
+ #swa-importer .window-content p.notes {
     color: black;
 }
 
@@ -6795,33 +6508,39 @@ font-style : normal;
 #talent-checker .window-content p.notes {
     color: black;
 }
-  .pack-content .entry-name {
-    color: white;
-  }
-  
+
 #swffg-skilllist-importer.app.window-app {
 	height:fit-content !important;
 	width:500px !important;
-}
-#swffg-skilllist-importer.app.window-app .window-content form {
-	padding: 0px 5px 0px 20px;
 }
 
 #swffg-skilllist-importer .skilllist tbody {
     height: fit-content !important;
 }
 
+#swffg-skilllist-importer a[href] {
+    color: #003abb !important;
+	text-shadow: 0px 0px 0px black;
+}
+
+#swffg-skilllist-importer.app.window-app .window-content form {
+	padding: 0px 5px 0px 2px;
+}
+
 #data-importer.app.window-app .window-content form {
-	padding: 0px 5px 0px 20px;
+	padding: 0px 5px 0px 2px;
 }
 
 #swa-importer.app.window-app .window-content form {
-	padding: 0px 5px 0px 20px;
+	padding: 0px 5px 0px 2px;
 }
 
 #talent-checker.app.window-app .window-content form {
-	padding: 0px 5px 0px 20px;
+	padding: 0px 5px 0px 2px;
 }
+  .pack-content .entry-name {
+    color: white;
+  }
 
   .window-content .dialog-content > * {
     color: white;
@@ -6887,18 +6606,16 @@ font-style : normal;
         font-weight: var(--actor-input-font-weight);
         color: #d6d6d6;
         line-height: normal;
-        border: 3px double #790000;
-        background: #563000de;
-		border-radius: 10px;
+        border: 3px double #009dce;
+        background: #220048d9;
       }
       #module-management .list-filters .filter:hover,
       #client-settings .sheet-tabs .item:hover {
-          box-shadow: 0 0 8px #c70000 !important;
-		  cursor: var(--application-cursor-pointer);
+          box-shadow: 0 0 8px #00c7ff !important;
         }
       #module-management .list-filters .filter.active,
       #client-settings .sheet-tabs .item.active {
-          background: #7b5c00d9;
+          background: #016075d9;
         }
 
       #module-management .list-filters .expand 
@@ -6948,7 +6665,7 @@ font-style : normal;
   left: 8px;
   position: relative;
   top: 5px;
-  cursor: pointer;
+  cursor: var(--application-cursor-pointer);
 }  
 
 .chat-buttons {
@@ -6997,7 +6714,7 @@ font-style : normal;
   border: 1px solid #736953a6;
   border-left: none;
   box-shadow: 0px 0px 10px inset black;
-  background: #6b4500;
+  background: #00486b;
 }
 
 .result-type > select,
@@ -7012,7 +6729,7 @@ font-style : normal;
   border-left: none;
   border-radius: 0px;
   box-shadow: 0px 0px 10px inset black;
-  background: #6b4500;
+  background: #00486b;
 }
 
 .roll-table-config ol.table-results .table-result.roulette {
@@ -7035,16 +6752,15 @@ font-style : normal;
 }
 #sidebar #tables .directory-list .directory-item {
   padding: 3px 3px;
-  border: 3px groove #790000;
+  border: 3px groove #009dce;
   box-shadow: 0 0 6px #000 inset;
   line-height: normal;
   background: #000000b5;
   font-family: var(--actor-input-font-family);
   font-size: 16px;
   font-weight: var(--actor-input-font-weight);
-  color: #f9efdc;
+  color: #dadada;
   text-shadow: 1px 1px 2px black;
-  border-radius: 10px;
 }
 
 #sidebar #tables .directory-list .directory-item h4{
@@ -7092,7 +6808,7 @@ font-style : normal;
   border-radius: 3px;
   border: 2px ridge #846109;
   display: inline-block;
-  cursor: pointer;
+  cursor: var(--application-cursor-pointer);
   color: #ffffff;
   font-family: KuiperBelt;
   font-size: 14px;
@@ -7126,7 +6842,6 @@ font-style : normal;
 .chargen-button:hover {
   background: linear-gradient(to bottom, #800000 5%, #3e0101 100%);
   background-color: red;
-  cursor: var(--application-cursor-pointer);
 }
 .overcast-button:active,
 .chargen-button:active {
@@ -7249,7 +6964,7 @@ input.card-edit {
   border-left: none;
   border-radius: 0px;
   box-shadow: 0px 0px 10px inset black;
-  background: #6b4500;
+  background: #00486b;
 }
 
 button.capture-position {
@@ -7325,7 +7040,7 @@ a.inline-roll,
   border-image-width: 4px;
   border-image-outset: 0px;
   box-shadow: none;
-  background: url(../ui/sidebar_button-background.webp) repeat;
+  background: url(../ui/sidebar_button-background_red.webp) repeat;
   background-origin: padding-box;
   font-family: var(--major-button-font-family);
   font-size: var(--major-button-font-size);
@@ -7335,7 +7050,7 @@ a.inline-roll,
   .scene-sheet .window-content .form-group.initial-position .form-fields .capture-position i {
     display: contents;
     font-size: 16px;
-    color: #66141a;
+    color: #b9b9b9;
   }
 
   .scene-sheet .form-header {
@@ -7365,7 +7080,7 @@ a.inline-roll,
     border-left: none;
     border-radius: 0px;
     box-shadow: 0px 0px 10px inset black;
-    background: #6b4500;
+    background: #00486b;
     height: 300px;
 }
 
@@ -7400,9 +7115,9 @@ a.inline-roll,
 }
 
 .editor-edit {
-  color: #790000;
+  color: #009dce;
   /* display: block; */
-  border: 1px solid #790000;
+  border: 1px solid #009dce;
   background: #c7c2987d;
   box-shadow: 0px 0px 2px inset #000000d1;
   margin: 0px;
@@ -7484,9 +7199,9 @@ our-box[data-location="lArm"] .armour-property .armour-flaw.comma:last-of-type {
   padding: 4px 1px 4px 1px;
   margin: 25px 16px 25px 21px;
   border-image: url(../ui/frames/chat-message-border-private.webp) 21 repeat;
-  border-image-width: 16px;
-  border-image-outset: 12px;
-  border-radius: 4px;
+  border-image-width: 10px;
+  border-image-outset: 8px;
+  border-radius: 0px;
   background: url(../ui/frames/parchment-texture.webp) repeat;
   box-shadow: none;
   color: #000000;
@@ -7503,9 +7218,9 @@ our-box[data-location="lArm"] .armour-property .armour-flaw.comma:last-of-type {
   padding: 4px 1px 4px 1px;
   margin: 25px 16px 25px 21px;
   border-image: url(../ui/frames/chat-message-border-blind.webp) 21 repeat;
-  border-image-width: 16px;
-  border-image-outset: 12px;
-  border-radius: 4px;
+  border-image-width: 10px;
+  border-image-outset: 8px;
+  border-radius: 0px;
   background: url(../ui/frames/parchment-texture.webp) repeat;
   box-shadow: none;
   color: #000000;
@@ -7561,7 +7276,7 @@ our-box[data-location="lArm"] .armour-property .armour-flaw.comma:last-of-type {
   border: 1px solid #736953a6;
   border-left: none;
   box-shadow: 0px 0px 8px inset black;
-  background: #6b4500;
+  background: #00486b;
   position: relative;
   top: 1px;
   transform: scale(1);
@@ -7578,7 +7293,7 @@ our-box[data-location="lArm"] .armour-property .armour-flaw.comma:last-of-type {
   border: 1px solid #736953a6;
   /* border-left: none; */
   box-shadow: 0px 0px 10px inset black;
-  background: #6b4500;
+  background: #00486b;
 }
 
 #filter-config input[type="range"],
@@ -7596,7 +7311,7 @@ height: 11px;
 width: 11px;
 border-radius: 5px;
 background: #212121;
-cursor: pointer;
+cursor: var(--application-cursor-pointer);
 margin-top: -4px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
 box-shadow: 1px 1px 1px #000000 inset, 0px 0px 2px #0d0d0d; /* Add cool effects to your sliders! */
 }
@@ -7639,11 +7354,11 @@ background-image: linear-gradient(to right, #820f0f , #82820d);
   font-weight: var(--actor-input-font-weight);
   color: #d6d6d6;
   line-height: normal;
-  border: 3px double #790000;
-  background: #563000de;
+  border: 3px double #009dce;
+  background: #220048d9;
 }
 .app.window-app.filepicker .tabs .item.active {
-  background: #7b5c00d9;
+  background: #016075d9;
 }
   .app.window-app.filepicker .tabs .item .fas {
     display: none;
@@ -7734,7 +7449,7 @@ background-image: linear-gradient(to right, #820f0f , #82820d);
   #track-config .file-picker .fas.fa-file-import.fa-fw {
     display: contents;
     font-size: 16px;
-    color: #66141a;
+    color: #b9b9b9;
   }
   #track-config .form-group input[type="checkbox"] {
     position: relative;
@@ -7888,15 +7603,14 @@ background-image: linear-gradient(to right, #820f0f , #82820d);
   font-weight: var(--actor-input-font-weight);
   color: #d6d6d6;
   line-height: normal;
-  border: 3px double #790000;
-  background: #563000de;
+  border: 3px double #009dce;
+  background: #220048d9;
 }
   #av-config .sheet-tabs .item:hover {
-    box-shadow: 0 0 8px #c70000 !important;
-	cursor: var(--application-cursor-pointer);
+    box-shadow: 0 0 8px #00c7ff !important;
   }
   #av-config .sheet-tabs .item.active {
-    background: #7b5c00d9;
+    background: #016075d9;
   }
   #av-config .sheet-tabs .item i {
     display: none;
@@ -7951,11 +7665,6 @@ background-image: linear-gradient(to right, #820f0f , #82820d);
   margin-right: 0.25em;
 }
 
-#module-management.app.window-app {
-	/*height: 1080px;*/
-	width:680px !important;
-}  
-
 #module-management .enhanced-module-management button.modules-export .fas,
 #module-management .enhanced-module-management button.modules-import .fas {
     color:whitesmoke;
@@ -7992,7 +7701,7 @@ background-image: linear-gradient(to right, #820f0f , #82820d);
 #module-management .window-content .directory-list.package-list {
   padding: 0px 6px 0px 0px;
   overflow-y: scroll;
-  height: 80%;
+  height: 85%;
   margin-bottom: 6px;
 }
   #module-management .window-content .directory-list.package-list .package {
@@ -8000,8 +7709,7 @@ background-image: linear-gradient(to right, #820f0f , #82820d);
     line-height: 24px;
     border: 1px solid #736953a6;
     box-shadow: 0px 0px 10px inset black;
-    /* background: #fff68640; */
-	background: #d6ca7273;
+    background: #00a5d640;
     border-radius: 0px;
     opacity: 0.9;
     min-width: 93px;
@@ -8011,7 +7719,6 @@ background-image: linear-gradient(to right, #820f0f , #82820d);
     font-family: KuiperBelt;
     font-weight: 500;
     font-size: 16px;
-	border-radius:8px;
   }
   #module-management .window-content .directory-list.package-list input[type="checkbox"] {
     position: relative;
@@ -8064,7 +7771,7 @@ background-image: linear-gradient(to right, #820f0f , #82820d);
   border: 1px solid #736953a6;
   border-left: none;
   box-shadow: 0px 0px 10px inset black;
-  background: #6b4500;
+  background: #00486b;
   height: auto;
 }
 
@@ -8073,7 +7780,7 @@ input[name="dd-import.importPath"] {
 }
 
 .placeable-hud .control-icon.active {
-  border: 2px solid #4e0c0c;
+  border: 2px solid #3cbbff;
 }
 
 #chat-bubbles {
@@ -8098,7 +7805,7 @@ input[name="dd-import.importPath"] {
   border-radius: 3px;
   border: 2px ridge #846109;
   display: inline-block;
-  cursor: pointer;
+  cursor: var(--application-cursor-pointer);
   color: #ffffff;
   font-family: KuiperBelt;
   font-size: 14px;
@@ -8132,7 +7839,7 @@ input[name="dd-import.importPath"] {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    background: rgb(0,0,0,0.2);
+    /*background: rgb(0,0,0,0.2);*/
     font-family: var(--major-button-font-family);
 }
 
@@ -8224,8 +7931,7 @@ input[name="dd-import.importPath"] {
 }
 
 .app.window-app .window-header > a {
-  z-index: 5;
-  color:#650000;
+  z-index: 5
 }
 
 #stat-parser textarea {
@@ -8238,7 +7944,7 @@ input[name="dd-import.importPath"] {
   border-left: none;
   border-radius: 0px;
   box-shadow: 0px 0px 10px inset black;
-  background: #6b4500;
+  background: #00486b;
   height:90%;
   resize: none;
 }
@@ -8252,18 +7958,7 @@ input[name="dd-import.importPath"] {
 #cub-condition-lab form {
   overflow: hidden;
   background: #d8cbc0 url(../ui/frames/parchment-texture.webp) no-repeat !important; 
-  background-size: contain !important;
-  background-position: -40px 0 !important;
 } 
-
-#cub-puter .window-content {
-	background: #d8cbc0 url(../ui/frames/parchment-texture.webp) no-repeat !important; 
-	padding: 10px 5px 0px 115px;
-}
-
-#cub-puter .window-content .notes {
-  color:#4a0000;
-}
 
 .active-effect-sheet form {
   overflow: hidden;
@@ -8380,7 +8075,7 @@ hr,
   border-left: none;
   border-radius: 0px;
   box-shadow: 0px 0px 10px inset black;
-  background: #6b4500;
+  background: #00486b;
   height: auto;
 }
 
@@ -8393,7 +8088,7 @@ hr,
   color: #d6d6d6;
   border: 1px solid #736953a6;
   box-shadow: 0px 0px 10px inset black;
-  background: #6b4500;
+  background: #00486b;
   height: auto;
 }
 
@@ -8415,7 +8110,7 @@ hr,
   border-image-width: 4px;
   border-image-outset: 0px;
   box-shadow: none;
-  background: url(../ui/sidebar_button-background.webp) repeat;
+  background: url(../ui/sidebar_button-background_red.webp) repeat;
   background-origin: padding-box;
 
   font-family: var(--major-button-font-family);
@@ -8430,7 +8125,7 @@ hr,
   border-image: url(../ui/footer-button.webp) 10 repeat;
   border-image-width: 4px;
   border-image-outset: 0px;
-  background: url(../ui/sidebar_button-background.webp) repeat;
+  background: url(../ui/sidebar_button-background_red.webp) repeat;
   background-origin: padding-box;
   color: var(--major-button-color);
   cursor: var(--application-cursor-pointer);
@@ -8451,15 +8146,14 @@ hr,
   font-weight: var(--actor-input-font-weight);
   color: #d6d6d6;
   line-height: normal;
-  border: 3px double #790000;
-  background: #563000de;
+  border: 3px double #009dce;
+  background: #220048d9;
 }
 .forien-quest-preview nav .item:hover{
-    box-shadow: 0 0 8px #c70000 !important;
-	cursor: var(--application-cursor-pointer);
+    box-shadow: 0 0 8px #00c7ff !important;
   }
 .forien-quest-preview nav .item.active{
-    background: #7b5c00d9 !important; 
+    background: #016075d9 !important; 
     color: #d6d6d6 !important;
   }
 
@@ -8470,7 +8164,7 @@ hr,
 .calendar-form-container #calendar-form-minute-input,
 .calendar-form-container #calendar-form-second-input,
   .calendar-form-container #calendar-form-hour-input{
-  background-color: #6b4500 !important;
+  background-color: #00486b !important;
   border: 1px solid #736953a6;
   border-radius: 0px
 }
@@ -8506,7 +8200,7 @@ hr,
 }
 
 #forien-quest-log .quest-log.bookmarks nav .item{
-  background: url(../ui/sidebar_button-background.webp) repeat !important;
+  background: url(../ui/sidebar_button-background_red.webp) repeat !important;
 }
 
 .forien-quest-preview .add-abstract,
@@ -8515,8 +8209,8 @@ hr,
   font-size: var(--actor-input-font-size);
   font-weight: var(--actor-input-font-weight);
   color: #d6d6d6 !important;
-  border: 3px double #790000 !important;
-  background: #563000de !important;
+  border: 3px double #009dce !important;
+  background: #220048d9 !important;
 }
 
 /*div#destiny-tracker {
@@ -8582,7 +8276,7 @@ hr,
 	/* font-family: var(--major-button-font-family), sans-serif !important; */
 	/* font-size: 40px !important; */
     /* padding: 25px 0 12px 0; */
-	/* text-shadow: 1px 1px 5px #562300; */
+	/* text-shadow: 2px 2px 0px black; */
 /* } */
 
 /* .swffg-destiny .destiny-points span{ */
@@ -8616,7 +8310,6 @@ hr,
     /* pointer-events: auto; */
     /* height: 100px; */
 /* } */
-
 #destiny-tracker .window-content form{
   background: none;
 }
@@ -8674,57 +8367,6 @@ img {
 }
 
 /* ==================== XIV. STAR WARS FFG SPECIFIC ==================== */
-
-.starwarsffg .block-background {
-	background-color: #efe8e3;
-}
-
-.starwarsffg .skillsGrid .skillTypeGrid.skillColumnGrid {
-    border: 1px solid #66141a;
-    background: rgba(255, 255, 240, 0.65);
-}
-
-.starwarsffg .skill-name {
-    font-size: var(--major-button-font-size) !important;
-}
-
-.starwarsffg .skillsGrid .skillTable .skillsHeader div {
-    font-size: var(--major-button-font-size) !important;
-}
-.starwarsffg.sheet.actor.v2 nav.sheet-tabs {
-    display: grid;
-    height: fit-content !important;
-    align-content: space-around;
-    padding: 0;
-    margin: 0;
-}
-
-.starwarsffg.sheet nav.sheet-tabs {
-    display: flex;
-	height : 135px !important;
-}
-
-.sheet nav.sheet-tabs > [data-tab] i {
-    margin-right: 2px;
-    margin-top: 0px;
-}
-
-.starwarsffg.sheet .sheet-body {
-    margin: 0px 9px 9px 7px !important;
-    background: rgb(172 165 154 / 50%) !important;
-    border-top: 3px double #66141a !important;
-    border-radius: 14px !important;
-    border-bottom: 3px double #66141a;
-}
-
-/*.starwarsffg.sheet nav.sheet-tabs {
-
-    padding-left: 9px;
-    margin-right: -7px !important;
-    height: 21px !important;
-	display: flex;
-}*/
-
 .starwarsffg .vehicle .grid-3col {
     /* grid-column: span 3/ span 3; */
     /* grid-template-columns: repeat(3, minmax(0, 1fr)); */
@@ -8734,13 +8376,12 @@ img {
     margin-left: 50px;
 }
 
-.starwarsffg.sheet.actor .character .header-fields .profile-img{
-	display:block;
+.starwarsffg .skill-name {
+    font-size: var(--major-button-font-size) !important;
 }
 
-.starwarsffg.sheet.actor .character .header-fields .profile-block{
-	max-width: 150px;
-    min-width: 125px;
+.starwarsffg .skillsGrid .skillTable .skillsHeader div {
+    font-size: var(--major-button-font-size) !important;
 }
 
 .starwarsffg .character .characteristics .characteristic-item {
@@ -8755,46 +8396,117 @@ img {
 	background-color: #ffffff00;
 }
 
-.starwarsffg .item-sheet-species .characteristic {
-    background: #eee8d9;
-}
-
-.starwarsffg.sheet.actor .characteristic-item .characteristic {
-    background: #eee8d9;
-}
+/*.starwarsffg.sheet nav.sheet-tabs {
+    height: 21px !important;
+	display: flex;
+}*/
 
 .starwarsffg.sheet.actor .character .characteristic-item .characteristic-label {
     background-color: #ffffff00;
-}
-
-.starwarsffg.sheet.actor .vehicle .header-fields .profile-block .profile-img {
-    width: auto;
-    display: block;
-    margin: auto;
 }
 
 .starwarsffg.sheet.actor .vehicle .characteristic-item .characteristic-label {
     background-color: #ffffff00;
 	margin-top: 10px;
 }
-.starwarsffg .minion .profile-block {
-    min-height: 130px;
-	min-width:  130px;
+
+.starwarsffg.sheet.actor .character .header-fields .profile-block {
     display: block;
-}
-.starwarsffg .minion .profile-img {
-    display: block;
-}
-.starwarsffg .minion .minion-stats {
-    margin: 0 0 10px 20px;
+    min-width: 120px;
 }
 
-.starwarsffg .header-fields .row div {
-    font-size: inherit !important;
-    color: #512326 !important;
+.starwarsffg .item-sheet-species .characteristic {
+    background: #eee8d9;
 }
 
 /*--character-sheet-name-auberesh*/
+.starwarsffg.sheet.actor .character .header-fields .profile-block .auberesh-name {
+	font-family: var(--character-sheet-name-auberesh);
+    text-shadow: 0px 1px 10px #ffffff;
+    color: #ffffff;
+    text-align: center;
+    font-size: auto;
+    position: absolute;
+    width: 125px;
+    z-index: 40;
+    /* bottom: 70px; */
+	top:108px;
+    /* background: url(../ui/frames/auberesh-name-background.webp) no-repeat; */
+    /* background-size: 100% 100%; */
+    padding-top: 2px;
+	--notchSize: 6px;
+	-webkit-clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
+    clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
+	background-color: #771113;
+	min-width:130px;
+	max-height:36px;
+    opacity : 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s, opacity 0.8s;
+}
+
+.starwarsffg.sheet.actor .character .header-fields .profile-block:hover .auberesh-name {
+    opacity: 0.75;
+    transform: translateX(0);
+}
+
+.starwarsffg.sheet.actor .character .header-fields .profile-block .auberesh-name:hover {
+    opacity: 0.75;
+    transform: translateX(0);
+}
+
+.starwarsffg.sheet.actor .vehicle .header-fields .profile-block:hover .auberesh-name  {
+  opacity: 0.75;
+  transform: translateX(0);
+}
+
+.starwarsffg.sheet.actor .vehicle .header-fields .profile-block .auberesh-name:hover  {
+  opacity: 0.75;
+  transform: translateX(0);
+}
+
+.starwarsffg.sheet.actor .vehicle .header-fields .profile-block .profile-img {
+	-o-object-fit: contain;
+    object-fit: contain;
+	/* width: auto; */
+    display: block;
+}
+.starwarsffg.sheet.actor .vehicle .header-fields .profile-block .auberesh-name {
+	font-family: var(--character-sheet-name-auberesh);
+    text-shadow: 0px 1px 10px #ffffff;
+    color: #ffffff;
+    text-align: center;
+    font-size: x-large;
+    position: absolute;
+    --rightNotchSize: 10px;
+    width: calc(100% - var(--rightNotchSize));
+    z-index: 40;
+    bottom: 5px;
+    /* background: url(../ui/frames/auberesh-name-background.webp) no-repeat; */
+    /* background-size: 100% 100%; */
+    padding-top: 2px;
+	--notchSize: 8px;
+	-webkit-clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
+    clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
+	background-color: #00304f;
+	min-width: 95%;
+    max-height: 59px;
+    /* width: 220px; */
+    left: 2%;
+    opacity : 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s, opacity 0.8s;
+}
+
+.starwarsffg.sheet.actor .minion .header-fields .profile-block:hover .auberesh-name {
+    opacity: 0.75;
+    transform: translateX(0);
+}
+.starwarsffg.sheet.actor .minion .header-fields .profile-block .auberesh-name:hover {
+    opacity: 0.75;
+    transform: translateX(0);    
+}
+
 .starwarsffg.sheet.actor .minion .header-fields .profile-block .auberesh-name {
 	font-family: var(--character-sheet-name-auberesh);
     /* text-shadow: 0px 1px 10px #ffffff; */
@@ -8817,106 +8529,10 @@ img {
     transform: translateX(-100%);
     transition: transform 0.3s, opacity 0.8s;
 }
-
-.starwarsffg.sheet.actor .character .header-fields .profile-block .auberesh-name {
-	font-family: var(--character-sheet-name-auberesh);
-    text-shadow: 0px 1px 10px #ffffff;
-    color: #ffffff;
-    text-align: center;
-    font-size: auto;
-    position: absolute;
-    width: 125px;
-    z-index: 40;
-    /* bottom: 70px; */
-	top:108px;
-    padding-top: 2px;
-	--notchSize: 0.25rem;
-	-webkit-clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
-    clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
-	background-color: #771113;
-	max-height: 36px;
-    opacity : 0;
-    transform: translateX(-100%);
-    transition: transform 0.3s, opacity 0.8s;
-}
-
-.starwarsffg.sheet.actor .vehicle .header-fields .profile-block .auberesh-name {
-	font-family: var(--character-sheet-name-auberesh);
-    text-shadow: 0px 1px 10px #ffffff;
-    color: #ffffff;
-    text-align: center;
-    font-size: x-large;
-    position: absolute;
-    --rightNotchSize: 10px;
-    width: calc(100% - var(--rightNotchSize));
-    z-index: 40;
-    bottom: 5px;
-    /* background: url(../ui/frames/auberesh-name-background.webp) no-repeat; */
-    /* background-size: 100% 100%; */
-    padding-top: 2px;
-	--notchSize: 0.25rem;
-	-webkit-clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
-    clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
-	background-color: #00304f;
-    opacity : 0;
-    transform: translateX(-100%);
-    transition: transform 0.3s, opacity 0.8s;
-}
-
-.starwarsffg.sheet.actor .character .header-fields .profile-block:hover .auberesh-name {
-    opacity: 0.75;
-    transform: translateX(0);
-}
-.starwarsffg.sheet.actor .character .header-fields .profile-block .auberesh-name:hover {
-    opacity: 0.75;
-    transform: translateX(0);
-}
-.starwarsffg.sheet.actor .vehicle .header-fields .profile-block:hover .auberesh-name  {
-  opacity: 0.75;
-  transform: translateX(0);
-}
-.starwarsffg.sheet.actor .vehicle .header-fields .profile-block .auberesh-name:hover  {
-  opacity: 0.75;
-  transform: translateX(0);
-}
-
-.starwarsffg.sheet.actor .minion .header-fields .profile-block:hover .auberesh-name {
-    opacity: 0.75;
-    transform: translateX(0);
-}
-.starwarsffg.sheet.actor .minion .header-fields .profile-block .auberesh-name:hover {
-    opacity: 0.75;
-    transform: translateX(0);    
-}
-.starwarsffg .item-display {
-    border: 2px solid #782e22 !important;
-    background: rgb(102 20 26 / 20%) !important;
-    border-radius: 10px;
-}
-
-.destiny-flip .destiny-left {
-    background: rgb(102 20 26 / 30%);
-    padding: 4px 5px 5px 14px;
-    color: #66141a;
-    text-shadow: 0px 1px 8px white;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.destiny-flip .destiny-title {
-    border: 2px solid #782e22;
-    background: rgb(102 20 26 / 50%);
-    border-radius: 5px;
-    padding: 2px;
-    color: whitesmoke;
-}
-
 .starwarsffg .item-sheet-species .characteristics .characteristic-item .characteristic-label {
     position: relative;
     background-color: #ffffff00 !important;
-    /* top: 15px; */
-	/* bottom:2px; */
-	padding: 12px 0px 0px 0px;
+    padding: 12px 0px 0px 0px;
 }
 
 .starwarsffg .characteristics .characteristic-item {
@@ -8933,32 +8549,6 @@ img {
     font-family: 'DistantGalaxy';
 }
 
-.starwarsffg .item-sheet-itemattachment .characteristic-item, .starwarsffg .item-sheet-itemattachment .block-background {
-    background-color: #027b7b;
-	color: whitesmoke;
-	--notchSize:8px;
-    -webkit-clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
-    clip-path: polygon(0% var(--notchSize), var(--notchSize) 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize)));
-}
-.starwarsffg .item-sheet-itemattachment .attribute .block-value.block-single input {
-    color: whitesmoke;
-}
-
-.starwarsffg .item-sheet-itemattachment .characteristic {
-    background: rgb(200 255 255);
-}
-
-/* @TODO CVB */
-.skill-label.rollable.roll-button.starwarsffg.item-rollable:hover {
-	background-image: url(../ui/buttons/d10.webp) !important;
-}
-.starwarsffg .item-rollable.rollable:hover {
-    background-image: url(../ui/buttons/d10.webp) !important;
-}
-/*.starwarsffg .item-sheet-itemattachment .characteristic-item, .starwarsffg .item-sheet-itemattachment {
-    background-color: #bffebf;
-}*/
-
 .journal-sheet form input[name="name"] {
 	font-family: 'DistantGalaxy' !important;
 }
@@ -8966,8 +8556,10 @@ img {
 .starwarsffg.sheet.item.v2 .tabs .item,
 .starwarsffg.sheet.actor.v2 .tabs .item,
 .starwarsffg.v2 .tabs .item {
-  background: url(../ui/controls-background36x36.webp) no-repeat !important;
-  background-size: contain !important;
+  background: url(../ui/controls-background36x36.webp) !important;
+  margin: 0px;
+  width: 36px;
+  height: 36px;
 }
 
 .starwarsffg.sheet.item.v2 .tabs .item.active,
@@ -8975,27 +8567,24 @@ img {
 .starwarsffg.v2 .tabs .item.active {
   text-decoration: none;
   text-shadow: none;
-  background: url(../ui/controls-active-background36x36.webp) no-repeat !important;
+  background: url(../ui/controls-active-background36x36.webp) !important;
   margin-right: 0px;
-  flex:0 0 2.5rem;
-  background-size: contain !important;
 }
 
 .starwarsffg.sheet.actor.v2 .tabs .item {
   line-height: normal;
-  color:#66141a;
-  margin: 0px;
-  text-shadow: 0 0 black;
-  height: 35px;
-  margin-left: 5px;
-  padding: 10px 2px 0px 0px;
+  color:#fff;
+  font-size: 16px;
+  padding: 10px 0 0 3px;
 }
 
 .starwarsffg.sheet.actor.v2 .tabs .item.active {
   flex: inherit;
   height:36px;
-  color:red ;
-  margin-left: 5px;
+  width :36px;
+  color:cyan ;
+  font-size: 16px;
+  padding: 10px 0 0 3px;
 }
 
 .starwarsffg.sheet select:hover{
@@ -9008,37 +8597,21 @@ img {
 
 .starwarsffg.sheet.item.v2 .tabs .item {
   line-height: normal;
-  color: #66141a;
+  color: white;
 }
 
 .starwarsffg.sheet.item.v2 .tabs .item.active {
-  color: #6d0000;
-  text-shadow: 1px 1px 5px red;
+  color: #00e7ff;
 }
 
 .starwarsffg form {
   overflow: hidden;
-  background: #cab4a7 url(../ui/frames/parchment-texture.webp) no-repeat;
-  background-position-x: -90px;
-  background-position-y: -120px;
-  font-weight: bold;
-}
-
-.starwarsffg .dice-pool-dialog table {
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 24px;
-    border: 2px solid #66141a;
-    display: table-cell;
+  background: #6d9badfa url(../ui/frames/parchment-texture.webp) round; 
 }
 
 .starwarsffg.roll-builder-dialog form {
   overflow: scroll;
-  background: #d0beb0e6 url(../ui/frames/parchment-texture.webp) round;
-  padding: 10px;
-  margin: 0;
-  font-size:20px;
+  background: #6d9badfa url(../ui/frames/parchment-texture.webp) round; 
 }
 .starwarsffg .vehicle .injuries{
 	/* height:150px; */
@@ -9049,6 +8622,28 @@ img {
 	/* bottom:5px; */
 }
 
+.starwarsffg .characteristic-item .characteristic {
+    background: #f9f1df;
+}
+
+.starwarsffg.sheet.actor .characteristic-item .characteristic {
+    background: #f9f1df;
+}
+
+.starwarsffg.sheet.actor .vehicle .characteristic-item .characteristic {
+    background: whitesmoke;
+}
+
+.starwarsffg.sheet.actor.v2 nav.sheet-tabs {
+    display: grid;
+    height: fit-content !important;
+    align-content: space-around;
+}
+
+.starwarsffg.sheet nav.sheet-tabs {
+    display: flex;
+	height : 45px !important;
+}
 /* .starwarsffg.sheet.actor .character .biography-values:hover{ */
 	/* height:185px; */
 	/* position: relative; */
@@ -9070,41 +8665,38 @@ img {
 }
 
  .roll-builder-dialog .window-content button { 
-	margin: 3px 5px 6px 5px !important;
-    background: url(../ui/sidebar_button-background.webp) repeat;
-    font-family: 'DistantGalaxy';
-    font-size: 33px;
-    font-weight: 500;
-    text-shadow: 2px 2px 9px #f3000063;
-    color: #66141a;
-    border-radius: 10px;
-    border: 3px solid #66141a;
+	margin: 0px 5px 6px 5px !important; 
+	border-image: url(../ui/footer-button.webp) 10 repeat; 
+	background: url(../ui/sidebar_button-background_red.webp) repeat;
+	font-family: KuiperBelt;
+	font-size: 20px;
+	font-weight: 500;
+	text-shadow: 0px 0px 1px #00000063;
 }  
  
  .starwarsffg .dice-pool-dialog button {
 	margin: 0px 5px 6px 5px !important;
-    padding: 2px 0px 0px 0px;
-    height: 34px;
-    border: 3px solid #66141a;
-    /* border-image: url(../ui/footer-button.webp) 10 repeat; */
-    border-image-width: 4px;
-    border-image-outset: 0px;
-    box-shadow: 4px 4px 1px #00000085;
-    background: url(../ui/sidebar_button-background.webp) repeat;
-    background-origin: padding-box;
-    color: #66141a;
-    font-family: KuiperBelt;
-    font-size: 15px !important;
-    font-weight: bold;
-    text-shadow: 0px 0px 0px #00000063;
-    border-radius: 10px;
+	padding: 2px 0px 0px 0px;
+	height: 34px;
+	border: 1px solid black;
+	border-image: url(../ui/footer-button.webp) 10 repeat;
+	border-image-width: 4px;
+	border-image-outset: 0px;
+	box-shadow: 4px 4px 1px #00000085;
+	background: url(../ui/sidebar_button-background_red.webp) repeat;
+	background-origin: padding-box;
+	color: #dadada;
+	font-family: KuiperBelt;
+	font-size: 20px;
+	font-weight: 500;
+	text-shadow: 0px 0px 1px #00000063;
 	
 }
 
 .starwarsffg.v2 .tabs {
 	position: absolute !important;
 	width: 40px !important;
-	right: -47px !important;
+	right: -42px !important;
 	top: 60px !important;
 	height: auto !important;
 	
@@ -9127,13 +8719,13 @@ img {
 }
 
 .starwarsffg.v2 .tabs .item {
-  line-height: 35px;
-  font-size: 14pt;
-  margin: 8px 0px 1px 5px;
-  height: 40px;
-  width: 40px;
-  padding-top: 9px;
-  padding-left: 0px;
+    line-height: 35px;
+    font-size: 13pt;
+    margin: 6px 0px 1px 5px;
+    height: 36px;
+    width: 36px;
+    padding-top: 9px;
+    padding-left: 4px;
 }
 
 .starwarsffg.v2 .tabs .item.active {
@@ -9172,7 +8764,6 @@ img {
 
 .starwarsffg.sheet.actor.v2 .minion .profile-block {
   margin-right: 8px;
-  margin-top: 8px;
 }
 
 .starwarsffg.sheet.item.v2 .item-sheet-vehicle-weapon .container.flex-group-center {
@@ -9208,7 +8799,7 @@ img {
 
 .pure-g [class*=pure-u] {
     font-family: var(--major-button-font-family), sans-serif !important;
-	font-size : var(--actor-competence-font-size) !important;
+	font-size : var(--actor-competence-font-size);
 }
 
 .gm-screen-app.gm-screen-drawer.expanded .gm-screen-actions button {
@@ -9309,15 +8900,24 @@ img {
   background: transparent;
 }
 
+#ognpc-importer .window-content {
+  background: transparent;
+}
+
 div#ogc-importer {
+  width:auto !important;
+  height:auto !important;
+}
+
+div#ognpc-importer {
   width:auto !important;
   height:auto !important;
 }
 
 
 #ogc-importer .window-content p{
-  color:black;
-  text-shadow: 0 1px 1px #7a7971;
+  color:white;
+  text-shadow: 0 1px 1px black;
   padding: 2px 5px 0px 5px;
 }
 
@@ -9330,28 +8930,18 @@ div#ogc-importer {
   border-image-width: 4px;
   border-image-outset: 0px;
   box-shadow: 4px 4px 1px #00000085;
-  background: url(../ui/sidebar_button-background.webp) repeat;
+  background: url(../ui/sidebar_button-background_red.webp) repeat;
   background-origin: padding-box;
-  color: #3c2100;
+  color: #dadada;
   font-family: KuiperBelt;
   font-size: 20px;
   font-weight: 500;
   text-shadow: 0px 0px 1px #00000063;
 }
 
-#ognpc-importer .window-content {
-  background: transparent;
-}
-
-div#ognpc-importer {
-  width:auto !important;
-  height:auto !important;
-}
-
-
 #ognpc-importer .window-content p{
-  color:black;
-  text-shadow: 0 1px 1px #7a7971;
+  color:white;
+  text-shadow: 0 1px 1px black;
   padding: 2px 5px 0px 5px;
 }
 
@@ -9364,9 +8954,9 @@ div#ognpc-importer {
   border-image-width: 4px;
   border-image-outset: 0px;
   box-shadow: 4px 4px 1px #00000085;
-  background: url(../ui/sidebar_button-background.webp) repeat;
+  background: url(../ui/sidebar_button-background_red.webp) repeat;
   background-origin: padding-box;
-  color: #3c2100;
+  color: #dadada;
   font-family: KuiperBelt;
   font-size: 20px;
   font-weight: 500;
@@ -9428,7 +9018,6 @@ div#transition-form.app.window-app.sheet.transition-form{
 .token-tooltip-alt-tooltip-container.default .token-tooltip-alt-tooltip-item.title {
   border-bottom: 3px solid #920009 !important;
 }
-
 /* ##########  SWADE SYSTEM SPECIFICS ############# */
 
 .swade.sheet.item .window-content {
