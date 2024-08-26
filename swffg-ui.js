@@ -39,6 +39,26 @@ const themes = {
     }
 };
 
+const fonts = {
+	[IndicatorFonts.EARTHORBITER]: 'EarthOrbiter',
+	[IndicatorFonts.KUIPERBELT]: 'KuiperBelt',
+	[IndicatorFonts.MONS]: 'Mons',
+	[IndicatorFonts.DISTANTGALAXY]: 'DistantGalaxy',
+	[IndicatorFonts.SIGNIKA]: 'Signika',
+	[IndicatorFonts.ROBOTO]: 'Roboto',
+	[IndicatorFonts.ERAS]: 'Eras'
+};
+
+const applyFontSetting = (state) => {
+    const fontFamily = fonts[state];
+
+    if (fontFamily) {
+        document.documentElement.style.setProperty('--major-button-font-family', fontFamily);
+    } else {
+        console.error(`Something went wrong: ${state} does not exist in font choices`);
+    }
+};
+
 const applyTheme = (state) => {
     const head = document.head;
     const stateEnableCursor = Number(game.settings.get("swffgUI-cc", "enable-cursor"));
@@ -193,34 +213,8 @@ class swffgUIModule {
 				6: "SWFFG.options.indicator.fonts.6",
 			},
 			onChange: (value) => {
-				let state = Number(value);
-
-				switch (state){
-					case IndicatorFonts.EARTHORBITER:
-					  document.documentElement.style.setProperty('--major-button-font-family','EarthOrbiter');	
-					  break;
-					case IndicatorFonts.KUIPERBELT:
-					  document.documentElement.style.setProperty('--major-button-font-family','KuiperBelt');	
-					  break;
-					case IndicatorFonts.MONS:
-					  document.documentElement.style.setProperty('--major-button-font-family','Mons');	
-					  break;
-					case IndicatorFonts.DISTANTGALAXY:
-					  document.documentElement.style.setProperty('--major-button-font-family','DistantGalaxy');	
-					  break;
-					case IndicatorFonts.SIGNIKA:
-					  document.documentElement.style.setProperty('--major-button-font-family','Signika');	
-					  break;
-					case IndicatorFonts.ROBOTO:
-					  document.documentElement.style.setProperty('--major-button-font-family','Roboto');	
-					  break;
-					case IndicatorFonts.ERAS:
-					  document.documentElement.style.setProperty('--major-button-font-family','Eras');	
-					  break;
-					default:
-					  console.log('Something went wrong [$value] does not exists in fonts choices');
-				}
-			}
+                applyFontSetting(Number(value));
+            }
         });
 	
 		game.settings.register("swffgUI-cc", "windowBorderSize", {
@@ -397,31 +391,7 @@ class swffgUIModule {
         applyTheme(Number(state));		
 		
 		state = Number(game.settings.get("swffgUI-cc", "fontSettings"));
-		switch (state){
-			case IndicatorFonts.EARTHORBITER:
-			  document.documentElement.style.setProperty('--major-button-font-family','EarthOrbiter');	
-			  break;
-			case IndicatorFonts.KUIPERBELT:
-			  document.documentElement.style.setProperty('--major-button-font-family','KuiperBelt');	
-			  break;
-			case IndicatorFonts.MONS:
-			  document.documentElement.style.setProperty('--major-button-font-family','Mons');	
-			  break;
-			case IndicatorFonts.DISTANTGALAXY:
-			  document.documentElement.style.setProperty('--major-button-font-family','DistantGalaxy');	
-			  break;
-			case IndicatorFonts.SIGNIKA:
-			  document.documentElement.style.setProperty('--major-button-font-family','Signika');	
-			  break;
-			case IndicatorFonts.ROBOTO:
-			  document.documentElement.style.setProperty('--major-button-font-family','Roboto');	
-			  break;
-			case IndicatorFonts.ERAS:
-		      document.documentElement.style.setProperty('--major-button-font-family','Eras');	
-			  break;
-			default:
-			  console.log('Something went wrong [$value] does not exists in fonts choices');
-		}
+		applyFontSetting(Number(state));
 		
 		let windowBorderSize = game.settings.get("swffgUI-cc", "windowBorderSize");
 		
@@ -545,7 +515,6 @@ Hooks.on("renderSceneDirectory", (app, html, data) => {
 		  `<h3 class="auberesh">Scenes Directory</h3>`
 		);
 });
-
 
 Hooks.on("renderJournalDirectory", (app, html, data) => {
 	this.section = document.createElement("section");
