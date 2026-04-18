@@ -1,7 +1,7 @@
 {
   "title": "Star Wars - User Interface Creative Common",
-  "description": "Starwars unofficial design-2.6.3",
-  "version": "2.6.3",
+  "description": "Starwars unofficial design-3.0.0",
+  "version": "3.0.0",
   "authors": [
     {
       "name": "Prolice",
@@ -10,6 +10,7 @@
     }
   ],
   "styles": [
+    "css/swffg-shared.css",
     "swffg-default.css"
   ],
   "scripts": [
@@ -44,12 +45,20 @@
       {
         "id": "starwarsffg",
         "type": "system",
-        "compatibility": {}
+        "compatibility": {
+          "minimum": "1.910",
+          "verified": "2.0.3"
+        }
       }
     ]
   },
   "compatibility": {
-    "minimum": "10",
-    "verified": "12.331"
+    "minimum": "12",
+    "verified": "13",
+    "maximum": "13"
+  },
+  "hotReload": {
+    "extensions": ["css", "json"],
+    "paths": ["css/", "lang/", "darkside/css/", "rebel/css/", "EoE/css/", "blackEmpire/css/"]
   }
 }

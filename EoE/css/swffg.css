@@ -1,4 +1,11 @@
 /******************************************************************/
+/* EoE/css/swffg.css — EDGE OF THE EMPIRE THEME                  */
+/******************************************************************/
+/* ARCHITECTURE NOTE (v2.7+): css/swffg-shared.css is always     */
+/* loaded and provides shared rules. This file should only have   */
+/* theme-specific overrides. Shared blocks below are legacy kept  */
+/* for safety; marked [SHARED] for future removal.                */
+/******************************************************************/
 /******************************************************************/
 /*=============== TABLE OF CONTENTS ==============================*/
 /******************************************************************/
@@ -29,480 +36,9 @@
   margin: 0px 0px;
 }
 
-/******************************************************************/
-/*=============== I. LOCAL FONTS =================================*/
-/******************************************************************/
-
-  /* ==================== (A) STAR JEDI ==================== */
-
-
-@font-face {
-  font-family: "Auberesh";
-  src: url("../../fonts/Aurebesh Bold.otf")format("opentype");
-}
-
-@font-face {
-  font-family: "Mons";
-  src: url("../../fonts/MonsOlympiaBold-dq9x.ttf")format("truetype");
-}
-
-@font-face {
-  font-family: "EarthOrbiter";
-  src: url("../../fonts/EarthOrbiterBold-vzD9.otf")format("opentype");
-}
-
-@font-face {
-  font-family: "KuiperBelt";
-  src: url("../../fonts/KuiperBelt-Px0g.ttf")format("truetype");
-}
-
-
-@font-face {
-  font-family: "EotESymbol";
-  src: url("../../fonts/EotESymbol-Regular-PLUS.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "SWRPG-Symbol-Regular";
-  src: url("../../fonts/swrpg_symbol-regular_v1-webfont.woff2") format("woff2"), url("../../fonts/swrpg_symbol-regular_v1-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Genesys";
-  src: url("../../fonts/genesysglyphsanddice.woff2") format("woff2"), url("../../fonts/genesysglyphsanddice.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "GenesysSymbol";
-  src: url("../../fonts/Genesys.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "DistantGalaxy";
-  src: url("../../fonts/SfDistantGalaxy-0l3d.ttf") format("truetype");
-}
-
-@font-face {
-	font-family: "Eras";
-    src: url("../../fonts/ERASMD.TTF") format("truetype");
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "Eras";
-    src: url("../../fonts/ERASBD.TTF") format("truetype");
-	font-weight: Bold;
-	font-style: normal;
-}
-
-/******************************************************************/
-/*=============== FFG Enhancement MOD ============================*/
-/******************************************************************/
-
-@font-face {
-    font-family: Temporarium;
-    src: url("/modules/ffg-star-wars-enhancements/fonts/Temporarium.otf");
-}
-@font-face {
-    font-family: AurekBesh;
-    src: url("/modules/ffg-star-wars-enhancements/fonts/Aurek-Besh.woff2");
-}
-@font-face {
-    font-family: AnakinMono;
-    src: url("/modules/ffg-star-wars-enhancements/fonts/anakinmono.ttf");
-}
-
-@function tint($color, $percentage) {
-  @return mix(white, $color, $percentage);
-}
-
-.ffg-star-wars-enhancements-opening-crawl .titles > div .episode {
-    margin-bottom: -2em;
-    font-size: 150%;
-}
-
-.ffg-star-wars-enhancements-opening-crawl .titles > div .text p {
-    font-size: 100%;
-}
-
-.swdatapad {
-    background-image: url(/modules/ffg-star-wars-enhancements/artwork/datapad-template-700w.png) !important;
-    background-repeat: no-repeat !important;
-    width: 700px;
-    min-height: 1000px;
-    display: block;
-    padding: 75px 50px !important;
-    color: #d0faff !important;
-    font-size: 18px;
-    font-family: Temporarium !important;
-}
-
-.swdatapad table {
-    font-size: 12px
-}
-.swdatapad p {
-    color: #d0faff !important;
-    font-size: 18px;
-    font-family: Temporarium !important;
-}
-
-.swdatapad-wanted .credits {
-    font-family: AurekBesh;
-}
-
-.swdatapad-wanted {
-    background-image: url(/modules/ffg-star-wars-enhancements/artwork/datapad-template-wanted-700w.png) !important;
-    background-repeat: no-repeat !important;
-    width: 700px;
-    min-height: 1000px;
-    display: block;
-    padding: 65px 65px !important;
-    color: #d0faff !important;
-    font-size: 18px;
-    font-family: Temporarium !important;
-    color: #02e3dd !important;
-}
-
-.swdatapad-wanted h1 {
-    font-family: AurekBesh !important;
-    width: 100%;
-    text-align: center !important;
-    margin-bottom: 0.5em !important;
-    padding-top: 0.25em;
-    padding-bottom: 0.25em;
-    border-bottom: 2px solid #02e3dd !important;
-    border-top: 2px solid #02e3dd !important;
-}
-
-.swdatapad-wanted>* {
-    color: transparent !important;
-    background-color: #02e3dd;
-    background-clip: text !important;
-    -webkit-background-clip: text !important;
-    background-image: repeating-linear-gradient( to bottom, #02e3dd, #02e3dd 2px, #01bbb7 2px, #01bbb7 4px ) !important;
-}
-
-.swdatapad-wanted h2 {
-	font-family: AnakinMono !important;
-    margin-bottom: 0.5em !important;
-    padding-bottom: 0.25em;
-    border-bottom: 2px solid #02e3dd !important;
-}
-
-.swdatapad-wanted h3 {
-    margin-right: 0.5em !important;
-    font-family: AnakinMono !important;
-    font-weight: bold !important;
-    font-size: 16px !important;
-}
-
-.swdatapad-wanted p {
-    font-size: 14px;
-    margin-bottom: 1em;
-}
-
-.swdatapad-wanted table {
-    font-size: 14px;
-    border-bottom: 2px solid #02e3dd;
-    border-top: 2px solid #02e3dd;
-}
-
-.swdatapad-wanted tr:first-child>* {
-    padding-top: 1em;
-}
-.swdatapad-wanted tr:last-child>* {
-    padding-bottom: 1em;
-}
-.swdatapad-wanted table tr:nth-child(2n) {
-    background-color: inherit;
-}
-.swdatapad-wanted table td, .swdatapad-wanted table th {
-    padding: 0.2em 0;
-    line-height: 1.5em;
-    text-align: left;
-    vertical-align: top;
-}
-
-/* Float images and tint them with the stripe effect */
-.swdatapad-wanted .image-float {
-    float: right;
-    border-left: solid 10px #000000;
-    filter: sepia(100%) saturate(300%) brightness(60%) hue-rotate(130deg);
-}
-.swdatapad-wanted .image-float:after {
-    content:'';
-    position:absolute;
-    left:0; top:0;
-    width:100%; height:100%;
-    display:inline-block;
-    background-image: repeating-linear-gradient(
-        to bottom,
-        rgba(2,227,221,0.25),
-        rgba(2,227,221,0.35) 2px,
-        rgba(1,187,183,0.55) 2px,
-        rgba(1,187,183,0.55) 4px
-    );
-}
-
-table.vendor_item {
-	display: table !important;
-}
-/******************************************************************/
-/******************************************************************/
-#logo {
-  content : url("../art/ui/logo-foundryVTswffg-ui100x42.webp");
-  width: 100px;
-  height: 42px;
-}
-
-#mce_10_ifr .tox .tox-tbtn svg {
-    display: block;
-    fill: #ffffff;
-}
-
-
- :root {
-  /* =================== 1. ACTOR SHEET FONT STYLES =========== */
-	--character-sheet-name-auberesh:Auberesh;
-	--application-auberesh-title: none;
-	--application-auberesh-sidebar-title: none;
-  
-    --window-header-title-font-family: DistantGalaxy;
-    --window-header-title-font-size: 16px;
-	--window-header-vehicle-font-size: xx-large;
-    --window-header-title-font-weight: normal;
-    --window-header-title-color: #f5f5f5;
-
-    --major-button-font-family: KuiperBelt;
-    --major-button-font-size: 20px;
-    --major-button-font-weight: normal;
-    --major-button-color: #66141a;
-
-    --tab-header-font-family: KuiperBelt;
-    --tab-header-font-size: 18px;
-    --tab-header-font-weight: 700;
-    --tab-header-color: #ffffff;
-    --tab-header-color-active: #ff1f1f;
-
-    --actor-input-font-family: KuiperBelt;
-    --actor-input-font-size: 16px;
-	--chatform-input-font-size: 16px;
-    --actor-input-font-weight: 500;
-    --actor-input-color: #000000;
-	
-    --actor-label-font-family: KuiperBelt;
-    --actor-label-font-size: 22px;
-    --actor-label-font-weight: 700;
-    --actor-label-color: #1400ffc4;
-    
-	--actor-competence-font-family: KuiperBelt;
-    --actor-competence-font-size: 16px;
-    --actor-competence-font-weight: 700;
-    --actor-competence-color: #1400ffc4;
-	
-  /* =================== 2. DEBUGGING HIGHLIGHTERS ============ */ 
-    --debug-background-color-red: #ff000054;
-    --debug-background-color-blue: #1d00ff54;
-    --debug-background-color-green: #54ff0054;
-
-    --debug-box-shadow-red: inset 0 0 2px red;
-    --debug-box-shadow-blue: inset 0 0 2px blue;
-    --debug-box-shadow-green: inset 0 0 2px green;
-	
-  /* =================== 3. WINDOW BORDER SIZE ================ */
-	--window-content-border-image-width: 12px;
-	--window-content-border-image-outset: 4px;
-	--window-header-margin: 0px 0px 8px 0px;
-	--window-border-image-slice: 13;
-
-  /* ================== 4. APPLICATION CURSOR ================= */
-    --application-cursor-pointer : pointer;
-  }
-
-/******************************************************************/
-/*=============== II. GENERAL USER INTERFACE =====================*/
-/******************************************************************/
-
-/* ==================== (A) AWESOME FONT ICON CHANGES ========= */
-  .fa-check-circle:before {
-    content: "\f058" !important; 
-  }
-  .fa-trash:before {
-    content: "\f2ed" !important;
-    position: relative !important;
-    left: 0px !important;
-  }
-  
- /* #client-settings .fa, */
- /* #client-settings  .fas { */
-#ui-left {
-    width: 250px;
-} 
-
- #client-settings .far {
-    font-family: "Font Awesome 5 Free";
-	color:whitesmoke !important;
-}
-
-#client-settings.app.window-app.form #config-tabs .settings-list div.form-group input[type="checkbox"] {
-    left: 2px !important;
-    cursor: var(--application-cursor-pointer) !important;
-    height: 23px;
-}
-
-#client-settings.app.window-app.form #config-tabs .tab[data-tab="modules"] .settings-list h2.module-header {
-    cursor: var(--application-cursor-pointer) !important;
-}
-
-#client-settings #config-tabs div.tab[data-tab="modules"] #searchField #clear {
-    border-radius: 8px !important; 
-
-}
-
-#client-settings #config-tabs div.tab[data-tab="modules"] #searchField #searchInput {
-    color:whitesmoke !important;
-}
-
-/* ==================== (B) BUTTON BEHAVIOR CHANGES =========== */
-  a[href] {
-    color: #da0000;
-    /* color: #ffa16a; */
-    font-size: 16px;
-    font-family: var(--major-button-font-family), serif;
-    text-shadow: 0px 0px 7px #ffffff;
-}
-  a:hover {
-    /* color: #480000; */
-	color:white;
-    text-shadow: 1px 1px 7px #b50000 !important;
-    font-family: var(--major-button-font-family), serif;
-    cursor: var(--application-cursor-pointer);
-    font-weight: bold;
-  }
-  
-  button:hover {
-    box-shadow: 0 0 5px #c70000 !important;
-	cursor: var(--application-cursor-pointer);
-	background: url(../ui/sidebar_button-background_red.webp) repeat !important;
-	color:white !important;
-  }
-  
-  button:hover i{
-	color:white !important; 
-  }
-  option {
-    background: #6b4500;
-  }
-  
-  #chat option {
-	 background: whitesmoke; 
-  }
-  input[type="text"]:focus, 
-  input[type="password"]:focus {
-    box-shadow: 0 0 5px #c70000 !important;
-    outline: none;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: unset;
-    background: rgb(102 20 26 / 26%);
-    border-top: 1px solid #7a7971;
-    border-bottom: 1px solid #7a7971;
-    margin: 0.5em 0;
-    border-radius: 10px;
-}
-
-table td, table th {
-    padding: 0.25em 0;
-    border: 0px;
-    align-content: center;
-    /*width: 20px;*/
-}
-tbody {
-    display: contents;
-    vertical-align: middle;
-}
-
-.tabs .item {
-    color: whitesmoke;
-}
-
-.window-app {
-  font-family: var(--major-button-font-family), sans-serif !important;
-  font-size: var(--major-button-font-size);
-}
-
-.window-app .window-content {
-  font-family: var(--major-button-font-family), sans-serif !important;
-  font-size: var(--major-button-font-size) !important;
-}
-
-.window-app .window-content .compendium{
-	background: #cab4a7 url(../ui/frames/parchment-texture.webp) no-repeat;
-    background-position-x: -110px;
-    background-position-y: -120px;
-}
-
-body.vtt.game.screen-door::before {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-    z-index: 999;
-    background-size: 100% 2px, 3px 100%;
-    pointer-events: none;
-  }
-  
-  body.vtt.game.flickering::after {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: rgba(18, 16, 16, 0.1);
-    opacity: 0;
-    z-index: 999;
-    pointer-events: none;
-    animation: flicker 0.5s infinite;
-  }
-  
-@keyframes scanline {
-    0% {
-      bottom: 100%;
-    }
-    80% {
-      bottom: 100%;
-    }
-    100% {
-      bottom: 0%;
-    }
-  }
-  
-.scanline{
-	
-    width: 100%;
-    height: 150px;
-    z-index: 999;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.2) 10%, rgba(0, 0, 0, 0.1) 100%);
-    opacity: 0.2;
-    position: absolute;
-    bottom: 100%;
-    animation: scanline 10s linear infinite;
-    pointer-events: none;
-
-}
+/* Fonts, animations, CRT effects, datapad compat, and grid fallbacks
+   are provided by css/swffg-shared.css (always loaded).              */
+/* (orphaned scanline background and keyframe fragment removed)        */
 
 #client-settings.app.window-app.form 
 #config-tabs .settings-list div.form-group input[type="checkbox"] {
@@ -688,121 +224,11 @@ h3.auberesh {
 li.folder > .folder-header h3 {
     margin: 0;
     line-height: 24px;
-	text-shadow: 2px 2px 2px red;
-	opacity:0.7;
-	color: rgba(253, 235, 105, 1);
-	cursor: var(--application-cursor-pointer);
 }
-  
-  .app.window-app .editor .editor-content blockquote {
-    margin: 0.5em 0 0.5em 5px;
-    padding: 0 0 0 10px;
-    border-left: 3px ridge #825d4b87;
-    font-style: italic;
-  }
-  .app.window-app .editor .editor-content div {
-    margin: 0.5em 0;
-    padding: 0px;
-    font-family: var( --actor-input-font-family);
-    color: var(--actor-input-color);
-    background: none;
-    border: none;
-  }
-  .app.window-app .editor .editor-content pre {
-    display: block;
-    font-family: monospace;
-    white-space: pre;
-    margin: 1em 0px;
-  }
-  .app.window-app .editor .editor-content section.secret {
-    padding: 0 5px;
-    background: rgba(53, 0, 121, 0.05);
-    border-top: 1px solid #666;
-    border-bottom: 1px solid #666;
-  } 
 
-  .app.sheet .editor-content {
-    padding:5px;
-	/* background: #d8cbc0 url(../ui/frames/parchment-texture.webp) no-repeat; */
-  }
-  
   .app.gm-notes.sheet .editor-content {
     padding:5px;
 	background: #d8cbc0;
-  }
-  
-  .tox .tox-editor-container {
-    background: #d8cbc0 ;
-	}
-  
-  .window-app.sheet.actor .window-content {
-  background: #d8cbc0 url(../ui/frames/parchment-texture.webp) no-repeat;
-}
-
-.grid,
-.grid-2col {
-  display: grid;
-  grid-column: span 2 / span 2;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.5rem;
-  margin: 0;
-  padding: 0;
-}
-
-.grid-3col {
-  grid-column: span 3 / span 3;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-4col {
-  grid-column: span 4 / span 4;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.grid-5col {
-  grid-column: span 5 / span 5;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
-.grid-6col {
-  grid-column: span 6 / span 6;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-}
-
-.grid-7col {
-  grid-column: span 7 / span 7;
-  grid-template-columns: repeat(7, minmax(0, 1fr));
-}
-
-.grid-8col {
-  grid-column: span 8 / span 8;
-  grid-template-columns: repeat(8, minmax(0, 1fr));
-}
-
-.grid-9col {
-  grid-column: span 9 / span 9;
-  grid-template-columns: repeat(9, minmax(0, 1fr));
-}
-
-.grid-10col {
-  grid-column: span 10 / span 10;
-  grid-template-columns: repeat(10, minmax(0, 1fr));
-}
-
-.grid-11col {
-  grid-column: span 11 / span 11;
-  grid-template-columns: repeat(11, minmax(0, 1fr));
-}
-
-.grid-12col {
-  grid-column: span 12 / span 12;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-}
-
-/* ==================== (D) APPLICATION BODY ================== */
-  body {
-    width: 100vw;
-    height: 100vh;
     margin: 0;;
     padding: 0px;
     overflow: hidden;
@@ -1038,66 +464,6 @@ input::placeholder, placeholder, *placeholder {
     color:#027b7b;
 	font-family:var(--window-header-title-font-family) !important;
 	font-size: var(--window-header-vehicle-font-size);
-	text-shadow: 1px 1px 1px #94f4fde0;
-   }
-  .app.window-app.form ::-webkit-scrollbar-thumb {
-    outline: none;
-    border-radius: 3px;
-    background: none;
-    /* background: url(../ui/scrollbar.webp) no-repeat; */
-    border-image: url(../ui/scrollbars/scrollbar-thumb.webp) 25 repeat;
-    border-image-width: 25px;
-    border-image-outset: 0px;
-    min-height: 40px;
-  }
-  .app.window-app.form ::-webkit-scrollbar-button {
-    background: #222978;
-    height: 25px;
-    border: none;
-  }
-  .app.window-app.form ::-webkit-scrollbar-button:start:decrement {
-    background: url(../ui/scrollbars/scrollbar-button-vertical-decrement.webp) no-repeat;
-    background-position: center;
-    box-shadow: none;
-    box-shadow: none; 
-  } 
-  .app.window-app.form ::-webkit-scrollbar-button:end:increment {
-    background: url(../ui/scrollbars/scrollbar-button-vertical-increment.webp) no-repeat;
-    background-position: center;
-    box-shadow: none;
-    box-shadow: none; 
-  }
-  .app.window-app.form ::-webkit-scrollbar-button:vertical:start:increment,
-  .app.window-app.form ::-webkit-scrollbar-button:vertical:end:decrement {
-      display: none;
-  }
-  .app.window-app.form ::-webkit-scrollbar-track {
-    background: url(../ui/scrollbars/scrollbar-track.webp) repeat-y;
-    background-position: center;
-    background-size: 9px 110px;
-    box-shadow: none;
-  }
-
-  .window-app.app.filepicker ::-webkit-scrollbar {
-    width: 10px;
-    box-shadow: inset 0 0 
-  }
-  .window-app.app.filepicker ::-webkit-scrollbar-thumb {
-    outline: none;
-    border-radius: 3px;
-    background: none;
-    /* background: url(../ui/scrollbar.webp) no-repeat;  */
-    border-image: url(../ui/scrollbars/sheet-dark-scrollbar-thumb.webp) 10 repeat;
-    border-image-width: 5px;
-    border-image-outset: 0px;
-  }
-  .window-app.app.filepicker ::-webkit-scrollbar-button {
-    background: #222978;
-    height: 23px;
-    border: none;
-  }
-  .window-app.app.filepicker ::-webkit-scrollbar-button:start:decrement {
-    background: url(../ui/scrollbars/sheet-dark-scrollbar-button-vertical-decrement.webp) no-repeat;
     box-shadow: none;
     height: 16px;
     background-position-y: 0px;
@@ -8725,16 +8091,7 @@ img {
 	display: flex;
 }*/
 
-.starwarsffg .vehicle .grid-3col {
-    /* grid-column: span 3/ span 3; */
-    /* grid-template-columns: repeat(3, minmax(0, 1fr)); */
-    grid-gap: 10px;
-    grid-column-gap: 25px;
-    margin-right: 50px;
-    margin-left: 50px;
-}
-
-.starwarsffg.sheet.actor .character .header-fields .profile-img{
+.starwarsffg .vehicle .starwarsffg.sheet.actor .character .header-fields .profile-img{
 	display:block;
 }
 
@@ -9033,16 +8390,7 @@ img {
     display: table-cell;
 }
 
-.starwarsffg.roll-builder-dialog form {
-  overflow: scroll;
-  background: #d0beb0e6 url(../ui/frames/parchment-texture.webp) round;
-  padding: 10px;
-  margin: 0;
-  font-size:20px;
-}
-.starwarsffg .vehicle .injuries{
-	/* height:150px; */
-	bottom:15px;
+.starwarsffg .vehicle .starwarsffg.sheet.actor .character .header-fields .profile-img{
 }
 .starwarsffg .vehicle .injuries .block-background {
 	height:auto;
@@ -9433,4 +8781,198 @@ div#transition-form.app.window-app.sheet.transition-form{
 
 .swade.sheet.item .window-content {
     background: url(../ui/frames/parchment-texture.webp) !important;
+}
+
+/******************************************************************/
+/* FOUNDRY v13 COMPATIBILITY                                      */
+/******************************************************************/
+
+/* A. ApplicationV2 window content background */
+.application .window-content {
+    background: url(../ui/parchment.webp) round;
+}
+
+/* B. Sidebar tab buttons (v13: nav > button[data-action="tab"]) */
+#sidebar nav button[data-action="tab"] {
+    display: inline-block;
+    flex: none;
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    padding: 0;
+    color: transparent !important;
+    border: none;
+    border-radius: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
+    cursor: var(--application-cursor-pointer);
+}
+
+/* v13 inactive tab button images */
+#sidebar nav button[data-tab="chat"]       { background-image: url(../ui/sidebar-button-chat.webp); }
+#sidebar nav button[data-tab="combat"]     { background-image: url(../ui/sidebar-button-combat.webp); }
+#sidebar nav button[data-tab="scenes"]     { background-image: url(../ui/sidebar-button-scenes.webp); }
+#sidebar nav button[data-tab="actors"]     { background-image: url(../ui/sidebar-button-actors.webp); }
+#sidebar nav button[data-tab="items"]      { background-image: url(../ui/sidebar-button-items.webp); }
+#sidebar nav button[data-tab="journal"]    { background-image: url(../ui/sidebar-button-journal.webp); }
+#sidebar nav button[data-tab="tables"]     { background-image: url(../ui/sidebar-button-tables.webp); }
+#sidebar nav button[data-tab="playlists"]  { background-image: url(../ui/sidebar-button-playlists.webp); }
+#sidebar nav button[data-tab="compendium"] { background-image: url(../ui/sidebar-button-compendium.webp); }
+#sidebar nav button[data-tab="settings"]   { background-image: url(../ui/sidebar-button-settings.webp); }
+#sidebar nav button[data-tab="cards"]      { background-image: url(../ui/sidebar-button-cards.webp); }
+
+/* v13 active tab images (aria-pressed="true") */
+#sidebar nav button[data-tab="chat"][aria-pressed="true"]       { background-image: url(../ui/sidebar-button-chat-active.webp); }
+#sidebar nav button[data-tab="combat"][aria-pressed="true"]     { background-image: url(../ui/sidebar-button-combat-active.webp); }
+#sidebar nav button[data-tab="scenes"][aria-pressed="true"]     { background-image: url(../ui/sidebar-button-scenes-active.webp); }
+#sidebar nav button[data-tab="actors"][aria-pressed="true"]     { background-image: url(../ui/sidebar-button-actors-active.webp); }
+#sidebar nav button[data-tab="items"][aria-pressed="true"]      { background-image: url(../ui/sidebar-button-items-active.webp); }
+#sidebar nav button[data-tab="journal"][aria-pressed="true"]    { background-image: url(../ui/sidebar-button-journal-active.webp); }
+#sidebar nav button[data-tab="tables"][aria-pressed="true"]     { background-image: url(../ui/sidebar-button-tables-active.webp); }
+#sidebar nav button[data-tab="playlists"][aria-pressed="true"]  { background-image: url(../ui/sidebar-button-playlists-active.webp); }
+#sidebar nav button[data-tab="compendium"][aria-pressed="true"] { background-image: url(../ui/sidebar-button-compendium-active.webp); }
+#sidebar nav button[data-tab="settings"][aria-pressed="true"]   { background-image: url(../ui/sidebar-button-settings-active.webp); }
+#sidebar nav button[data-tab="cards"][aria-pressed="true"]      { background-image: url(../ui/sidebar-button-cards-active.webp); }
+
+/* v13 sidebar collapse/expand button */
+#sidebar nav button[data-action="toggleState"] {
+    color: transparent !important;
+    background-image: url(../ui/sidebar-button-collapse.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
+    height: 30px;
+    width: 30px;
+    border: none;
+}
+
+/* C. Sidebar content panels (v13: #sidebar-content .tab) */
+#sidebar-content .tab {
+    flex: 1;
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+    padding: 0;
+    margin: 0;
+}
+#sidebar-content #chat #chat-log {
+    flex: 4;
+    overflow-y: auto;
+    list-style: none;
+    padding: 0;
+}
+#sidebar-content .tab .directory-header {
+    line-height: 32px;
+    text-align: center;
+    margin: 0;
+    border-bottom: none;
+}
+#sidebar-content .tab .directory-header .header-search input {
+    background: url(../ui/frames/parchment-texture.webp);
+    box-shadow: inset 0 0 10px #000000;
+    border-image: url(../ui/chat-controls-border.webp) 4 repeat;
+    border-image-width: 4px;
+    border-image-outset: 1px;
+    font-family: var(--actor-input-font-family);
+    font-weight: var(--actor-input-font-weight);
+    color: var(--actor-input-color);
+}
+#sidebar-content .tab .directory-list li { border-bottom: 2px groove #333; }
+#sidebar-content .tab .directory-list .directory-item.context,
+#sidebar-content .tab .directory-list .directory-item.active {
+    padding: 3px !important;
+    border-top: 1px solid #cc8800 !important;
+    border-bottom: 1px solid #cc8800 !important;
+    box-shadow: 0 0 3px #cc8800 !important;
+    background: #1e0e0073 !important;
+}
+
+/* D. v13 scene navigation */
+#scene-navigation .scene-navigation-menu li.scene .scene-name span.Auberesh {
+    font-family: "Auberesh";
+    font-size: xx-small;
+    margin: -10px 0 0;
+    display: var(--application-auberesh-title);
+    animation: textShadow 1.6s infinite;
+}
+
+/* E. Sidebar layout fix for v13 */
+#sidebar {
+    position: relative !important;
+    height: 100% !important;
+    --sidebar-width: 350px;
+}
+#sidebar-content {
+    background: url(../ui/sidebar.webp) no-repeat;
+    background-position: left top;
+    background-size: cover;
+}
+#sidebar-content .tab,
+#sidebar .sidebar-tab {
+    margin-left: 0 !important;
+}
+#sidebar-tabs {
+    position: relative !important;
+    left: auto !important;
+    width: auto !important;
+    height: 100% !important;
+    flex-direction: column !important;
+    padding: 8px 4px !important;
+    gap: 8px !important;
+    background: none !important;
+    border: none !important;
+    border-image: none !important;
+    align-items: center !important;
+}
+
+/* F. v13 scene navigation item styling */
+#scene-navigation .scene-navigation-menu .scene.view,
+#scene-navigation .scene-navigation-menu .scene.active {
+    cursor: default;
+    color: #FFF;
+    background: url(../ui/sidebar_button-background.webp) repeat;
+    background-origin: padding-box;
+    border-image: url(../ui/footer-button.webp) 10 repeat;
+    border-image-width: 4px;
+    border-image-outset: 0px;
+    box-shadow: 0 0 3px #4e0c0c;
+}
+#scene-navigation .scene-navigation-menu .scene {
+    cursor: default;
+    color: #460004;
+    background: url(../ui/sidebar_button-background_grey.webp) repeat;
+    background-origin: padding-box;
+    border-image: url(../ui/footer-button.webp) 10 repeat;
+    border-image-width: 4px;
+    border-image-outset: 0px;
+    font-family: KuiperBelt;
+    font-weight: bold;
+    font-size: 15px;
+}
+#scene-navigation #scene-navigation-expand {
+    cursor: default;
+    color: whitesmoke;
+    background: url(../ui/sidebar_button-background_red.webp) repeat;
+    background-origin: padding-box;
+    border-radius: 8px;
+    border: 3px solid #66141a;
+    font-family: KuiperBelt;
+    font-size: 14px;
+}
+
+/* G. v13 canvas controls */
+#ui-left .ui-control {
+    background: url(../ui/controls-background.webp) no-repeat center !important;
+    background-size: 32px 32px !important;
+    border-color: transparent !important;
+    color: transparent !important;
+    width: 32px !important;
+    height: 32px !important;
+}
+#ui-left .ui-control:hover,
+#ui-left .ui-control[aria-pressed="true"] {
+    background: url(../ui/controls-active-background.webp) no-repeat center !important;
+    background-size: 32px 32px !important;
+    color: transparent !important;
+    border-color: transparent !important;
 }

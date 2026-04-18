@@ -1,0 +1,839 @@
+/******************************************************************/
+/* swffg-shared.css                                               */
+/* Loaded ALWAYS (module.json styles array).                      */
+/* Contains all rules shared across every theme.                  */
+/* Theme files (rebel/css/swffg.css etc.) override from here.    */
+/******************************************************************/
+
+/******************************************************************/
+/* I. LOCAL FONTS                                                  */
+/******************************************************************/
+
+@font-face {
+  font-family: "Auberesh";
+  src: url("../fonts/Aurebesh Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Mons";
+  src: url("../fonts/MonsOlympiaBold-dq9x.ttf") format("truetype");
+}
+@font-face {
+  font-family: "EarthOrbiter";
+  src: url("../fonts/EarthOrbiterBold-vzD9.otf") format("opentype");
+}
+@font-face {
+  font-family: "KuiperBelt";
+  src: url("../fonts/KuiperBelt-Px0g.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DistantGalaxy";
+  src: url("../fonts/SfDistantGalaxy-0l3d.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Eras";
+  src: url("../fonts/ERASMD.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Eras";
+  src: url("../fonts/ERASBD.TTF") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "EotESymbol";
+  src: url("../fonts/EotESymbol-Regular-PLUS.otf") format("opentype");
+}
+@font-face {
+  font-family: "SWRPG-Symbol-Regular";
+  src: url("../fonts/swrpg_symbol-regular_v1-webfont.woff2") format("woff2"),
+       url("../fonts/swrpg_symbol-regular_v1-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Genesys";
+  src: url("../fonts/genesysglyphsanddice.woff2") format("woff2"),
+       url("../fonts/genesysglyphsanddice.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GenesysSymbol";
+  src: url("../fonts/Genesys.ttf") format("truetype");
+}
+
+/* --- FFG Enhancement Module Fonts (optional dependency) --- */
+@font-face {
+  font-family: "Temporarium";
+  src: url("/modules/ffg-star-wars-enhancements/fonts/Temporarium.otf");
+}
+@font-face {
+  font-family: "AurekBesh";
+  src: url("/modules/ffg-star-wars-enhancements/fonts/Aurek-Besh.woff2");
+}
+@font-face {
+  font-family: "AnakinMono";
+  src: url("/modules/ffg-star-wars-enhancements/fonts/anakinmono.ttf");
+}
+
+/******************************************************************/
+/* II. ANIMATIONS                                                  */
+/******************************************************************/
+
+@keyframes flicker {
+  0%   { opacity: 0.27861; }
+  5%   { opacity: 0.34769; }
+  10%  { opacity: 0.23604; }
+  15%  { opacity: 0.90626; }
+  20%  { opacity: 0.18128; }
+  25%  { opacity: 0.83891; }
+  30%  { opacity: 0.65583; }
+  35%  { opacity: 0.67807; }
+  40%  { opacity: 0.26559; }
+  45%  { opacity: 0.84693; }
+  50%  { opacity: 0.96019; }
+  55%  { opacity: 0.08594; }
+  60%  { opacity: 0.20313; }
+  65%  { opacity: 0.71988; }
+  70%  { opacity: 0.53455; }
+  75%  { opacity: 0.37288; }
+  80%  { opacity: 0.71428; }
+  85%  { opacity: 0.70419; }
+  90%  { opacity: 0.7003;  }
+  95%  { opacity: 0.36108; }
+  100% { opacity: 0.24387; }
+}
+
+@keyframes textShadow {
+  0%   { text-shadow: 0.44px 0 1px rgba(0,30,255,.5), -0.44px 0 1px rgba(255,0,80,.3), 0 0 3px; }
+  5%   { text-shadow: 2.79px 0 1px rgba(0,30,255,.5), -2.79px 0 1px rgba(255,0,80,.3), 0 0 3px; }
+  10%  { text-shadow: 0.03px 0 1px rgba(0,30,255,.5), -0.03px 0 1px rgba(255,0,80,.3), 0 0 3px; }
+  15%  { text-shadow: 0.40px 0 1px rgba(0,30,255,.5), -0.40px 0 1px rgba(255,0,80,.3), 0 0 3px; }
+  20%  { text-shadow: 3.48px 0 1px rgba(0,30,255,.5), -3.48px 0 1px rgba(255,0,80,.3), 0 0 3px; }
+  25%  { text-shadow: 1.61px 0 1px rgba(0,30,255,.5), -1.61px 0 1px rgba(255,0,80,.3), 0 0 3px; }
+  30%  { text-shadow: 0.70px 0 1px rgba(0,30,255,.5), -0.70px 0 1px rgba(255,0,80,.3), 0 0 3px; }
+  35%  { text-shadow: 3.90px 0 1px rgba(0,30,255,.5), -3.90px 0 1px rgba(255,0,80,.3), 0 0 3px; }
+  40%  { text-shadow: 3.87px 0 1px rgba(0,30,255,.5), -3.87px 0 1px rgba(255,0,80,.3), 0 0 3px; }
+  45%  { text-shadow: 2.23px 0 1px rgba(0,30,255,.5), -2.23px 0 1px rgba(255,0,80,.3), 0 0 3px; }
+  50%  { text-shadow: 0.08px 0 1px rgba(0,30,255,.5), -0.08px 0 1px rgba(255,0,80,.3), 0 0 3px; }
+  55%  { text-shadow: 2.38px 0 1px rgba(0,30,255,.5), -2.38px 0 1px rgba(255,0,80,.3), 0 0 3px; }
+  60%  { text-shadow: 2.20px 0 1px rgba(0,30,255,.5), -2.20px 0 1px rgba(255,0,80,.3), 0 0 3px; }
+  65%  { text-shadow: 2.86px 0 1px rgba(0,30,255,.5), -2.86px 0 1px rgba(255,0,80,.3), 0 0 3px; }
+  70%  { text-shadow: 0.49px 0 1px rgba(0,30,255,.5), -0.49px 0 1px rgba(255,0,80,.3), 0 0 3px; }
+  75%  { text-shadow: 1.89px 0 1px rgba(0,30,255,.5), -1.89px 0 1px rgba(255,0,80,.3), 0 0 3px; }
+  80%  { text-shadow: 0.08px 0 1px rgba(0,30,255,.5), -0.08px 0 1px rgba(255,0,80,.3), 0 0 3px; }
+  85%  { text-shadow: 0.10px 0 1px rgba(0,30,255,.5), -0.10px 0 1px rgba(255,0,80,.3), 0 0 3px; }
+  90%  { text-shadow: 3.44px 0 1px rgba(0,30,255,.5), -3.44px 0 1px rgba(255,0,80,.3), 0 0 3px; }
+  95%  { text-shadow: 2.18px 0 1px rgba(0,30,255,.5), -2.18px 0 1px rgba(255,0,80,.3), 0 0 3px; }
+  100% { text-shadow: 2.62px 0 1px rgba(0,30,255,.5), -2.62px 0 1px rgba(255,0,80,.3), 0 0 3px; }
+}
+
+@keyframes scanline {
+  0%   { bottom: 100%; }
+  80%  { bottom: 100%; }
+  100% { bottom: 0%; }
+}
+
+/******************************************************************/
+/* III. CSS CUSTOM PROPERTIES (ROOT DEFAULTS)                     */
+/******************************************************************/
+
+:root {
+  /* --- Auberesh display toggles --- */
+  --character-sheet-name-auberesh: Auberesh;
+  --application-auberesh-title: none;
+  --application-auberesh-sidebar-title: none;
+
+  /* --- Typography --- */
+  --major-button-font-family: Eras;
+  --major-button-font-size: 16px;
+  --major-button-font-weight: normal;
+  --major-button-color: #dadada;
+
+  --window-header-title-font-family: DistantGalaxy;
+  --window-header-title-font-size: 17px;
+  --window-header-vehicle-font-size: xx-large;
+  --window-header-title-color: #f5f5f5;
+
+  --actor-input-font-family: KuiperBelt;
+  --actor-input-font-size: 14px;
+  --actor-input-font-weight: 500;
+  --actor-input-color: #000;
+
+  --tab-header-font-family: KuiperBelt;
+  --tab-header-font-size: 16px;
+  --tab-header-font-weight: 700;
+  --tab-header-color: #fff;
+  --tab-header-color-active: #1febff;
+
+  --chatform-input-font-size: 14px;
+
+  /* --- Window borders (configurable via settings) --- */
+  --window-content-border-image-width: 12px;
+  --window-content-border-image-outset: 4px;
+  --window-header-margin: 0 0 4px 0;
+  --window-border-image-slice: 20 14 20 14;
+
+  /* --- Cursor --- */
+  --application-cursor-pointer: pointer;
+}
+
+/******************************************************************/
+/* IV. CRT DISPLAY EFFECTS                                        */
+/******************************************************************/
+
+/* Screen-door overlay */
+body.vtt.game.screen-door::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(18,16,16,0) 50%, rgba(0,0,0,.25) 50%),
+    linear-gradient(90deg, rgba(255,0,0,.06), rgba(0,255,0,.02), rgba(0,0,255,.06));
+  background-size: 100% 2px, 3px 100%;
+  z-index: 999;
+  pointer-events: none;
+}
+
+/* Flicker overlay */
+body.vtt.game.flickering::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  inset: 0;
+  background: rgba(18,16,16,.1);
+  opacity: 0;
+  z-index: 999;
+  pointer-events: none;
+  animation: flicker 0.5s infinite;
+}
+
+/* Scanline element (.scanline div appended by JS) */
+.scanline {
+  width: 100%;
+  height: 150px;
+  z-index: 999;
+  background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(255,255,255,.2) 10%, rgba(0,0,0,.1) 100%);
+  opacity: 0.2;
+  position: absolute;
+  bottom: 100%;
+  animation: scanline 10s linear infinite;
+  pointer-events: none;
+}
+
+/******************************************************************/
+/* V. AUBERESH SIDEBAR HEADERS                                    */
+/******************************************************************/
+
+/* Section injected by JS hooks into sidebar tabs */
+section.swffgui {
+  display: var(--application-auberesh-sidebar-title);
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-height: 30px;
+}
+
+h3.auberesh {
+  font-family: "Auberesh";
+  display: var(--application-auberesh-title);
+}
+
+.swffgui h3 {
+  flex: 0 100%;
+  margin: 3px;
+  text-align: center;
+  display: var(--application-auberesh-title);
+}
+
+/* Scene navigation Auberesh span — v12 and v13 */
+#navigation #scene-list .scene span,
+#scene-navigation .scene-navigation-menu li.scene .scene-name span.Auberesh {
+  font-family: "Auberesh";
+  font-size: xx-small;
+  margin: -10px 0 0;
+  display: var(--application-auberesh-title);
+  animation: textShadow 1.6s infinite;
+}
+
+#scenes .scene h3 span {
+  font-size: medium;
+  font-family: "Auberesh";
+  display: none;
+}
+
+/******************************************************************/
+/* VI. AUBERESH CHARACTER NAME OVERLAY                            */
+/******************************************************************/
+
+/* Base for all actor types — hover-in sliding name badge */
+.starwarsffg.sheet.actor .header-fields .profile-block .auberesh-name {
+  font-family: var(--character-sheet-name-auberesh);
+  text-shadow: 0 1px 10px #fff;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  z-index: 40;
+  padding-top: 2px;
+  --notchSize: 6px;
+  -webkit-clip-path: polygon(
+    0% var(--notchSize), var(--notchSize) 0%,
+    calc(100% - var(--notchSize)) 0%, 100% var(--notchSize),
+    100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%,
+    var(--notchSize) 100%, 0% calc(100% - var(--notchSize))
+  );
+  clip-path: polygon(
+    0% var(--notchSize), var(--notchSize) 0%,
+    calc(100% - var(--notchSize)) 0%, 100% var(--notchSize),
+    100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%,
+    var(--notchSize) 100%, 0% calc(100% - var(--notchSize))
+  );
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 0.3s, opacity 0.8s;
+}
+
+/* Character type */
+.starwarsffg.sheet.actor .character .header-fields .profile-block .auberesh-name {
+  width: 125px;
+  top: 108px;
+  background-color: #771113;
+}
+
+/* Vehicle type */
+.starwarsffg.sheet.actor .vehicle .header-fields .profile-block .auberesh-name {
+  --rightNotchSize: 10px;
+  width: calc(100% - var(--rightNotchSize));
+  font-size: x-large;
+  bottom: 5px;
+  background-color: #00304f;
+}
+
+/* Minion type */
+.starwarsffg.sheet.actor .minion .header-fields .profile-block .auberesh-name {
+  font-size: small;
+  width: 115px;
+  bottom: 90px;
+  max-width: 124px;
+  padding-top: 5px;
+  background-color: #84725e;
+}
+
+/* Hover reveal — unified for all actor types */
+.starwarsffg.sheet.actor .header-fields .profile-block:hover .auberesh-name,
+.starwarsffg.sheet.actor .header-fields .profile-block .auberesh-name:hover {
+  opacity: 0.75;
+  transform: translateX(0);
+}
+
+/* Profile-block minimum sizes */
+.starwarsffg.sheet.actor .character .header-fields .profile-block,
+.starwarsffg .minion .profile-block {
+  min-width: 125px;
+}
+.starwarsffg.sheet.actor .character .header-fields .profile-img,
+.starwarsffg .minion .profile-img {
+  display: block;
+}
+
+/******************************************************************/
+/* VII. WINDOW APP BASE OVERRIDES                                 */
+/* Covers both:                                                   */
+/*   Foundry v12 / appv1 compat (v13): .window-app               */
+/*   Foundry v13 ApplicationV2 native: .application              */
+/******************************************************************/
+
+/* Font propagation — appv1 (still used by actor/item sheets) */
+.window-app {
+  font-family: var(--major-button-font-family), sans-serif;
+  font-size: var(--major-button-font-size);
+}
+
+.window-app .window-content {
+  font-family: var(--major-button-font-family), sans-serif;
+  font-size: var(--major-button-font-size);
+}
+
+.window-app .window-header .window-title {
+  font-family: "DistantGalaxy", sans-serif;
+}
+
+/* Font propagation — ApplicationV2 windows (Foundry v13) */
+.application .window-content {
+  font-family: var(--major-button-font-family), sans-serif;
+  font-size: var(--major-button-font-size);
+}
+
+.application .window-header .window-title {
+  font-family: "DistantGalaxy", sans-serif;
+}
+
+/* Settings config form */
+div.swffgui-settings {
+  flex: 0;
+  text-align: center;
+  margin: 0;
+}
+
+/* Settings sidebar section headers */
+.settings-sidebar h4 {
+  margin: 6px 0;
+  padding: 3px 8px;
+  border-top: 1px solid var(--color-border-dark-4, #444);
+  border-bottom: 1px solid var(--color-border-dark-4, #444);
+  background: rgba(255, 255, 255, 0.1);
+  font-size: var(--font-size-16, 16px);
+}
+
+/* Checkbox height normalisation — v12 (.window-app) and v13 (.application) */
+#client-settings.app.window-app.form
+#config-tabs .settings-list div.form-group input[type="checkbox"],
+#client-settings.application
+#config-tabs .settings-list div.form-group input[type="checkbox"] {
+  height: 18px;
+}
+
+/******************************************************************/
+/* VIII. SHEET TAB NAVIGATION                                     */
+/* starwarsffg 2.xx (Foundry v13): tabs use <nav class="sheet-tabs tabs"> */
+/******************************************************************/
+
+.starwarsffg.sheet nav.sheet-tabs,
+.starwarsffg.sheet .tabs {
+  padding: 0;
+}
+
+/* Ensure the form flex direction for appv1 sheets */
+.window-app.starwarsffg.sheet.actor .window-content > *,
+.application.starwarsffg.sheet.actor .window-content > * {
+  display: flex;
+  flex-direction: column;
+}
+
+/******************************************************************/
+/* IX. STAR WARS FFG SPECIFIC — TYPOGRAPHY                        */
+/******************************************************************/
+
+.starwarsffg .charname input {
+  color: #771113;
+  font-family: "DistantGalaxy", sans-serif;
+}
+
+.starwarsffg .minion .sheet-header .minion-name h1 input {
+  font-family: "DistantGalaxy";
+  color: #771113;
+  font-size: unset;
+}
+
+.starwarsffg.sheet.actor .character .header-fields .header-name input {
+  font-family: "DistantGalaxy";
+  color: #771113;
+}
+
+.starwarsffg .skill-name {
+  font-size: var(--major-button-font-size);
+}
+
+.starwarsffg .skillsGrid .skillTable .skillsHeader div {
+  font-size: var(--major-button-font-size);
+}
+
+.starwarsffg .header-fields .row div {
+  color: #512326;
+}
+
+/******************************************************************/
+/* X. CHARACTERISTIC ITEMS                                        */
+/* Aligned with host system notch-based design language.          */
+/* Themes override background-image per their art direction.      */
+/******************************************************************/
+
+/* Preserve host system's clip-path notch on characteristic labels */
+.starwarsffg.sheet.actor .characteristic-item .characteristic-label {
+  background-color: transparent;
+}
+
+.starwarsffg.sheet.actor .vehicle .characteristic-item .characteristic-label {
+  background-color: transparent;
+  margin-top: 10px;
+}
+
+.starwarsffg .item-sheet-species .characteristics .characteristic-item .characteristic-label {
+  position: relative;
+  background-color: transparent;
+  padding: 12px 0 0;
+}
+
+/* Characteristic circle fill — neutral default, themes override */
+.starwarsffg .characteristic-item .characteristic,
+.starwarsffg.sheet.actor .characteristic-item .characteristic {
+  background: #f9f1df;
+}
+
+.starwarsffg.sheet.actor .vehicle .characteristic-item .characteristic {
+  background: whitesmoke;
+}
+
+.starwarsffg .item-sheet-species .characteristic {
+  background: #eee8d9;
+}
+
+/******************************************************************/
+/* XI. VEHICLE GRID LAYOUT FIX                                    */
+/******************************************************************/
+
+/*
+ * NOTE ON GRID UTILITIES (.grid, .grid-Ncol, .flex-group-*)
+ * ---------------------------------------------------------
+ * In starwarsffg 1.910 (Foundry v12), these classes were defined in the
+ * host system's starwarsffg.css. In starwarsffg 2.xx (Foundry v13) they
+ * were removed from the host CSS — Foundry v13 core now provides them.
+ *
+ * The module defines a SAFETY fallback here using @layer so that:
+ *   - If Foundry v13 core already defined them, the core rules win.
+ *   - If not (e.g. on a non-standard build), the module's rules apply.
+ * This prevents layout breaks without overriding the authoritative source.
+ */
+@layer swffgui-grid-fallback {
+  .grid,
+  .grid-2col {
+    display: grid;
+    grid-column: span 2 / span 2;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin: 10px 0;
+    padding: 0;
+  }
+  .grid-3col  { grid-column: span 3  / span 3;  grid-template-columns: repeat(3,  minmax(0, 1fr)); }
+  .grid-4col  { grid-column: span 4  / span 4;  grid-template-columns: repeat(4,  minmax(0, 1fr)); }
+  .grid-5col  { grid-column: span 5  / span 5;  grid-template-columns: repeat(5,  minmax(0, 1fr)); }
+  .grid-6col  { grid-column: span 6  / span 6;  grid-template-columns: repeat(6,  minmax(0, 1fr)); }
+  .grid-7col  { grid-column: span 7  / span 7;  grid-template-columns: repeat(7,  minmax(0, 1fr)); }
+  .grid-8col  { grid-column: span 8  / span 8;  grid-template-columns: repeat(8,  minmax(0, 1fr)); }
+  .grid-9col  { grid-column: span 9  / span 9;  grid-template-columns: repeat(9,  minmax(0, 1fr)); }
+  .grid-10col { grid-column: span 10 / span 10; grid-template-columns: repeat(10, minmax(0, 1fr)); }
+  .grid-11col { grid-column: span 11 / span 11; grid-template-columns: repeat(11, minmax(0, 1fr)); }
+  .grid-12col { grid-column: span 12 / span 12; grid-template-columns: repeat(12, minmax(0, 1fr)); }
+
+  .flex-group-center,
+  .flex-group-left,
+  .flex-group-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+  }
+  .flex-group-left  { justify-content: flex-start; text-align: left; }
+  .flex-group-right { justify-content: flex-end;   text-align: right; }
+  .flex-center      { display: flex; align-items: center; justify-content: center; text-align: center; }
+  .flex-between     { display: flex; justify-content: space-between; }
+}
+
+/* Vehicle-specific grid override */
+.starwarsffg .vehicle .grid-3col {
+  grid-gap: 10px;
+  grid-column-gap: 25px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+/******************************************************************/
+/* XII. PAUSE SCREEN                                              */
+/******************************************************************/
+
+#pause.paused {
+  text-align: center;
+  text-decoration: none;
+}
+
+#pause > h3 {
+  color: #ccc;
+  font-family: "Auberesh";
+  background: none;
+  font-size: 40px;
+  border-bottom: 0;
+}
+
+#pause > h3 span {
+  font-family: "DistantGalaxy";
+}
+
+#pause > figcaption {
+  font-family: "Auberesh";
+}
+
+#pause > figcaption span {
+  font-family: "DistantGalaxy";
+}
+
+/******************************************************************/
+/* XIII. TOOLTIP MANAGER COMPAT                                   */
+/******************************************************************/
+
+#tooltip-manager .window-content,
+#tooltip-editor-default .window-content {
+  padding: 0 10px 10px;
+  margin: 0;
+}
+
+#tooltip-editor-default .window-content .notes {
+  font-family: var(--actor-input-font-family);
+  font-size: var(--actor-input-font-size);
+  font-weight: var(--actor-input-font-weight);
+}
+
+#tooltip-editor-default .tabs .item {
+  color: whitesmoke;
+}
+
+/* token-tooltip-alt compat */
+.token-tooltip-alt-tooltip-container {
+  border: 4px solid white;
+  border-radius: 8px;
+}
+
+.token-tooltip-alt-data-manager-window .data-manager,
+.token-tooltip-alt-advanced-editor-window .advanced-editor {
+  font-family: var(--major-button-font-family);
+}
+
+.token-tooltip-alt-tooltip-container.default .token-tooltip-alt-tooltip-item.title {
+  border-bottom: 3px solid white;
+}
+
+/******************************************************************/
+/* XIV. FFG-STAR-WARS-ENHANCEMENTS COMPAT                        */
+/******************************************************************/
+
+/* Opening crawl */
+.ffg-star-wars-enhancements-opening-crawl .titles > div .episode {
+  margin-bottom: -2em;
+  font-size: 150%;
+}
+.ffg-star-wars-enhancements-opening-crawl .titles > div .text p {
+  font-size: 100%;
+}
+
+/* Datapad — these rely on the enhancement module assets */
+.swdatapad {
+  background-image: url(/modules/ffg-star-wars-enhancements/artwork/datapad-template-700w.png);
+  background-repeat: no-repeat;
+  width: 700px;
+  min-height: 1000px;
+  display: block;
+  padding: 75px 50px;
+  color: #d0faff;
+  font-size: 18px;
+  font-family: Temporarium, sans-serif;
+}
+.swdatapad table { font-size: 12px; }
+.swdatapad p {
+  color: #d0faff;
+  font-size: 18px;
+  font-family: Temporarium, sans-serif;
+}
+
+.swdatapad-wanted {
+  background-image: url(/modules/ffg-star-wars-enhancements/artwork/datapad-template-wanted-700w.png);
+  background-repeat: no-repeat;
+  width: 700px;
+  min-height: 1000px;
+  display: block;
+  padding: 65px 65px;
+  color: #02e3dd;
+  font-size: 18px;
+  font-family: Temporarium, sans-serif;
+}
+.swdatapad-wanted .credits { font-family: AurekBesh, sans-serif; }
+.swdatapad-wanted h1 {
+  font-family: AurekBesh, sans-serif;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.5em;
+  padding: 0.25em 0;
+  border-top: 2px solid #02e3dd;
+  border-bottom: 2px solid #02e3dd;
+}
+.swdatapad-wanted > * {
+  color: transparent;
+  background-color: #02e3dd;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: repeating-linear-gradient(to bottom, #02e3dd, #02e3dd 2px, #01bbb7 2px, #01bbb7 4px);
+}
+.swdatapad-wanted h2 {
+  font-family: AnakinMono, sans-serif;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.25em;
+  border-bottom: 2px solid #02e3dd;
+}
+.swdatapad-wanted h3 {
+  margin-right: 0.5em;
+  font-family: AnakinMono, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+.swdatapad-wanted p {
+  font-size: 14px;
+  margin-bottom: 1em;
+}
+.swdatapad-wanted table {
+  font-size: 14px;
+  border-top: 2px solid #02e3dd;
+  border-bottom: 2px solid #02e3dd;
+}
+.swdatapad-wanted tr:first-child > * { padding-top: 1em; }
+.swdatapad-wanted tr:last-child > *  { padding-bottom: 1em; }
+.swdatapad-wanted table tr:nth-child(2n) { background-color: inherit; }
+.swdatapad-wanted table td,
+.swdatapad-wanted table th {
+  padding: 0.2em 0;
+  line-height: 1.5em;
+  text-align: left;
+  vertical-align: top;
+}
+.swdatapad-wanted .image-float {
+  float: right;
+  border-left: solid 10px #000;
+  filter: sepia(100%) saturate(300%) brightness(60%) hue-rotate(130deg);
+}
+.swdatapad-wanted .image-float::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  display: inline-block;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    rgba(2,227,221,.25), rgba(2,227,221,.35) 2px,
+    rgba(1,187,183,.55) 2px, rgba(1,187,183,.55) 4px
+  );
+}
+
+/******************************************************************/
+/* XV. VENDOR ITEM TABLE FIX                                      */
+/******************************************************************/
+
+table.vendor_item {
+  display: table;
+}
+
+/******************************************************************/
+/* XVI. FOUNDRY v13 SIDEBAR COMPATIBILITY                         */
+/*                                                                */
+/* Foundry v12: #sidebar-tabs > .item[data-tab]  (horizontal)    */
+/* Foundry v13: #sidebar-tabs > menu > button/li.ui-control       */
+/*              Active state: [aria-pressed="true"]               */
+/*                                                                */
+/* Theme files provide background images per data-tab value.      */
+/* This shared block only handles layout/cursor/base behaviour.   */
+/******************************************************************/
+
+/* v13: sidebar tab buttons — cursor and base layout */
+#sidebar nav button[data-action="tab"],
+#sidebar-tabs > menu .ui-control[data-action="tab"] {
+  cursor: var(--application-cursor-pointer);
+}
+
+/* v13: collapsed sidebar — handled by #sidebar-content margin transition. */
+#sidebar.collapsed {
+  /* Themes handle collapsed-state visual styling if needed */
+}
+
+/******************************************************************/
+/* XVII. FOUNDRY v13 APPLICATION V2 COMPAT                        */
+/* .application replaces .window-app for new core dialogs/forms   */
+/******************************************************************/
+
+/* v13 client-settings uses ApplicationV2 */
+.application#client-settings .window-content,
+.application .window-content {
+  font-family: var(--major-button-font-family), sans-serif;
+  font-size: var(--major-button-font-size);
+}
+
+/* v13 filepicker */
+.application.filepicker .window-content {
+  font-family: var(--major-button-font-family), sans-serif;
+}
+
+/* v13 sheet — ensure actor/item sheets still get themed font */
+.application.starwarsffg.sheet .window-content {
+  font-family: var(--major-button-font-family), sans-serif;
+  font-size: var(--major-button-font-size);
+}
+
+/******************************************************************/
+/* XVIII. FOUNDRY v13 SIDEBAR CONTENT STRUCTURE                   */
+/* v13 introduces #sidebar-content wrapper around sidebar tabs    */
+/******************************************************************/
+
+#sidebar-content {
+  /* v13: sidebar content container — theme backgrounds apply here */
+}
+
+#sidebar-content .sidebar-tab {
+  /* v13: individual tab panels inside #sidebar-content */
+}
+
+/* v13: Chat uses #sidebar-content #chat instead of #sidebar .sidebar-tab */
+#sidebar-content #chat .chat-log,
+#sidebar .sidebar-tab #chat-log {
+  /* unified: both v12 and v13 chat log */
+}
+
+/******************************************************************/
+/* XIX-B. FOUNDRY v13 CANVAS CONTROLS CURSOR                      */
+/* v12: #controls .scene-control / .control-tool                  */
+/* v13: .ui-control in #ui-left                                   */
+/* Theme files apply background images. Shared: cursor only.     */
+/******************************************************************/
+
+#ui-left .ui-control {
+  cursor: var(--application-cursor-pointer);
+}
+
+/******************************************************************/
+/* XIX. STARWARSFFG 2.xx SYSTEM COMPAT                            */
+/* Addresses CSS differences between system 1.910 and 2.xx        */
+/******************************************************************/
+
+/* v2 tabs - the new system adds .v2 class to sheets */
+.starwarsffg.sheet.actor.v2 .tabs .item {
+  line-height: normal;
+}
+.starwarsffg.sheet.actor.v2 .tabs .item.active {
+  color: #490c0b;
+}
+
+/* Combat sidebar — new system adds .combat-sidebar styles */
+.combat-sidebar li.combatant .roll {
+  display: block;
+  width: 40px;
+  height: var(--sidebar-item-height, 48px);
+  background: url(../../../icons/svg/d20.svg) no-repeat 50% 50%;
+  background-size: 32px;
+  margin: 0 0.5em;
+}
+
+/* Talent grid body — added in 2.xx */
+.starwarsffg .talent-grid .talent-body {
+  height: calc(100% - 2rem);
+}
+
+/* Medical items — added in 2.xx */
+.starwarsffg.item-medical {
+  height: 60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.starwarsffg.item-medical img {
+  display: none;
+}
+.starwarsffg.item-medical:hover img {
+  display: block;
+}
