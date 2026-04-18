@@ -786,14 +786,51 @@ table.vendor_item {
 }
 
 /******************************************************************/
-/* XIX-B. FOUNDRY v13 CANVAS CONTROLS CURSOR                      */
-/* v12: #controls .scene-control / .control-tool                  */
+/* XIX-B. #ui-left — TYPOGRAPHY RESET & CANVAS CONTROLS          */
+/*                                                                */
+/* Problem: body{font-family:var(--major-button-font-family)}     */
+/* propagates decorative Star Wars fonts into #ui-left, which    */
+/* contains icon-based controls that need system/icon fonts.     */
+/*                                                                */
+/* Fix: hard-reset font to a safe system stack here so no theme  */
+/* can accidentally inherit a decorative font into this zone.    */
+/* Individual theme files add background images; this block      */
+/* owns typography, cursor, base color, and graceful fallback.   */
+/*                                                                */
+/* v12: #controls .scene-control / .control-tool (dead in v13)   */
 /* v13: .ui-control in #ui-left                                   */
-/* Theme files apply background images. Shared: cursor only.     */
 /******************************************************************/
 
+/* --- Typography reset --- */
+#ui-left,
+#ui-left * {
+  font-family: var(--font-primary, ui-sans-serif, system-ui, -apple-system, sans-serif);
+}
+
+/* --- Cursor --- */
 #ui-left .ui-control {
   cursor: var(--application-cursor-pointer);
+
+  /* Visible baseline icon color — themes may override.              */
+  /* Using a semi-transparent white ensures the FontAwesome glyph   */
+  /* is readable as a graceful fallback when background-image fails. */
+  color: rgba(255, 255, 255, 0.55);
+
+  /* Smooth state transition */
+  transition: color 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Active / hover: full brightness */
+#ui-left .ui-control:hover,
+#ui-left .ui-control[aria-pressed="true"] {
+  color: #ffffff;
+}
+
+/* Disabled / inactive fallback — lower contrast without hiding entirely */
+#ui-left .ui-control[disabled],
+#ui-left .ui-control[aria-disabled="true"] {
+  color: rgba(255, 255, 255, 0.25);
+  cursor: not-allowed;
 }
 
 /******************************************************************/

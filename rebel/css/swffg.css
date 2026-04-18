@@ -8588,21 +8588,23 @@ div#transition-form.app.window-app.sheet.transition-form{
 }
 
 /* G. v13 canvas controls
- * v12: #controls .scene-control / .control-tool (dead in v13)
+ * v12: #controls .scene-control / .control-tool (dead in v13 — kept for v12 compat only)
  * v13: .ui-control in #ui-left */
 #ui-left .ui-control {
-    background: url(../ui/controls-background.webp) no-repeat center !important;
-    background-size: 32px 32px !important;
-    border-color: transparent !important;
-    color: transparent !important;
-    width: 32px !important;
-    height: 32px !important;
+    background: url(../ui/controls-background.webp) no-repeat center;
+    background-size: 32px 32px;
+    border-color: transparent;
+    /* Rebel: muted cyan glyph — visible fallback */
+    color: rgba(0, 210, 230, 0.5);
+    width: 32px;
+    height: 32px;
 }
 #ui-left .ui-control:hover,
 #ui-left .ui-control[aria-pressed="true"] {
-    background: url(../ui/controls-active-background.webp) no-repeat center !important;
-    background-size: 32px 32px !important;
-    color: transparent !important;
-    border-color: transparent !important;
+    background: url(../ui/controls-active-background.webp) no-repeat center;
+    background-size: 32px 32px;
+    /* Full-brightness cyan on active/hover */
+    color: #1febff;
+    border-color: transparent;
 }
 

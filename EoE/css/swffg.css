@@ -8962,17 +8962,19 @@ div#transition-form.app.window-app.sheet.transition-form{
 
 /* G. v13 canvas controls */
 #ui-left .ui-control {
-    background: url(../ui/controls-background.webp) no-repeat center !important;
-    background-size: 32px 32px !important;
-    border-color: transparent !important;
-    color: transparent !important;
-    width: 32px !important;
-    height: 32px !important;
+    background: url(../ui/controls-background.webp) no-repeat center;
+    background-size: 32px 32px;
+    border-color: transparent;
+    /* EoE: warm amber glyph — readable on dark background */
+    color: rgba(220, 160, 60, 0.55);
+    width: 32px;
+    height: 32px;
 }
 #ui-left .ui-control:hover,
 #ui-left .ui-control[aria-pressed="true"] {
-    background: url(../ui/controls-active-background.webp) no-repeat center !important;
-    background-size: 32px 32px !important;
-    color: transparent !important;
-    border-color: transparent !important;
+    background: url(../ui/controls-active-background.webp) no-repeat center;
+    background-size: 32px 32px;
+    /* Full amber on active/hover */
+    color: #ffcc66;
+    border-color: transparent;
 }
